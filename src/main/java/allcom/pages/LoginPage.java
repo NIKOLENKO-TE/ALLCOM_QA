@@ -19,9 +19,4 @@ public class LoginPage extends BasePage{
         type(usernameField, email);
         type(passwordField, password);
     }
-    @FindBy(xpath = "//button[@id='button_login']")
-    WebElement loginButton;
-    public void clickOnLoginButton() {
-        loginButton.click();
-    }
 }
