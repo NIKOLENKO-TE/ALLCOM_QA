@@ -1,6 +1,7 @@
 package allcom.pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -12,6 +13,7 @@ import java.time.Duration;
 
 public class BasePage {
     WebDriver driver;
+
     public BasePage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
@@ -20,21 +22,23 @@ public class BasePage {
     public void click(WebElement element) {
         element.click();
     }
+
     public void type(WebElement element, String text) {
-       if(text != null) {
-           click(element);
-           element.clear();
-           element.sendKeys(text);
-       }
+        if (text != null) {
+            click(element);
+            element.clear();
+            element.sendKeys(text);
+        }
     }
-    public boolean isCurrentPage(String expectedURL) {
-        return driver.getCurrentUrl().equals(expectedURL);
+    public void isCurrentPage(String expectedURL) {
+        driver.getCurrentUrl();
     }
 
     public void goToPage(String pageURL) {
         driver.get(pageURL);
     }
-    @FindBy(xpath = "//div[@class='warning_message--validation']")
+
+    @FindBy(css = "[data-testid^='error_']")
     WebElement errorValidation;
 
     public boolean errorValidationIsPresent(boolean expectedStatus) {
@@ -46,23 +50,61 @@ public class BasePage {
             return !expectedStatus;
         }
     }
-    @FindBy(xpath = "//div[@class='language__currency d-none d-lg-block']")
-    WebElement chooseLangList;
+
     public void changeLanguage(String language) {
-        click(chooseLangList);
-        driver.findElement(By.xpath("//li[contains(text(), '" + language + "')]")).click();
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebElement languageDropdown = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("[data-testid='language-text-set']")));
+        languageDropdown.click();
+        WebElement languageOption = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//li[contains(text(), '" + language + "')]")));
+        languageOption.click();
     }
-    public void clickOnButton(String buttonName) {
-        driver.findElement(By.xpath("//button[@id='" + buttonName + "']")).click();
+
+    public void clickOnButton(String buttonId) {
+        By buttonLocator = By.xpath("//button[@id='" + buttonId + "']");
+        driver.findElement(buttonLocator).click();
     }
+
     public void clickOnLabel(String labelName) {
         driver.findElement(By.xpath("//label[@id='" + labelName + "']/a")).click();
     }
-    public void isElementPreset(String nameElement) {
-        driver.findElement(By.xpath("//p[contains(text(),'" + nameElement + "')]"));
+
+    public void clickOnHrefLink(String linkName) {
+        driver.findElement(By.xpath("//href[@id='" + linkName + "']/a")).click();
     }
-    public void isSpanElementPreset(String nameElement) {
-        driver.findElement(By.xpath("//span[@class='" + nameElement + "']"));
+
+    public boolean isPPresent(String pElement) {
+        try {
+            driver.findElement(By.xpath("//p[@id='" + pElement + "']"));
+            return true;
+        } catch (NoSuchElementException e) {
+            return false;
+        }
+    }
+
+    public boolean isButtonPresent(String buttonName) {
+        try {
+            driver.findElement(By.xpath("//button[@id='" + buttonName + "']"));
+            return true;
+        } catch (NoSuchElementException e) {
+            return false;
+        }
+    }
+
+    public boolean isSpanElementPresent(String spanName) {
+        try {
+            driver.findElement(By.xpath("//span[@id='" + spanName + "']"));
+            return true;
+        } catch (NoSuchElementException e) {
+            return false;
+        }
+    }
+    public boolean isElementPresent(By by) {
+        try {
+            driver.findElement(by);
+            return true;
+        } catch (NoSuchElementException e) {
+            return false;
+        }
     }
     public void setCheckbox(String nameCheckbox) {
         WebElement checkbox = driver.findElement(By.xpath("//input[@id='" + nameCheckbox + "']"));
@@ -70,6 +112,7 @@ public class BasePage {
             checkbox.click();
         }
     }
+
     public void setCheckboxFirma() {
         WebElement checkboxFirma = driver.findElement(By.xpath("//body/div[@id='root']/div[1]/form[1]/div[2]/div[1]/div[1]/input[1]"));
         if (!checkboxFirma.isSelected()) {

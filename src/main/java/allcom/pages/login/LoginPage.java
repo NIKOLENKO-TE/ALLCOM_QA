@@ -1,15 +1,17 @@
-package allcom.pages;
+package allcom.pages.login;
 
+import allcom.pages.BasePage;
+import allcom.pages.HomePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class LoginPage extends BasePage{
+public class LoginPage extends BasePage {
     public LoginPage(WebDriver driver) {
         super(driver);
     }
     public static String loginPageURL() {
-        return "https://deploy-preview-34--incredible-snickerdoodle-514a2d.netlify.app/login";
+        return HomePage.homePageURL() + "/login";
     }
     @FindBy(name = "email")
     WebElement usernameField;

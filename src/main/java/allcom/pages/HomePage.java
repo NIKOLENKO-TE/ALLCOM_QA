@@ -6,7 +6,8 @@ public class HomePage extends BasePage {
     public HomePage(WebDriver driver) {
         super(driver);
     }
+    static String homePageURL;
     public static String homePageURL() {
-        return "https://deploy-preview-34--incredible-snickerdoodle-514a2d.netlify.app/";
+        return "https://master--incredible-snickerdoodle-514a2d.netlify.app";
     }
 }

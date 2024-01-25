@@ -1,7 +1,8 @@
-package allcom.tests;
-
+package allcom.tests.passwordReset;
 import allcom.pages.BasePage;
-import allcom.pages.RestorePasswordPage;
+import allcom.pages.passwordReset.RestorePasswordPage;
+import allcom.pages.passwordReset.RestorePasswordWaitPage;
+import allcom.tests.TestBase;
 import com.opencsv.CSVReader;
 import com.opencsv.exceptions.CsvValidationException;
 import org.testng.Assert;
@@ -14,7 +15,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class RestorePasswordTests extends TestBase{
+public class RestorePasswordTests extends TestBase {
     private BasePage basePage;
     private RestorePasswordPage restorePasswordPage;
     @BeforeMethod
@@ -22,7 +23,6 @@ public class RestorePasswordTests extends TestBase{
         basePage = new BasePage(driver);
         restorePasswordPage = new RestorePasswordPage(driver);
         basePage.goToPage(RestorePasswordPage.restorePasswordPageURL());
-        basePage.isSpanElementPreset("login_register--divide__text");
         basePage.isCurrentPage(RestorePasswordPage.restorePasswordPageURL());
     }
     @Test

@@ -1,6 +1,7 @@
-package allcom.tests;
+package allcom.pages.passwordReset;
 
 import allcom.pages.BasePage;
+import allcom.pages.HomePage;
 import org.openqa.selenium.WebDriver;
 
 public class RestorePasswordWaitPage extends BasePage {
@@ -8,6 +9,6 @@ public class RestorePasswordWaitPage extends BasePage {
         super(driver);
     }
     public static String restorePasswordWaitPageURL() {
-        return "https://deploy-preview-34--incredible-snickerdoodle-514a2d.netlify.app/restore_password_wait";
+        return HomePage.homePageURL() + "/restore_password_wait";
     }
 }

@@ -1,14 +1,16 @@
-package allcom.pages;
+package allcom.pages.registration;
 
+import allcom.pages.BasePage;
+import allcom.pages.HomePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-public class RegisterPage extends BasePage{
+public class RegisterPage extends BasePage {
     public RegisterPage(WebDriver driver) {
         super(driver);
     }
     public static String registerPageURL() {
-        return "https://deploy-preview-34--incredible-snickerdoodle-514a2d.netlify.app/register";
+        return HomePage.homePageURL() + "/register";
     }
     @FindBy(name = "firstName")
     WebElement firstNameField;
