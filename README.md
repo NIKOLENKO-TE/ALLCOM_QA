@@ -1,4 +1,6 @@
 <h1 align="center">Hi 👋, I'm Nikolenko Tymofii</h1>
+![Screenshot](/assets/images/readme.png)
+
 <h3 align="center">Quality Assurance Automation Engineer from Ukraine, but now i live in Germany, Berlin</h3>
 
 - 🔭 I’m currently working on [git ALLCOM](https://github.com/NIKOLENKO-TE/ALLCOM_SITE)
