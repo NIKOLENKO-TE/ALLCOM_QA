@@ -1,12 +1,15 @@
 package allcom.pages;
 
+import com.google.common.io.Files;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.Browser;
-
+import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
 
@@ -15,7 +18,7 @@ public class ApplicationManager extends BasePage {
     public BasePage basePage;
     public String browser;
 
-    public  WebDriver driver;
+    public WebDriver driver;
 
     public static ApplicationManager app = new ApplicationManager(System.getProperty("browser", Browser.CHROME.browserName()));
 
@@ -60,5 +63,16 @@ public class ApplicationManager extends BasePage {
             Runtime.getRuntime().exec("taskkill /F /IM chromedriver.exe /T");
         } catch (IOException ignored) {
         }
+    }
+
+    public String takeScreenshot() {
+        File tmp = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        File screenshot = new File("src/screenshots/screen" + System.currentTimeMillis() + ".png");
+        try {
+            Files.copy(tmp, screenshot);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        return screenshot.getAbsolutePath();
     }
 }

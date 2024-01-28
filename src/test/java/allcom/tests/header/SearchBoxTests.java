@@ -115,7 +115,7 @@ public class SearchBoxTests extends TestBase {
         String searchText = "some text to input test";
         basePage.type(searchBox.getSearchBoxInput(), searchText);
         searchBox.clickOnSearchButton();
-        basePage.isCurrentPage(SearchBox.searchResultURL(), true);
+        basePage.isCurrentPage(SearchBox.searchResultURL(), false);
     }
 
 

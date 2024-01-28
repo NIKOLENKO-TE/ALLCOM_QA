@@ -28,8 +28,12 @@ public class TestBase {
         if (result.isSuccess()) {
             logger.info("PASSED: [" + result.getMethod().getMethodName() + "], with Parameters: " + params);
         } else {
-            logger.error("FAILED: [" + result.getMethod().getMethodName() + "], with Parameters: " + params);
-            logger.info("///////////////////////////////////////////////////////");
+            Throwable throwable = result.getThrowable();
+            String errorMessage = throwable != null ? throwable.getMessage() : "Unknown error";
+            logger.error("ERROR FAILED TEST: [" + result.getMethod().getMethodName() + "], with Parameters: " + params);
+            logger.error("ERROR TEST MESSAGE: " + errorMessage);
+            logger.error("ERROR TEST SCREENSHOT: " + app.takeScreenshot());
+            logger.info("[==================================================================================================]");
         }
     }
 

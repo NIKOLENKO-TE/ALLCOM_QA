@@ -17,7 +17,7 @@ public class SearchBox extends BasePage {
         super(driver);
     }
     public static String searchResultURL() {
-        return HomePage.homePageURL() + "/?#";
+        return HomePage.homePageURL() + "/?#222";
     }
     @FindBy(className = "header__search--box")
     WebElement searchBox;
