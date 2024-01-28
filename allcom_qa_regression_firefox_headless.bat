@@ -1,7 +1,7 @@
 @echo off
 cd /d "C:\Users\PORTISHEAD\Desktop\ALLCOM\allcom_qa"
 echo ////////////////////////////////////////////////////////////////////////////////////////////////
-echo 			Start allcom_qa tests in Chrome [all tests]
+echo 		   Start allcom_qa tests in Firefox [REGRESSION, HEADLESS MODE]
 echo ////////////////////////////////////////////////////////////////////////////////////////////////
-call gradlew clean allcom_qa
+call gradle -Pbrowser=firefox -Pmode=headless clean allcom_qa_regression
 pause

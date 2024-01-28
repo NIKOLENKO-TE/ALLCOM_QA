@@ -71,11 +71,6 @@ public class RegisterPageTests extends TestBase {
         basePage.validateFieldWithIncorrectData(registerPage.getPhoneNumberField(), invalidPhoneNumber, true);
     }
 
-    @Test(dataProvider = "invalidPhoneData", dataProviderClass = DataProviderClass.class)
-    public void yourTest(String invalidPhoneNumber) {
-        basePage.validateFieldWithIncorrectData(registerPage.getPhoneNumberField(), invalidPhoneNumber, true);
-    }
-
     @Test(dataProvider = "invalidEMailData", dataProviderClass = DataProviderClass.class)
     public void validateEmailWithIncorrectData(String invalidEmail) {
         basePage.validateFieldWithIncorrectData(registerPage.getEmailField(), invalidEmail, true);

@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.Browser;
 
 import java.io.IOException;
@@ -36,10 +37,17 @@ public class ApplicationManager extends BasePage {
     }
 
     public void initHeadless() {
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("headless");
-        options.addArguments("window-size=1920x1080");
-        driver = new ChromeDriver(options);
+        String browserType = System.getProperty("browserType", "chrome");
+        if (browserType.equalsIgnoreCase("firefox")) {
+            FirefoxOptions options = new FirefoxOptions();
+            options.addArguments("-headless");
+            driver = new FirefoxDriver(options);
+        } else {
+            ChromeOptions options = new ChromeOptions();
+            options.addArguments("headless");
+            options.addArguments("window-size=1920x1080");
+            driver = new ChromeDriver(options);
+        }
         BasePage basePage = new BasePage(driver);
         driver.get(HomePage.homePageURL());
         basePage.changeLanguage("English");
