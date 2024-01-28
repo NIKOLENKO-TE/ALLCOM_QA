@@ -1,3 +1,5 @@
+<div align="center"><img src="https://komarev.com/ghpvc/?username=nikolenkote&color=blueviolet&label=PROFILE+VIEWS" alt="counter"/></div>
+
 <h1 align="center">Hi 👋, I'm Nikolenko Tymofii</h1>
 
 <h3 align="center">Quality Assurance Automation Engineer from Ukraine, but now i live in Germany, Berlin</h3>
