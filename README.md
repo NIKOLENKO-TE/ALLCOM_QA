@@ -2,7 +2,7 @@
 
 <h3 align="center">Quality Assurance Automation Engineer from Ukraine, but now i live in Germany, Berlin</h3>
 
-- 🔭 I’m currently working on [git ALLCOM](https://github.com/NIKOLENKO-TE/ALLCOM_SITE)
+- 🔭 I’m currently working on [git ALLCOM_AUCTION PROJECT](https://github.com/NIKOLENKO-TE/ALLCOM_SITE)
 
 - 🔭 Also I’m currently working on [git PHOTOGRAPHER BERLIN](https://github.com/NIKOLENKO-TE/PHOTOGRAPHER_BERLIN)
   
