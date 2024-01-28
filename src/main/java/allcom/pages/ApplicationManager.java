@@ -1,20 +1,35 @@
 package allcom.pages;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.Browser;
 
 import java.io.IOException;
 import java.time.Duration;
 
 public class ApplicationManager extends BasePage {
-    private static final Logger logger = LogManager.getLogger(ApplicationManager.class);
+
+    public BasePage basePage;
+    public String browser;
+
+    public  WebDriver driver;
+
+    public static ApplicationManager app = new ApplicationManager(System.getProperty("browser", Browser.CHROME.browserName()));
+
+    public ApplicationManager(String browser) {
+        this.browser = browser;
+    }
 
     public void init() {
-        driver = new ChromeDriver();
-        BasePage basePage = new BasePage(driver);
+        if (browser.equalsIgnoreCase("chrome")) {
+            driver = new ChromeDriver();
+        } else if (browser.equalsIgnoreCase("firefox")) {
+            driver = new FirefoxDriver();
+        }
         driver.get(HomePage.homePageURL());
+        BasePage basePage = new BasePage(driver);
         basePage.changeLanguage("English");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
@@ -35,8 +50,7 @@ public class ApplicationManager extends BasePage {
         driver.quit();
         try {
             Runtime.getRuntime().exec("taskkill /F /IM chromedriver.exe /T");
-        } catch (IOException e) {
-            logger.error("An error occurred while stopping the driver", e);
+        } catch (IOException ignored) {
         }
     }
 }

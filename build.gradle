@@ -1,0 +1,32 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.11
+targetCompatibility = 1.11
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.seleniumhq.selenium:selenium-java:4.17.0'
+    implementation 'org.testng:testng:7.9.0'
+    testImplementation 'com.opencsv:opencsv:5.5.2'
+}
+processTestResources {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
+test {
+    useTestNG()
+}
+sourceSets {
+    test {
+        resources {
+            srcDir 'src/test/resources'
+        }
+    }
+}

@@ -5,7 +5,7 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
 public class TestBase {
-    protected static ApplicationManager app = new ApplicationManager();
+    protected static ApplicationManager app = new ApplicationManager("chrome");
 
     @BeforeSuite
     public void setUp() {
