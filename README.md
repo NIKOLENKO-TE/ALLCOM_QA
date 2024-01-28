@@ -1,5 +1,4 @@
 <h1 align="center">Hi 👋, I'm Nikolenko Tymofii</h1>
-![Screenshot](/assets/images/readme.png)
 
 <h3 align="center">Quality Assurance Automation Engineer from Ukraine, but now i live in Germany, Berlin</h3>
 
@@ -106,7 +105,7 @@ Effective collaboration with developers and other project stakeholders to addres
 Commitment to continuous improvement of skills and knowledge.
 
 ### Contacts
-
+<img align="center" src="https://i.ibb.co/BzxgKXb/readme.png" alt="screenshot"/>
 :mailbox_with_mail: If you have questions or suggestions, please contact me at `nikoloenkote@gmail.com`.
 
 <h3 align="left">Connect with me:</h3>
