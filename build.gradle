@@ -5,17 +5,15 @@ plugins {
 group 'org.example'
 version '1.0-SNAPSHOT'
 
-sourceCompatibility = 1.11
-targetCompatibility = 1.11
-
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    implementation 'org.seleniumhq.selenium:selenium-java:4.17.0'
-    implementation 'org.testng:testng:7.9.0'
-    testImplementation 'com.opencsv:opencsv:5.5.2'
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.17.0'
+    implementation group: 'org.testng', name: 'testng', version: '7.9.0'
+    implementation group: 'com.opencsv', name: 'opencsv', version: '5.9'
+    implementation group: 'ch.qos.logback', name: 'logback-classic', version: '1.4.14'
 }
 processTestResources {
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
@@ -28,5 +26,11 @@ sourceSets {
         resources {
             srcDir 'src/test/resources'
         }
+    }
+}
+tasks.register('allcom_qa', Test) {
+    useTestNG()
+    if (project.hasProperty('browser')) {
+        systemProperty 'browser', "${browser}"
     }
 }

@@ -12,7 +12,7 @@ import java.util.List;
 public class DataProviderClass {
 
     private Object[][] readDataFromCSV(String fileName) {
-        String filePath = "./src/test/resources/" + fileName;
+        String filePath = "./src/test/resources/invalid_data/" + fileName;
         List<Object[]> data = new ArrayList<>();
         try (CSVReader reader = new CSVReader(new FileReader(filePath))) {
             String[] line;
