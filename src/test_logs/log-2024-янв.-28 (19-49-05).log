@@ -1,0 +1,5 @@
+6267 [Test worker] INFO  allcom.tests.TestBase -- Start test: [allInteractiveElementsAreAccessible]
+6430 [Test worker] ERROR allcom.tests.TestBase -- ERROR FAILED TEST: [allInteractiveElementsAreAccessible], with Parameters: []
+6430 [Test worker] ERROR allcom.tests.TestBase -- ERROR TEST MESSAGE: null
+6630 [Test worker] ERROR allcom.tests.TestBase -- ERROR TEST SCREENSHOT: C:\Users\PORTISHEAD\Desktop\ALLCOM\allcom_qa\src\screenshots\screenshot_error_124649.png
+6630 [Test worker] INFO  allcom.tests.TestBase -- [==================================================================================================]

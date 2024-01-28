@@ -1,0 +1,5 @@
+2960 [Test worker] INFO  allcom.tests.TestBase -- Start test: [allElementsAreKeyboardNavigable]
+3144 [Test worker] ERROR allcom.tests.TestBase -- ERROR FAILED TEST: [allElementsAreKeyboardNavigable], with Parameters: []
+3145 [Test worker] ERROR allcom.tests.TestBase -- ERROR TEST MESSAGE: null
+3287 [Test worker] ERROR allcom.tests.TestBase -- ERROR TEST SCREENSHOT: C:\Users\PORTISHEAD\Desktop\ALLCOM\allcom_qa\src\screenshots\screenshot_error_125259.png
+3288 [Test worker] INFO  allcom.tests.TestBase -- [==================================================================================================]

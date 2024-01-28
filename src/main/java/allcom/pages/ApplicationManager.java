@@ -66,8 +66,10 @@ public class ApplicationManager extends BasePage {
     }
 
     public String takeScreenshot() {
+        String time = String.valueOf(System.nanoTime());
+        String shortTime = time.substring(0, 6);
         File tmp = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-        File screenshot = new File("src/screenshots/screen" + System.currentTimeMillis() + ".png");
+        File screenshot = new File("src/screenshots/screenshot_error_" + shortTime + ".png");
         try {
             Files.copy(tmp, screenshot);
         } catch (IOException e) {

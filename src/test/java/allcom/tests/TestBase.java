@@ -1,6 +1,7 @@
 package allcom.tests;
 
 import allcom.pages.ApplicationManager;
+import org.openqa.selenium.WebDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.ITestResult;
@@ -14,6 +15,7 @@ import java.util.Arrays;
 
 public class TestBase {
     protected static ApplicationManager app = new ApplicationManager("chrome");
+    protected WebDriver driver;
     Logger logger = LoggerFactory.getLogger(TestBase.class);
 
     @BeforeMethod
