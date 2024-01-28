@@ -79,4 +79,9 @@ public class DataProviderClass {
     public Object[][] getInvalidPositionData() {
         return readDataFromCSV("position_invalid.csv");
     }
+
+    @DataProvider(name = "invalidSearchData")
+    public Object[][] getInvalidSearchData() {
+        return readDataFromCSV("search_invalid.csv");
+    }
 }

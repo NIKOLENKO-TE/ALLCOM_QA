@@ -20,14 +20,17 @@ public class CreateNewPasswordPage extends BasePage {
         return HomePage.homePageURL() + "/restore_password_new";
     }
 
-    @FindBy(name = "email")
-    WebElement usernameField;
-
     public WebElement getPasswordField() {
         return passwordField;
     }
 
     public WebElement getPasswordConfirmField() {
         return passwordConfirmField;
+    }
+    public void clickSetNewPasswordButton() {
+        clickOnElement(BasePage.ElementType.DATA_TESTID, "buttonRestore");
+    }
+    public void isCountdownTimerPresent(boolean expectedStatus) {
+        isElementPresent(ElementType.DATA_TESTID, "countdownTimer", expectedStatus);
     }
 }

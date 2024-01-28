@@ -1,56 +1,36 @@
 package allcom.tests.passwordReset;
+
 import allcom.pages.BasePage;
 import allcom.pages.passwordReset.RestorePasswordPage;
-import allcom.pages.passwordReset.RestorePasswordWaitPage;
+import allcom.tests.DataProviderClass;
 import allcom.tests.TestBase;
-import com.opencsv.CSVReader;
-import com.opencsv.exceptions.CsvValidationException;
-import org.testng.Assert;
+import org.openqa.selenium.WebDriver;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 
 public class RestorePasswordTests extends TestBase {
     private BasePage basePage;
     private RestorePasswordPage restorePasswordPage;
+
     @BeforeMethod
     public void precondition() {
-        basePage = new BasePage(driver);
-        restorePasswordPage = new RestorePasswordPage(driver);
+        basePage = new BasePage(app.driver);
+        restorePasswordPage = new RestorePasswordPage(app.driver);
         basePage.goToPage(RestorePasswordPage.restorePasswordPageURL());
-        basePage.isCurrentPage(RestorePasswordPage.restorePasswordPageURL());
+        basePage.isCurrentPage(RestorePasswordPage.restorePasswordPageURL(),true);
     }
+
     @Test
     public void restoreWithValidEmail() {
         restorePasswordPage.emailToRestore("admin@gmail.com");
-        basePage.clickOnButton("button_restore");
-        Assert.assertTrue(basePage.errorValidationIsPresent(false));
-        basePage.isCurrentPage(RestorePasswordWaitPage.restorePasswordWaitPageURL());
+        restorePasswordPage.clickRestorePasswordButton();
+        basePage.isCurrentPage(RestorePasswordPage.restorePasswordPageURL(),true);
     }
 
-    @DataProvider(name = "invalidEmailData")
-    public Object[][] getInvalidEmailData() throws IOException {
-        List<Object[]> data = new ArrayList<>();
-        try (CSVReader reader = new CSVReader(new FileReader("./src/test/resources/email_invalid.csv"))) {
-            String[] line;
-            while ((line = reader.readNext()) != null) {
-                System.out.println("Email: " + line[0]);
-                data.add(new Object[]{line[0]});
-            }
-        } catch (CsvValidationException e) {
-            throw new RuntimeException(e);
-        }
-        return data.toArray(new Object[0][]);
-    }
-    @Test(dataProvider = "invalidEmailData")
+    @Test(dataProvider = "invalidEMailData", dataProviderClass = DataProviderClass.class)
     public void restoreWithInvalidEmail(String email) {
         restorePasswordPage.emailToRestore(email);
-        basePage.clickOnButton("button_restore");
-        Assert.assertTrue(basePage.errorValidationIsPresent(true));
+        restorePasswordPage.clickRestorePasswordButton();
+        basePage.isValidationErrorPresent(true);
     }
 }

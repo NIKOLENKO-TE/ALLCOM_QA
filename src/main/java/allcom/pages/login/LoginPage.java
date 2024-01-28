@@ -21,4 +21,13 @@ public class LoginPage extends BasePage {
         type(usernameField, email);
         type(passwordField, password);
     }
+    public void clickLoginButton() {
+        clickOnElement(BasePage.ElementType.DATA_TESTID, "button_login");
+    }
+    public void clickRegisterButton() {
+        clickOnElement(BasePage.ElementType.DATA_TESTID, "button_register");
+    }
+    public void clickForgotPasswordButton() {
+        clickOnElement(BasePage.ElementType.DATA_TESTID, "ButtonForgotPassword");
+    }
 }

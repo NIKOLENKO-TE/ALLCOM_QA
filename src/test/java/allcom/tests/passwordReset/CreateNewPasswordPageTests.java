@@ -2,68 +2,88 @@ package allcom.tests.passwordReset;
 
 import allcom.pages.BasePage;
 import allcom.pages.passwordReset.CreateNewPasswordPage;
+import allcom.pages.registration.RegisterPage;
 import allcom.tests.DataProviderClass;
 import allcom.tests.TestBase;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class CreateNewPasswordPageTests extends TestBase {
-    private BasePage basePage;
-    private CreateNewPasswordPage createNewPasswordPage;
+    BasePage basePage;
+    RegisterPage registerPage;
+    CreateNewPasswordPage createNewPasswordPage;
 
     @BeforeMethod
     public void precondition() {
-        basePage = new BasePage(driver);
-        createNewPasswordPage = new CreateNewPasswordPage(driver);
+        basePage = new BasePage(app.driver);
+        createNewPasswordPage = new CreateNewPasswordPage(app.driver);
+        registerPage = new RegisterPage(app.driver);
         basePage.goToPage(CreateNewPasswordPage.createNewPasswordPageURL());
-        basePage.isCurrentPage(CreateNewPasswordPage.createNewPasswordPageURL());
-    }
-
-    public void validateFieldWithIncorrectData(WebElement field, String invalidData) {
-        createNewPasswordPage.type(field, invalidData);
-        Assert.assertTrue(basePage.errorValidationIsPresent(true));
+        basePage.isCurrentPage(CreateNewPasswordPage.createNewPasswordPageURL(), true);
     }
 
     @Test
     public void isCreateNewPasswordButtonPresent() {
-        Assert.assertTrue(basePage.isButtonPresent("button_restore"));
+        basePage.isValidationErrorPresent(false);
     }
 
     @Test(dataProvider = "invalidPasswordData", dataProviderClass = DataProviderClass.class)
     public void validatePasswordWithIncorrectData(String invalidPassword) {
-        validateFieldWithIncorrectData(createNewPasswordPage.getPasswordField(), invalidPassword);
+        basePage.validateFieldWithIncorrectData(createNewPasswordPage.getPasswordField(), invalidPassword, true);
     }
 
     @Test(dataProvider = "invalidPasswordData", dataProviderClass = DataProviderClass.class)
     public void validatePasswordConfirmWithIncorrectData(String invalidPasswordConfirm) {
-        validateFieldWithIncorrectData(createNewPasswordPage.getPasswordConfirmField(), invalidPasswordConfirm);
-    }
-
-    public void validateComparePasswordsEquality(String password, String passwordConfirm, boolean expectedResult) {
-        createNewPasswordPage.type(createNewPasswordPage.getPasswordField(), password);
-        createNewPasswordPage.type(createNewPasswordPage.getPasswordConfirmField(), passwordConfirm);
-        Assert.assertTrue(basePage.errorValidationIsPresent(expectedResult));
+        basePage.validateFieldWithIncorrectData(createNewPasswordPage.getPasswordConfirmField(), invalidPasswordConfirm, true);
     }
 
     @Test
     public void validateComparePasswordsEqualityPositive() {
-        validateComparePasswordsEquality("Qwertyuiop@1", "Qwertyuiop@1", false);
+        registerPage.comparePasswordsEquality("Qwertyuiop@1", "Qwertyuiop@1", true);
     }
 
     @Test
     public void validateComparePasswordsEqualityNegative() {
-        validateComparePasswordsEquality("Qwertyuiop@1", "Qwertyuiop@2", true);
+        registerPage.comparePasswordsEquality("Qwertyuiop@1", "Qwertyuiop@2", false);
     }
 
     @Test
-    public void isPasswordResetSuccess() {
-        String password = "Qwertyuiop@1";
-        createNewPasswordPage.type(createNewPasswordPage.getPasswordField(), password);
-        createNewPasswordPage.type(createNewPasswordPage.getPasswordConfirmField(), password);
-        basePage.clickOnButton("button_restore");
-        Assert.assertTrue(basePage.isElementPresent(By.cssSelector("[data-testid='countdownTimer']")));
+    public void isPasswordResetSuccessValidDataWoValidationCheck() {
+        basePage.type(createNewPasswordPage.getPasswordField(), "Qwertyuiop@1");
+        basePage.type(createNewPasswordPage.getPasswordConfirmField(), "Qwertyuiop@1");
+        createNewPasswordPage.clickSetNewPasswordButton();
+        basePage.isElementPresent(BasePage.ElementType.DATA_TESTID, "countdownTimer", true);
+
+    }
+    @Test
+    public void isPasswordResetNotSuccessInvalidDataWoValidationCheck() {
+        basePage.type(createNewPasswordPage.getPasswordField(), "Qwertyuiop@1");
+        basePage.type(createNewPasswordPage.getPasswordConfirmField(), "Qwertyuiop@2");
+        createNewPasswordPage.clickSetNewPasswordButton();
+        basePage.isElementPresent(BasePage.ElementType.DATA_TESTID, "countdownTimer", false);
+
+    }
+    @Test
+    public void isPasswordResetSuccessValidDataWithValidationCheck() {
+        basePage.type(createNewPasswordPage.getPasswordField(), "Qwertyuiop@1");
+        basePage.type(createNewPasswordPage.getPasswordConfirmField(), "Qwertyuiop@1");
+        basePage.isValidationErrorPresent(false);
+        createNewPasswordPage.clickSetNewPasswordButton();
+        createNewPasswordPage.isCountdownTimerPresent(true);
+
+    }
+    @Test
+    public void isPasswordResetNotSuccessInvalidDataWithValidationCheck() {
+        basePage.type(createNewPasswordPage.getPasswordField(), "Qwertyuiop@1");
+        basePage.type(createNewPasswordPage.getPasswordConfirmField(), "Qwertyuiop@2");
+        basePage.isValidationErrorPresent(true);
+    }
+    @Test
+    public void isPasswordResetNotSuccessInvalidDataWoValidationCheckWoTimer() {
+        basePage.type(createNewPasswordPage.getPasswordField(), "Qwertyuiop@1");
+        basePage.type(createNewPasswordPage.getPasswordConfirmField(), "Qwertyuiop@2");
+        basePage.isValidationErrorPresent(true);
+        createNewPasswordPage.clickSetNewPasswordButton();
+        createNewPasswordPage.isCountdownTimerPresent(false);
     }
 }

@@ -5,13 +5,24 @@ import allcom.pages.HomePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.testng.Assert;
+
 public class RegisterPage extends BasePage {
+    BasePage basePage;
+
     public RegisterPage(WebDriver driver) {
         super(driver);
+        this.basePage = new BasePage(driver);
     }
+
     public static String registerPageURL() {
         return HomePage.homePageURL() + "/register";
     }
+
+    public BasePage getBasePage() {
+        return basePage;
+    }
+
     @FindBy(name = "firstName")
     WebElement firstNameField;
     @FindBy(name = "lastName")
@@ -38,6 +49,7 @@ public class RegisterPage extends BasePage {
     WebElement streetField;
     @FindBy(name = "houseNumber")
     WebElement houseNumberField;
+
     public void registerClient(String firstName, String lastName, String phoneNumber, String email, String password, String passwordConfirm) {
         type(firstNameField, firstName);
         type(lastNameField, lastName);
@@ -46,6 +58,7 @@ public class RegisterPage extends BasePage {
         type(passwordField, password);
         type(passwordConfirmField, passwordConfirm);
     }
+
     public void registerFirma(String firstName, String lastName, String phoneNumber, String email, String password, String passwordConfirm,
                               String companyName, String position, String taxNumber, String postIndex, String city,
                               String street, String houseNumber) {
@@ -114,5 +127,29 @@ public class RegisterPage extends BasePage {
 
     public WebElement getHouseNumberField() {
         return houseNumberField;
+    }
+
+    public void clickRegisterButton() {
+        clickOnElement(BasePage.ElementType.DATA_TESTID, "button_register");
+    }
+
+    public void clickLoginButton() {
+        clickOnElement(BasePage.ElementType.DATA_TESTID, "button_login");
+    }
+
+    public void clickReadTermsCheckbox() {
+        clickOnElement(BasePage.ElementType.CHECKBOX, "checkbox_read_terms");
+    }
+
+    public void comparePasswordsEquality(String password, String passwordConfirm, boolean expectPasswordsEquality) {
+        if (password != null && passwordConfirm != null) {
+            Assert.assertEquals(password.equals(passwordConfirm), expectPasswordsEquality, "Passwords equality validation failed");
+            if (password.equals(passwordConfirm)) {
+                basePage.type(getPasswordField(), password);
+                basePage.type(getPasswordConfirmField(), passwordConfirm);
+            }
+        } else {
+            throw new IllegalArgumentException("Password values are null");
+        }
     }
 }
