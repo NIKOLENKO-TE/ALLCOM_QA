@@ -1,7 +1,10 @@
+<div align="center"><img src="https://komarev.com/ghpvc/?username=nikolenkote&color=blueviolet&label=PROFILE+VIEWS" alt="counter"/></div>
+
 <h1 align="center">Hi 👋, I'm Nikolenko Tymofii</h1>
+
 <h3 align="center">Quality Assurance Automation Engineer from Ukraine, but now i live in Germany, Berlin</h3>
 
-- 🔭 I’m currently working on [git ALLCOM](https://github.com/NIKOLENKO-TE/ALLCOM_SITE)
+- 🔭 I’m currently working on [git ALLCOM_AUCTION PROJECT](https://github.com/NIKOLENKO-TE/ALLCOM_SITE)
 
 - 🔭 Also I’m currently working on [git PHOTOGRAPHER BERLIN](https://github.com/NIKOLENKO-TE/PHOTOGRAPHER_BERLIN)
   
@@ -103,9 +106,11 @@ Effective collaboration with developers and other project stakeholders to addres
 :neckbeard: Willingness to learn new testing methodologies and technologies.
 Commitment to continuous improvement of skills and knowledge.
 
-### Contacts
-
+## Result
+<img align="center" src="https://i.ibb.co/BzxgKXb/readme.png" alt="screenshot"/>
 :mailbox_with_mail: If you have questions or suggestions, please contact me at `nikoloenkote@gmail.com`.
+
+### Contacts
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
