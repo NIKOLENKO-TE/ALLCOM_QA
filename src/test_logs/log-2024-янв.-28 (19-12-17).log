@@ -1,5 +1,0 @@
-3028 [Test worker] INFO  allcom.tests.TestBase -- Start test: [clickWishlistTopWhenLoggedInNavigatesToCorrectPage]
-3196 [Test worker] ERROR allcom.tests.TestBase -- ERROR FAILED TEST: [clickWishlistTopWhenLoggedInNavigatesToCorrectPage], with Parameters: []
-3197 [Test worker] ERROR allcom.tests.TestBase -- ERROR TEST MESSAGE: null
-3380 [Test worker] ERROR allcom.tests.TestBase -- ERROR TEST SCREENSHOT: C:\Users\PORTISHEAD\Desktop\ALLCOM\allcom_qa\src\screenshots\screenshot_error_102547.png
-3380 [Test worker] INFO  allcom.tests.TestBase -- [==================================================================================================]

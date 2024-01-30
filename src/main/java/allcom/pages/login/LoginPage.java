@@ -14,12 +14,12 @@ public class LoginPage extends BasePage {
         return HomePage.homePageURL() + "/login";
     }
     @FindBy(name = "email")
-    WebElement usernameField;
+    WebElement USER_EMAIL;
     @FindBy(name = "password")
-    WebElement passwordField;
+    WebElement USER_PASSWORD;
     public void login(String email, String password) {
-        type(usernameField, email);
-        type(passwordField, password);
+        type(USER_EMAIL, email);
+        type(USER_PASSWORD, password);
     }
     public void clickLoginButton() {
         clickOnElement(BasePage.ElementType.DATA_TESTID, "button_login");

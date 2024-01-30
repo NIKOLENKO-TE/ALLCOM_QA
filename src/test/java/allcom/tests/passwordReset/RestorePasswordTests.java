@@ -2,9 +2,8 @@ package allcom.tests.passwordReset;
 
 import allcom.pages.BasePage;
 import allcom.pages.passwordReset.RestorePasswordPage;
-import allcom.tests.DataProviderClass;
+import allcom.pages.DataProviderClass;
 import allcom.tests.TestBase;
-import org.openqa.selenium.WebDriver;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 

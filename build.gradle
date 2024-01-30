@@ -12,8 +12,9 @@ repositories {
 dependencies {
     implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.17.0'
     implementation group: 'org.testng', name: 'testng', version: '7.9.0'
-    implementation group: 'com.opencsv', name: 'opencsv', version: '5.9'
     implementation group: 'ch.qos.logback', name: 'logback-classic', version: '1.4.14'
+    // https://mvnrepository.com/artifact/com.opencsv/opencsv
+    implementation group: 'com.opencsv', name: 'opencsv', version: '5.9'
 }
 processTestResources {
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
@@ -43,8 +44,11 @@ def registerTask(String taskName, String suitePath) {
 }
 
 registerTask('allcom_qa_regression', 'src/test/resources/regression.xml')
-registerTask('allcom_qa_login', 'src/test/resources/login_tests.xml')
-registerTask('allcom_qa_register', 'src/test/resources/registration_tests.xml')
+registerTask('allcom_qa_login_negative', 'src/test/resources/login_negative_tests.xml')
+registerTask('allcom_qa_login_positive', 'src/test/resources/login_positive_tests.xml')
+registerTask('allcom_qa_register_negative', 'src/test/resources/registration_negative_tests.xml')
+registerTask('allcom_qa_register_positive', 'src/test/resources/registration_positive_tests.xml')
 registerTask('allcom_qa_aboutUs', 'src/test/resources/about_us_tests.xml')
-registerTask('allcom_qa_header_page', 'src/test/resources/header_page_tests.xml')
-registerTask('allcom_qa_restore_password_page', 'src/test/resources/restore_password_page_tests.xml')
+registerTask('allcom_qa_header', 'src/test/resources/header_tests.xml')
+registerTask('allcom_qa_restore_password', 'src/test/resources/restore_password_tests.xml')
+registerTask('allcom_qa_notFound', 'src/test/resources/not_found_positive_tests.xml')

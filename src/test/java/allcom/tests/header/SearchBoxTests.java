@@ -3,7 +3,7 @@ package allcom.tests.header;
 import allcom.pages.BasePage;
 import allcom.pages.HomePage;
 import allcom.pages.header.SearchBox;
-import allcom.tests.DataProviderClass;
+import allcom.pages.DataProviderClass;
 import allcom.tests.TestBase;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.support.ui.ExpectedConditions;

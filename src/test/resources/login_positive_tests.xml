@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="LoginPositive" verbose="1">
+    <test name="LoginPositive">
+        <classes>
+            <class name="allcom.tests.login.LoginPositiveTests"/>
+        </classes>
+    </test>
+</suite>

@@ -3,7 +3,7 @@ package allcom.tests.passwordReset;
 import allcom.pages.BasePage;
 import allcom.pages.passwordReset.CreateNewPasswordPage;
 import allcom.pages.registration.RegisterPage;
-import allcom.tests.DataProviderClass;
+import allcom.pages.DataProviderClass;
 import allcom.tests.TestBase;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -29,12 +29,12 @@ public class CreateNewPasswordPageTests extends TestBase {
 
     @Test(dataProvider = "invalidPasswordData", dataProviderClass = DataProviderClass.class)
     public void validatePasswordWithIncorrectData(String invalidPassword) {
-        basePage.validateFieldWithIncorrectData(createNewPasswordPage.getPasswordField(), invalidPassword, true);
+        basePage.validateField(createNewPasswordPage.getPasswordField(), invalidPassword, true);
     }
 
     @Test(dataProvider = "invalidPasswordData", dataProviderClass = DataProviderClass.class)
     public void validatePasswordConfirmWithIncorrectData(String invalidPasswordConfirm) {
-        basePage.validateFieldWithIncorrectData(createNewPasswordPage.getPasswordConfirmField(), invalidPasswordConfirm, true);
+        basePage.validateField(createNewPasswordPage.getPasswordConfirmField(), invalidPasswordConfirm, true);
     }
 
     @Test

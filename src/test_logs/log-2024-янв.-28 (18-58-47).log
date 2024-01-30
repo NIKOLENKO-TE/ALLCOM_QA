@@ -1,5 +1,0 @@
-2934 [Test worker] INFO  allcom.tests.TestBase -- Start test: [searchRedirectsToCorrectPageTest]
-3504 [Test worker] ERROR allcom.tests.TestBase -- ERROR FAILED TEST: [searchRedirectsToCorrectPageTest], with Parameters: []
-3505 [Test worker] ERROR allcom.tests.TestBase -- ERROR TEST MESSAGE: Current page status does not match the expected status expected [true] but found [false]
-3676 [Test worker] ERROR allcom.tests.TestBase -- ERROR TEST SCREENSHOT: C:\Users\PORTISHEAD\Desktop\ALLCOM\allcom_qa\src\screenshots\screenshot_error_944412.png
-3676 [Test worker] INFO  allcom.tests.TestBase -- [==================================================================================================]

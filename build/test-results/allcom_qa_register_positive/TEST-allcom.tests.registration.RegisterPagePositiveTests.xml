@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="allcom.tests.registration.RegisterPagePositiveTests" tests="30" skipped="0" failures="0" errors="0" timestamp="2024-01-30T01:18:20" hostname="PORTISHEAD-PC" time="29.811">
+  <properties/>
+  <testcase name="registerNewUserWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="1.021"/>
+  <testcase name="registerNewUserWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="0.884"/>
+  <testcase name="registerNewUserWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="0.863"/>
+  <testcase name="registerNewUserWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="0.86"/>
+  <testcase name="registerNewUserWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="0.861"/>
+  <testcase name="registerNewUserWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="0.868"/>
+  <testcase name="registerNewUserWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="0.873"/>
+  <testcase name="registerNewUserWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="0.85"/>
+  <testcase name="registerNewUserWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="0.96"/>
+  <testcase name="registerNewUserWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="0.853"/>
+  <testcase name="registerNewUserWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="0.867"/>
+  <testcase name="registerNewUserWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="0.856"/>
+  <testcase name="registerNewUserWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="0.851"/>
+  <testcase name="registerNewUserWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="0.85"/>
+  <testcase name="registerNewUserWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="0.852"/>
+  <testcase name="registerNewUserWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="0.887"/>
+  <testcase name="registerNewUserWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="0.85"/>
+  <testcase name="registerNewUserWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="0.864"/>
+  <testcase name="registerNewUserWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="0.882"/>
+  <testcase name="registerNewUserWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="0.848"/>
+  <testcase name="registerNewUserWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="0.848"/>
+  <testcase name="registerNewUserWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="0.853"/>
+  <testcase name="registerNewUserWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="0.901"/>
+  <testcase name="registerNewUserWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="0.92"/>
+  <testcase name="registerNewUserWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="0.866"/>
+  <testcase name="registerNewUserWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="0.896"/>
+  <testcase name="registerNewUserWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="0.844"/>
+  <testcase name="registerNewUserWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="0.858"/>
+  <testcase name="registerNewUserWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="0.861"/>
+  <testcase name="registerNewUserWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="0.858"/>
+  <system-out><![CDATA[02:18:20.370 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidRandomDataPositive]
+02:18:21.547 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidRandomDataPositive], with Parameters: []
+02:18:21.548 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidRandomDataPositive]
+02:18:22.551 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidRandomDataPositive], with Parameters: []
+02:18:22.552 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidRandomDataPositive]
+02:18:23.542 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidRandomDataPositive], with Parameters: []
+02:18:23.543 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidRandomDataPositive]
+02:18:24.525 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidRandomDataPositive], with Parameters: []
+02:18:24.526 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidRandomDataPositive]
+02:18:25.508 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidRandomDataPositive], with Parameters: []
+02:18:25.509 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidRandomDataPositive]
+02:18:26.499 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidRandomDataPositive], with Parameters: []
+02:18:26.500 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidRandomDataPositive]
+02:18:27.488 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidRandomDataPositive], with Parameters: []
+02:18:27.488 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidRandomDataPositive]
+02:18:28.462 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidRandomDataPositive], with Parameters: []
+02:18:28.463 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidRandomDataPositive]
+02:18:29.542 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidRandomDataPositive], with Parameters: []
+02:18:29.543 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidRandomDataPositive]
+02:18:30.521 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidRandomDataPositive], with Parameters: []
+02:18:30.521 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidRandomDataPositive]
+02:18:31.503 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidRandomDataPositive], with Parameters: []
+02:18:31.503 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidRandomDataPositive]
+02:18:32.485 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidRandomDataPositive], with Parameters: []
+02:18:32.485 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidRandomDataPositive]
+02:18:33.461 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidRandomDataPositive], with Parameters: []
+02:18:33.462 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidRandomDataPositive]
+02:18:34.434 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidRandomDataPositive], with Parameters: []
+02:18:34.436 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidRandomDataPositive]
+02:18:35.408 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidRandomDataPositive], with Parameters: []
+02:18:35.410 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidRandomDataPositive]
+02:18:36.451 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidRandomDataPositive], with Parameters: []
+02:18:36.452 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidRandomDataPositive]
+02:18:37.422 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidRandomDataPositive], with Parameters: []
+02:18:37.423 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidRandomDataPositive]
+02:18:38.409 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidRandomDataPositive], with Parameters: []
+02:18:38.409 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidRandomDataPositive]
+02:18:39.413 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidRandomDataPositive], with Parameters: []
+02:18:39.414 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidRandomDataPositive]
+02:18:40.386 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidRandomDataPositive], with Parameters: []
+02:18:40.387 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidRandomDataPositive]
+02:18:41.358 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidRandomDataPositive], with Parameters: []
+02:18:41.358 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidRandomDataPositive]
+02:18:42.333 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidRandomDataPositive], with Parameters: []
+02:18:42.333 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidRandomDataPositive]
+02:18:43.366 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidRandomDataPositive], with Parameters: []
+02:18:43.369 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidRandomDataPositive]
+02:18:44.412 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidRandomDataPositive], with Parameters: []
+02:18:44.413 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidRandomDataPositive]
+02:18:45.400 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidRandomDataPositive], with Parameters: []
+02:18:45.401 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidRandomDataPositive]
+02:18:46.418 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidRandomDataPositive], with Parameters: []
+02:18:46.419 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidRandomDataPositive]
+02:18:47.385 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidRandomDataPositive], with Parameters: []
+02:18:47.386 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidRandomDataPositive]
+02:18:48.370 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidRandomDataPositive], with Parameters: []
+02:18:48.370 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidRandomDataPositive]
+02:18:49.356 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidRandomDataPositive], with Parameters: []
+02:18:49.356 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidRandomDataPositive]
+02:18:50.335 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidRandomDataPositive], with Parameters: []
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

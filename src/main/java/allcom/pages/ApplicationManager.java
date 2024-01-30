@@ -9,6 +9,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.Browser;
+
 import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
@@ -34,9 +35,10 @@ public class ApplicationManager extends BasePage {
         }
         driver.get(HomePage.homePageURL());
         BasePage basePage = new BasePage(driver);
-        basePage.changeLanguage("English");
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
+        driver.manage().timeouts().implicitlyWait(Duration.ZERO);
+        basePage.changeLanguage("English");
+        basePage.waitForElementToAppear(BasePage.ElementType.DATA_TESTID, "language-option-en", true, 5);
     }
 
     public void initHeadless() {
@@ -53,8 +55,9 @@ public class ApplicationManager extends BasePage {
         }
         BasePage basePage = new BasePage(driver);
         driver.get(HomePage.homePageURL());
+        driver.manage().timeouts().implicitlyWait(Duration.ZERO);
         basePage.changeLanguage("English");
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        basePage.waitForElementToAppear(BasePage.ElementType.DATA_TESTID, "language-option-en", true, 5);
     }
 
     public void stop() {

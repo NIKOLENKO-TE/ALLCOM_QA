@@ -2,6 +2,7 @@ package allcom.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
@@ -17,12 +18,15 @@ public class BasePage {
     public enum ElementType {
         XPATH, CSS, ID, DATA_TESTID, HREF, ROLE, LABEL, SPAN, BUTTON, P, ERROR_VALIDATION, PASSWORD_CONFIRM, CHECKBOX
     }
+
     public BasePage() {
     }
+
     public BasePage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
+
     public void click(WebElement element) {
         element.click();
     }
@@ -34,6 +38,12 @@ public class BasePage {
             element.sendKeys(text);
         }
     }
+
+    public void isValidationErrorPresent(boolean validationStatus) {
+        boolean isPresent = isElementPresent(BasePage.ElementType.ERROR_VALIDATION, "", validationStatus);
+        assert isPresent == validationStatus : "Validation error present status does not match the expected status";
+    }
+
     public void isCurrentPage(String expectedURL, boolean expectedPage) {
         String currentUrl = driver.getCurrentUrl();
         if (currentUrl.endsWith("/")) {
@@ -47,11 +57,25 @@ public class BasePage {
         driver.get(pageURL);
     }
 
+    public WebElement waitForElement(By locator, int timeoutInSeconds) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutInSeconds));
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+    }
+
+    public void waitForElementToAppear(ElementType type, String value, boolean expectedStatus, int timeoutInSeconds) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutInSeconds));
+        try {
+            wait.until((WebDriver d) -> isElementPresent(type, value, expectedStatus));
+        } catch (TimeoutException e) {
+            System.out.println("Element can't be found on the page in " + timeoutInSeconds + " seconds");
+            throw new RuntimeException("The item didn't appear within the specified time", e);
+        }
+    }
+
     public void changeLanguage(String language) {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        WebElement languageDropdown = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("[data-testid='language-text-set']")));
+        WebElement languageDropdown = waitForElement(By.cssSelector("[data-testid='language-text-set']"), 10);
         languageDropdown.click();
-        WebElement languageOption = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//li[contains(text(), '" + language + "')]")));
+        WebElement languageOption = waitForElement(By.xpath("//li[contains(text(), '" + language + "')]"), 10);
         languageOption.click();
     }
 
@@ -86,55 +110,42 @@ public class BasePage {
         driver.findElement(by).click();
     }
 
-    public void isValidationErrorPresent(boolean validationStatus) {
-        boolean isPresent = isElementPresent(BasePage.ElementType.ERROR_VALIDATION, "", validationStatus);
-        assert isPresent == validationStatus : "Validation error present status does not match the expected status";
-    }
-
     public boolean isElementPresent(ElementType type, String value, boolean expectedStatus) {
-        By by;
         switch (type) {
             case XPATH:
-                by = By.xpath(value);
+                By.xpath(value);
                 break;
             case CSS:
-                by = By.cssSelector(value);
+                By.cssSelector(value);
                 break;
             case DATA_TESTID:
-                by = By.xpath("//*[@data-testid='" + value + "']");
+                By.xpath("//*[@data-testid='" + value + "']");
                 break;
             case SPAN:
-                by = By.xpath("//span[@id='" + value + "']");
+                By.xpath("//span[@id='" + value + "']");
                 break;
             case BUTTON:
-                by = By.xpath("//button[@id='" + value + "']");
+                By.xpath("//button[@id='" + value + "']");
                 break;
             case P:
-                by = By.xpath("//p[@id='" + value + "']");
+                By.xpath("//p[@id='" + value + "']");
                 break;
             case ERROR_VALIDATION:
-                by = By.cssSelector("[data-testid^='error_']");
-                WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
                 try {
-                    wait.until(ExpectedConditions.visibilityOfElementLocated(by));
+                    driver.findElement(By.cssSelector("[data-testid^='error_']"));
                     Assert.assertTrue(expectedStatus);
                     return true;
-                } catch (Exception e) {
-                    Assert.assertFalse(expectedStatus, "Element is not present");
+                } catch (NoSuchElementException e) {
+                    Assert.assertFalse(expectedStatus, "Element can not be found");
                 }
                 break;
             default:
                 throw new IllegalArgumentException("Invalid selector type: " + type);
         }
-        try {
-            driver.findElement(by);
-        } catch (NoSuchElementException e) {
-            Assert.assertFalse(expectedStatus, "Element is not present");
-        }
         return expectedStatus;
     }
 
-    public void validateFieldWithIncorrectData(WebElement getElement, String invalidData, boolean validationExpectation) {
+    public void validateField(WebElement getElement, String invalidData, boolean validationExpectation) {
         if (getElement != null && invalidData != null) {
             type(getElement, invalidData);
             isValidationErrorPresent(validationExpectation);
