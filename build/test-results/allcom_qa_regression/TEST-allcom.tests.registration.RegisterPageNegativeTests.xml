@@ -1,0 +1,765 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="allcom.tests.registration.RegisterPageNegativeTests" tests="253" skipped="0" failures="0" errors="0" timestamp="2024-01-30T01:46:39" hostname="PORTISHEAD-PC" time="166.684">
+  <properties/>
+  <testcase name="validateCityWithIncorrectData[0]()" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.434"/>
+  <testcase name="validateCityWithIncorrectData[1](В )" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.439"/>
+  <testcase name="validateCityWithIncorrectData[2]()" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.42"/>
+  <testcase name="validateCityWithIncorrectData[3](1)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.306"/>
+  <testcase name="validateCityWithIncorrectData[4](s)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.151"/>
+  <testcase name="validateCityWithIncorrectData[5](S)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.378"/>
+  <testcase name="validateCityWithIncorrectData[6](С‹)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.402"/>
+  <testcase name="validateCityWithIncorrectData[7](SС‹)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.289"/>
+  <testcase name="validateCityWithIncorrectData[8](S1)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.166"/>
+  <testcase name="validateCityWithIncorrectData[9](!)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.436"/>
+  <testcase name="validateCityWithIncorrectData[10](@)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.438"/>
+  <testcase name="validateCityWithIncorrectData[11](#)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.449"/>
+  <testcase name="validateCityWithIncorrectData[12](Ass$)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.458"/>
+  <testcase name="validateCityWithIncorrectData[13](ss%)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.478"/>
+  <testcase name="validateCityWithIncorrectData[14](()" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.459"/>
+  <testcase name="validateCityWithIncorrectData[15](&lt;script&gt;&lt;/script&gt;)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.514"/>
+  <testcase name="validateCityWithIncorrectData[16](&lt;input&gt;)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.465"/>
+  <testcase name="validateCityWithIncorrectData[17](0)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.441"/>
+  <testcase name="validateCompanyNameWithIncorrectData[0]()" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.453"/>
+  <testcase name="validateCompanyNameWithIncorrectData[1](В )" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.445"/>
+  <testcase name="validateCompanyNameWithIncorrectData[2]()" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.141"/>
+  <testcase name="validateCompanyNameWithIncorrectData[3](1)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.449"/>
+  <testcase name="validateCompanyNameWithIncorrectData[4](s)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.462"/>
+  <testcase name="validateCompanyNameWithIncorrectData[5](S)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.274"/>
+  <testcase name="validateCompanyNameWithIncorrectData[6](С‹)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.144"/>
+  <testcase name="validateCompanyNameWithIncorrectData[7](SС‹)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.463"/>
+  <testcase name="validateCompanyNameWithIncorrectData[8](!)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.452"/>
+  <testcase name="validateCompanyNameWithIncorrectData[9](@)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.441"/>
+  <testcase name="validateCompanyNameWithIncorrectData[10](#)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.248"/>
+  <testcase name="validateCompanyNameWithIncorrectData[11](()" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.205"/>
+  <testcase name="validateCompanyNameWithIncorrectData[12](&lt;script&gt;&lt;/script&gt;)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.51"/>
+  <testcase name="validateCompanyNameWithIncorrectData[13](&lt;input&gt;)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.36"/>
+  <testcase name="validateCompanyNameWithIncorrectData[14](0)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.147"/>
+  <testcase name="validateCompanyPositionWithIncorrectData[0]()" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.461"/>
+  <testcase name="validateCompanyPositionWithIncorrectData[1](В )" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.459"/>
+  <testcase name="validateCompanyPositionWithIncorrectData[2]()" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.465"/>
+  <testcase name="validateCompanyPositionWithIncorrectData[3](1)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.22"/>
+  <testcase name="validateCompanyPositionWithIncorrectData[4](s)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.155"/>
+  <testcase name="validateCompanyPositionWithIncorrectData[5](S)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.466"/>
+  <testcase name="validateCompanyPositionWithIncorrectData[6](С‹)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.478"/>
+  <testcase name="validateCompanyPositionWithIncorrectData[7](SС‹)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.492"/>
+  <testcase name="validateCompanyPositionWithIncorrectData[8](!)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.482"/>
+  <testcase name="validateCompanyPositionWithIncorrectData[9](@)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.493"/>
+  <testcase name="validateCompanyPositionWithIncorrectData[10](#)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.45"/>
+  <testcase name="validateCompanyPositionWithIncorrectData[11](Ass$)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.207"/>
+  <testcase name="validateCompanyPositionWithIncorrectData[12](ss%)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.167"/>
+  <testcase name="validateCompanyPositionWithIncorrectData[13](()" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.478"/>
+  <testcase name="validateCompanyPositionWithIncorrectData[14](&lt;script&gt;&lt;/script&gt;)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.551"/>
+  <testcase name="validateCompanyPositionWithIncorrectData[15](&lt;input&gt;)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.504"/>
+  <testcase name="validateCompanyPositionWithIncorrectData[16](0)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.494"/>
+  <testcase name="validateComparePasswordsEqualityNegativeData" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.0"/>
+  <testcase name="validateEmailWithIncorrectData[0](п»ї)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.478"/>
+  <testcase name="validateEmailWithIncorrectData[1]()" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.429"/>
+  <testcase name="validateEmailWithIncorrectData[2](testgmail.com)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.463"/>
+  <testcase name="validateEmailWithIncorrectData[3](test@.com)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.451"/>
+  <testcase name="validateEmailWithIncorrectData[4](test@gmailcom)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.466"/>
+  <testcase name="validateEmailWithIncorrectData[5](test@gmail.)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.465"/>
+  <testcase name="validateEmailWithIncorrectData[6](@gmail.com)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.486"/>
+  <testcase name="validateEmailWithIncorrectData[7](Fqpwiuery)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.447"/>
+  <testcase name="validateEmailWithIncorrectData[8](С†СѓРєС€РіРµС€РіР·)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.495"/>
+  <testcase name="validateEmailWithIncorrectData[9](&quot;%^&amp;()):&quot;)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.483"/>
+  <testcase name="validateEmailWithIncorrectData[10](1)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.457"/>
+  <testcase name="validateEmailWithIncorrectData[11](С‚РµСЃС‚@gmail.com)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.501"/>
+  <testcase name="validateEmailWithIncorrectData[12](SELECT* FROM)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.508"/>
+  <testcase name="validateEmailWithIncorrectData[13](test@@gmail.com)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.494"/>
+  <testcase name="validateEmailWithIncorrectData[14](www.telran.com)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.492"/>
+  <testcase name="validateEmailWithIncorrectData[15](tes t@gmail.com)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.505"/>
+  <testcase name="validateEmailWithIncorrectData[16](test@ gmail.com)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.484"/>
+  <testcase name="validateEmailWithIncorrectData[17](test@gmail .com)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.503"/>
+  <testcase name="validateEmailWithIncorrectData[18](test@gmail. com)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.509"/>
+  <testcase name="validateEmailWithIncorrectData[19](&lt;script&gt;&lt;/script&gt;)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.503"/>
+  <testcase name="validateEmailWithIncorrectData[20](&lt;input&gt;)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.514"/>
+  <testcase name="validateEmailWithIncorrectData[21](0)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.516"/>
+  <testcase name="validateFirstNameWithIncorrectData[0]()" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.464"/>
+  <testcase name="validateFirstNameWithIncorrectData[1](В )" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.466"/>
+  <testcase name="validateFirstNameWithIncorrectData[2]()" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.461"/>
+  <testcase name="validateFirstNameWithIncorrectData[3](1)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.461"/>
+  <testcase name="validateFirstNameWithIncorrectData[4](s)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.459"/>
+  <testcase name="validateFirstNameWithIncorrectData[5](S)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.462"/>
+  <testcase name="validateFirstNameWithIncorrectData[6](С‹)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.468"/>
+  <testcase name="validateFirstNameWithIncorrectData[7](SС‹)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.471"/>
+  <testcase name="validateFirstNameWithIncorrectData[8](S1)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.467"/>
+  <testcase name="validateFirstNameWithIncorrectData[9](!)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.46"/>
+  <testcase name="validateFirstNameWithIncorrectData[10](@)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.457"/>
+  <testcase name="validateFirstNameWithIncorrectData[11](#)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.453"/>
+  <testcase name="validateFirstNameWithIncorrectData[12](Ass$)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.482"/>
+  <testcase name="validateFirstNameWithIncorrectData[13](ss%)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.488"/>
+  <testcase name="validateFirstNameWithIncorrectData[14](()" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.482"/>
+  <testcase name="validateFirstNameWithIncorrectData[15](&lt;script&gt;&lt;/script&gt;)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.502"/>
+  <testcase name="validateFirstNameWithIncorrectData[16](&lt;input&gt;)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.471"/>
+  <testcase name="validateFirstNameWithIncorrectData[17](0)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.473"/>
+  <testcase name="validateHouseNumberWithIncorrectData[0](В )" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.545"/>
+  <testcase name="validateHouseNumberWithIncorrectData[1]()" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.508"/>
+  <testcase name="validateHouseNumberWithIncorrectData[2](С‹)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.583"/>
+  <testcase name="validateHouseNumberWithIncorrectData[3](СЏ)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.533"/>
+  <testcase name="validateHouseNumberWithIncorrectData[4](С‹)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.526"/>
+  <testcase name="validateHouseNumberWithIncorrectData[5](С‘)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.547"/>
+  <testcase name="validateHouseNumberWithIncorrectData[6](SС‹)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.562"/>
+  <testcase name="validateHouseNumberWithIncorrectData[7](!)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.522"/>
+  <testcase name="validateHouseNumberWithIncorrectData[8](@)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.533"/>
+  <testcase name="validateHouseNumberWithIncorrectData[9](Ass$)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.558"/>
+  <testcase name="validateHouseNumberWithIncorrectData[10](ss%)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.541"/>
+  <testcase name="validateHouseNumberWithIncorrectData[11](()" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.521"/>
+  <testcase name="validateHouseNumberWithIncorrectData[12]((1)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.554"/>
+  <testcase name="validateHouseNumberWithIncorrectData[13](&lt;script&gt;&lt;/script&gt;)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.608"/>
+  <testcase name="validateHouseNumberWithIncorrectData[14](&lt;input&gt;)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.569"/>
+  <testcase name="validateLastNameWithIncorrectData[0]()" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.477"/>
+  <testcase name="validateLastNameWithIncorrectData[1](В )" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.488"/>
+  <testcase name="validateLastNameWithIncorrectData[2]()" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.506"/>
+  <testcase name="validateLastNameWithIncorrectData[3](1)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.504"/>
+  <testcase name="validateLastNameWithIncorrectData[4](s)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.566"/>
+  <testcase name="validateLastNameWithIncorrectData[5](S)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.505"/>
+  <testcase name="validateLastNameWithIncorrectData[6](С‹)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.496"/>
+  <testcase name="validateLastNameWithIncorrectData[7](SС‹)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.509"/>
+  <testcase name="validateLastNameWithIncorrectData[8](S1)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.513"/>
+  <testcase name="validateLastNameWithIncorrectData[9](!)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.495"/>
+  <testcase name="validateLastNameWithIncorrectData[10](@)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.491"/>
+  <testcase name="validateLastNameWithIncorrectData[11](#)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.498"/>
+  <testcase name="validateLastNameWithIncorrectData[12](Ass$)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.504"/>
+  <testcase name="validateLastNameWithIncorrectData[13](ss%)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.505"/>
+  <testcase name="validateLastNameWithIncorrectData[14](()" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.494"/>
+  <testcase name="validateLastNameWithIncorrectData[15](&lt;script&gt;&lt;/script&gt;)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.567"/>
+  <testcase name="validateLastNameWithIncorrectData[16](&lt;input&gt;)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.528"/>
+  <testcase name="validateLastNameWithIncorrectData[17](0)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.494"/>
+  <testcase name="validatePasswordConfirmWithIncorrectData[0](п»їTes123)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.533"/>
+  <testcase name="validatePasswordConfirmWithIncorrectData[1](Tes1234)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.532"/>
+  <testcase name="validatePasswordConfirmWithIncorrectData[2](Test1234555555555555555555555555555555555555555555555555555555555555555555555555555555555555)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.756"/>
+  <testcase name="validatePasswordConfirmWithIncorrectData[3](1)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.487"/>
+  <testcase name="validatePasswordConfirmWithIncorrectData[4](*&amp;^(*&amp;%$##@)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.545"/>
+  <testcase name="validatePasswordConfirmWithIncorrectData[5](Qwertyuiop@1С‹)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.542"/>
+  <testcase name="validatePasswordConfirmWithIncorrectData[6](Р¤Р«Р’РђРђРџРєРіСѓС‰СѓС†Р·)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.578"/>
+  <testcase name="validatePasswordConfirmWithIncorrectData[7](Test 12345!)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.559"/>
+  <testcase name="validatePasswordConfirmWithIncorrectData[8](SELECT* FROM)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.555"/>
+  <testcase name="validatePasswordConfirmWithIncorrectData[9](www.gmail.com)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.581"/>
+  <testcase name="validatePasswordConfirmWithIncorrectData[10]()" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.52"/>
+  <testcase name="validatePasswordConfirmWithIncorrectData[11](В )" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.514"/>
+  <testcase name="validatePasswordConfirmWithIncorrectData[12]()" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.521"/>
+  <testcase name="validatePasswordConfirmWithIncorrectData[13](0)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.521"/>
+  <testcase name="validatePasswordConfirmWithIncorrectData[14](&lt;input&gt;)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.545"/>
+  <testcase name="validatePasswordConfirmWithIncorrectData[15](&lt;script&gt;&lt;/script&gt;)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.576"/>
+  <testcase name="validatePasswordConfirmWithIncorrectData[16](11111E+12)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.568"/>
+  <testcase name="validatePasswordWithIncorrectData[0](п»їTes123)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.571"/>
+  <testcase name="validatePasswordWithIncorrectData[1](Tes1234)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.552"/>
+  <testcase name="validatePasswordWithIncorrectData[2](Test1234555555555555555555555555555555555555555555555555555555555555555555555555555555555555)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.791"/>
+  <testcase name="validatePasswordWithIncorrectData[3](1)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.521"/>
+  <testcase name="validatePasswordWithIncorrectData[4](*&amp;^(*&amp;%$##@)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.436"/>
+  <testcase name="validatePasswordWithIncorrectData[5](Qwertyuiop@1С‹)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.571"/>
+  <testcase name="validatePasswordWithIncorrectData[6](Р¤Р«Р’РђРђРџРєРіСѓС‰СѓС†Р·)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.696"/>
+  <testcase name="validatePasswordWithIncorrectData[7](Test 12345!)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.572"/>
+  <testcase name="validatePasswordWithIncorrectData[8](SELECT* FROM)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.564"/>
+  <testcase name="validatePasswordWithIncorrectData[9](www.gmail.com)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.495"/>
+  <testcase name="validatePasswordWithIncorrectData[10]()" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.558"/>
+  <testcase name="validatePasswordWithIncorrectData[11](В )" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.537"/>
+  <testcase name="validatePasswordWithIncorrectData[12]()" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.529"/>
+  <testcase name="validatePasswordWithIncorrectData[13](0)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.532"/>
+  <testcase name="validatePasswordWithIncorrectData[14](&lt;input&gt;)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.584"/>
+  <testcase name="validatePasswordWithIncorrectData[15](&lt;script&gt;&lt;/script&gt;)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.605"/>
+  <testcase name="validatePasswordWithIncorrectData[16](11111E+12)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.573"/>
+  <testcase name="validatePhoneWithIncorrectData[0]()" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.537"/>
+  <testcase name="validatePhoneWithIncorrectData[1](В )" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.53"/>
+  <testcase name="validatePhoneWithIncorrectData[2]()" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.529"/>
+  <testcase name="validatePhoneWithIncorrectData[3](1)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.545"/>
+  <testcase name="validatePhoneWithIncorrectData[4](s)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.542"/>
+  <testcase name="validatePhoneWithIncorrectData[5](S)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.557"/>
+  <testcase name="validatePhoneWithIncorrectData[6](С‹)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.617"/>
+  <testcase name="validatePhoneWithIncorrectData[7](SС‹)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.576"/>
+  <testcase name="validatePhoneWithIncorrectData[8](S1)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.544"/>
+  <testcase name="validatePhoneWithIncorrectData[9](!)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.546"/>
+  <testcase name="validatePhoneWithIncorrectData[10](@)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.543"/>
+  <testcase name="validatePhoneWithIncorrectData[11](#)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.544"/>
+  <testcase name="validatePhoneWithIncorrectData[12](Ass$)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.645"/>
+  <testcase name="validatePhoneWithIncorrectData[13](ss%)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.632"/>
+  <testcase name="validatePhoneWithIncorrectData[14](()" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.573"/>
+  <testcase name="validatePhoneWithIncorrectData[15](&lt;script&gt;&lt;/script&gt;)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.634"/>
+  <testcase name="validatePhoneWithIncorrectData[16](&lt;input&gt;)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.595"/>
+  <testcase name="validatePhoneWithIncorrectData[17](0)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.553"/>
+  <testcase name="validatePhoneWithIncorrectData[18](123456789)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.297"/>
+  <testcase name="validatePhoneWithIncorrectData[19](null)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.127"/>
+  <testcase name="validatePhoneWithIncorrectData[20](1234567890123)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.62"/>
+  <testcase name="validatePhoneWithIncorrectData[21](1234567890С‹)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.603"/>
+  <testcase name="validatePhoneWithIncorrectData[22](1234567890s)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.598"/>
+  <testcase name="validatePhoneWithIncorrectData[23](123456789O)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.599"/>
+  <testcase name="validatePostalWithIncorrectData[0]()" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.628"/>
+  <testcase name="validatePostalWithIncorrectData[1](В )" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.618"/>
+  <testcase name="validatePostalWithIncorrectData[2]()" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.61"/>
+  <testcase name="validatePostalWithIncorrectData[3](1)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.631"/>
+  <testcase name="validatePostalWithIncorrectData[4](s)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.622"/>
+  <testcase name="validatePostalWithIncorrectData[5](S)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.645"/>
+  <testcase name="validatePostalWithIncorrectData[6](С‹)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.628"/>
+  <testcase name="validatePostalWithIncorrectData[7](SС‹)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.638"/>
+  <testcase name="validatePostalWithIncorrectData[8](S1)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.641"/>
+  <testcase name="validatePostalWithIncorrectData[9](!)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.639"/>
+  <testcase name="validatePostalWithIncorrectData[10](@)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.641"/>
+  <testcase name="validatePostalWithIncorrectData[11](#)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.642"/>
+  <testcase name="validatePostalWithIncorrectData[12](Ass$)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.642"/>
+  <testcase name="validatePostalWithIncorrectData[13](ss%)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.644"/>
+  <testcase name="validatePostalWithIncorrectData[14](()" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.632"/>
+  <testcase name="validatePostalWithIncorrectData[15](&lt;script&gt;&lt;/script&gt;)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.76"/>
+  <testcase name="validatePostalWithIncorrectData[16](&lt;input&gt;)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.676"/>
+  <testcase name="validatePostalWithIncorrectData[17](0)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.59"/>
+  <testcase name="validatePostalWithIncorrectData[18](1234)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.65"/>
+  <testcase name="validatePostalWithIncorrectData[19](123456)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.651"/>
+  <testcase name="validatePostalWithIncorrectData[20](12345d)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.659"/>
+  <testcase name="validatePostalWithIncorrectData[21](O01234)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.683"/>
+  <testcase name="validatePostalWithIncorrectData[22](1234#)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.737"/>
+  <testcase name="validatePostalWithIncorrectData[23](null)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.662"/>
+  <testcase name="validatePostalWithIncorrectData[24](12345s)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.703"/>
+  <testcase name="validatePostalWithIncorrectData[25](1234567890s)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.205"/>
+  <testcase name="validatePostalWithIncorrectData[26](123456789O)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.205"/>
+  <testcase name="validatePostalWithIncorrectData[27](123456789012345678901)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.239"/>
+  <testcase name="validateStreetWithIncorrectData[0]()" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.144"/>
+  <testcase name="validateStreetWithIncorrectData[1](В )" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.153"/>
+  <testcase name="validateStreetWithIncorrectData[2]()" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.138"/>
+  <testcase name="validateStreetWithIncorrectData[3](1)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.137"/>
+  <testcase name="validateStreetWithIncorrectData[4](s)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.144"/>
+  <testcase name="validateStreetWithIncorrectData[5](S)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.15"/>
+  <testcase name="validateStreetWithIncorrectData[6](С‹)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.153"/>
+  <testcase name="validateStreetWithIncorrectData[7](SС‹)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.164"/>
+  <testcase name="validateStreetWithIncorrectData[8](!)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.143"/>
+  <testcase name="validateStreetWithIncorrectData[9](@)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.147"/>
+  <testcase name="validateStreetWithIncorrectData[10](#)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.145"/>
+  <testcase name="validateStreetWithIncorrectData[11](Ass$)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.173"/>
+  <testcase name="validateStreetWithIncorrectData[12](ss%)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.165"/>
+  <testcase name="validateStreetWithIncorrectData[13](()" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.151"/>
+  <testcase name="validateStreetWithIncorrectData[14](&lt;script&gt;&lt;/script&gt;)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.244"/>
+  <testcase name="validateStreetWithIncorrectData[15](&lt;input&gt;)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.181"/>
+  <testcase name="validateStreetWithIncorrectData[16](0)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.142"/>
+  <testcase name="validateTaxWithIncorrectData[0]()" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.139"/>
+  <testcase name="validateTaxWithIncorrectData[1](В )" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.146"/>
+  <testcase name="validateTaxWithIncorrectData[2]()" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.138"/>
+  <testcase name="validateTaxWithIncorrectData[3](1)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.148"/>
+  <testcase name="validateTaxWithIncorrectData[4](s)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.147"/>
+  <testcase name="validateTaxWithIncorrectData[5](S)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.145"/>
+  <testcase name="validateTaxWithIncorrectData[6](С‹)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.151"/>
+  <testcase name="validateTaxWithIncorrectData[7](SС‹)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.166"/>
+  <testcase name="validateTaxWithIncorrectData[8](S1)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.166"/>
+  <testcase name="validateTaxWithIncorrectData[9](!)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.143"/>
+  <testcase name="validateTaxWithIncorrectData[10](@)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.147"/>
+  <testcase name="validateTaxWithIncorrectData[11](#)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.14"/>
+  <testcase name="validateTaxWithIncorrectData[12](Ass$)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.167"/>
+  <testcase name="validateTaxWithIncorrectData[13](ss%)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.167"/>
+  <testcase name="validateTaxWithIncorrectData[14](()" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.148"/>
+  <testcase name="validateTaxWithIncorrectData[15](&lt;script&gt;&lt;/script&gt;)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.231"/>
+  <testcase name="validateTaxWithIncorrectData[16](&lt;input&gt;)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.183"/>
+  <testcase name="validateTaxWithIncorrectData[17](0)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.157"/>
+  <testcase name="validateTaxWithIncorrectData[18](12345678)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.185"/>
+  <testcase name="validateTaxWithIncorrectData[19](123456789d)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.197"/>
+  <testcase name="validateTaxWithIncorrectData[20](123456789#)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.202"/>
+  <testcase name="validateTaxWithIncorrectData[21](null)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.175"/>
+  <testcase name="validateTaxWithIncorrectData[22](1234567890С‹)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.201"/>
+  <testcase name="validateTaxWithIncorrectData[23](1234567890s)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.207"/>
+  <testcase name="validateTaxWithIncorrectData[24](123456789O)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.199"/>
+  <testcase name="validateTaxWithIncorrectData[25](123456789012345678901)" classname="allcom.tests.registration.RegisterPageNegativeTests" time="0.248"/>
+  <system-out><![CDATA[02:46:39.560 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateCityWithIncorrectData]
+02:46:40.126 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateCityWithIncorrectData], with Parameters: []
+02:46:40.126 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateCityWithIncorrectData]
+02:46:40.690 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateCityWithIncorrectData], with Parameters: [В ]
+02:46:40.690 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateCityWithIncorrectData]
+02:46:41.238 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateCityWithIncorrectData], with Parameters: []
+02:46:41.238 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateCityWithIncorrectData]
+02:46:41.674 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateCityWithIncorrectData], with Parameters: [1]
+02:46:41.674 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateCityWithIncorrectData]
+02:46:42.032 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateCityWithIncorrectData], with Parameters: [s]
+02:46:42.032 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateCityWithIncorrectData]
+02:46:42.536 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateCityWithIncorrectData], with Parameters: [S]
+02:46:42.537 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateCityWithIncorrectData]
+02:46:43.036 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateCityWithIncorrectData], with Parameters: [С‹]
+02:46:43.036 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateCityWithIncorrectData]
+02:46:43.516 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateCityWithIncorrectData], with Parameters: [SС‹]
+02:46:43.516 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateCityWithIncorrectData]
+02:46:43.917 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateCityWithIncorrectData], with Parameters: [S1]
+02:46:43.917 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateCityWithIncorrectData]
+02:46:44.478 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateCityWithIncorrectData], with Parameters: [!]
+02:46:44.478 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateCityWithIncorrectData]
+02:46:45.058 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateCityWithIncorrectData], with Parameters: [@]
+02:46:45.058 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateCityWithIncorrectData]
+02:46:45.629 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateCityWithIncorrectData], with Parameters: [#]
+02:46:45.630 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateCityWithIncorrectData]
+02:46:46.208 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateCityWithIncorrectData], with Parameters: [Ass$]
+02:46:46.208 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateCityWithIncorrectData]
+02:46:46.808 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateCityWithIncorrectData], with Parameters: [ss%]
+02:46:46.809 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateCityWithIncorrectData]
+02:46:47.388 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateCityWithIncorrectData], with Parameters: [(]
+02:46:47.388 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateCityWithIncorrectData]
+02:46:48.031 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateCityWithIncorrectData], with Parameters: [<script></script>]
+02:46:48.031 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateCityWithIncorrectData]
+02:46:48.634 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateCityWithIncorrectData], with Parameters: [<input>]
+02:46:48.634 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateCityWithIncorrectData]
+02:46:49.216 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateCityWithIncorrectData], with Parameters: [0]
+02:46:49.218 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateCompanyNameWithIncorrectData]
+02:46:49.800 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateCompanyNameWithIncorrectData], with Parameters: []
+02:46:49.801 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateCompanyNameWithIncorrectData]
+02:46:50.365 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateCompanyNameWithIncorrectData], with Parameters: [В ]
+02:46:50.365 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateCompanyNameWithIncorrectData]
+02:46:50.637 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateCompanyNameWithIncorrectData], with Parameters: []
+02:46:50.637 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateCompanyNameWithIncorrectData]
+02:46:51.211 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateCompanyNameWithIncorrectData], with Parameters: [1]
+02:46:51.212 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateCompanyNameWithIncorrectData]
+02:46:51.796 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateCompanyNameWithIncorrectData], with Parameters: [s]
+02:46:51.796 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateCompanyNameWithIncorrectData]
+02:46:52.189 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateCompanyNameWithIncorrectData], with Parameters: [S]
+02:46:52.189 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateCompanyNameWithIncorrectData]
+02:46:52.540 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateCompanyNameWithIncorrectData], with Parameters: [С‹]
+02:46:52.541 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateCompanyNameWithIncorrectData]
+02:46:53.113 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateCompanyNameWithIncorrectData], with Parameters: [SС‹]
+02:46:53.113 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateCompanyNameWithIncorrectData]
+02:46:53.684 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateCompanyNameWithIncorrectData], with Parameters: [!]
+02:46:53.684 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateCompanyNameWithIncorrectData]
+02:46:54.257 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateCompanyNameWithIncorrectData], with Parameters: [@]
+02:46:54.258 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateCompanyNameWithIncorrectData]
+02:46:54.627 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateCompanyNameWithIncorrectData], with Parameters: [#]
+02:46:54.627 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateCompanyNameWithIncorrectData]
+02:46:55.074 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateCompanyNameWithIncorrectData], with Parameters: [(]
+02:46:55.075 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateCompanyNameWithIncorrectData]
+02:46:55.692 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateCompanyNameWithIncorrectData], with Parameters: [<script></script>]
+02:46:55.693 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateCompanyNameWithIncorrectData]
+02:46:56.180 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateCompanyNameWithIncorrectData], with Parameters: [<input>]
+02:46:56.180 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateCompanyNameWithIncorrectData]
+02:46:56.544 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateCompanyNameWithIncorrectData], with Parameters: [0]
+02:46:56.545 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateCompanyPositionWithIncorrectData]
+02:46:57.136 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateCompanyPositionWithIncorrectData], with Parameters: []
+02:46:57.136 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateCompanyPositionWithIncorrectData]
+02:46:57.725 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateCompanyPositionWithIncorrectData], with Parameters: [В ]
+02:46:57.726 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateCompanyPositionWithIncorrectData]
+02:46:58.312 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateCompanyPositionWithIncorrectData], with Parameters: []
+02:46:58.312 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateCompanyPositionWithIncorrectData]
+02:46:58.652 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateCompanyPositionWithIncorrectData], with Parameters: [1]
+02:46:58.652 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateCompanyPositionWithIncorrectData]
+02:46:59.128 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateCompanyPositionWithIncorrectData], with Parameters: [s]
+02:46:59.129 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateCompanyPositionWithIncorrectData]
+02:46:59.699 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateCompanyPositionWithIncorrectData], with Parameters: [S]
+02:46:59.699 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateCompanyPositionWithIncorrectData]
+02:47:00.306 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateCompanyPositionWithIncorrectData], with Parameters: [С‹]
+02:47:00.306 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateCompanyPositionWithIncorrectData]
+02:47:00.923 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateCompanyPositionWithIncorrectData], with Parameters: [SС‹]
+02:47:00.923 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateCompanyPositionWithIncorrectData]
+02:47:01.528 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateCompanyPositionWithIncorrectData], with Parameters: [!]
+02:47:01.529 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateCompanyPositionWithIncorrectData]
+02:47:02.141 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateCompanyPositionWithIncorrectData], with Parameters: [@]
+02:47:02.142 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateCompanyPositionWithIncorrectData]
+02:47:02.719 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateCompanyPositionWithIncorrectData], with Parameters: [#]
+02:47:02.719 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateCompanyPositionWithIncorrectData]
+02:47:03.095 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateCompanyPositionWithIncorrectData], with Parameters: [Ass$]
+02:47:03.095 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateCompanyPositionWithIncorrectData]
+02:47:03.627 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateCompanyPositionWithIncorrectData], with Parameters: [ss%]
+02:47:03.627 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateCompanyPositionWithIncorrectData]
+02:47:04.220 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateCompanyPositionWithIncorrectData], with Parameters: [(]
+02:47:04.221 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateCompanyPositionWithIncorrectData]
+02:47:04.900 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateCompanyPositionWithIncorrectData], with Parameters: [<script></script>]
+02:47:04.900 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateCompanyPositionWithIncorrectData]
+02:47:05.521 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateCompanyPositionWithIncorrectData], with Parameters: [<input>]
+02:47:05.521 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateCompanyPositionWithIncorrectData]
+02:47:06.142 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateCompanyPositionWithIncorrectData], with Parameters: [0]
+02:47:06.143 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateComparePasswordsEqualityNegativeData]
+02:47:06.261 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateComparePasswordsEqualityNegativeData], with Parameters: []
+02:47:06.262 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateEmailWithIncorrectData]
+02:47:06.871 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateEmailWithIncorrectData], with Parameters: [п»ї]
+02:47:06.871 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateEmailWithIncorrectData]
+02:47:07.396 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateEmailWithIncorrectData], with Parameters: []
+02:47:07.396 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateEmailWithIncorrectData]
+02:47:07.963 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateEmailWithIncorrectData], with Parameters: [testgmail.com]
+02:47:07.963 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateEmailWithIncorrectData]
+02:47:08.531 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateEmailWithIncorrectData], with Parameters: [test@.com]
+02:47:08.531 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateEmailWithIncorrectData]
+02:47:09.099 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateEmailWithIncorrectData], with Parameters: [test@gmailcom]
+02:47:09.100 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateEmailWithIncorrectData]
+02:47:09.679 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateEmailWithIncorrectData], with Parameters: [test@gmail.]
+02:47:09.679 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateEmailWithIncorrectData]
+02:47:10.265 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateEmailWithIncorrectData], with Parameters: [@gmail.com]
+02:47:10.265 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateEmailWithIncorrectData]
+02:47:10.813 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateEmailWithIncorrectData], with Parameters: [Fqpwiuery]
+02:47:10.814 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateEmailWithIncorrectData]
+02:47:11.411 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateEmailWithIncorrectData], with Parameters: [С†СѓРєС€РіРµС€РіР·]
+02:47:11.411 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateEmailWithIncorrectData]
+02:47:12.006 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateEmailWithIncorrectData], with Parameters: ["%^&()):"]
+02:47:12.006 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateEmailWithIncorrectData]
+02:47:12.555 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateEmailWithIncorrectData], with Parameters: [1]
+02:47:12.555 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateEmailWithIncorrectData]
+02:47:13.153 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateEmailWithIncorrectData], with Parameters: [С‚РµСЃС‚@gmail.com]
+02:47:13.153 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateEmailWithIncorrectData]
+02:47:13.760 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateEmailWithIncorrectData], with Parameters: [SELECT* FROM]
+02:47:13.761 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateEmailWithIncorrectData]
+02:47:14.379 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateEmailWithIncorrectData], with Parameters: [test@@gmail.com]
+02:47:14.380 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateEmailWithIncorrectData]
+02:47:15.067 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateEmailWithIncorrectData], with Parameters: [www.telran.com]
+02:47:15.068 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateEmailWithIncorrectData]
+02:47:15.672 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateEmailWithIncorrectData], with Parameters: [tes t@gmail.com]
+02:47:15.672 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateEmailWithIncorrectData]
+02:47:16.268 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateEmailWithIncorrectData], with Parameters: [test@ gmail.com]
+02:47:16.268 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateEmailWithIncorrectData]
+02:47:16.871 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateEmailWithIncorrectData], with Parameters: [test@gmail .com]
+02:47:16.872 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateEmailWithIncorrectData]
+02:47:17.478 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateEmailWithIncorrectData], with Parameters: [test@gmail. com]
+02:47:17.479 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateEmailWithIncorrectData]
+02:47:18.095 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateEmailWithIncorrectData], with Parameters: [<script></script>]
+02:47:18.096 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateEmailWithIncorrectData]
+02:47:18.716 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateEmailWithIncorrectData], with Parameters: [<input>]
+02:47:18.716 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateEmailWithIncorrectData]
+02:47:19.336 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateEmailWithIncorrectData], with Parameters: [0]
+02:47:19.337 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateFirstNameWithIncorrectData]
+02:47:19.897 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateFirstNameWithIncorrectData], with Parameters: []
+02:47:19.898 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateFirstNameWithIncorrectData]
+02:47:20.458 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateFirstNameWithIncorrectData], with Parameters: [В ]
+02:47:20.459 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateFirstNameWithIncorrectData]
+02:47:21.014 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateFirstNameWithIncorrectData], with Parameters: []
+02:47:21.015 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateFirstNameWithIncorrectData]
+02:47:21.581 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateFirstNameWithIncorrectData], with Parameters: [1]
+02:47:21.581 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateFirstNameWithIncorrectData]
+02:47:22.154 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateFirstNameWithIncorrectData], with Parameters: [s]
+02:47:22.154 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateFirstNameWithIncorrectData]
+02:47:22.716 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateFirstNameWithIncorrectData], with Parameters: [S]
+02:47:22.716 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateFirstNameWithIncorrectData]
+02:47:23.279 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateFirstNameWithIncorrectData], with Parameters: [С‹]
+02:47:23.279 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateFirstNameWithIncorrectData]
+02:47:23.850 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateFirstNameWithIncorrectData], with Parameters: [SС‹]
+02:47:23.850 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateFirstNameWithIncorrectData]
+02:47:24.417 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateFirstNameWithIncorrectData], with Parameters: [S1]
+02:47:24.417 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateFirstNameWithIncorrectData]
+02:47:24.979 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateFirstNameWithIncorrectData], with Parameters: [!]
+02:47:24.980 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateFirstNameWithIncorrectData]
+02:47:25.542 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateFirstNameWithIncorrectData], with Parameters: [@]
+02:47:25.542 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateFirstNameWithIncorrectData]
+02:47:26.090 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateFirstNameWithIncorrectData], with Parameters: [#]
+02:47:26.090 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateFirstNameWithIncorrectData]
+02:47:26.665 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateFirstNameWithIncorrectData], with Parameters: [Ass$]
+02:47:26.665 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateFirstNameWithIncorrectData]
+02:47:27.250 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateFirstNameWithIncorrectData], with Parameters: [ss%]
+02:47:27.251 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateFirstNameWithIncorrectData]
+02:47:27.827 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateFirstNameWithIncorrectData], with Parameters: [(]
+02:47:27.828 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateFirstNameWithIncorrectData]
+02:47:28.432 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateFirstNameWithIncorrectData], with Parameters: [<script></script>]
+02:47:28.432 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateFirstNameWithIncorrectData]
+02:47:29.012 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateFirstNameWithIncorrectData], with Parameters: [<input>]
+02:47:29.013 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateFirstNameWithIncorrectData]
+02:47:29.584 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateFirstNameWithIncorrectData], with Parameters: [0]
+02:47:29.585 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateHouseNumberWithIncorrectData]
+02:47:30.227 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateHouseNumberWithIncorrectData], with Parameters: [В ]
+02:47:30.227 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateHouseNumberWithIncorrectData]
+02:47:30.870 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateHouseNumberWithIncorrectData], with Parameters: []
+02:47:30.871 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateHouseNumberWithIncorrectData]
+02:47:31.585 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateHouseNumberWithIncorrectData], with Parameters: [С‹]
+02:47:31.585 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateHouseNumberWithIncorrectData]
+02:47:32.251 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateHouseNumberWithIncorrectData], with Parameters: [СЏ]
+02:47:32.251 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateHouseNumberWithIncorrectData]
+02:47:32.918 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateHouseNumberWithIncorrectData], with Parameters: [С‹]
+02:47:32.918 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateHouseNumberWithIncorrectData]
+02:47:33.592 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateHouseNumberWithIncorrectData], with Parameters: [С‘]
+02:47:33.592 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateHouseNumberWithIncorrectData]
+02:47:34.278 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateHouseNumberWithIncorrectData], with Parameters: [SС‹]
+02:47:34.278 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateHouseNumberWithIncorrectData]
+02:47:34.933 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateHouseNumberWithIncorrectData], with Parameters: [!]
+02:47:34.933 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateHouseNumberWithIncorrectData]
+02:47:35.593 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateHouseNumberWithIncorrectData], with Parameters: [@]
+02:47:35.593 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateHouseNumberWithIncorrectData]
+02:47:36.269 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateHouseNumberWithIncorrectData], with Parameters: [Ass$]
+02:47:36.269 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateHouseNumberWithIncorrectData]
+02:47:36.942 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateHouseNumberWithIncorrectData], with Parameters: [ss%]
+02:47:36.942 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateHouseNumberWithIncorrectData]
+02:47:37.604 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateHouseNumberWithIncorrectData], with Parameters: [(]
+02:47:37.605 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateHouseNumberWithIncorrectData]
+02:47:38.284 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateHouseNumberWithIncorrectData], with Parameters: [(1]
+02:47:38.284 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateHouseNumberWithIncorrectData]
+02:47:39.024 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateHouseNumberWithIncorrectData], with Parameters: [<script></script>]
+02:47:39.025 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateHouseNumberWithIncorrectData]
+02:47:39.716 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateHouseNumberWithIncorrectData], with Parameters: [<input>]
+02:47:39.717 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateLastNameWithIncorrectData]
+02:47:40.331 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateLastNameWithIncorrectData], with Parameters: []
+02:47:40.331 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateLastNameWithIncorrectData]
+02:47:40.936 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateLastNameWithIncorrectData], with Parameters: [В ]
+02:47:40.936 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateLastNameWithIncorrectData]
+02:47:41.538 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateLastNameWithIncorrectData], with Parameters: []
+02:47:41.538 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateLastNameWithIncorrectData]
+02:47:42.148 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateLastNameWithIncorrectData], with Parameters: [1]
+02:47:42.149 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateLastNameWithIncorrectData]
+02:47:42.817 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateLastNameWithIncorrectData], with Parameters: [s]
+02:47:42.817 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateLastNameWithIncorrectData]
+02:47:43.417 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateLastNameWithIncorrectData], with Parameters: [S]
+02:47:43.417 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateLastNameWithIncorrectData]
+02:47:44.009 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateLastNameWithIncorrectData], with Parameters: [С‹]
+02:47:44.009 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateLastNameWithIncorrectData]
+02:47:44.620 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateLastNameWithIncorrectData], with Parameters: [SС‹]
+02:47:44.620 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateLastNameWithIncorrectData]
+02:47:45.226 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateLastNameWithIncorrectData], with Parameters: [S1]
+02:47:45.226 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateLastNameWithIncorrectData]
+02:47:45.826 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateLastNameWithIncorrectData], with Parameters: [!]
+02:47:45.827 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateLastNameWithIncorrectData]
+02:47:46.421 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateLastNameWithIncorrectData], with Parameters: [@]
+02:47:46.421 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateLastNameWithIncorrectData]
+02:47:47.032 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateLastNameWithIncorrectData], with Parameters: [#]
+02:47:47.032 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateLastNameWithIncorrectData]
+02:47:47.632 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateLastNameWithIncorrectData], with Parameters: [Ass$]
+02:47:47.632 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateLastNameWithIncorrectData]
+02:47:48.232 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateLastNameWithIncorrectData], with Parameters: [ss%]
+02:47:48.232 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateLastNameWithIncorrectData]
+02:47:48.829 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateLastNameWithIncorrectData], with Parameters: [(]
+02:47:48.830 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateLastNameWithIncorrectData]
+02:47:49.500 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateLastNameWithIncorrectData], with Parameters: [<script></script>]
+02:47:49.500 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateLastNameWithIncorrectData]
+02:47:50.129 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateLastNameWithIncorrectData], with Parameters: [<input>]
+02:47:50.129 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateLastNameWithIncorrectData]
+02:47:50.739 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateLastNameWithIncorrectData], with Parameters: [0]
+02:47:50.740 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePasswordConfirmWithIncorrectData]
+02:47:51.382 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePasswordConfirmWithIncorrectData], with Parameters: [п»їTes123]
+02:47:51.383 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePasswordConfirmWithIncorrectData]
+02:47:52.010 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePasswordConfirmWithIncorrectData], with Parameters: [Tes1234]
+02:47:52.010 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePasswordConfirmWithIncorrectData]
+02:47:52.872 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePasswordConfirmWithIncorrectData], with Parameters: [Test1234555555555555555555555555555555555555555555555555555555555555555555555555555555555555]
+02:47:52.872 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePasswordConfirmWithIncorrectData]
+02:47:53.468 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePasswordConfirmWithIncorrectData], with Parameters: [1]
+02:47:53.468 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePasswordConfirmWithIncorrectData]
+02:47:54.111 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePasswordConfirmWithIncorrectData], with Parameters: [*&^(*&%$##@]
+02:47:54.111 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePasswordConfirmWithIncorrectData]
+02:47:54.758 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePasswordConfirmWithIncorrectData], with Parameters: [Qwertyuiop@1С‹]
+02:47:54.758 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePasswordConfirmWithIncorrectData]
+02:47:55.470 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePasswordConfirmWithIncorrectData], with Parameters: [Р¤Р«Р’РђРђРџРєРіСѓС‰СѓС†Р·]
+02:47:55.471 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePasswordConfirmWithIncorrectData]
+02:47:56.127 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePasswordConfirmWithIncorrectData], with Parameters: [Test 12345!]
+02:47:56.127 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePasswordConfirmWithIncorrectData]
+02:47:56.787 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePasswordConfirmWithIncorrectData], with Parameters: [SELECT* FROM]
+02:47:56.787 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePasswordConfirmWithIncorrectData]
+02:47:57.464 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePasswordConfirmWithIncorrectData], with Parameters: [www.gmail.com]
+02:47:57.465 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePasswordConfirmWithIncorrectData]
+02:47:58.116 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePasswordConfirmWithIncorrectData], with Parameters: []
+02:47:58.117 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePasswordConfirmWithIncorrectData]
+02:47:58.749 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePasswordConfirmWithIncorrectData], with Parameters: [В ]
+02:47:58.749 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePasswordConfirmWithIncorrectData]
+02:47:59.373 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePasswordConfirmWithIncorrectData], with Parameters: []
+02:47:59.374 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePasswordConfirmWithIncorrectData]
+02:48:00.007 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePasswordConfirmWithIncorrectData], with Parameters: [0]
+02:48:00.007 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePasswordConfirmWithIncorrectData]
+02:48:00.658 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePasswordConfirmWithIncorrectData], with Parameters: [<input>]
+02:48:00.659 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePasswordConfirmWithIncorrectData]
+02:48:01.337 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePasswordConfirmWithIncorrectData], with Parameters: [<script></script>]
+02:48:01.337 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePasswordConfirmWithIncorrectData]
+02:48:02.018 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePasswordConfirmWithIncorrectData], with Parameters: [11111E+12]
+02:48:02.019 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePasswordWithIncorrectData]
+02:48:02.688 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePasswordWithIncorrectData], with Parameters: [п»їTes123]
+02:48:02.689 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePasswordWithIncorrectData]
+02:48:03.384 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePasswordWithIncorrectData], with Parameters: [Tes1234]
+02:48:03.385 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePasswordWithIncorrectData]
+02:48:04.308 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePasswordWithIncorrectData], with Parameters: [Test1234555555555555555555555555555555555555555555555555555555555555555555555555555555555555]
+02:48:04.308 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePasswordWithIncorrectData]
+02:48:04.945 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePasswordWithIncorrectData], with Parameters: [1]
+02:48:04.945 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePasswordWithIncorrectData]
+02:48:05.485 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePasswordWithIncorrectData], with Parameters: [*&^(*&%$##@]
+02:48:05.487 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePasswordWithIncorrectData]
+02:48:06.230 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePasswordWithIncorrectData], with Parameters: [Qwertyuiop@1С‹]
+02:48:06.231 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePasswordWithIncorrectData]
+02:48:07.076 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePasswordWithIncorrectData], with Parameters: [Р¤Р«Р’РђРђРџРєРіСѓС‰СѓС†Р·]
+02:48:07.076 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePasswordWithIncorrectData]
+02:48:07.750 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePasswordWithIncorrectData], with Parameters: [Test 12345!]
+02:48:07.750 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePasswordWithIncorrectData]
+02:48:08.413 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePasswordWithIncorrectData], with Parameters: [SELECT* FROM]
+02:48:08.413 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePasswordWithIncorrectData]
+02:48:09.025 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePasswordWithIncorrectData], with Parameters: [www.gmail.com]
+02:48:09.026 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePasswordWithIncorrectData]
+02:48:09.742 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePasswordWithIncorrectData], with Parameters: []
+02:48:09.743 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePasswordWithIncorrectData]
+02:48:10.383 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePasswordWithIncorrectData], with Parameters: [В ]
+02:48:10.384 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePasswordWithIncorrectData]
+02:48:11.007 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePasswordWithIncorrectData], with Parameters: []
+02:48:11.007 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePasswordWithIncorrectData]
+02:48:11.654 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePasswordWithIncorrectData], with Parameters: [0]
+02:48:11.654 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePasswordWithIncorrectData]
+02:48:12.333 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePasswordWithIncorrectData], with Parameters: [<input>]
+02:48:12.334 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePasswordWithIncorrectData]
+02:48:13.038 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePasswordWithIncorrectData], with Parameters: [<script></script>]
+02:48:13.038 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePasswordWithIncorrectData]
+02:48:13.741 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePasswordWithIncorrectData], with Parameters: [11111E+12]
+02:48:13.742 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePhoneWithIncorrectData]
+02:48:14.403 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePhoneWithIncorrectData], with Parameters: []
+02:48:14.403 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePhoneWithIncorrectData]
+02:48:15.042 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePhoneWithIncorrectData], with Parameters: [В ]
+02:48:15.042 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePhoneWithIncorrectData]
+02:48:15.679 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePhoneWithIncorrectData], with Parameters: []
+02:48:15.679 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePhoneWithIncorrectData]
+02:48:16.323 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePhoneWithIncorrectData], with Parameters: [1]
+02:48:16.323 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePhoneWithIncorrectData]
+02:48:16.970 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePhoneWithIncorrectData], with Parameters: [s]
+02:48:16.970 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePhoneWithIncorrectData]
+02:48:17.622 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePhoneWithIncorrectData], with Parameters: [S]
+02:48:17.622 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePhoneWithIncorrectData]
+02:48:18.349 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePhoneWithIncorrectData], with Parameters: [С‹]
+02:48:18.350 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePhoneWithIncorrectData]
+02:48:19.024 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePhoneWithIncorrectData], with Parameters: [SС‹]
+02:48:19.024 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePhoneWithIncorrectData]
+02:48:19.673 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePhoneWithIncorrectData], with Parameters: [S1]
+02:48:19.674 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePhoneWithIncorrectData]
+02:48:20.325 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePhoneWithIncorrectData], with Parameters: [!]
+02:48:20.326 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePhoneWithIncorrectData]
+02:48:20.987 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePhoneWithIncorrectData], with Parameters: [@]
+02:48:20.987 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePhoneWithIncorrectData]
+02:48:21.645 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePhoneWithIncorrectData], with Parameters: [#]
+02:48:21.645 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePhoneWithIncorrectData]
+02:48:22.387 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePhoneWithIncorrectData], with Parameters: [Ass$]
+02:48:22.387 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePhoneWithIncorrectData]
+02:48:23.125 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePhoneWithIncorrectData], with Parameters: [ss%]
+02:48:23.125 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePhoneWithIncorrectData]
+02:48:23.798 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePhoneWithIncorrectData], with Parameters: [(]
+02:48:23.799 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePhoneWithIncorrectData]
+02:48:24.546 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePhoneWithIncorrectData], with Parameters: [<script></script>]
+02:48:24.546 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePhoneWithIncorrectData]
+02:48:25.260 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePhoneWithIncorrectData], with Parameters: [<input>]
+02:48:25.260 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePhoneWithIncorrectData]
+02:48:25.919 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePhoneWithIncorrectData], with Parameters: [0]
+02:48:25.919 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePhoneWithIncorrectData]
+02:48:26.312 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePhoneWithIncorrectData], with Parameters: [123456789]
+02:48:26.312 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePhoneWithIncorrectData]
+02:48:26.720 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePhoneWithIncorrectData], with Parameters: [null]
+02:48:26.720 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePhoneWithIncorrectData]
+02:48:27.448 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePhoneWithIncorrectData], with Parameters: [1234567890123]
+02:48:27.449 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePhoneWithIncorrectData]
+02:48:28.166 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePhoneWithIncorrectData], with Parameters: [1234567890С‹]
+02:48:28.166 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePhoneWithIncorrectData]
+02:48:28.859 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePhoneWithIncorrectData], with Parameters: [1234567890s]
+02:48:28.859 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePhoneWithIncorrectData]
+02:48:29.563 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePhoneWithIncorrectData], with Parameters: [123456789O]
+02:48:29.564 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePostalWithIncorrectData]
+02:48:30.286 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePostalWithIncorrectData], with Parameters: []
+02:48:30.287 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePostalWithIncorrectData]
+02:48:31.065 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePostalWithIncorrectData], with Parameters: [В ]
+02:48:31.065 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePostalWithIncorrectData]
+02:48:31.806 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePostalWithIncorrectData], with Parameters: []
+02:48:31.807 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePostalWithIncorrectData]
+02:48:32.562 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePostalWithIncorrectData], with Parameters: [1]
+02:48:32.562 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePostalWithIncorrectData]
+02:48:33.323 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePostalWithIncorrectData], with Parameters: [s]
+02:48:33.323 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePostalWithIncorrectData]
+02:48:34.094 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePostalWithIncorrectData], with Parameters: [S]
+02:48:34.094 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePostalWithIncorrectData]
+02:48:34.862 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePostalWithIncorrectData], with Parameters: [С‹]
+02:48:34.862 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePostalWithIncorrectData]
+02:48:35.630 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePostalWithIncorrectData], with Parameters: [SС‹]
+02:48:35.630 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePostalWithIncorrectData]
+02:48:36.405 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePostalWithIncorrectData], with Parameters: [S1]
+02:48:36.405 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePostalWithIncorrectData]
+02:48:37.167 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePostalWithIncorrectData], with Parameters: [!]
+02:48:37.168 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePostalWithIncorrectData]
+02:48:37.936 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePostalWithIncorrectData], with Parameters: [@]
+02:48:37.936 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePostalWithIncorrectData]
+02:48:38.704 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePostalWithIncorrectData], with Parameters: [#]
+02:48:38.704 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePostalWithIncorrectData]
+02:48:39.471 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePostalWithIncorrectData], with Parameters: [Ass$]
+02:48:39.471 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePostalWithIncorrectData]
+02:48:40.246 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePostalWithIncorrectData], with Parameters: [ss%]
+02:48:40.246 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePostalWithIncorrectData]
+02:48:41.022 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePostalWithIncorrectData], with Parameters: [(]
+02:48:41.022 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePostalWithIncorrectData]
+02:48:41.921 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePostalWithIncorrectData], with Parameters: [<script></script>]
+02:48:41.922 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePostalWithIncorrectData]
+02:48:42.723 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePostalWithIncorrectData], with Parameters: [<input>]
+02:48:42.723 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePostalWithIncorrectData]
+02:48:43.450 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePostalWithIncorrectData], with Parameters: [0]
+02:48:43.451 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePostalWithIncorrectData]
+02:48:44.231 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePostalWithIncorrectData], with Parameters: [1234]
+02:48:44.233 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePostalWithIncorrectData]
+02:48:45.016 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePostalWithIncorrectData], with Parameters: [123456]
+02:48:45.016 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePostalWithIncorrectData]
+02:48:45.806 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePostalWithIncorrectData], with Parameters: [12345d]
+02:48:45.807 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePostalWithIncorrectData]
+02:48:46.611 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePostalWithIncorrectData], with Parameters: [O01234]
+02:48:46.611 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePostalWithIncorrectData]
+02:48:47.494 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePostalWithIncorrectData], with Parameters: [1234#]
+02:48:47.494 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePostalWithIncorrectData]
+02:48:48.286 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePostalWithIncorrectData], with Parameters: [null]
+02:48:48.287 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePostalWithIncorrectData]
+02:48:49.110 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePostalWithIncorrectData], with Parameters: [12345s]
+02:48:49.110 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePostalWithIncorrectData]
+02:48:49.941 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePostalWithIncorrectData], with Parameters: [1234567890s]
+02:48:49.941 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePostalWithIncorrectData]
+02:48:50.757 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePostalWithIncorrectData], with Parameters: [123456789O]
+02:48:50.757 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validatePostalWithIncorrectData]
+02:48:51.618 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validatePostalWithIncorrectData], with Parameters: [123456789012345678901]
+02:48:51.619 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateStreetWithIncorrectData]
+02:48:52.376 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateStreetWithIncorrectData], with Parameters: []
+02:48:52.377 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateStreetWithIncorrectData]
+02:48:53.131 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateStreetWithIncorrectData], with Parameters: [В ]
+02:48:53.132 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateStreetWithIncorrectData]
+02:48:53.870 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateStreetWithIncorrectData], with Parameters: []
+02:48:53.870 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateStreetWithIncorrectData]
+02:48:54.658 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateStreetWithIncorrectData], with Parameters: [1]
+02:48:54.658 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateStreetWithIncorrectData]
+02:48:55.404 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateStreetWithIncorrectData], with Parameters: [s]
+02:48:55.404 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateStreetWithIncorrectData]
+02:48:56.322 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateStreetWithIncorrectData], with Parameters: [S]
+02:48:56.322 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateStreetWithIncorrectData]
+02:48:57.099 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateStreetWithIncorrectData], with Parameters: [С‹]
+02:48:57.100 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateStreetWithIncorrectData]
+02:48:57.875 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateStreetWithIncorrectData], with Parameters: [SС‹]
+02:48:57.875 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateStreetWithIncorrectData]
+02:48:58.622 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateStreetWithIncorrectData], with Parameters: [!]
+02:48:58.622 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateStreetWithIncorrectData]
+02:48:59.366 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateStreetWithIncorrectData], with Parameters: [@]
+02:48:59.366 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateStreetWithIncorrectData]
+02:49:00.127 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateStreetWithIncorrectData], with Parameters: [#]
+02:49:00.127 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateStreetWithIncorrectData]
+02:49:00.905 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateStreetWithIncorrectData], with Parameters: [Ass$]
+02:49:00.905 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateStreetWithIncorrectData]
+02:49:01.681 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateStreetWithIncorrectData], with Parameters: [ss%]
+02:49:01.682 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateStreetWithIncorrectData]
+02:49:02.499 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateStreetWithIncorrectData], with Parameters: [(]
+02:49:02.499 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateStreetWithIncorrectData]
+02:49:03.393 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateStreetWithIncorrectData], with Parameters: [<script></script>]
+02:49:03.393 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateStreetWithIncorrectData]
+02:49:04.206 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateStreetWithIncorrectData], with Parameters: [<input>]
+02:49:04.206 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateStreetWithIncorrectData]
+02:49:04.964 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateStreetWithIncorrectData], with Parameters: [0]
+02:49:04.965 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateTaxWithIncorrectData]
+02:49:05.729 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateTaxWithIncorrectData], with Parameters: []
+02:49:05.729 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateTaxWithIncorrectData]
+02:49:06.496 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateTaxWithIncorrectData], with Parameters: [В ]
+02:49:06.496 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateTaxWithIncorrectData]
+02:49:07.309 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateTaxWithIncorrectData], with Parameters: []
+02:49:07.310 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateTaxWithIncorrectData]
+02:49:08.073 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateTaxWithIncorrectData], with Parameters: [1]
+02:49:08.073 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateTaxWithIncorrectData]
+02:49:08.844 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateTaxWithIncorrectData], with Parameters: [s]
+02:49:08.844 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateTaxWithIncorrectData]
+02:49:09.690 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateTaxWithIncorrectData], with Parameters: [S]
+02:49:09.691 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateTaxWithIncorrectData]
+02:49:10.493 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateTaxWithIncorrectData], with Parameters: [С‹]
+02:49:10.493 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateTaxWithIncorrectData]
+02:49:11.290 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateTaxWithIncorrectData], with Parameters: [SС‹]
+02:49:11.290 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateTaxWithIncorrectData]
+02:49:12.112 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateTaxWithIncorrectData], with Parameters: [S1]
+02:49:12.112 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateTaxWithIncorrectData]
+02:49:12.913 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateTaxWithIncorrectData], with Parameters: [!]
+02:49:12.914 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateTaxWithIncorrectData]
+02:49:13.722 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateTaxWithIncorrectData], with Parameters: [@]
+02:49:13.722 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateTaxWithIncorrectData]
+02:49:14.532 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateTaxWithIncorrectData], with Parameters: [#]
+02:49:14.532 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateTaxWithIncorrectData]
+02:49:15.364 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateTaxWithIncorrectData], with Parameters: [Ass$]
+02:49:15.364 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateTaxWithIncorrectData]
+02:49:16.168 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateTaxWithIncorrectData], with Parameters: [ss%]
+02:49:16.169 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateTaxWithIncorrectData]
+02:49:16.972 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateTaxWithIncorrectData], with Parameters: [(]
+02:49:16.972 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateTaxWithIncorrectData]
+02:49:17.839 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateTaxWithIncorrectData], with Parameters: [<script></script>]
+02:49:17.839 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateTaxWithIncorrectData]
+02:49:18.655 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateTaxWithIncorrectData], with Parameters: [<input>]
+02:49:18.656 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateTaxWithIncorrectData]
+02:49:19.524 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateTaxWithIncorrectData], with Parameters: [0]
+02:49:19.524 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateTaxWithIncorrectData]
+02:49:20.364 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateTaxWithIncorrectData], with Parameters: [12345678]
+02:49:20.364 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateTaxWithIncorrectData]
+02:49:21.194 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateTaxWithIncorrectData], with Parameters: [123456789d]
+02:49:21.195 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateTaxWithIncorrectData]
+02:49:22.034 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateTaxWithIncorrectData], with Parameters: [123456789#]
+02:49:22.034 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateTaxWithIncorrectData]
+02:49:22.884 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateTaxWithIncorrectData], with Parameters: [null]
+02:49:22.885 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateTaxWithIncorrectData]
+02:49:23.765 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateTaxWithIncorrectData], with Parameters: [1234567890С‹]
+02:49:23.766 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateTaxWithIncorrectData]
+02:49:24.626 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateTaxWithIncorrectData], with Parameters: [1234567890s]
+02:49:24.626 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateTaxWithIncorrectData]
+02:49:25.488 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateTaxWithIncorrectData], with Parameters: [123456789O]
+02:49:25.488 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateTaxWithIncorrectData]
+02:49:26.376 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateTaxWithIncorrectData], with Parameters: [123456789012345678901]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

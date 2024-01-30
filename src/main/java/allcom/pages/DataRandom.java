@@ -15,20 +15,6 @@ public class DataRandom {
     public static final String AT = "@";
     public static final String DOT = ".";
     private static final SecureRandom random = new SecureRandom();
-    public static final String VALID_FIRST_NAME = DataRandom.randomString(2, 20, DataRandom.abcABC);
-    public static final String VALID_LAST_NAME = DataRandom.randomString(2, 20, DataRandom.abcABC);
-    public static final String VALID_EMAIL = DataRandom.randomEmail(3, 15, 1, 1, 2, 20, 1, 1, 2, 10);
-    public static final String VALID_PHONE_NUMBER = DataRandom.randomPhone(10, 12);
-    public static final String VALID_PASSWORD = DataRandom.randomPassword(8, 25);
-    public static final String VALID_PASSWORD_CONFIRM = VALID_PASSWORD;
-    public static final String VALID_COMPANY_NAME = DataRandom.randomString(2, 25, DataRandom.ABC_DIG);
-    public static final String VALID_POSITION = DataRandom.randomString(2, 25, DataRandom.ABC_SPACE_DIG);
-    public static final String VALID_TAX_NUMBER = DataRandom.randomString(9, 20, DataRandom.DIG);
-    public static final String VALID_POST_INDEX = DataRandom.randomString(5, 5, DataRandom.DIG);
-    public static final String VALID_CITY = DataRandom.randomString(3, 30, DataRandom.ABC_SPACE_DIG);
-    public static final String VALID_STREET = DataRandom.randomString(10, 25, DataRandom.ABC_SPACE_DIG);
-    public static final String VALID_HOUSE_NUMBER = DataRandom.randomString(1, 5, DataRandom.HOUSE);
-
     public static String randomString(int min, int max, String chars) {
         if (min > max || min < 0) {
             throw new IllegalArgumentException("Invalid minLength or maxLength");
@@ -71,6 +57,42 @@ public class DataRandom {
 
     private static char randomChar(String chars) {
         return chars.charAt(DataRandom.random.nextInt(chars.length()));
+    }
+    public static String getValidFirstName() {
+        return randomString(2, 20, abcABC);
+    }
+    public static String getValidLastName() {
+        return randomString(2, 20, abcABC);
+    }
+    public static String getValidEmail() {
+        return randomEmail(3, 15, 1, 1, 2, 20, 1, 1, 2, 10);
+    }
+    public static String getValidPhoneNumber() {
+        return randomPhone(10, 12);
+    }
+    public static String getValidPassword() {
+        return randomPassword(8, 25);
+    }
+    public static String getValidCompanyName() {
+        return randomString(2, 25, ABC_DIG);
+    }
+    public static String getValidPosition() {
+        return randomString(2, 25, ABC_SPACE_DIG);
+    }
+    public static String getValidTaxNumber() {
+        return randomString(9, 20, DIG);
+    }
+    public static String getValidPostIndex() {
+        return randomString(5, 5, DIG);
+    }
+    public static String getValidCity() {
+        return randomString(3, 30, ABC_SPACE_DIG);
+    }
+    public static String getValidStreet() {
+        return randomString(10, 25, ABC_SPACE_DIG);
+    }
+    public static String getValidHouseNumber() {
+        return randomString(1, 5, HOUSE);
     }
 
 }

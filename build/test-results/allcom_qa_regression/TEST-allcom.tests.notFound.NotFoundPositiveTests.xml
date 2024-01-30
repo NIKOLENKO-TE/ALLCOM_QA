@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="allcom.tests.notFound.NotFoundPositiveTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-01-30T01:46:11" hostname="PORTISHEAD-PC" time="0.336">
+  <properties/>
+  <testcase name="clickOnBackToHomeButton" classname="allcom.tests.notFound.NotFoundPositiveTests" time="0.234"/>
+  <testcase name="findContentTitleElement" classname="allcom.tests.notFound.NotFoundPositiveTests" time="0.0"/>
+  <system-out><![CDATA[02:46:10.876 [Test worker] INFO  allcom.tests.TestBase -- Start test: [clickOnBackToHomeButton]
+02:46:11.234 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [clickOnBackToHomeButton], with Parameters: []
+02:46:11.235 [Test worker] INFO  allcom.tests.TestBase -- Start test: [findContentTitleElement]
+02:46:11.336 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [findContentTitleElement], with Parameters: []
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
