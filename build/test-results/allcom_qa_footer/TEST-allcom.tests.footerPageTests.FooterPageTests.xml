@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="allcom.tests.footerPageTests.FooterPageTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-01-31T10:30:06" hostname="PORTISHEAD-PC" time="1.503">
-  <properties/>
-  <testcase name="clickTwitterLink" classname="allcom.tests.footerPageTests.FooterPageTests" time="1.503"/>
-  <system-out><![CDATA[11:30:06.116 [Test worker] INFO  allcom.tests.TestBase -- Start test: [clickTwitterLink]
-11:30:07.774 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [clickTwitterLink], with Parameters: []
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
