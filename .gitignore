@@ -3,7 +3,6 @@ target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
-
 # IntelliJ IDEA
 .idea/
 # Git
@@ -16,31 +15,25 @@ target/
 .settings
 .springBeans
 .sts4-cache
-
 # NetBeans
 /nbproject/private/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
-
 # VS Code
 .vscode/
-
 # Mac OS
 .DS_Store
-
 # Gradle
 .gradle/
 gradlew
 gradlew.bat
-gradle/wrapper/gradle-wrapper.properties
-
+gradle/wrapper/
 # Logs and databases
 *.log
 *.sql
 *.sqlite
-
 # Other
 *.bak
 *.swp
@@ -51,12 +44,10 @@ gradle/wrapper/gradle-wrapper.properties
 *.ear
 *.jar
 *.rar
-
 # Virtual Machine files
 *.vdi
 *.vbox
 *.vbox-prev
-
 # JetBrains IDE
 *.iml.*
 *.icls
@@ -97,18 +88,14 @@ gradle/wrapper/gradle-wrapper.properties
 .idea/codeStyles/Project.xml
 .idea/scopes/scope_settings.xml
 .idea/shelf
-
 # Junit
 *.junit
 *.junit_tmp
-
 # TestNG
 test-output/
 *.tlog
 *.tmp
 
-# OS generated files
-.DS_Store?
 ._*
 .Spotlight-V100
 .Trashes
