@@ -1,0 +1,5 @@
+3017 [Test worker] INFO  allcom.tests.TestBase -- Start test: [clickFacebookLink]
+3199 [Test worker] ERROR allcom.tests.TestBase -- ERROR FAILED TEST: [clickFacebookLink], with Parameters: []
+3200 [Test worker] ERROR allcom.tests.TestBase -- ERROR TEST MESSAGE: Input must be set
+3385 [Test worker] ERROR allcom.tests.TestBase -- ERROR TEST SCREENSHOT: C:\Users\PORTISHEAD\Desktop\ALLCOM\allcom_qa\src\screenshots\screenshot_error_112404.png
+3386 [Test worker] INFO  allcom.tests.TestBase -- [==================================================================================================]

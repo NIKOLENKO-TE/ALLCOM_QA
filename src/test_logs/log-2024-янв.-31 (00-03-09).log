@@ -1,0 +1,2 @@
+2931 [Test worker] INFO  allcom.tests.TestBase -- Start test: [clickLoginLink]
+3329 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [clickLoginLink], with Parameters: []

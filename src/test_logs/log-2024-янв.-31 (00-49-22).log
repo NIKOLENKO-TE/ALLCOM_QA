@@ -1,0 +1,2 @@
+2357 [Test worker] INFO  allcom.tests.TestBase -- Start test: [clickInstagramLink]
+3401 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [clickInstagramLink], with Parameters: []

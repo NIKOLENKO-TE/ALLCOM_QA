@@ -1,0 +1,8 @@
+2579 [Test worker] INFO  allcom.tests.TestBase -- Start test: [clickYoutubeLink]
+13221 [Test worker] ERROR allcom.tests.TestBase -- ERROR FAILED TEST: [clickYoutubeLink], with Parameters: []
+13221 [Test worker] ERROR allcom.tests.TestBase -- ERROR TEST MESSAGE: Expected condition failed: waiting for url to be "https://www.youtube.com". Current url: "https://master--incredible-snickerdoodle-514a2d.netlify.app/" (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.86, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:22769}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:22769/devtoo..., se:cdpVersion: 121.0.6167.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b73d56a4e421e7c4d957ca38a0f5fcd6

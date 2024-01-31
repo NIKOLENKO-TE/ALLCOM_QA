@@ -1,0 +1,9 @@
+2930 [Test worker] INFO  allcom.tests.TestBase -- Start test: [clickAboutUsLink]
+3242 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [clickAboutUsLink], with Parameters: []
+3245 [Test worker] INFO  allcom.tests.TestBase -- Start test: [clickAllcomBottomLink]
+3378 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [clickAllcomBottomLink], with Parameters: []
+3379 [Test worker] INFO  allcom.tests.TestBase -- Start test: [clickContactLink]
+3719 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [clickContactLink], with Parameters: []
+3720 [Test worker] INFO  allcom.tests.TestBase -- Start test: [clickFacebookLink]
+14410 [Test worker] ERROR allcom.tests.TestBase -- ERROR FAILED TEST: [clickFacebookLink], with Parameters: []
+14410 [Test worker] ERROR allcom.tests.TestBase -- ERROR TEST MESSAGE: Expected condition failed: waiting for allcom.pages.BasePage$$Lambda$689/0x0000000100405840@7a34f66a (tried for 10 second(s) with 500 milliseconds interval)

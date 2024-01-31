@@ -1,0 +1,5 @@
+2392 [Test worker] INFO  allcom.tests.TestBase -- Start test: [clickYoutubeLink]
+2581 [Test worker] ERROR allcom.tests.TestBase -- ERROR FAILED TEST: [clickYoutubeLink], with Parameters: []
+2581 [Test worker] ERROR allcom.tests.TestBase -- ERROR TEST MESSAGE: Input must be set
+2787 [Test worker] ERROR allcom.tests.TestBase -- ERROR TEST SCREENSHOT: C:\Users\PORTISHEAD\Desktop\ALLCOM\allcom_qa\src\screenshots\screenshot_error_125726.png
+2788 [Test worker] INFO  allcom.tests.TestBase -- [==================================================================================================]

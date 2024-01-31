@@ -1,6 +1,7 @@
 package allcom.tests;
 
 import allcom.pages.ApplicationManager;
+import allcom.pages.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,12 +16,30 @@ import java.util.Arrays;
 
 public class TestBase {
     protected static ApplicationManager app = new ApplicationManager("chrome");
-    protected WebDriver driver;
+
+    protected static WebDriver driver;
     Logger logger = LoggerFactory.getLogger(TestBase.class);
+
+    public WebDriver getDriver() {
+        return driver;
+    }
 
     @BeforeMethod
     public void logTestStart(Method method) {
         logger.info("Start test: [" + method.getName() + "]");
+    }
+
+    @BeforeSuite
+    public void setUp() {
+        String browser = System.getProperty("browser", "chrome");
+        String mode = System.getProperty("mode", "headless");
+        app = new ApplicationManager(browser);
+        driver = app.getDriver();
+        if (mode.equalsIgnoreCase("headless")) {
+            app.initHeadless();
+        } else {
+            app.init();
+        }
     }
 
     @AfterMethod
@@ -38,19 +57,6 @@ public class TestBase {
             logger.info("[==================================================================================================]");
         }
     }
-
-    @BeforeSuite
-    public void setUp() {
-        String browser = System.getProperty("browser", "chrome");
-        String mode = System.getProperty("mode", "headless");
-        app = new ApplicationManager(browser);
-        if (mode.equalsIgnoreCase("headless")) {
-            app.initHeadless();
-        } else {
-            app.init();
-        }
-    }
-
     @AfterSuite
     public void tearDown() {
         app.stop();

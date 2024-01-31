@@ -1,6 +1,8 @@
 package allcom.pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
@@ -11,9 +13,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import java.time.Duration;
+import java.util.ArrayList;
 
 public class BasePage {
     public WebDriver driver;
+    private static final Duration WAIT_SECONDS = Duration.ofSeconds(5);
 
     public enum ElementType {
         XPATH, CSS, ID, DATA_TESTID, HREF, ROLE, LABEL, SPAN, BUTTON, P, ERROR_VALIDATION, PASSWORD_CONFIRM, CHECKBOX
@@ -28,9 +32,35 @@ public class BasePage {
     }
 
     public void click(WebElement element) {
+        WebDriverWait wait = new WebDriverWait(driver, WAIT_SECONDS);
+        wait.until(ExpectedConditions.elementToBeClickable(element));
         element.click();
     }
 
+    public void clickLinks(WebElement element) {
+        JavascriptExecutor executor = (JavascriptExecutor) driver;
+        executor.executeScript("arguments[0].click();", element);
+    }
+    public void waitForPageLoad() {
+        new WebDriverWait(driver, Duration.ofSeconds(10)).until(
+                webDriver -> ((JavascriptExecutor) webDriver).executeScript("return document.readyState").equals("complete"));
+    }
+    public void switchToNewTab() {
+        ArrayList<String> tabs = new ArrayList<>(driver.getWindowHandles());
+        driver.switchTo().window(tabs.get(1));
+    }
+    public void closeTab() {
+        driver.close();
+        ArrayList<String> tabs = new ArrayList<>(driver.getWindowHandles());
+        driver.switchTo().window(tabs.get(0));
+    }
+    public void testClickLink(WebElement urlToOpen, String urlToCompare) {
+        clickLinks(urlToOpen);
+        switchToNewTab();
+        waitForPageLoad();
+        isCurrentPage(urlToCompare, true);
+        closeTab();
+    }
     public void type(WebElement element, String text) {
         if (text != null) {
             click(element);
@@ -52,6 +82,20 @@ public class BasePage {
         boolean isCurrent = currentUrl.equals(expectedURL);
         Assert.assertEquals(isCurrent, expectedPage, "Current page status does not match the expected status");
     }
+//    public void isCurrentPage(String expectedURL, boolean expectedPage) {
+//        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+//        wait.until(ExpectedConditions.urlMatches(expectedURL + "/?"));
+//
+//        String currentUrl = driver.getCurrentUrl();
+//        if (currentUrl.endsWith("/")) {
+//            currentUrl = currentUrl.substring(0, currentUrl.length() - 1);
+//        }
+//        if (expectedURL.endsWith("/")) {
+//            expectedURL = expectedURL.substring(0, expectedURL.length() - 1);
+//        }
+//        boolean isCurrent = currentUrl.equals(expectedURL);
+//        Assert.assertEquals(isCurrent, expectedPage, "Current page status does not match the expected status");
+//    }
 
     public void goToPage(String pageURL) {
         driver.get(pageURL);
@@ -118,6 +162,9 @@ public class BasePage {
             case CSS:
                 By.cssSelector(value);
                 break;
+            case HREF:
+                By.xpath("//a[@href='" + value + "']");
+                break;
             case DATA_TESTID:
                 By.xpath("//*[@data-testid='" + value + "']");
                 break;
@@ -156,5 +203,21 @@ public class BasePage {
 
     public void setCheckboxFirma() {
         clickOnElement(BasePage.ElementType.DATA_TESTID, "checkbox_client_firma_switch");
+    }
+
+    public void clickLinkSameTab(String linkName) {
+        if (linkName != null) {
+            if (!linkName.startsWith("https://") && !linkName.startsWith("http://")) {
+                linkName = HomePage.homePageURL() + "/" + linkName;
+            }
+            driver.get(linkName);
+        } else {
+            throw new IllegalArgumentException("Invalid link name: " + linkName);
+        }
+    }
+
+    public void scrollToBottom() {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
     }
 }

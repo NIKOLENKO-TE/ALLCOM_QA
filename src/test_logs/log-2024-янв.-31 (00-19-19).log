@@ -1,0 +1,5 @@
+3249 [Test worker] INFO  allcom.tests.TestBase -- Start test: [clickYoutubeLink]
+3443 [Test worker] ERROR allcom.tests.TestBase -- ERROR FAILED TEST: [clickYoutubeLink], with Parameters: []
+3443 [Test worker] ERROR allcom.tests.TestBase -- ERROR TEST MESSAGE: Input must be set
+3642 [Test worker] ERROR allcom.tests.TestBase -- ERROR TEST SCREENSHOT: C:\Users\PORTISHEAD\Desktop\ALLCOM\allcom_qa\src\screenshots\screenshot_error_124601.png
+3643 [Test worker] INFO  allcom.tests.TestBase -- [==================================================================================================]

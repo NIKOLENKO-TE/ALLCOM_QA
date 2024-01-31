@@ -1,0 +1,48 @@
+2806 [Test worker] INFO  allcom.tests.TestBase -- Start test: [clickAboutUsLink]
+3234 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [clickAboutUsLink], with Parameters: []
+3236 [Test worker] INFO  allcom.tests.TestBase -- Start test: [clickAllcomBottomLink]
+3410 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [clickAllcomBottomLink], with Parameters: []
+3411 [Test worker] INFO  allcom.tests.TestBase -- Start test: [clickContactLink]
+3672 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [clickContactLink], with Parameters: []
+3673 [Test worker] INFO  allcom.tests.TestBase -- Start test: [clickFacebookLink]
+3906 [Test worker] ERROR allcom.tests.TestBase -- ERROR FAILED TEST: [clickFacebookLink], with Parameters: []
+3907 [Test worker] ERROR allcom.tests.TestBase -- ERROR TEST MESSAGE: null
+4191 [Test worker] ERROR allcom.tests.TestBase -- ERROR TEST SCREENSHOT: C:\Users\PORTISHEAD\Desktop\ALLCOM\allcom_qa\src\screenshots\screenshot_error_118911.png
+4192 [Test worker] INFO  allcom.tests.TestBase -- [==================================================================================================]
+4192 [Test worker] INFO  allcom.tests.TestBase -- Start test: [clickFavoritesAuctionsLink]
+4525 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [clickFavoritesAuctionsLink], with Parameters: []
+4527 [Test worker] INFO  allcom.tests.TestBase -- Start test: [clickInstagramLink]
+4724 [Test worker] ERROR allcom.tests.TestBase -- ERROR FAILED TEST: [clickInstagramLink], with Parameters: []
+4725 [Test worker] ERROR allcom.tests.TestBase -- ERROR TEST MESSAGE: null
+4966 [Test worker] ERROR allcom.tests.TestBase -- ERROR TEST SCREENSHOT: C:\Users\PORTISHEAD\Desktop\ALLCOM\allcom_qa\src\screenshots\screenshot_error_118919.png
+4966 [Test worker] INFO  allcom.tests.TestBase -- [==================================================================================================]
+4968 [Test worker] INFO  allcom.tests.TestBase -- Start test: [clickLoginLink]
+5324 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [clickLoginLink], with Parameters: []
+5325 [Test worker] INFO  allcom.tests.TestBase -- Start test: [clickMyAccountLink]
+5691 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [clickMyAccountLink], with Parameters: []
+5693 [Test worker] INFO  allcom.tests.TestBase -- Start test: [clickMyAuctionsLink]
+5984 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [clickMyAuctionsLink], with Parameters: []
+5985 [Test worker] INFO  allcom.tests.TestBase -- Start test: [clickPortfolioLink]
+6254 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [clickPortfolioLink], with Parameters: []
+6256 [Test worker] INFO  allcom.tests.TestBase -- Start test: [clickPrivacyPolicyLink]
+6531 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [clickPrivacyPolicyLink], with Parameters: []
+6532 [Test worker] INFO  allcom.tests.TestBase -- Start test: [clickRegisterLink]
+6812 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [clickRegisterLink], with Parameters: []
+6812 [Test worker] INFO  allcom.tests.TestBase -- Start test: [clickTwitterLink]
+8036 [Test worker] ERROR allcom.tests.TestBase -- ERROR FAILED TEST: [clickTwitterLink], with Parameters: []
+8036 [Test worker] ERROR allcom.tests.TestBase -- ERROR TEST MESSAGE: element click intercepted: Element is not clickable at point (392, 1383)
+  (Session info: chrome=121.0.6167.86)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ef39761f85d25c7ac900f438953a6255, clickElement {id=4E8ABE3F8BFEEB52302BDFC8B7467FC8_element_1068}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.86, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:18018}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:18018/devtoo..., se:cdpVersion: 121.0.6167.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ef39761f85d25c7ac900f438953a6255)] -> xpath: //a[@data-testid='link_twitter']]
+Session ID: ef39761f85d25c7ac900f438953a6255
+8322 [Test worker] ERROR allcom.tests.TestBase -- ERROR TEST SCREENSHOT: C:\Users\PORTISHEAD\Desktop\ALLCOM\allcom_qa\src\screenshots\screenshot_error_118952.png
+8322 [Test worker] INFO  allcom.tests.TestBase -- [==================================================================================================]
+8322 [Test worker] INFO  allcom.tests.TestBase -- Start test: [clickYoutubeLink]
+8492 [Test worker] ERROR allcom.tests.TestBase -- ERROR FAILED TEST: [clickYoutubeLink], with Parameters: []
+8492 [Test worker] ERROR allcom.tests.TestBase -- ERROR TEST MESSAGE: null
+8726 [Test worker] ERROR allcom.tests.TestBase -- ERROR TEST SCREENSHOT: C:\Users\PORTISHEAD\Desktop\ALLCOM\allcom_qa\src\screenshots\screenshot_error_118957.png
+8726 [Test worker] INFO  allcom.tests.TestBase -- [==================================================================================================]

@@ -1,0 +1,5 @@
+2881 [Test worker] INFO  allcom.tests.TestBase -- Start test: [clickFacebookLink]
+3054 [Test worker] ERROR allcom.tests.TestBase -- ERROR FAILED TEST: [clickFacebookLink], with Parameters: []
+3055 [Test worker] ERROR allcom.tests.TestBase -- ERROR TEST MESSAGE: null
+3216 [Test worker] ERROR allcom.tests.TestBase -- ERROR TEST SCREENSHOT: C:\Users\PORTISHEAD\Desktop\ALLCOM\allcom_qa\src\screenshots\screenshot_error_141976.png
+3216 [Test worker] INFO  allcom.tests.TestBase -- [==================================================================================================]

@@ -27,6 +27,10 @@ public class ApplicationManager extends BasePage {
         this.browser = browser;
     }
 
+    public WebDriver getDriver() {
+        return driver;
+    }
+
     public void init() {
         if (browser.equalsIgnoreCase("chrome")) {
             driver = new ChromeDriver();

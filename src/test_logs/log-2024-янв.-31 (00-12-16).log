@@ -1,0 +1,13 @@
+2872 [Test worker] INFO  allcom.tests.TestBase -- Start test: [clickTwitterLink]
+4154 [Test worker] ERROR allcom.tests.TestBase -- ERROR FAILED TEST: [clickTwitterLink], with Parameters: []
+4155 [Test worker] ERROR allcom.tests.TestBase -- ERROR TEST MESSAGE: element click intercepted: Element is not clickable at point (939, 1664)
+  (Session info: chrome-headless-shell=121.0.6167.86)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [70370199b698f72ec7deac4f934209f4, clickElement {id=55DCC8775C4FCA98A9B38F78D1A4C056_element_100}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 121.0.6167.86, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:18517}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:18517/devtoo..., se:cdpVersion: 121.0.6167.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome-headless-shell on windows (70370199b698f72ec7deac4f934209f4)] -> xpath: //*[@data-testid='link_Allcom_home']]
+Session ID: 70370199b698f72ec7deac4f934209f4
+4407 [Test worker] ERROR allcom.tests.TestBase -- ERROR TEST SCREENSHOT: C:\Users\PORTISHEAD\Desktop\ALLCOM\allcom_qa\src\screenshots\screenshot_error_120380.png
+4407 [Test worker] INFO  allcom.tests.TestBase -- [==================================================================================================]

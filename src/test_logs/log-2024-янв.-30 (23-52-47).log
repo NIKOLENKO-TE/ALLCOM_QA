@@ -1,0 +1,40 @@
+2717 [Test worker] INFO  allcom.tests.TestBase -- Start test: [clickAboutUsLink]
+3039 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [clickAboutUsLink], with Parameters: []
+3040 [Test worker] INFO  allcom.tests.TestBase -- Start test: [clickAllcomBottomLink]
+3206 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [clickAllcomBottomLink], with Parameters: []
+3208 [Test worker] INFO  allcom.tests.TestBase -- Start test: [clickContactLink]
+3454 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [clickContactLink], with Parameters: []
+3455 [Test worker] INFO  allcom.tests.TestBase -- Start test: [clickFacebookLink]
+3706 [Test worker] ERROR allcom.tests.TestBase -- ERROR FAILED TEST: [clickFacebookLink], with Parameters: []
+3706 [Test worker] ERROR allcom.tests.TestBase -- ERROR TEST MESSAGE: null
+3965 [Test worker] ERROR allcom.tests.TestBase -- ERROR TEST SCREENSHOT: C:\Users\PORTISHEAD\Desktop\ALLCOM\allcom_qa\src\screenshots\screenshot_error_108688.png
+3965 [Test worker] INFO  allcom.tests.TestBase -- [==================================================================================================]
+3966 [Test worker] INFO  allcom.tests.TestBase -- Start test: [clickFavoritesAuctionsLink]
+4313 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [clickFavoritesAuctionsLink], with Parameters: []
+4314 [Test worker] INFO  allcom.tests.TestBase -- Start test: [clickInstagramLink]
+4559 [Test worker] ERROR allcom.tests.TestBase -- ERROR FAILED TEST: [clickInstagramLink], with Parameters: []
+4559 [Test worker] ERROR allcom.tests.TestBase -- ERROR TEST MESSAGE: null
+4829 [Test worker] ERROR allcom.tests.TestBase -- ERROR TEST SCREENSHOT: C:\Users\PORTISHEAD\Desktop\ALLCOM\allcom_qa\src\screenshots\screenshot_error_108696.png
+4829 [Test worker] INFO  allcom.tests.TestBase -- [==================================================================================================]
+4831 [Test worker] INFO  allcom.tests.TestBase -- Start test: [clickLoginLink]
+5187 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [clickLoginLink], with Parameters: []
+5189 [Test worker] INFO  allcom.tests.TestBase -- Start test: [clickMyAccountLink]
+5512 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [clickMyAccountLink], with Parameters: []
+5513 [Test worker] INFO  allcom.tests.TestBase -- Start test: [clickMyAuctionsLink]
+5800 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [clickMyAuctionsLink], with Parameters: []
+5803 [Test worker] INFO  allcom.tests.TestBase -- Start test: [clickPortfolioLink]
+6088 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [clickPortfolioLink], with Parameters: []
+6089 [Test worker] INFO  allcom.tests.TestBase -- Start test: [clickPrivacyPolicyLink]
+6365 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [clickPrivacyPolicyLink], with Parameters: []
+6366 [Test worker] INFO  allcom.tests.TestBase -- Start test: [clickRegisterLink]
+6634 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [clickRegisterLink], with Parameters: []
+6635 [Test worker] INFO  allcom.tests.TestBase -- Start test: [clickTwitterLink]
+6802 [Test worker] ERROR allcom.tests.TestBase -- ERROR FAILED TEST: [clickTwitterLink], with Parameters: []
+6803 [Test worker] ERROR allcom.tests.TestBase -- ERROR TEST MESSAGE: null
+7013 [Test worker] ERROR allcom.tests.TestBase -- ERROR TEST SCREENSHOT: C:\Users\PORTISHEAD\Desktop\ALLCOM\allcom_qa\src\screenshots\screenshot_error_108719.png
+7013 [Test worker] INFO  allcom.tests.TestBase -- [==================================================================================================]
+7014 [Test worker] INFO  allcom.tests.TestBase -- Start test: [clickYoutubeLink]
+7184 [Test worker] ERROR allcom.tests.TestBase -- ERROR FAILED TEST: [clickYoutubeLink], with Parameters: []
+7184 [Test worker] ERROR allcom.tests.TestBase -- ERROR TEST MESSAGE: null
+7444 [Test worker] ERROR allcom.tests.TestBase -- ERROR TEST SCREENSHOT: C:\Users\PORTISHEAD\Desktop\ALLCOM\allcom_qa\src\screenshots\screenshot_error_108723.png
+7444 [Test worker] INFO  allcom.tests.TestBase -- [==================================================================================================]

@@ -1,0 +1,5 @@
+2420 [Test worker] INFO  allcom.tests.TestBase -- Start test: [clickFacebookLink]
+2596 [Test worker] ERROR allcom.tests.TestBase -- ERROR FAILED TEST: [clickFacebookLink], with Parameters: []
+2597 [Test worker] ERROR allcom.tests.TestBase -- ERROR TEST MESSAGE: Input must be set
+2816 [Test worker] ERROR allcom.tests.TestBase -- ERROR TEST SCREENSHOT: C:\Users\PORTISHEAD\Desktop\ALLCOM\allcom_qa\src\screenshots\screenshot_error_111471.png
+2816 [Test worker] INFO  allcom.tests.TestBase -- [==================================================================================================]
