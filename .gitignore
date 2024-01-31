@@ -96,9 +96,13 @@ gradle/wrapper/
 test-output/
 *.tlog
 *.tmp
-
 ._*
 .Spotlight-V100
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Exclude gradle/wrapper
+gradle/wrapper/
+# Exclude .gitignore
+.gitignore
