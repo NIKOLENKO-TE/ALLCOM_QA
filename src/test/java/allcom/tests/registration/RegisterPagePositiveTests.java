@@ -100,16 +100,12 @@ public class RegisterPagePositiveTests extends TestBase {
 
     @Test(invocationCount = 30)
     public void registerNewUserWithValidRandomDataPositive() {
-        String validFirstName = DataRandom.getValidFirstName();
-        String validLastName = DataRandom.getValidLastName();
-        String validEmail = DataRandom.getValidEmail();
-        String validPhoneNumber = DataRandom.getValidPhoneNumber();
         String validPassword = DataRandom.getValidPassword();
-        basePage.validateField(registerPage.getFirstNameField(), validFirstName, false);
-        basePage.validateField(registerPage.getLastNameField(), validLastName, false);
-        basePage.validateField(registerPage.getEmailField(), validEmail, false);
-        basePage.validateField(registerPage.getPhoneNumberField(), validPhoneNumber, false);
-        basePage.validateField(registerPage.getPasswordField(), validPassword, false);
+        basePage.validateField(registerPage.getFirstNameField(), DataRandom.getValidFirstName(), false);
+        basePage.validateField(registerPage.getLastNameField(), DataRandom.getValidLastName(), false);
+        basePage.validateField(registerPage.getEmailField(), DataRandom.getValidEmail(), false);
+        basePage.validateField(registerPage.getPhoneNumberField(), DataRandom.getValidPhoneNumber(), false);
+        basePage.validateField(registerPage.getPasswordField(), DataRandom.getValidPhoneNumber(), false);
         basePage.validateField(registerPage.getPasswordConfirmField(), validPassword, false);
         registerPage.clickReadTermsCheckbox();
         registerPage.clickRegisterButton();
@@ -118,32 +114,21 @@ public class RegisterPagePositiveTests extends TestBase {
 
     @Test(invocationCount = 30)
     public void registerNewFirmaWithValidRandomDataPositive() {
-        basePage.setCheckboxFirma();
-        String validFirstName = DataRandom.getValidFirstName();
-        String validLastName = DataRandom.getValidLastName();
-        String validEmail = DataRandom.getValidEmail();
-        String validPhoneNumber = DataRandom.getValidPhoneNumber();
         String validPassword = DataRandom.getValidPassword();
-        String validCompanyName = DataRandom.getValidCompanyName();
-        String validPosition = DataRandom.getValidPosition();
-        String validTaxNumber = DataRandom.getValidTaxNumber();
-        String validPostIndex = DataRandom.getValidPostIndex();
-        String validCity = DataRandom.getValidCity();
-        String validStreet = DataRandom.getValidStreet();
-        String validHouseNumber = DataRandom.getValidHouseNumber();
-        basePage.validateField(registerPage.getFirstNameField(), validFirstName, false);
-        basePage.validateField(registerPage.getLastNameField(), validLastName, false);
-        basePage.validateField(registerPage.getEmailField(), validEmail, false);
-        basePage.validateField(registerPage.getPhoneNumberField(), validPhoneNumber, false);
+        basePage.setCheckboxFirma();
+        basePage.validateField(registerPage.getFirstNameField(), DataRandom.getValidFirstName(), false);
+        basePage.validateField(registerPage.getLastNameField(), DataRandom.getValidLastName(), false);
+        basePage.validateField(registerPage.getEmailField(), DataRandom.getValidEmail(), false);
+        basePage.validateField(registerPage.getPhoneNumberField(), DataRandom.getValidPhoneNumber(), false);
         basePage.validateField(registerPage.getPasswordField(), validPassword, false);
         basePage.validateField(registerPage.getPasswordConfirmField(), validPassword, false);
-        basePage.validateField(registerPage.getCompanyNameField(), validCompanyName, false);
-        basePage.validateField(registerPage.getPositionField(), validPosition, false);
-        basePage.validateField(registerPage.getTaxNumberField(), validTaxNumber, false);
-        basePage.validateField(registerPage.getPostIndexField(), validPostIndex, false);
-        basePage.validateField(registerPage.getCityField(), validCity, false);
-        basePage.validateField(registerPage.getStreetField(), validStreet, false);
-        basePage.validateField(registerPage.getHouseNumberField(), validHouseNumber, false);
+        basePage.validateField(registerPage.getCompanyNameField(), DataRandom.getValidCompanyName(), false);
+        basePage.validateField(registerPage.getPositionField(), DataRandom.getValidPosition(), false);
+        basePage.validateField(registerPage.getTaxNumberField(), DataRandom.getValidTaxNumber(), false);
+        basePage.validateField(registerPage.getPostIndexField(), DataRandom.getValidPostIndex(), false);
+        basePage.validateField(registerPage.getCityField(), DataRandom.getValidCity(), false);
+        basePage.validateField(registerPage.getStreetField(), DataRandom.getValidStreet(), false);
+        basePage.validateField(registerPage.getHouseNumberField(), DataRandom.getValidHouseNumber(), false);
         registerPage.clickReadTermsCheckbox();
         registerPage.clickRegisterButton();
         basePage.isValidationErrorPresent(false);
