@@ -124,3 +124,281 @@ Commitment to continuous improvement of skills and knowledge.
 <p align="left"> <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://www.photoshop.com/en" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg" alt="photoshop" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://www.selenium.dev" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/detain/svg-logos/780f25886640cef088af994181646db2f6b1a3f8/svg/selenium-logo.svg" alt="selenium" width="40" height="40"/> </a> <a href="https://vuejs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg" alt="vuejs" width="40" height="40"/> </a> </p>
 
 <p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=nikolenko-te&show_icons=true&locale=en&layout=compact" alt="nikolenko-te" /></p>
+
+
+<div id="content">
+<h1>Test Summary</h1>
+<div id="summary">
+<table>
+<tbody><tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tbody><tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">645</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">6m5.05s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li class="selected"><h2>Packages</h2></li>
+<li class="deselected"><a id="ltab1" href="#tab1">Classes</a></li>
+</ul>
+<div id="tab0" class="tab selected">
+
+<table>
+<thead>
+<tr>
+<th>Package</th>
+<th>Tests</th>
+<th>Failures</th>
+<th>Ignored</th>
+<th>Duration</th>
+<th>Success rate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="success">
+<a href="packages/allcom.tests.aboutUs.html">allcom.tests.aboutUs</a>
+</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0.001s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="packages/allcom.tests.header.html">allcom.tests.header</a>
+</td>
+<td>86</td>
+<td>0</td>
+<td>0</td>
+<td>9.020s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="packages/allcom.tests.login.html">allcom.tests.login</a>
+</td>
+<td>108</td>
+<td>0</td>
+<td>0</td>
+<td>47.609s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="packages/allcom.tests.notFound.html">allcom.tests.notFound</a>
+</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0.234s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="packages/allcom.tests.passwordReset.html">allcom.tests.passwordReset</a>
+</td>
+<td>66</td>
+<td>0</td>
+<td>0</td>
+<td>19.324s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="packages/allcom.tests.registration.html">allcom.tests.registration</a>
+</td>
+<td>380</td>
+<td>0</td>
+<td>0</td>
+<td>4m48.86s</td>
+<td class="success">100%</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="tab1" class="tab deselected">
+
+<table>
+<thead>
+<tr>
+<th>Class</th>
+<th>Tests</th>
+<th>Failures</th>
+<th>Ignored</th>
+<th>Duration</th>
+<th>Success rate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="success">
+<a href="classes/allcom.tests.aboutUs.AboutUsPageTests.html">allcom.tests.aboutUs.AboutUsPageTests</a>
+</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0.001s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/allcom.tests.header.AllcomLogoTests.html">allcom.tests.header.AllcomLogoTests</a>
+</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0.344s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/allcom.tests.header.HeaderAccountTests.html">allcom.tests.header.HeaderAccountTests</a>
+</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>0.163s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/allcom.tests.header.SearchBoxTests.html">allcom.tests.header.SearchBoxTests</a>
+</td>
+<td>78</td>
+<td>0</td>
+<td>0</td>
+<td>8.513s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/allcom.tests.login.LoginNegativeTests.html">allcom.tests.login.LoginNegativeTests</a>
+</td>
+<td>47</td>
+<td>0</td>
+<td>0</td>
+<td>17.579s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/allcom.tests.login.LoginPositiveTests.html">allcom.tests.login.LoginPositiveTests</a>
+</td>
+<td>61</td>
+<td>0</td>
+<td>0</td>
+<td>30.030s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/allcom.tests.notFound.NotFoundPositiveTests.html">allcom.tests.notFound.NotFoundPositiveTests</a>
+</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0.234s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/allcom.tests.passwordReset.CreateNewPasswordPageTests.html">allcom.tests.passwordReset.CreateNewPasswordPageTests</a>
+</td>
+<td>42</td>
+<td>0</td>
+<td>0</td>
+<td>10.813s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/allcom.tests.passwordReset.RestorePasswordTests.html">allcom.tests.passwordReset.RestorePasswordTests</a>
+</td>
+<td>23</td>
+<td>0</td>
+<td>0</td>
+<td>8.460s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/allcom.tests.passwordReset.RestorePasswordWaitPageTests.html">allcom.tests.passwordReset.RestorePasswordWaitPageTests</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0.051s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/allcom.tests.registration.RegisterPageNegativeTests.html">allcom.tests.registration.RegisterPageNegativeTests</a>
+</td>
+<td>253</td>
+<td>0</td>
+<td>0</td>
+<td>1m52.03s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/allcom.tests.registration.RegisterPagePositiveTests.html">allcom.tests.registration.RegisterPagePositiveTests</a>
+</td>
+<td>127</td>
+<td>0</td>
+<td>0</td>
+<td>2m56.83s</td>
+<td class="success">100%</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="footer">
+<p>
+</p><div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off">
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.5</a> at 30 янв. 2024 г., 2:53:56<p></p>
+</div>
+</div>
