@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="allcom.tests.header.HeaderAccountTests" tests="6" skipped="0" failures="0" errors="0" timestamp="2024-01-31T00:15:17" hostname="PORTISHEAD-PC" time="0.69">
+  <properties/>
+  <testcase name="cartTopIsPresent" classname="allcom.tests.header.HeaderAccountTests" time="0.0"/>
+  <testcase name="clickCartTopNavigatesToCorrectPage" classname="allcom.tests.header.HeaderAccountTests" time="0.052"/>
+  <testcase name="clickMyAccountTopNavigatesToCorrectPage" classname="allcom.tests.header.HeaderAccountTests" time="0.056"/>
+  <testcase name="clickWishlistTopNavigatesToCorrectPage" classname="allcom.tests.header.HeaderAccountTests" time="0.052"/>
+  <testcase name="myAccountTopIsPresent" classname="allcom.tests.header.HeaderAccountTests" time="0.0"/>
+  <testcase name="wishlistTopIsPresent" classname="allcom.tests.header.HeaderAccountTests" time="0.0"/>
+  <system-out><![CDATA[01:15:17.200 [Test worker] INFO  allcom.tests.TestBase -- Start test: [cartTopIsPresent]
+01:15:17.305 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [cartTopIsPresent], with Parameters: []
+01:15:17.306 [Test worker] INFO  allcom.tests.TestBase -- Start test: [clickCartTopNavigatesToCorrectPage]
+01:15:17.461 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [clickCartTopNavigatesToCorrectPage], with Parameters: []
+01:15:17.462 [Test worker] INFO  allcom.tests.TestBase -- Start test: [clickMyAccountTopNavigatesToCorrectPage]
+01:15:17.622 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [clickMyAccountTopNavigatesToCorrectPage], with Parameters: []
+01:15:17.623 [Test worker] INFO  allcom.tests.TestBase -- Start test: [clickWishlistTopNavigatesToCorrectPage]
+01:15:17.781 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [clickWishlistTopNavigatesToCorrectPage], with Parameters: []
+01:15:17.781 [Test worker] INFO  allcom.tests.TestBase -- Start test: [myAccountTopIsPresent]
+01:15:17.889 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [myAccountTopIsPresent], with Parameters: []
+01:15:17.889 [Test worker] INFO  allcom.tests.TestBase -- Start test: [wishlistTopIsPresent]
+01:15:17.994 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [wishlistTopIsPresent], with Parameters: []
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

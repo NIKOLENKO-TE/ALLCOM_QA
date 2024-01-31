@@ -1,5 +1,0 @@
-3048 [Test worker] INFO  allcom.tests.TestBase -- Start test: [clickTwitterLink]
-3221 [Test worker] ERROR allcom.tests.TestBase -- ERROR FAILED TEST: [clickTwitterLink], with Parameters: []
-3221 [Test worker] ERROR allcom.tests.TestBase -- ERROR TEST MESSAGE: Input must be set
-3412 [Test worker] ERROR allcom.tests.TestBase -- ERROR TEST SCREENSHOT: C:\Users\PORTISHEAD\Desktop\ALLCOM\allcom_qa\src\screenshots\screenshot_error_121130.png
-3413 [Test worker] INFO  allcom.tests.TestBase -- [==================================================================================================]

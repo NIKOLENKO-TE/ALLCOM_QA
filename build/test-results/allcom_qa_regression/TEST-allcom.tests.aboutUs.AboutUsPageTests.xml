@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="allcom.tests.aboutUs.AboutUsPageTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-01-31T00:15:08" hostname="PORTISHEAD-PC" time="0.218">
+  <properties/>
+  <testcase name="aboutUsContentIsPresent" classname="allcom.tests.aboutUs.AboutUsPageTests" time="0.0"/>
+  <testcase name="aboutUsHeaderIsPresent" classname="allcom.tests.aboutUs.AboutUsPageTests" time="0.001"/>
+  <testcase name="aboutUsMapContainerIsPresent" classname="allcom.tests.aboutUs.AboutUsPageTests" time="0.0"/>
+  <system-out><![CDATA[01:15:08.383 [Test worker] INFO  allcom.tests.TestBase -- Start test: [aboutUsContentIsPresent]
+01:15:08.535 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [aboutUsContentIsPresent], with Parameters: []
+01:15:08.536 [Test worker] INFO  allcom.tests.TestBase -- Start test: [aboutUsHeaderIsPresent]
+01:15:08.644 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [aboutUsHeaderIsPresent], with Parameters: []
+01:15:08.645 [Test worker] INFO  allcom.tests.TestBase -- Start test: [aboutUsMapContainerIsPresent]
+01:15:08.751 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [aboutUsMapContainerIsPresent], with Parameters: []
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

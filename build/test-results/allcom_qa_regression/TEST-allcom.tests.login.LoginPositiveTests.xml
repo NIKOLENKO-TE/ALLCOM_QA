@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="allcom.tests.login.LoginPositiveTests" tests="61" skipped="0" failures="0" errors="0" timestamp="2024-01-31T00:16:10" hostname="PORTISHEAD-PC" time="47.319">
+  <properties/>
+  <testcase name="loginUserWithValidRandomDataPositive" classname="allcom.tests.login.LoginPositiveTests" time="0.636"/>
+  <testcase name="loginUserWithValidRandomDataPositive" classname="allcom.tests.login.LoginPositiveTests" time="0.755"/>
+  <testcase name="loginUserWithValidRandomDataPositive" classname="allcom.tests.login.LoginPositiveTests" time="0.638"/>
+  <testcase name="loginUserWithValidRandomDataPositive" classname="allcom.tests.login.LoginPositiveTests" time="0.642"/>
+  <testcase name="loginUserWithValidRandomDataPositive" classname="allcom.tests.login.LoginPositiveTests" time="0.664"/>
+  <testcase name="loginUserWithValidRandomDataPositive" classname="allcom.tests.login.LoginPositiveTests" time="0.571"/>
+  <testcase name="loginUserWithValidRandomDataPositive" classname="allcom.tests.login.LoginPositiveTests" time="0.644"/>
+  <testcase name="loginUserWithValidRandomDataPositive" classname="allcom.tests.login.LoginPositiveTests" time="0.655"/>
+  <testcase name="loginUserWithValidRandomDataPositive" classname="allcom.tests.login.LoginPositiveTests" time="0.533"/>
+  <testcase name="loginUserWithValidRandomDataPositive" classname="allcom.tests.login.LoginPositiveTests" time="0.618"/>
+  <testcase name="loginUserWithValidRandomDataPositive" classname="allcom.tests.login.LoginPositiveTests" time="0.543"/>
+  <testcase name="loginUserWithValidRandomDataPositive" classname="allcom.tests.login.LoginPositiveTests" time="0.618"/>
+  <testcase name="loginUserWithValidRandomDataPositive" classname="allcom.tests.login.LoginPositiveTests" time="0.675"/>
+  <testcase name="loginUserWithValidRandomDataPositive" classname="allcom.tests.login.LoginPositiveTests" time="0.595"/>
+  <testcase name="loginUserWithValidRandomDataPositive" classname="allcom.tests.login.LoginPositiveTests" time="0.599"/>
+  <testcase name="loginUserWithValidRandomDataPositive" classname="allcom.tests.login.LoginPositiveTests" time="0.606"/>
+  <testcase name="loginUserWithValidRandomDataPositive" classname="allcom.tests.login.LoginPositiveTests" time="0.653"/>
+  <testcase name="loginUserWithValidRandomDataPositive" classname="allcom.tests.login.LoginPositiveTests" time="0.607"/>
+  <testcase name="loginUserWithValidRandomDataPositive" classname="allcom.tests.login.LoginPositiveTests" time="0.603"/>
+  <testcase name="loginUserWithValidRandomDataPositive" classname="allcom.tests.login.LoginPositiveTests" time="0.585"/>
+  <testcase name="loginUserWithValidRandomDataPositive" classname="allcom.tests.login.LoginPositiveTests" time="0.592"/>
+  <testcase name="loginUserWithValidRandomDataPositive" classname="allcom.tests.login.LoginPositiveTests" time="0.63"/>
+  <testcase name="loginUserWithValidRandomDataPositive" classname="allcom.tests.login.LoginPositiveTests" time="0.733"/>
+  <testcase name="loginUserWithValidRandomDataPositive" classname="allcom.tests.login.LoginPositiveTests" time="0.576"/>
+  <testcase name="loginUserWithValidRandomDataPositive" classname="allcom.tests.login.LoginPositiveTests" time="0.577"/>
+  <testcase name="loginUserWithValidRandomDataPositive" classname="allcom.tests.login.LoginPositiveTests" time="0.581"/>
+  <testcase name="loginUserWithValidRandomDataPositive" classname="allcom.tests.login.LoginPositiveTests" time="0.645"/>
+  <testcase name="loginUserWithValidRandomDataPositive" classname="allcom.tests.login.LoginPositiveTests" time="0.627"/>
+  <testcase name="loginUserWithValidRandomDataPositive" classname="allcom.tests.login.LoginPositiveTests" time="0.573"/>
+  <testcase name="loginUserWithValidRandomDataPositive" classname="allcom.tests.login.LoginPositiveTests" time="0.698"/>
+  <testcase name="loginWithValidDataPositive" classname="allcom.tests.login.LoginPositiveTests" time="0.616"/>
+  <testcase name="loginWithValidDataProviderPositive[0](testuser1@testuser.com, Test!123)" classname="allcom.tests.login.LoginPositiveTests" time="0.55"/>
+  <testcase name="loginWithValidDataProviderPositive[1](demoaccount@demoaccoun.com, Demo@Pass2022)" classname="allcom.tests.login.LoginPositiveTests" time="0.607"/>
+  <testcase name="loginWithValidDataProviderPositive[2](user1234@user1234.com, Secure@Pwd567)" classname="allcom.tests.login.LoginPositiveTests" time="0.562"/>
+  <testcase name="loginWithValidDataProviderPositive[3](trialuser@trialuser.cdddom, Test@Pass789)" classname="allcom.tests.login.LoginPositiveTests" time="0.576"/>
+  <testcase name="loginWithValidDataProviderPositive[4](awesome_tester@example.com, Awesome!12345)" classname="allcom.tests.login.LoginPositiveTests" time="0.592"/>
+  <testcase name="loginWithValidDataProviderPositive[5](dummyuser@i.ua, Dummy@Pass456)" classname="allcom.tests.login.LoginPositiveTests" time="0.533"/>
+  <testcase name="loginWithValidDataProviderPositive[6](explorertester@example.com, Explore@Test789)" classname="allcom.tests.login.LoginPositiveTests" time="0.571"/>
+  <testcase name="loginWithValidDataProviderPositive[7](betauser123@example.com, Beta@UserPass!33)" classname="allcom.tests.login.LoginPositiveTests" time="0.686"/>
+  <testcase name="loginWithValidDataProviderPositive[8](verify_test@example.com, Verify@Pass2022)" classname="allcom.tests.login.LoginPositiveTests" time="0.634"/>
+  <testcase name="loginWithValidDataProviderPositive[9](happytester@happytester.com, Happy@Testing!333)" classname="allcom.tests.login.LoginPositiveTests" time="0.663"/>
+  <testcase name="loginWithValidDataProviderPositive[10](techtester@techtester.com, Tech@Pass123)" classname="allcom.tests.login.LoginPositiveTests" time="0.609"/>
+  <testcase name="loginWithValidDataProviderPositive[11](quality_test@example.com, Quality!123)" classname="allcom.tests.login.LoginPositiveTests" time="0.613"/>
+  <testcase name="loginWithValidDataProviderPositive[12](trialaccount@trialaccount.com, Trial@Pass456)" classname="allcom.tests.login.LoginPositiveTests" time="0.649"/>
+  <testcase name="loginWithValidDataProviderPositive[13](email@email.com, Email!Test789)" classname="allcom.tests.login.LoginPositiveTests" time="0.611"/>
+  <testcase name="loginWithValidDataProviderPositive[14](secureuser@example.com, Secure@User2022)" classname="allcom.tests.login.LoginPositiveTests" time="0.585"/>
+  <testcase name="loginWithValidDataProviderPositive[15](happytester2@example.com, Happy@Testing!33)" classname="allcom.tests.login.LoginPositiveTests" time="0.613"/>
+  <testcase name="loginWithValidDataProviderPositive[16](user456@example.com, User@Pass123)" classname="allcom.tests.login.LoginPositiveTests" time="0.626"/>
+  <testcase name="loginWithValidDataProviderPositive[17](testaccount@example.com, Test@12345)" classname="allcom.tests.login.LoginPositiveTests" time="0.796"/>
+  <testcase name="loginWithValidDataProviderPositive[18](betauser456@betauser456.com, Beta@UserPass!333)" classname="allcom.tests.login.LoginPositiveTests" time="0.671"/>
+  <testcase name="loginWithValidDataProviderPositive[19](securetester@example.com, Secure@Test2022)" classname="allcom.tests.login.LoginPositiveTests" time="0.584"/>
+  <testcase name="loginWithValidDataProviderPositive[20](qualityuser@example.com, Quality!Test123)" classname="allcom.tests.login.LoginPositiveTests" time="0.604"/>
+  <testcase name="loginWithValidDataProviderPositive[21](explorertester2@example.com, Explore@Test789)" classname="allcom.tests.login.LoginPositiveTests" time="0.671"/>
+  <testcase name="loginWithValidDataProviderPositive[22](dummyuser2@dummyuser2.com, Dummy@Pass456)" classname="allcom.tests.login.LoginPositiveTests" time="0.688"/>
+  <testcase name="loginWithValidDataProviderPositive[23](prodtester2@example.com, Prod@Test2023)" classname="allcom.tests.login.LoginPositiveTests" time="0.672"/>
+  <testcase name="loginWithValidDataProviderPositive[24](verifyuser@example.com, Verify@Test2022)" classname="allcom.tests.login.LoginPositiveTests" time="0.623"/>
+  <testcase name="loginWithValidDataProviderPositive[25](techengineer@example.com, Tech@Engineer123)" classname="allcom.tests.login.LoginPositiveTests" time="0.582"/>
+  <testcase name="loginWithValidDataProviderPositive[26](qauser@example.com, QA@Tester2022)" classname="allcom.tests.login.LoginPositiveTests" time="0.618"/>
+  <testcase name="loginWithValidDataProviderPositive[27](happytestuser@example.com, Happy@TestUser123)" classname="allcom.tests.login.LoginPositiveTests" time="0.615"/>
+  <testcase name="loginWithValidDataProviderPositive[28](nikolenkotenikolenkotenikolenkotenikolenkotenikolenkotenikolenk@gmail.com, secureusersecureuserD@User202)" classname="allcom.tests.login.LoginPositiveTests" time="0.89"/>
+  <testcase name="loginWithValidDataProviderPositive[29](nikolenkotenikolenkotenikolenkotenikolenkotenikolenkotenikolenk@gmailgmailgmailgmailgmailgmailgmailgmailgmailgmailgmailgmailgma.com, ecureusersecureuserecureusersecureuserecureusersecureuserecureusersecureuserecureusersecureuserecureusersecureuserecureusersecureuserecureusersecureuserecureusersecureuserecureusersecureuserecureusersecureuserecureusersecureuserecureusersecureusaD@User2022)" classname="allcom.tests.login.LoginPositiveTests" time="1.479"/>
+  <system-out><![CDATA[01:16:10.779 [Test worker] INFO  allcom.tests.TestBase -- Start test: [loginUserWithValidRandomDataPositive]
+01:16:11.547 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [loginUserWithValidRandomDataPositive], with Parameters: []
+01:16:11.547 [Test worker] INFO  allcom.tests.TestBase -- Start test: [loginUserWithValidRandomDataPositive]
+01:16:12.433 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [loginUserWithValidRandomDataPositive], with Parameters: []
+01:16:12.433 [Test worker] INFO  allcom.tests.TestBase -- Start test: [loginUserWithValidRandomDataPositive]
+01:16:13.196 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [loginUserWithValidRandomDataPositive], with Parameters: []
+01:16:13.196 [Test worker] INFO  allcom.tests.TestBase -- Start test: [loginUserWithValidRandomDataPositive]
+01:16:13.990 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [loginUserWithValidRandomDataPositive], with Parameters: []
+01:16:13.990 [Test worker] INFO  allcom.tests.TestBase -- Start test: [loginUserWithValidRandomDataPositive]
+01:16:14.781 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [loginUserWithValidRandomDataPositive], with Parameters: []
+01:16:14.781 [Test worker] INFO  allcom.tests.TestBase -- Start test: [loginUserWithValidRandomDataPositive]
+01:16:15.473 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [loginUserWithValidRandomDataPositive], with Parameters: []
+01:16:15.473 [Test worker] INFO  allcom.tests.TestBase -- Start test: [loginUserWithValidRandomDataPositive]
+01:16:16.257 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [loginUserWithValidRandomDataPositive], with Parameters: []
+01:16:16.257 [Test worker] INFO  allcom.tests.TestBase -- Start test: [loginUserWithValidRandomDataPositive]
+01:16:17.049 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [loginUserWithValidRandomDataPositive], with Parameters: []
+01:16:17.049 [Test worker] INFO  allcom.tests.TestBase -- Start test: [loginUserWithValidRandomDataPositive]
+01:16:17.718 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [loginUserWithValidRandomDataPositive], with Parameters: []
+01:16:17.718 [Test worker] INFO  allcom.tests.TestBase -- Start test: [loginUserWithValidRandomDataPositive]
+01:16:18.461 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [loginUserWithValidRandomDataPositive], with Parameters: []
+01:16:18.462 [Test worker] INFO  allcom.tests.TestBase -- Start test: [loginUserWithValidRandomDataPositive]
+01:16:19.457 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [loginUserWithValidRandomDataPositive], with Parameters: []
+01:16:19.457 [Test worker] INFO  allcom.tests.TestBase -- Start test: [loginUserWithValidRandomDataPositive]
+01:16:20.201 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [loginUserWithValidRandomDataPositive], with Parameters: []
+01:16:20.201 [Test worker] INFO  allcom.tests.TestBase -- Start test: [loginUserWithValidRandomDataPositive]
+01:16:21.001 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [loginUserWithValidRandomDataPositive], with Parameters: []
+01:16:21.003 [Test worker] INFO  allcom.tests.TestBase -- Start test: [loginUserWithValidRandomDataPositive]
+01:16:21.728 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [loginUserWithValidRandomDataPositive], with Parameters: []
+01:16:21.729 [Test worker] INFO  allcom.tests.TestBase -- Start test: [loginUserWithValidRandomDataPositive]
+01:16:22.455 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [loginUserWithValidRandomDataPositive], with Parameters: []
+01:16:22.456 [Test worker] INFO  allcom.tests.TestBase -- Start test: [loginUserWithValidRandomDataPositive]
+01:16:23.190 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [loginUserWithValidRandomDataPositive], with Parameters: []
+01:16:23.190 [Test worker] INFO  allcom.tests.TestBase -- Start test: [loginUserWithValidRandomDataPositive]
+01:16:23.967 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [loginUserWithValidRandomDataPositive], with Parameters: []
+01:16:23.967 [Test worker] INFO  allcom.tests.TestBase -- Start test: [loginUserWithValidRandomDataPositive]
+01:16:24.729 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [loginUserWithValidRandomDataPositive], with Parameters: []
+01:16:24.729 [Test worker] INFO  allcom.tests.TestBase -- Start test: [loginUserWithValidRandomDataPositive]
+01:16:25.448 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [loginUserWithValidRandomDataPositive], with Parameters: []
+01:16:25.449 [Test worker] INFO  allcom.tests.TestBase -- Start test: [loginUserWithValidRandomDataPositive]
+01:16:26.155 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [loginUserWithValidRandomDataPositive], with Parameters: []
+01:16:26.155 [Test worker] INFO  allcom.tests.TestBase -- Start test: [loginUserWithValidRandomDataPositive]
+01:16:26.872 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [loginUserWithValidRandomDataPositive], with Parameters: []
+01:16:26.872 [Test worker] INFO  allcom.tests.TestBase -- Start test: [loginUserWithValidRandomDataPositive]
+01:16:27.628 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [loginUserWithValidRandomDataPositive], with Parameters: []
+01:16:27.628 [Test worker] INFO  allcom.tests.TestBase -- Start test: [loginUserWithValidRandomDataPositive]
+01:16:28.480 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [loginUserWithValidRandomDataPositive], with Parameters: []
+01:16:28.481 [Test worker] INFO  allcom.tests.TestBase -- Start test: [loginUserWithValidRandomDataPositive]
+01:16:29.172 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [loginUserWithValidRandomDataPositive], with Parameters: []
+01:16:29.172 [Test worker] INFO  allcom.tests.TestBase -- Start test: [loginUserWithValidRandomDataPositive]
+01:16:29.870 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [loginUserWithValidRandomDataPositive], with Parameters: []
+01:16:29.870 [Test worker] INFO  allcom.tests.TestBase -- Start test: [loginUserWithValidRandomDataPositive]
+01:16:30.579 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [loginUserWithValidRandomDataPositive], with Parameters: []
+01:16:30.579 [Test worker] INFO  allcom.tests.TestBase -- Start test: [loginUserWithValidRandomDataPositive]
+01:16:31.345 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [loginUserWithValidRandomDataPositive], with Parameters: []
+01:16:31.346 [Test worker] INFO  allcom.tests.TestBase -- Start test: [loginUserWithValidRandomDataPositive]
+01:16:32.101 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [loginUserWithValidRandomDataPositive], with Parameters: []
+01:16:32.101 [Test worker] INFO  allcom.tests.TestBase -- Start test: [loginUserWithValidRandomDataPositive]
+01:16:32.801 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [loginUserWithValidRandomDataPositive], with Parameters: []
+01:16:32.801 [Test worker] INFO  allcom.tests.TestBase -- Start test: [loginUserWithValidRandomDataPositive]
+01:16:33.623 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [loginUserWithValidRandomDataPositive], with Parameters: []
+01:16:33.624 [Test worker] INFO  allcom.tests.TestBase -- Start test: [loginWithValidDataPositive]
+01:16:34.394 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [loginWithValidDataPositive], with Parameters: []
+01:16:34.395 [Test worker] INFO  allcom.tests.TestBase -- Start test: [loginWithValidDataProviderPositive]
+01:16:35.077 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [loginWithValidDataProviderPositive], with Parameters: [testuser1@testuser.com, Test!123]
+01:16:35.079 [Test worker] INFO  allcom.tests.TestBase -- Start test: [loginWithValidDataProviderPositive]
+01:16:35.807 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [loginWithValidDataProviderPositive], with Parameters: [demoaccount@demoaccoun.com, Demo@Pass2022]
+01:16:35.807 [Test worker] INFO  allcom.tests.TestBase -- Start test: [loginWithValidDataProviderPositive]
+01:16:36.489 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [loginWithValidDataProviderPositive], with Parameters: [user1234@user1234.com, Secure@Pwd567]
+01:16:36.490 [Test worker] INFO  allcom.tests.TestBase -- Start test: [loginWithValidDataProviderPositive]
+01:16:37.190 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [loginWithValidDataProviderPositive], with Parameters: [trialuser@trialuser.cdddom, Test@Pass789]
+01:16:37.190 [Test worker] INFO  allcom.tests.TestBase -- Start test: [loginWithValidDataProviderPositive]
+01:16:37.905 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [loginWithValidDataProviderPositive], with Parameters: [awesome_tester@example.com, Awesome!12345]
+01:16:37.906 [Test worker] INFO  allcom.tests.TestBase -- Start test: [loginWithValidDataProviderPositive]
+01:16:38.560 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [loginWithValidDataProviderPositive], with Parameters: [dummyuser@i.ua, Dummy@Pass456]
+01:16:38.560 [Test worker] INFO  allcom.tests.TestBase -- Start test: [loginWithValidDataProviderPositive]
+01:16:39.256 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [loginWithValidDataProviderPositive], with Parameters: [explorertester@example.com, Explore@Test789]
+01:16:39.256 [Test worker] INFO  allcom.tests.TestBase -- Start test: [loginWithValidDataProviderPositive]
+01:16:40.064 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [loginWithValidDataProviderPositive], with Parameters: [betauser123@example.com, Beta@UserPass!33]
+01:16:40.065 [Test worker] INFO  allcom.tests.TestBase -- Start test: [loginWithValidDataProviderPositive]
+01:16:40.927 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [loginWithValidDataProviderPositive], with Parameters: [verify_test@example.com, Verify@Pass2022]
+01:16:40.928 [Test worker] INFO  allcom.tests.TestBase -- Start test: [loginWithValidDataProviderPositive]
+01:16:41.714 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [loginWithValidDataProviderPositive], with Parameters: [happytester@happytester.com, Happy@Testing!333]
+01:16:41.714 [Test worker] INFO  allcom.tests.TestBase -- Start test: [loginWithValidDataProviderPositive]
+01:16:42.458 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [loginWithValidDataProviderPositive], with Parameters: [techtester@techtester.com, Tech@Pass123]
+01:16:42.458 [Test worker] INFO  allcom.tests.TestBase -- Start test: [loginWithValidDataProviderPositive]
+01:16:43.193 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [loginWithValidDataProviderPositive], with Parameters: [quality_test@example.com, Quality!123]
+01:16:43.193 [Test worker] INFO  allcom.tests.TestBase -- Start test: [loginWithValidDataProviderPositive]
+01:16:43.974 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [loginWithValidDataProviderPositive], with Parameters: [trialaccount@trialaccount.com, Trial@Pass456]
+01:16:43.975 [Test worker] INFO  allcom.tests.TestBase -- Start test: [loginWithValidDataProviderPositive]
+01:16:44.710 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [loginWithValidDataProviderPositive], with Parameters: [email@email.com, Email!Test789]
+01:16:44.710 [Test worker] INFO  allcom.tests.TestBase -- Start test: [loginWithValidDataProviderPositive]
+01:16:45.416 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [loginWithValidDataProviderPositive], with Parameters: [secureuser@example.com, Secure@User2022]
+01:16:45.416 [Test worker] INFO  allcom.tests.TestBase -- Start test: [loginWithValidDataProviderPositive]
+01:16:46.179 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [loginWithValidDataProviderPositive], with Parameters: [happytester2@example.com, Happy@Testing!33]
+01:16:46.179 [Test worker] INFO  allcom.tests.TestBase -- Start test: [loginWithValidDataProviderPositive]
+01:16:47.055 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [loginWithValidDataProviderPositive], with Parameters: [user456@example.com, User@Pass123]
+01:16:47.055 [Test worker] INFO  allcom.tests.TestBase -- Start test: [loginWithValidDataProviderPositive]
+01:16:47.973 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [loginWithValidDataProviderPositive], with Parameters: [testaccount@example.com, Test@12345]
+01:16:47.973 [Test worker] INFO  allcom.tests.TestBase -- Start test: [loginWithValidDataProviderPositive]
+01:16:48.784 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [loginWithValidDataProviderPositive], with Parameters: [betauser456@betauser456.com, Beta@UserPass!333]
+01:16:48.784 [Test worker] INFO  allcom.tests.TestBase -- Start test: [loginWithValidDataProviderPositive]
+01:16:49.493 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [loginWithValidDataProviderPositive], with Parameters: [securetester@example.com, Secure@Test2022]
+01:16:49.493 [Test worker] INFO  allcom.tests.TestBase -- Start test: [loginWithValidDataProviderPositive]
+01:16:50.217 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [loginWithValidDataProviderPositive], with Parameters: [qualityuser@example.com, Quality!Test123]
+01:16:50.218 [Test worker] INFO  allcom.tests.TestBase -- Start test: [loginWithValidDataProviderPositive]
+01:16:51.018 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [loginWithValidDataProviderPositive], with Parameters: [explorertester2@example.com, Explore@Test789]
+01:16:51.018 [Test worker] INFO  allcom.tests.TestBase -- Start test: [loginWithValidDataProviderPositive]
+01:16:51.831 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [loginWithValidDataProviderPositive], with Parameters: [dummyuser2@dummyuser2.com, Dummy@Pass456]
+01:16:51.831 [Test worker] INFO  allcom.tests.TestBase -- Start test: [loginWithValidDataProviderPositive]
+01:16:52.639 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [loginWithValidDataProviderPositive], with Parameters: [prodtester2@example.com, Prod@Test2023]
+01:16:52.640 [Test worker] INFO  allcom.tests.TestBase -- Start test: [loginWithValidDataProviderPositive]
+01:16:53.385 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [loginWithValidDataProviderPositive], with Parameters: [verifyuser@example.com, Verify@Test2022]
+01:16:53.385 [Test worker] INFO  allcom.tests.TestBase -- Start test: [loginWithValidDataProviderPositive]
+01:16:54.095 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [loginWithValidDataProviderPositive], with Parameters: [techengineer@example.com, Tech@Engineer123]
+01:16:54.095 [Test worker] INFO  allcom.tests.TestBase -- Start test: [loginWithValidDataProviderPositive]
+01:16:54.849 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [loginWithValidDataProviderPositive], with Parameters: [qauser@example.com, QA@Tester2022]
+01:16:54.849 [Test worker] INFO  allcom.tests.TestBase -- Start test: [loginWithValidDataProviderPositive]
+01:16:55.589 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [loginWithValidDataProviderPositive], with Parameters: [happytestuser@example.com, Happy@TestUser123]
+01:16:55.589 [Test worker] INFO  allcom.tests.TestBase -- Start test: [loginWithValidDataProviderPositive]
+01:16:56.598 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [loginWithValidDataProviderPositive], with Parameters: [nikolenkotenikolenkotenikolenkotenikolenkotenikolenkotenikolenk@gmail.com, secureusersecureuserD@User202]
+01:16:56.600 [Test worker] INFO  allcom.tests.TestBase -- Start test: [loginWithValidDataProviderPositive]
+01:16:58.230 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [loginWithValidDataProviderPositive], with Parameters: [nikolenkotenikolenkotenikolenkotenikolenkotenikolenkotenikolenk@gmailgmailgmailgmailgmailgmailgmailgmailgmailgmailgmailgmailgma.com, ecureusersecureuserecureusersecureuserecureusersecureuserecureusersecureuserecureusersecureuserecureusersecureuserecureusersecureuserecureusersecureuserecureusersecureuserecureusersecureuserecureusersecureuserecureusersecureuserecureusersecureusaD@User2022]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

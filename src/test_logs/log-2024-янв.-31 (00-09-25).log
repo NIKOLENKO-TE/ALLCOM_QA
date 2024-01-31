@@ -1,5 +1,0 @@
-2908 [Test worker] INFO  allcom.tests.TestBase -- Start test: [clickTwitterLink]
-3072 [Test worker] ERROR allcom.tests.TestBase -- ERROR FAILED TEST: [clickTwitterLink], with Parameters: []
-3072 [Test worker] ERROR allcom.tests.TestBase -- ERROR TEST MESSAGE: null
-3215 [Test worker] ERROR allcom.tests.TestBase -- ERROR TEST SCREENSHOT: C:\Users\PORTISHEAD\Desktop\ALLCOM\allcom_qa\src\screenshots\screenshot_error_118660.png
-3215 [Test worker] INFO  allcom.tests.TestBase -- [==================================================================================================]

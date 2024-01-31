@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="allcom.tests.footerPageTests.FooterPageTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-01-31T00:02:19" hostname="PORTISHEAD-PC" time="0.604">
-  <properties/>
-  <testcase name="clickFacebookLink" classname="allcom.tests.footerPageTests.FooterPageTests" time="0.604"/>
-  <system-out><![CDATA[01:02:19.467 [Test worker] INFO  allcom.tests.TestBase -- Start test: [clickFacebookLink]
-01:02:20.235 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [clickFacebookLink], with Parameters: []
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

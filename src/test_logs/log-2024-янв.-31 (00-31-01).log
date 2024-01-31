@@ -1,5 +1,0 @@
-2648 [Test worker] INFO  allcom.tests.TestBase -- Start test: [clickYoutubeLink]
-2983 [Test worker] ERROR allcom.tests.TestBase -- ERROR FAILED TEST: [clickYoutubeLink], with Parameters: []
-2984 [Test worker] ERROR allcom.tests.TestBase -- ERROR TEST MESSAGE: URL is not correct expected [https://www.youtube.com] but found [https://master--incredible-snickerdoodle-514a2d.netlify.app/]
-3325 [Test worker] ERROR allcom.tests.TestBase -- ERROR TEST SCREENSHOT: C:\Users\PORTISHEAD\Desktop\ALLCOM\allcom_qa\src\screenshots\screenshot_error_131617.png
-3325 [Test worker] INFO  allcom.tests.TestBase -- [==================================================================================================]

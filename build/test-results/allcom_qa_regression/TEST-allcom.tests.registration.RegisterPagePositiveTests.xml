@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="allcom.tests.registration.RegisterPagePositiveTests" tests="127" skipped="0" failures="0" errors="0" timestamp="2024-01-31T00:20:40" hostname="PORTISHEAD-PC" time="325.504">
+  <properties/>
+  <testcase name="registerClientWithValidDataPositiveTest" classname="allcom.tests.registration.RegisterPagePositiveTests" time="0.943"/>
+  <testcase name="registerFirmaWithValidDataPositiveTest" classname="allcom.tests.registration.RegisterPagePositiveTests" time="2.192"/>
+  <testcase name="registerNewFirmaWithValidDataPositive[0](John, Doe, johndoe@example.com, 4934567894, Test!123, Test!123, ACME Corp, Manager, 123456789012, 12345, Berlin, Berliner Strasse, 42A)" classname="allcom.tests.registration.RegisterPagePositiveTests" time="1.993"/>
+  <testcase name="registerNewFirmaWithValidDataPositive[1](Jane, Smith, janesmith@example.com, 9876545321, Demo@Pass2022, Demo@Pass2022, XYZ Ltd, Engineer, 987654321098, 54321, Hamburg, Hauptstrasse, 17B)" classname="allcom.tests.registration.RegisterPagePositiveTests" time="2.187"/>
+  <testcase name="registerNewFirmaWithValidDataPositive[2](Alice, Johnson, alicejohnson@example.com, 4556789012, Secure@Pwd567, Secure@Pwd567, QuickFix Inc, Developer, 654321098765, 67890, Munich, Muenchner Weg, 99C)" classname="allcom.tests.registration.RegisterPagePositiveTests" time="2.07"/>
+  <testcase name="registerNewFirmaWithValidDataPositive[3](Bob, Miller, bobmiller@example.com, 7890123545, Test@Pass789, Test@Pass789, Sprint Systems, Analyst, 210987654321, 98765, Stuttgart, Stuttgarter Allee, 12D)" classname="allcom.tests.registration.RegisterPagePositiveTests" time="1.959"/>
+  <testcase name="registerNewFirmaWithValidDataPositive[4](Charlie, Brown, charliebrown@example.com, 3210958765, Awesome!12345, Awesome!12345, InnoTech Solutions, Designer, 543210987654, 34567, Frankfurt, Frankfurte Ring, 7E)" classname="allcom.tests.registration.RegisterPagePositiveTests" time="2.016"/>
+  <testcase name="registerNewFirmaWithValidDataPositive[5](Eva, Clark, evaclark@example.com, 6543210958, Dummy@Pass456, Dummy@Pass456, SmartGrid GmbH, Manager, 109876543210, 87654, Dusseldorf, Duesseldorfer Platz, 23F)" classname="allcom.tests.registration.RegisterPagePositiveTests" time="1.972"/>
+  <testcase name="registerNewFirmaWithValidDataPositive[6](David, Williams, davidwilliams@example.com, 25109876554, Explore@Test789, Explore@Test789, TechPro GmbH, Engineer, 987654321012, 43210, Leipzig, Leipziger Strasse, 56G)" classname="allcom.tests.registration.RegisterPagePositiveTests" time="2.098"/>
+  <testcase name="registerNewFirmaWithValidDataPositive[7](Olivia, Jones, oliviajones@example.com, 54321509875, Beta@UserPass!33, Beta@UserPass!33, InnovaCorp AG, Analyst, 876543210987, 21098, Hannover, Hannoveraner Weg, 78H)" classname="allcom.tests.registration.RegisterPagePositiveTests" time="2.079"/>
+  <testcase name="registerNewFirmaWithValidDataPositive[8](Michael, Smith, michaelsmith@example.com, 8765543210, Verify@Pass2022, Verify@Pass2022, FirmTech Solutions, Developer, 109876543210, 76543, Cologne, Koelner Gasse, 34I)" classname="allcom.tests.registration.RegisterPagePositiveTests" time="2.104"/>
+  <testcase name="registerNewFirmaWithValidDataPositive[9](Sophie, Anderson, sophieanderson@example.com, 1095876543, Happy@Testing!333, Happy@Testing!333, DataFlow Systems, Designer, 321098765, 54321, Berlin, Berliner Strasse, 42A)" classname="allcom.tests.registration.RegisterPagePositiveTests" time="2.182"/>
+  <testcase name="registerNewFirmaWithValidDataPositive[10](Alex, White, alexwhite@example.com, 9876543521, Pass@123, Pass@123, GlobalTech Ltd, Manager, 123456789012, 12345, Hamburg, Hauptstrasse, 17B)" classname="allcom.tests.registration.RegisterPagePositiveTests" time="2.158"/>
+  <testcase name="registerNewFirmaWithValidDataPositive[11](Emma, Taylor, emataylor@example.com, 6543251098, Test@456, Test@456, BlueSky Inc, Engineer, 987654321098, 54321, Munich, Muenchner Weg, 99C)" classname="allcom.tests.registration.RegisterPagePositiveTests" time="1.994"/>
+  <testcase name="registerNewFirmaWithValidDataPositive[12](Daniel, Baker, danielbaker@example.com, 3251098765, Secure@789, Secure@789, SmartBuild Solutions, Developer, 654321098765, 67890, Stuttgart, Stuttgarter Allee, 12D)" classname="allcom.tests.registration.RegisterPagePositiveTests" time="2.85"/>
+  <testcase name="registerNewFirmaWithValidDataPositive[13](Grace, Turner, graceturner@example.com, 7859012345, Pass!2022, Pass!2022, FastTech Systems, Analyst, 210987654321, 98765, Frankfurt, Frankfurter Ring, 7E)" classname="allcom.tests.registration.RegisterPagePositiveTests" time="2.124"/>
+  <testcase name="registerNewFirmaWithValidDataPositive[14](Oliver, Hall, oliverhall@example.com, 2109587654, Explore@2023, Explore@2023, TechGenius GmbH, Engineer, 987654321012, 43210, Dusseldorf, Duesseldorfer Platz, 23F)" classname="allcom.tests.registration.RegisterPagePositiveTests" time="2.239"/>
+  <testcase name="registerNewFirmaWithValidDataPositive[15](Mia, Wilson, miawilson@example.com, 5432105987, Beta@Tester!33, Beta@Tester!33, InnoSoft AG, Analyst, 876543210987, 21098, Leipzig, Leipziger Strasse, 56G)" classname="allcom.tests.registration.RegisterPagePositiveTests" time="2.082"/>
+  <testcase name="registerNewFirmaWithValidDataPositive[16](Sophia, Moore, sophiamoore@example.com, 8756543210, Verify@4567, Verify@4567, SmartData Solutions, Developer, 109876543210, 76543, Hannover, Hannoveraner Weg, 78H)" classname="allcom.tests.registration.RegisterPagePositiveTests" time="2.112"/>
+  <testcase name="registerNewFirmaWithValidDataPositive[17](Liam, Carter, liamcarter@example.com, 1098576543, Happy@2023, Happy@2023, FutureTech Corp, Designer, 321098765, 54321, Cologne, Koelner Gasse, 4I)" classname="allcom.tests.registration.RegisterPagePositiveTests" time="2.1"/>
+  <testcase name="registerNewFirmaWithValidDataPositive[18](Ava, Martin, avamartin@example.com, 7654325109, Test@12345, Test@12345, DataInnovate GmbH, Manager, 123456789012, 12345, Berlin, Berliner Strasse, 42A)" classname="allcom.tests.registration.RegisterPagePositiveTests" time="2.064"/>
+  <testcase name="registerNewFirmaWithValidDataPositive[19](Lucas, Harris, lucasharris@example.com, 98576543210, Pass@2022, Pass@2022, GlobalSoft Ltd, Engineer, 987654321098, 54321, Hamburg, Hauptstrasse, 17B)" classname="allcom.tests.registration.RegisterPagePositiveTests" time="2.474"/>
+  <testcase name="registerNewFirmaWithValidDataPositive[20](Ella, Cooper, ellacooper@example.com, 8765432109, Secure@1234, Secure@1234, BlueWave Inc, Developer, 654321098765, 67890, Munich, Muenchner Weg, 99C)" classname="allcom.tests.registration.RegisterPagePositiveTests" time="2.035"/>
+  <testcase name="registerNewFirmaWithValidDataPositive[21](Jackson, Fisher, jacksonfisher@example.com, 7654321098, Test@5678, Test@5678, SmartTech Solutions, Analyst, 210987654321, 98765, Stuttgart, Stuttgarter Allee, 12D)" classname="allcom.tests.registration.RegisterPagePositiveTests" time="2.068"/>
+  <testcase name="registerNewFirmaWithValidDataPositive[22](Isabella, Clark, isabellaclark@example.com, 10987654321, Awesome@2022, Awesome@2022, InnoConnect GmbH, Designer, 543210987654, 34567, Frankfurt, Frankfurter Ring, 7E)" classname="allcom.tests.registration.RegisterPagePositiveTests" time="2.213"/>
+  <testcase name="registerNewFirmaWithValidDataPositive[23](Leo, Ward, leoward@example.com, 87654321098, Dummy@4567, Dummy@4567, FutureBuild Systems, Manager, 109876543210, 87654, Dusseldorf, Duesseldorfer Platz, 23F)" classname="allcom.tests.registration.RegisterPagePositiveTests" time="2.693"/>
+  <testcase name="registerNewFirmaWithValidDataPositive[24](Aria, Martin, ariamartin@example.com, 10987654321, Explore@Tester!33, Explore@Tester!33, DataScape AG, Engineer, 987654321012, 43210, Leipzig, Leipziger Strasse, 56G)" classname="allcom.tests.registration.RegisterPagePositiveTests" time="3.226"/>
+  <testcase name="registerNewFirmaWithValidDataPositive[25](Oliver, Adams, oliveradams@example.com, 7654321098, Beta@Tester456, Beta@Tester456, InnoWave Corp, Analyst, 876543210987, 21098, Hannover, Hannoveraner Weg, 8H)" classname="allcom.tests.registration.RegisterPagePositiveTests" time="2.43"/>
+  <testcase name="registerNewFirmaWithValidDataPositive[26](Liam, Grey, liamgrey@example.com, 10987654321, Verify@Tester2022, Verify@Tester2022, SmartMind Solutions, Developer, 109876543210, 76543, Cologne, Koelner Gasse, 34I)" classname="allcom.tests.registration.RegisterPagePositiveTests" time="2.055"/>
+  <testcase name="registerNewFirmaWithValidDataPositive[27](Zoe, Turner, zoeturner@example.com, 76543210987, Happy@Tester2022, Happy@Tester2022, FutureTech Innovations, Designer, 32109876576, 54321, Berlin, Berliner Strasse, 42A)" classname="allcom.tests.registration.RegisterPagePositiveTests" time="2.018"/>
+  <testcase name="registerNewFirmaWithValidDataPositive[28](Ethan, Williams, ethanwilliams@example.com, 10987654321, Test@Tester123, Test@Tester123, GlobalInnovate GmbH, Manager, 123456789012, 12345, Hamburg, Hauptstrasse, 17B)" classname="allcom.tests.registration.RegisterPagePositiveTests" time="1.995"/>
+  <testcase name="registerNewFirmaWithValidDataPositive[29](Luna, Knight, lunaknight@example.com, 87654321098, Pass@Tester2022, Pass@Tester2022, BlueTech Ltd, Engineer, 987654321098, 54321, Munich, Muenchner Weg, 99C)" classname="allcom.tests.registration.RegisterPagePositiveTests" time="2.006"/>
+  <testcase name="registerNewFirmaWithValidDataPositive[30](Nikolay, Kotenko, nikolenkotenikolenkotenikolenkotenikolenkotenikolenkotenikolenk@gmail.com, 87654321098, Explore@Tester!33, Explore@Tester!33, DataScape AG, Analyst, 109876543210, 43210, Cologne, Koelner Gasse, 17B)" classname="allcom.tests.registration.RegisterPagePositiveTests" time="2.295"/>
+  <testcase name="registerNewFirmaWithValidDataPositive[31](Gmail, Kotenko, nikolenkotenikolenkotenikolenkotenikolenkotenikolenkotenikolenk@gmailgmailgmailgmailgmailgmailgmailgmailgmailgmailgmailgmailgma.com, 87654321098, Pass@Tester2022, Pass@Tester2022, FutureTech Innovations, Designer, 543210987654, 76543, Munich, Duesseldorfer Platz, #45)" classname="allcom.tests.registration.RegisterPagePositiveTests" time="2.411"/>
+  <testcase name="registerNewFirmaWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="2.217"/>
+  <testcase name="registerNewFirmaWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="2.254"/>
+  <testcase name="registerNewFirmaWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="2.486"/>
+  <testcase name="registerNewFirmaWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="2.555"/>
+  <testcase name="registerNewFirmaWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="2.218"/>
+  <testcase name="registerNewFirmaWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="2.319"/>
+  <testcase name="registerNewFirmaWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="2.524"/>
+  <testcase name="registerNewFirmaWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="2.105"/>
+  <testcase name="registerNewFirmaWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="2.214"/>
+  <testcase name="registerNewFirmaWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="2.248"/>
+  <testcase name="registerNewFirmaWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="2.189"/>
+  <testcase name="registerNewFirmaWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="2.214"/>
+  <testcase name="registerNewFirmaWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="2.308"/>
+  <testcase name="registerNewFirmaWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="2.26"/>
+  <testcase name="registerNewFirmaWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="2.547"/>
+  <testcase name="registerNewFirmaWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="2.355"/>
+  <testcase name="registerNewFirmaWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="2.113"/>
+  <testcase name="registerNewFirmaWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="2.188"/>
+  <testcase name="registerNewFirmaWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="2.175"/>
+  <testcase name="registerNewFirmaWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="2.216"/>
+  <testcase name="registerNewFirmaWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="2.304"/>
+  <testcase name="registerNewFirmaWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="2.217"/>
+  <testcase name="registerNewFirmaWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="2.549"/>
+  <testcase name="registerNewFirmaWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="2.417"/>
+  <testcase name="registerNewFirmaWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="2.249"/>
+  <testcase name="registerNewFirmaWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="2.175"/>
+  <testcase name="registerNewFirmaWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="2.193"/>
+  <testcase name="registerNewFirmaWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="2.253"/>
+  <testcase name="registerNewFirmaWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="2.233"/>
+  <testcase name="registerNewFirmaWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="2.129"/>
+  <testcase name="registerNewUserWithValidDataPositive[0](John, Doe, johndoe@example.com, 4934567894, Test!123)" classname="allcom.tests.registration.RegisterPagePositiveTests" time="0.962"/>
+  <testcase name="registerNewUserWithValidDataPositive[1](Jane, Smith, janesmith@example.com, 9876545321, Demo@Pass2022)" classname="allcom.tests.registration.RegisterPagePositiveTests" time="0.918"/>
+  <testcase name="registerNewUserWithValidDataPositive[2](Alice, Johnson, alicejohnson@example.com, 4556789012, Secure@Pwd567)" classname="allcom.tests.registration.RegisterPagePositiveTests" time="0.96"/>
+  <testcase name="registerNewUserWithValidDataPositive[3](Bob, Miller, bobmiller@example.com, 7890123545, Test@Pass789)" classname="allcom.tests.registration.RegisterPagePositiveTests" time="0.967"/>
+  <testcase name="registerNewUserWithValidDataPositive[4](Charlie, Brown, charliebrown@example.com, 3210958765, Awesome!12345)" classname="allcom.tests.registration.RegisterPagePositiveTests" time="1.009"/>
+  <testcase name="registerNewUserWithValidDataPositive[5](Eva, Clark, evaclark@example.com, 6543210958, Dummy@Pass456)" classname="allcom.tests.registration.RegisterPagePositiveTests" time="1.073"/>
+  <testcase name="registerNewUserWithValidDataPositive[6](David, Williams, davidwilliams@example.com, 25109876554, Explore@Test789)" classname="allcom.tests.registration.RegisterPagePositiveTests" time="1.13"/>
+  <testcase name="registerNewUserWithValidDataPositive[7](Olivia, Jones, oliviajones@example.com, 54321509875, Beta@UserPass!33)" classname="allcom.tests.registration.RegisterPagePositiveTests" time="1.201"/>
+  <testcase name="registerNewUserWithValidDataPositive[8](Michael, Smith, michaelsmith@example.com, 8765543210, Verify@Pass2022)" classname="allcom.tests.registration.RegisterPagePositiveTests" time="1.156"/>
+  <testcase name="registerNewUserWithValidDataPositive[9](Sophie, Anderson, sophieanderson@example.com, 1095876543, Happy@Testing!333)" classname="allcom.tests.registration.RegisterPagePositiveTests" time="1.139"/>
+  <testcase name="registerNewUserWithValidDataPositive[10](Alex, White, alexwhite@example.com, 9876543521, Pass@123)" classname="allcom.tests.registration.RegisterPagePositiveTests" time="1.067"/>
+  <testcase name="registerNewUserWithValidDataPositive[11](Emma, Taylor, emataylor@example.com, 6543251098, Test@456)" classname="allcom.tests.registration.RegisterPagePositiveTests" time="0.959"/>
+  <testcase name="registerNewUserWithValidDataPositive[12](Daniel, Baker, danielbaker@example.com, 3251098765, Secure@789)" classname="allcom.tests.registration.RegisterPagePositiveTests" time="1.051"/>
+  <testcase name="registerNewUserWithValidDataPositive[13](Grace, Turner, graceturner@example.com, 7859012345, Pass!2022)" classname="allcom.tests.registration.RegisterPagePositiveTests" time="0.92"/>
+  <testcase name="registerNewUserWithValidDataPositive[14](Oliver, Hall, oliverhall@example.com, 2109587654, Explore@2023)" classname="allcom.tests.registration.RegisterPagePositiveTests" time="1.045"/>
+  <testcase name="registerNewUserWithValidDataPositive[15](Mia, Wilson, miawilson@example.com, 5432105987, Beta@Tester!33)" classname="allcom.tests.registration.RegisterPagePositiveTests" time="0.94"/>
+  <testcase name="registerNewUserWithValidDataPositive[16](Sophia, Moore, sophiamoore@example.com, 8756543210, Verify@4567)" classname="allcom.tests.registration.RegisterPagePositiveTests" time="0.943"/>
+  <testcase name="registerNewUserWithValidDataPositive[17](Liam, Carter, liamcarter@example.com, 1098576543, Happy@2023)" classname="allcom.tests.registration.RegisterPagePositiveTests" time="0.936"/>
+  <testcase name="registerNewUserWithValidDataPositive[18](Ava, Martin, avamartin@example.com, 7654325109, Test@12345)" classname="allcom.tests.registration.RegisterPagePositiveTests" time="0.91"/>
+  <testcase name="registerNewUserWithValidDataPositive[19](Lucas, Harris, lucasharris@example.com, 98576543210, Pass@2022)" classname="allcom.tests.registration.RegisterPagePositiveTests" time="0.923"/>
+  <testcase name="registerNewUserWithValidDataPositive[20](Ella, Cooper, ellacooper@example.com, 8765432109, Secure@1234)" classname="allcom.tests.registration.RegisterPagePositiveTests" time="0.908"/>
+  <testcase name="registerNewUserWithValidDataPositive[21](Jackson, Fisher, jacksonfisher@example.com, 7654321098, Test@5678)" classname="allcom.tests.registration.RegisterPagePositiveTests" time="0.939"/>
+  <testcase name="registerNewUserWithValidDataPositive[22](Isabella, Clark, isabellaclark@example.com, 10987654321, Awesome@2022)" classname="allcom.tests.registration.RegisterPagePositiveTests" time="0.978"/>
+  <testcase name="registerNewUserWithValidDataPositive[23](Leo, Ward, leoward@example.com, 87654321098, Dummy@4567)" classname="allcom.tests.registration.RegisterPagePositiveTests" time="0.923"/>
+  <testcase name="registerNewUserWithValidDataPositive[24](Aria, Martin, ariamartin@example.com, 10987654321, Explore@Tester!33)" classname="allcom.tests.registration.RegisterPagePositiveTests" time="0.959"/>
+  <testcase name="registerNewUserWithValidDataPositive[25](Oliver, Adams, oliveradams@example.com, 7654321098, Beta@Tester456)" classname="allcom.tests.registration.RegisterPagePositiveTests" time="0.964"/>
+  <testcase name="registerNewUserWithValidDataPositive[26](Liam, Grey, liamgrey@example.com, 10987654321, Verify@Tester2022)" classname="allcom.tests.registration.RegisterPagePositiveTests" time="0.959"/>
+  <testcase name="registerNewUserWithValidDataPositive[27](Zoe, Turner, zoeturner@example.com, 76543210987, Happy@Tester2022)" classname="allcom.tests.registration.RegisterPagePositiveTests" time="1.005"/>
+  <testcase name="registerNewUserWithValidDataPositive[28](Ethan, Williams, ethanwilliams@example.com, 10987654321, Test@Tester123)" classname="allcom.tests.registration.RegisterPagePositiveTests" time="1.035"/>
+  <testcase name="registerNewUserWithValidDataPositive[29](Luna, Knight, lunaknight@example.com, 87654321098, Pass@Tester2022)" classname="allcom.tests.registration.RegisterPagePositiveTests" time="0.947"/>
+  <testcase name="registerNewUserWithValidDataPositive[30](Nikolay, Kotenko, nikolenkotenikolenkotenikolenkotenikolenkotenikolenkotenikolenk@gmail.com, 4567894012, secureusersecureuserD@User202)" classname="allcom.tests.registration.RegisterPagePositiveTests" time="1.137"/>
+  <testcase name="registerNewUserWithValidDataPositive[31](Gmail, Kotenko, nikolenkotenikolenkotenikolenkotenikolenkotenikolenkotenikolenk@gmailgmailgmailgmailgmailgmailgmailgmailgmailgmailgmailgmailgma.com, 3210948765, ecureusersecureuserecureusersecureuserecureusersecureuserecureusersecureuserecureusersecureuserecureusersecureuserecureusersecureuserecureusersecureuserecureusersecureuserecureusersecureuserecureusersecureusaD@User2022)" classname="allcom.tests.registration.RegisterPagePositiveTests" time="2.169"/>
+  <testcase name="registerNewUserWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="1.056"/>
+  <testcase name="registerNewUserWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="1.092"/>
+  <testcase name="registerNewUserWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="1.079"/>
+  <testcase name="registerNewUserWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="1.133"/>
+  <testcase name="registerNewUserWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="1.117"/>
+  <testcase name="registerNewUserWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="1.222"/>
+  <testcase name="registerNewUserWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="1.346"/>
+  <testcase name="registerNewUserWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="2.144"/>
+  <testcase name="registerNewUserWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="1.602"/>
+  <testcase name="registerNewUserWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="2.501"/>
+  <testcase name="registerNewUserWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="2.658"/>
+  <testcase name="registerNewUserWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="2.29"/>
+  <testcase name="registerNewUserWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="2.038"/>
+  <testcase name="registerNewUserWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="1.511"/>
+  <testcase name="registerNewUserWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="1.167"/>
+  <testcase name="registerNewUserWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="1.12"/>
+  <testcase name="registerNewUserWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="1.137"/>
+  <testcase name="registerNewUserWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="1.096"/>
+  <testcase name="registerNewUserWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="1.084"/>
+  <testcase name="registerNewUserWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="1.347"/>
+  <testcase name="registerNewUserWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="1.271"/>
+  <testcase name="registerNewUserWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="1.123"/>
+  <testcase name="registerNewUserWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="1.283"/>
+  <testcase name="registerNewUserWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="1.373"/>
+  <testcase name="registerNewUserWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="1.144"/>
+  <testcase name="registerNewUserWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="1.162"/>
+  <testcase name="registerNewUserWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="1.036"/>
+  <testcase name="registerNewUserWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="1.088"/>
+  <testcase name="registerNewUserWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="1.327"/>
+  <testcase name="registerNewUserWithValidRandomDataPositive" classname="allcom.tests.registration.RegisterPagePositiveTests" time="1.156"/>
+  <testcase name="validateComparePasswordsEqualityPositiveData" classname="allcom.tests.registration.RegisterPagePositiveTests" time="0.319"/>
+  <system-out><![CDATA[01:20:39.322 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerClientWithValidDataPositiveTest]
+01:20:40.985 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerClientWithValidDataPositiveTest], with Parameters: []
+01:20:40.985 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerFirmaWithValidDataPositiveTest]
+01:20:44.004 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerFirmaWithValidDataPositiveTest], with Parameters: []
+01:20:44.005 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewFirmaWithValidDataPositive]
+01:20:46.727 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewFirmaWithValidDataPositive], with Parameters: [John, Doe, johndoe@example.com, 4934567894, Test!123, Test!123, ACME Corp, Manager, 123456789012, 12345, Berlin, Berliner Strasse, 42A]
+01:20:46.727 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewFirmaWithValidDataPositive]
+01:20:50.066 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewFirmaWithValidDataPositive], with Parameters: [Jane, Smith, janesmith@example.com, 9876545321, Demo@Pass2022, Demo@Pass2022, XYZ Ltd, Engineer, 987654321098, 54321, Hamburg, Hauptstrasse, 17B]
+01:20:50.066 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewFirmaWithValidDataPositive]
+01:20:52.808 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewFirmaWithValidDataPositive], with Parameters: [Alice, Johnson, alicejohnson@example.com, 4556789012, Secure@Pwd567, Secure@Pwd567, QuickFix Inc, Developer, 654321098765, 67890, Munich, Muenchner Weg, 99C]
+01:20:52.808 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewFirmaWithValidDataPositive]
+01:20:55.419 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewFirmaWithValidDataPositive], with Parameters: [Bob, Miller, bobmiller@example.com, 7890123545, Test@Pass789, Test@Pass789, Sprint Systems, Analyst, 210987654321, 98765, Stuttgart, Stuttgarter Allee, 12D]
+01:20:55.420 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewFirmaWithValidDataPositive]
+01:20:58.122 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewFirmaWithValidDataPositive], with Parameters: [Charlie, Brown, charliebrown@example.com, 3210958765, Awesome!12345, Awesome!12345, InnoTech Solutions, Designer, 543210987654, 34567, Frankfurt, Frankfurte Ring, 7E]
+01:20:58.124 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewFirmaWithValidDataPositive]
+01:21:00.852 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewFirmaWithValidDataPositive], with Parameters: [Eva, Clark, evaclark@example.com, 6543210958, Dummy@Pass456, Dummy@Pass456, SmartGrid GmbH, Manager, 109876543210, 87654, Dusseldorf, Duesseldorfer Platz, 23F]
+01:21:00.852 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewFirmaWithValidDataPositive]
+01:21:03.631 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewFirmaWithValidDataPositive], with Parameters: [David, Williams, davidwilliams@example.com, 25109876554, Explore@Test789, Explore@Test789, TechPro GmbH, Engineer, 987654321012, 43210, Leipzig, Leipziger Strasse, 56G]
+01:21:03.631 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewFirmaWithValidDataPositive]
+01:21:06.398 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewFirmaWithValidDataPositive], with Parameters: [Olivia, Jones, oliviajones@example.com, 54321509875, Beta@UserPass!33, Beta@UserPass!33, InnovaCorp AG, Analyst, 876543210987, 21098, Hannover, Hannoveraner Weg, 78H]
+01:21:06.399 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewFirmaWithValidDataPositive]
+01:21:09.194 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewFirmaWithValidDataPositive], with Parameters: [Michael, Smith, michaelsmith@example.com, 8765543210, Verify@Pass2022, Verify@Pass2022, FirmTech Solutions, Developer, 109876543210, 76543, Cologne, Koelner Gasse, 34I]
+01:21:09.194 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewFirmaWithValidDataPositive]
+01:21:12.102 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewFirmaWithValidDataPositive], with Parameters: [Sophie, Anderson, sophieanderson@example.com, 1095876543, Happy@Testing!333, Happy@Testing!333, DataFlow Systems, Designer, 321098765, 54321, Berlin, Berliner Strasse, 42A]
+01:21:12.102 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewFirmaWithValidDataPositive]
+01:21:14.972 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewFirmaWithValidDataPositive], with Parameters: [Alex, White, alexwhite@example.com, 9876543521, Pass@123, Pass@123, GlobalTech Ltd, Manager, 123456789012, 12345, Hamburg, Hauptstrasse, 17B]
+01:21:14.972 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewFirmaWithValidDataPositive]
+01:21:17.618 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewFirmaWithValidDataPositive], with Parameters: [Emma, Taylor, emataylor@example.com, 6543251098, Test@456, Test@456, BlueSky Inc, Engineer, 987654321098, 54321, Munich, Muenchner Weg, 99C]
+01:21:17.618 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewFirmaWithValidDataPositive]
+01:21:21.200 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewFirmaWithValidDataPositive], with Parameters: [Daniel, Baker, danielbaker@example.com, 3251098765, Secure@789, Secure@789, SmartBuild Solutions, Developer, 654321098765, 67890, Stuttgart, Stuttgarter Allee, 12D]
+01:21:21.200 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewFirmaWithValidDataPositive]
+01:21:24.113 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewFirmaWithValidDataPositive], with Parameters: [Grace, Turner, graceturner@example.com, 7859012345, Pass!2022, Pass!2022, FastTech Systems, Analyst, 210987654321, 98765, Frankfurt, Frankfurter Ring, 7E]
+01:21:24.115 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewFirmaWithValidDataPositive]
+01:21:27.014 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewFirmaWithValidDataPositive], with Parameters: [Oliver, Hall, oliverhall@example.com, 2109587654, Explore@2023, Explore@2023, TechGenius GmbH, Engineer, 987654321012, 43210, Dusseldorf, Duesseldorfer Platz, 23F]
+01:21:27.014 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewFirmaWithValidDataPositive]
+01:21:29.812 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewFirmaWithValidDataPositive], with Parameters: [Mia, Wilson, miawilson@example.com, 5432105987, Beta@Tester!33, Beta@Tester!33, InnoSoft AG, Analyst, 876543210987, 21098, Leipzig, Leipziger Strasse, 56G]
+01:21:29.812 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewFirmaWithValidDataPositive]
+01:21:32.625 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewFirmaWithValidDataPositive], with Parameters: [Sophia, Moore, sophiamoore@example.com, 8756543210, Verify@4567, Verify@4567, SmartData Solutions, Developer, 109876543210, 76543, Hannover, Hannoveraner Weg, 78H]
+01:21:32.626 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewFirmaWithValidDataPositive]
+01:21:35.517 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewFirmaWithValidDataPositive], with Parameters: [Liam, Carter, liamcarter@example.com, 1098576543, Happy@2023, Happy@2023, FutureTech Corp, Designer, 321098765, 54321, Cologne, Koelner Gasse, 4I]
+01:21:35.519 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewFirmaWithValidDataPositive]
+01:21:38.516 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewFirmaWithValidDataPositive], with Parameters: [Ava, Martin, avamartin@example.com, 7654325109, Test@12345, Test@12345, DataInnovate GmbH, Manager, 123456789012, 12345, Berlin, Berliner Strasse, 42A]
+01:21:38.516 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewFirmaWithValidDataPositive]
+01:21:41.695 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewFirmaWithValidDataPositive], with Parameters: [Lucas, Harris, lucasharris@example.com, 98576543210, Pass@2022, Pass@2022, GlobalSoft Ltd, Engineer, 987654321098, 54321, Hamburg, Hauptstrasse, 17B]
+01:21:41.695 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewFirmaWithValidDataPositive]
+01:21:44.534 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewFirmaWithValidDataPositive], with Parameters: [Ella, Cooper, ellacooper@example.com, 8765432109, Secure@1234, Secure@1234, BlueWave Inc, Developer, 654321098765, 67890, Munich, Muenchner Weg, 99C]
+01:21:44.534 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewFirmaWithValidDataPositive]
+01:21:47.422 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewFirmaWithValidDataPositive], with Parameters: [Jackson, Fisher, jacksonfisher@example.com, 7654321098, Test@5678, Test@5678, SmartTech Solutions, Analyst, 210987654321, 98765, Stuttgart, Stuttgarter Allee, 12D]
+01:21:47.423 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewFirmaWithValidDataPositive]
+01:21:50.364 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewFirmaWithValidDataPositive], with Parameters: [Isabella, Clark, isabellaclark@example.com, 10987654321, Awesome@2022, Awesome@2022, InnoConnect GmbH, Designer, 543210987654, 34567, Frankfurt, Frankfurter Ring, 7E]
+01:21:50.365 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewFirmaWithValidDataPositive]
+01:21:53.767 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewFirmaWithValidDataPositive], with Parameters: [Leo, Ward, leoward@example.com, 87654321098, Dummy@4567, Dummy@4567, FutureBuild Systems, Manager, 109876543210, 87654, Dusseldorf, Duesseldorfer Platz, 23F]
+01:21:53.768 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewFirmaWithValidDataPositive]
+01:21:57.871 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewFirmaWithValidDataPositive], with Parameters: [Aria, Martin, ariamartin@example.com, 10987654321, Explore@Tester!33, Explore@Tester!33, DataScape AG, Engineer, 987654321012, 43210, Leipzig, Leipziger Strasse, 56G]
+01:21:57.871 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewFirmaWithValidDataPositive]
+01:22:01.474 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewFirmaWithValidDataPositive], with Parameters: [Oliver, Adams, oliveradams@example.com, 7654321098, Beta@Tester456, Beta@Tester456, InnoWave Corp, Analyst, 876543210987, 21098, Hannover, Hannoveraner Weg, 8H]
+01:22:01.474 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewFirmaWithValidDataPositive]
+01:22:04.369 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewFirmaWithValidDataPositive], with Parameters: [Liam, Grey, liamgrey@example.com, 10987654321, Verify@Tester2022, Verify@Tester2022, SmartMind Solutions, Developer, 109876543210, 76543, Cologne, Koelner Gasse, 34I]
+01:22:04.369 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewFirmaWithValidDataPositive]
+01:22:07.096 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewFirmaWithValidDataPositive], with Parameters: [Zoe, Turner, zoeturner@example.com, 76543210987, Happy@Tester2022, Happy@Tester2022, FutureTech Innovations, Designer, 32109876576, 54321, Berlin, Berliner Strasse, 42A]
+01:22:07.097 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewFirmaWithValidDataPositive]
+01:22:09.810 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewFirmaWithValidDataPositive], with Parameters: [Ethan, Williams, ethanwilliams@example.com, 10987654321, Test@Tester123, Test@Tester123, GlobalInnovate GmbH, Manager, 123456789012, 12345, Hamburg, Hauptstrasse, 17B]
+01:22:09.810 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewFirmaWithValidDataPositive]
+01:22:12.527 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewFirmaWithValidDataPositive], with Parameters: [Luna, Knight, lunaknight@example.com, 87654321098, Pass@Tester2022, Pass@Tester2022, BlueTech Ltd, Engineer, 987654321098, 54321, Munich, Muenchner Weg, 99C]
+01:22:12.527 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewFirmaWithValidDataPositive]
+01:22:15.500 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewFirmaWithValidDataPositive], with Parameters: [Nikolay, Kotenko, nikolenkotenikolenkotenikolenkotenikolenkotenikolenkotenikolenk@gmail.com, 87654321098, Explore@Tester!33, Explore@Tester!33, DataScape AG, Analyst, 109876543210, 43210, Cologne, Koelner Gasse, 17B]
+01:22:15.500 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewFirmaWithValidDataPositive]
+01:22:18.616 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewFirmaWithValidDataPositive], with Parameters: [Gmail, Kotenko, nikolenkotenikolenkotenikolenkotenikolenkotenikolenkotenikolenk@gmailgmailgmailgmailgmailgmailgmailgmailgmailgmailgmailgmailgma.com, 87654321098, Pass@Tester2022, Pass@Tester2022, FutureTech Innovations, Designer, 543210987654, 76543, Munich, Duesseldorfer Platz, #45]
+01:22:18.616 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewFirmaWithValidRandomDataPositive]
+01:22:21.554 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewFirmaWithValidRandomDataPositive], with Parameters: []
+01:22:21.554 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewFirmaWithValidRandomDataPositive]
+01:22:24.651 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewFirmaWithValidRandomDataPositive], with Parameters: []
+01:22:24.651 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewFirmaWithValidRandomDataPositive]
+01:22:27.884 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewFirmaWithValidRandomDataPositive], with Parameters: []
+01:22:27.884 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewFirmaWithValidRandomDataPositive]
+01:22:31.377 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewFirmaWithValidRandomDataPositive], with Parameters: []
+01:22:31.379 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewFirmaWithValidRandomDataPositive]
+01:22:34.520 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewFirmaWithValidRandomDataPositive], with Parameters: []
+01:22:34.520 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewFirmaWithValidRandomDataPositive]
+01:22:37.715 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewFirmaWithValidRandomDataPositive], with Parameters: []
+01:22:37.715 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewFirmaWithValidRandomDataPositive]
+01:22:41.138 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewFirmaWithValidRandomDataPositive], with Parameters: []
+01:22:41.138 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewFirmaWithValidRandomDataPositive]
+01:22:44.087 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewFirmaWithValidRandomDataPositive], with Parameters: []
+01:22:44.087 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewFirmaWithValidRandomDataPositive]
+01:22:47.033 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewFirmaWithValidRandomDataPositive], with Parameters: []
+01:22:47.033 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewFirmaWithValidRandomDataPositive]
+01:22:50.209 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewFirmaWithValidRandomDataPositive], with Parameters: []
+01:22:50.209 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewFirmaWithValidRandomDataPositive]
+01:22:53.177 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewFirmaWithValidRandomDataPositive], with Parameters: []
+01:22:53.177 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewFirmaWithValidRandomDataPositive]
+01:22:56.150 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewFirmaWithValidRandomDataPositive], with Parameters: []
+01:22:56.151 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewFirmaWithValidRandomDataPositive]
+01:22:59.237 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewFirmaWithValidRandomDataPositive], with Parameters: []
+01:22:59.237 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewFirmaWithValidRandomDataPositive]
+01:23:02.503 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewFirmaWithValidRandomDataPositive], with Parameters: []
+01:23:02.503 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewFirmaWithValidRandomDataPositive]
+01:23:05.999 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewFirmaWithValidRandomDataPositive], with Parameters: []
+01:23:05.999 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewFirmaWithValidRandomDataPositive]
+01:23:09.235 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewFirmaWithValidRandomDataPositive], with Parameters: []
+01:23:09.235 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewFirmaWithValidRandomDataPositive]
+01:23:12.140 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewFirmaWithValidRandomDataPositive], with Parameters: []
+01:23:12.140 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewFirmaWithValidRandomDataPositive]
+01:23:15.082 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewFirmaWithValidRandomDataPositive], with Parameters: []
+01:23:15.083 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewFirmaWithValidRandomDataPositive]
+01:23:18.027 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewFirmaWithValidRandomDataPositive], with Parameters: []
+01:23:18.027 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewFirmaWithValidRandomDataPositive]
+01:23:21.018 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewFirmaWithValidRandomDataPositive], with Parameters: []
+01:23:21.019 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewFirmaWithValidRandomDataPositive]
+01:23:24.136 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewFirmaWithValidRandomDataPositive], with Parameters: []
+01:23:24.136 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewFirmaWithValidRandomDataPositive]
+01:23:27.122 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewFirmaWithValidRandomDataPositive], with Parameters: []
+01:23:27.122 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewFirmaWithValidRandomDataPositive]
+01:23:30.614 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewFirmaWithValidRandomDataPositive], with Parameters: []
+01:23:30.615 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewFirmaWithValidRandomDataPositive]
+01:23:33.771 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewFirmaWithValidRandomDataPositive], with Parameters: []
+01:23:33.772 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewFirmaWithValidRandomDataPositive]
+01:23:36.759 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewFirmaWithValidRandomDataPositive], with Parameters: []
+01:23:36.759 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewFirmaWithValidRandomDataPositive]
+01:23:39.749 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewFirmaWithValidRandomDataPositive], with Parameters: []
+01:23:39.749 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewFirmaWithValidRandomDataPositive]
+01:23:42.686 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewFirmaWithValidRandomDataPositive], with Parameters: []
+01:23:42.687 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewFirmaWithValidRandomDataPositive]
+01:23:45.662 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewFirmaWithValidRandomDataPositive], with Parameters: []
+01:23:45.663 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewFirmaWithValidRandomDataPositive]
+01:23:48.745 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewFirmaWithValidRandomDataPositive], with Parameters: []
+01:23:48.745 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewFirmaWithValidRandomDataPositive]
+01:23:51.641 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewFirmaWithValidRandomDataPositive], with Parameters: []
+01:23:51.642 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidDataPositive]
+01:23:53.329 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidDataPositive], with Parameters: [John, Doe, johndoe@example.com, 4934567894, Test!123]
+01:23:53.329 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidDataPositive]
+01:23:54.965 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidDataPositive], with Parameters: [Jane, Smith, janesmith@example.com, 9876545321, Demo@Pass2022]
+01:23:54.965 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidDataPositive]
+01:23:56.667 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidDataPositive], with Parameters: [Alice, Johnson, alicejohnson@example.com, 4556789012, Secure@Pwd567]
+01:23:56.667 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidDataPositive]
+01:23:58.371 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidDataPositive], with Parameters: [Bob, Miller, bobmiller@example.com, 7890123545, Test@Pass789]
+01:23:58.371 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidDataPositive]
+01:24:00.168 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidDataPositive], with Parameters: [Charlie, Brown, charliebrown@example.com, 3210958765, Awesome!12345]
+01:24:00.168 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidDataPositive]
+01:24:02.189 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidDataPositive], with Parameters: [Eva, Clark, evaclark@example.com, 6543210958, Dummy@Pass456]
+01:24:02.189 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidDataPositive]
+01:24:04.434 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidDataPositive], with Parameters: [David, Williams, davidwilliams@example.com, 25109876554, Explore@Test789]
+01:24:04.434 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidDataPositive]
+01:24:06.600 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidDataPositive], with Parameters: [Olivia, Jones, oliviajones@example.com, 54321509875, Beta@UserPass!33]
+01:24:06.601 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidDataPositive]
+01:24:08.674 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidDataPositive], with Parameters: [Michael, Smith, michaelsmith@example.com, 8765543210, Verify@Pass2022]
+01:24:08.674 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidDataPositive]
+01:24:11.075 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidDataPositive], with Parameters: [Sophie, Anderson, sophieanderson@example.com, 1095876543, Happy@Testing!333]
+01:24:11.075 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidDataPositive]
+01:24:13.238 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidDataPositive], with Parameters: [Alex, White, alexwhite@example.com, 9876543521, Pass@123]
+01:24:13.239 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidDataPositive]
+01:24:15.100 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidDataPositive], with Parameters: [Emma, Taylor, emataylor@example.com, 6543251098, Test@456]
+01:24:15.100 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidDataPositive]
+01:24:17.335 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidDataPositive], with Parameters: [Daniel, Baker, danielbaker@example.com, 3251098765, Secure@789]
+01:24:17.335 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidDataPositive]
+01:24:19.062 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidDataPositive], with Parameters: [Grace, Turner, graceturner@example.com, 7859012345, Pass!2022]
+01:24:19.062 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidDataPositive]
+01:24:20.979 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidDataPositive], with Parameters: [Oliver, Hall, oliverhall@example.com, 2109587654, Explore@2023]
+01:24:20.979 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidDataPositive]
+01:24:22.681 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidDataPositive], with Parameters: [Mia, Wilson, miawilson@example.com, 5432105987, Beta@Tester!33]
+01:24:22.681 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidDataPositive]
+01:24:24.435 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidDataPositive], with Parameters: [Sophia, Moore, sophiamoore@example.com, 8756543210, Verify@4567]
+01:24:24.435 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidDataPositive]
+01:24:26.169 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidDataPositive], with Parameters: [Liam, Carter, liamcarter@example.com, 1098576543, Happy@2023]
+01:24:26.169 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidDataPositive]
+01:24:27.821 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidDataPositive], with Parameters: [Ava, Martin, avamartin@example.com, 7654325109, Test@12345]
+01:24:27.822 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidDataPositive]
+01:24:29.573 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidDataPositive], with Parameters: [Lucas, Harris, lucasharris@example.com, 98576543210, Pass@2022]
+01:24:29.573 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidDataPositive]
+01:24:31.271 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidDataPositive], with Parameters: [Ella, Cooper, ellacooper@example.com, 8765432109, Secure@1234]
+01:24:31.271 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidDataPositive]
+01:24:32.957 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidDataPositive], with Parameters: [Jackson, Fisher, jacksonfisher@example.com, 7654321098, Test@5678]
+01:24:32.957 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidDataPositive]
+01:24:34.744 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidDataPositive], with Parameters: [Isabella, Clark, isabellaclark@example.com, 10987654321, Awesome@2022]
+01:24:34.744 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidDataPositive]
+01:24:36.563 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidDataPositive], with Parameters: [Leo, Ward, leoward@example.com, 87654321098, Dummy@4567]
+01:24:36.564 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidDataPositive]
+01:24:38.308 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidDataPositive], with Parameters: [Aria, Martin, ariamartin@example.com, 10987654321, Explore@Tester!33]
+01:24:38.309 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidDataPositive]
+01:24:40.128 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidDataPositive], with Parameters: [Oliver, Adams, oliveradams@example.com, 7654321098, Beta@Tester456]
+01:24:40.128 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidDataPositive]
+01:24:41.853 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidDataPositive], with Parameters: [Liam, Grey, liamgrey@example.com, 10987654321, Verify@Tester2022]
+01:24:41.853 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidDataPositive]
+01:24:43.678 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidDataPositive], with Parameters: [Zoe, Turner, zoeturner@example.com, 76543210987, Happy@Tester2022]
+01:24:43.678 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidDataPositive]
+01:24:45.507 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidDataPositive], with Parameters: [Ethan, Williams, ethanwilliams@example.com, 10987654321, Test@Tester123]
+01:24:45.507 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidDataPositive]
+01:24:47.220 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidDataPositive], with Parameters: [Luna, Knight, lunaknight@example.com, 87654321098, Pass@Tester2022]
+01:24:47.220 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidDataPositive]
+01:24:49.151 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidDataPositive], with Parameters: [Nikolay, Kotenko, nikolenkotenikolenkotenikolenkotenikolenkotenikolenkotenikolenk@gmail.com, 4567894012, secureusersecureuserD@User202]
+01:24:49.151 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidDataPositive]
+01:24:52.150 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidDataPositive], with Parameters: [Gmail, Kotenko, nikolenkotenikolenkotenikolenkotenikolenkotenikolenkotenikolenk@gmailgmailgmailgmailgmailgmailgmailgmailgmailgmailgmailgmailgma.com, 3210948765, ecureusersecureuserecureusersecureuserecureusersecureuserecureusersecureuserecureusersecureuserecureusersecureuserecureusersecureuserecureusersecureuserecureusersecureuserecureusersecureuserecureusersecureusaD@User2022]
+01:24:52.151 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidRandomDataPositive]
+01:24:54.011 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidRandomDataPositive], with Parameters: []
+01:24:54.011 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidRandomDataPositive]
+01:24:55.955 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidRandomDataPositive], with Parameters: []
+01:24:55.955 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidRandomDataPositive]
+01:24:57.869 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidRandomDataPositive], with Parameters: []
+01:24:57.870 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidRandomDataPositive]
+01:24:59.824 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidRandomDataPositive], with Parameters: []
+01:24:59.825 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidRandomDataPositive]
+01:25:01.947 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidRandomDataPositive], with Parameters: []
+01:25:01.947 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidRandomDataPositive]
+01:25:04.219 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidRandomDataPositive], with Parameters: []
+01:25:04.219 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidRandomDataPositive]
+01:25:06.576 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidRandomDataPositive], with Parameters: []
+01:25:06.577 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidRandomDataPositive]
+01:25:10.077 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidRandomDataPositive], with Parameters: []
+01:25:10.078 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidRandomDataPositive]
+01:25:12.681 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidRandomDataPositive], with Parameters: []
+01:25:12.682 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidRandomDataPositive]
+01:25:16.779 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidRandomDataPositive], with Parameters: []
+01:25:16.780 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidRandomDataPositive]
+01:25:20.916 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidRandomDataPositive], with Parameters: []
+01:25:20.917 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidRandomDataPositive]
+01:25:24.844 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidRandomDataPositive], with Parameters: []
+01:25:24.844 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidRandomDataPositive]
+01:25:28.472 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidRandomDataPositive], with Parameters: []
+01:25:28.472 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidRandomDataPositive]
+01:25:30.931 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidRandomDataPositive], with Parameters: []
+01:25:30.931 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidRandomDataPositive]
+01:25:33.108 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidRandomDataPositive], with Parameters: []
+01:25:33.108 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidRandomDataPositive]
+01:25:35.079 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidRandomDataPositive], with Parameters: []
+01:25:35.079 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidRandomDataPositive]
+01:25:37.130 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidRandomDataPositive], with Parameters: []
+01:25:37.131 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidRandomDataPositive]
+01:25:39.049 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidRandomDataPositive], with Parameters: []
+01:25:39.049 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidRandomDataPositive]
+01:25:40.978 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidRandomDataPositive], with Parameters: []
+01:25:40.978 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidRandomDataPositive]
+01:25:43.390 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidRandomDataPositive], with Parameters: []
+01:25:43.391 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidRandomDataPositive]
+01:25:45.561 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidRandomDataPositive], with Parameters: []
+01:25:45.561 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidRandomDataPositive]
+01:25:47.565 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidRandomDataPositive], with Parameters: []
+01:25:47.565 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidRandomDataPositive]
+01:25:49.719 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidRandomDataPositive], with Parameters: []
+01:25:49.719 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidRandomDataPositive]
+01:25:51.972 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidRandomDataPositive], with Parameters: []
+01:25:51.972 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidRandomDataPositive]
+01:25:53.990 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidRandomDataPositive], with Parameters: []
+01:25:53.991 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidRandomDataPositive]
+01:25:56.017 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidRandomDataPositive], with Parameters: []
+01:25:56.017 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidRandomDataPositive]
+01:25:58.202 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidRandomDataPositive], with Parameters: []
+01:25:58.202 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidRandomDataPositive]
+01:26:00.149 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidRandomDataPositive], with Parameters: []
+01:26:00.149 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidRandomDataPositive]
+01:26:02.330 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidRandomDataPositive], with Parameters: []
+01:26:02.331 [Test worker] INFO  allcom.tests.TestBase -- Start test: [registerNewUserWithValidRandomDataPositive]
+01:26:04.391 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [registerNewUserWithValidRandomDataPositive], with Parameters: []
+01:26:04.391 [Test worker] INFO  allcom.tests.TestBase -- Start test: [validateComparePasswordsEqualityPositiveData]
+01:26:05.546 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [validateComparePasswordsEqualityPositiveData], with Parameters: []
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
