@@ -43,6 +43,10 @@ In addition to the mentioned functionalities, the **[ALLCOM](https://github.com/
 
 :gear: Start the project with`gradle run`.
 
+or You can use one of this .**batch** files on Windows
+
+<img align="center" src="https://i.ibb.co/dDcpZth/batch.png" alt="screenshot"/>
+
 Before executing tests, ensure the installation of the following dependencies: Java, Gradle, Selenium (version 4.17.0), TestNG (version 7.9.0), Logback (version 1.4.14), OpenCSV (version 5.9).
 ## Сreate new branch
 :floppy_disk: Use `feature/new-branch`
