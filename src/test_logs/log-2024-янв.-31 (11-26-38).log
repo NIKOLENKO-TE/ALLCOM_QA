@@ -1,0 +1,2 @@
+5045 [Test worker] INFO  allcom.tests.TestBase -- Start test: [clickTwitterLink]
+6603 [Test worker] INFO  allcom.tests.TestBase -- PASSED: [clickTwitterLink], with Parameters: []
