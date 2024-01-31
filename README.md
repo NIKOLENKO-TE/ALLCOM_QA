@@ -1,8 +1,8 @@
 <div align="center"><img src="https://komarev.com/ghpvc/?username=nikolenkote&color=blueviolet&label=PROFILE+VIEWS" alt="counter"/></div>
 
-<h1 align="center">Hi 👋, I'm Nikolenko Tymofii</h1>
+<h1 align="center">Hi 👋, I'm Nikolenko Tymofii   <img align="top" src="https://i.ibb.co/gW1J8Sr/Ukraine.png"  height="40" width="60" alt="flag_Ukraine"/></h1> 
 
-<h3 align="center">Quality Assurance Automation Engineer from Ukraine, but now i live in Germany, Berlin</h3>
+<h3 align="center">Quality Assurance Automation Engineer from Germany, Berlin   <img align="center" src="https://i.ibb.co/mCmjb5s/germany.png"  height="40" width="60" alt="flag_Ukraine"/></h3>
 
 - 🔭 I’m currently working on [git ALLCOM_AUCTION PROJECT](https://github.com/NIKOLENKO-TE/ALLCOM_SITE)
 
