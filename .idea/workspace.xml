@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8db75e9f-d9f2-4f58-bf1e-f8acdfc98d27" name="Changes" comment="fix gitignore file" />
+    <list default="true" id="8db75e9f-d9f2-4f58-bf1e-f8acdfc98d27" name="Changes" comment="fix gitignore file">
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/allcom_qa_footer/classes/allcom.tests.footerPageTests.FooterPageTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/allcom_qa_footer/classes/allcom.tests.footerPageTests.FooterPageTests.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/allcom_qa_footer/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/allcom_qa_footer/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/allcom_qa_footer/packages/allcom.tests.footerPageTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/allcom_qa_footer/packages/allcom.tests.footerPageTests.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/allcom_qa_footer/TEST-allcom.tests.footerPageTests.FooterPageTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/allcom_qa_footer/TEST-allcom.tests.footerPageTests.FooterPageTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/allcom_qa_footer/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/allcom_qa_footer/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/allcom_qa_footer/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/allcom_qa_footer/binary/output.bin.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/allcom_qa_footer/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/allcom_qa_footer/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -307,7 +321,7 @@
       <recent name="allcom.pages.header" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.FooterPageTests">
+  <component name="RunManager" selected="Gradle.FooterPageTests.clickTwitterLink">
     <configuration name="FooterPageTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -380,6 +394,30 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="FooterPageTests.clickTwitterLink" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":allcom_qa_footer" />
+            <option value="--tests" />
+            <option value="&quot;allcom.tests.footerPageTests.FooterPageTests.clickTwitterLink&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="FooterPageTests.clickYoutubeLink" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -394,30 +432,6 @@
             <option value=":allcom_qa_footer" />
             <option value="--tests" />
             <option value="&quot;allcom.tests.footerPageTests.FooterPageTests.clickYoutubeLink&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="RegisterPagePositiveTests.registerNewFirmaWithValidRandomDataPositive" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":allcom_qa_register_positive" />
-            <option value="--tests" />
-            <option value="&quot;allcom.tests.registration.RegisterPagePositiveTests.registerNewFirmaWithValidRandomDataPositive&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -443,11 +457,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.FooterPageTests.clickTwitterLink" />
         <item itemvalue="Gradle.FooterPageTests" />
         <item itemvalue="Gradle.FooterPageTests.clickContactLink" />
         <item itemvalue="Gradle.FooterPageTests.clickMyAccountLink" />
         <item itemvalue="Gradle.FooterPageTests.clickYoutubeLink" />
-        <item itemvalue="Gradle.RegisterPagePositiveTests.registerNewFirmaWithValidRandomDataPositive" />
       </list>
     </recent_temporary>
   </component>
@@ -527,6 +541,8 @@
       <workItem from="1706695703621" duration="811000" />
       <workItem from="1706696529533" duration="45000" />
       <workItem from="1706696584238" duration="6000" />
+      <workItem from="1706696664479" duration="66000" />
+      <workItem from="1706696763648" duration="425000" />
     </task>
     <task id="LOCAL-00001" summary="fix gitignore file">
       <option name="closed" value="true" />
