@@ -14,6 +14,7 @@ import org.testng.Assert;
 
 import java.time.Duration;
 import java.util.ArrayList;
+import java.util.Set;
 
 public class BasePage {
     public WebDriver driver;
@@ -55,11 +56,20 @@ public class BasePage {
         driver.switchTo().window(tabs.get(0));
     }
     public void testClickLink(WebElement urlToOpen, String urlToCompare) {
+        String currentWindowHandle = driver.getWindowHandle();
         clickLinks(urlToOpen);
-        switchToNewTab();
-        waitForPageLoad();
-        isCurrentPage(urlToCompare, true);
-        closeTab();
+        Set<String> windowHandles = driver.getWindowHandles();
+        if (windowHandles.size() > 1) {
+            windowHandles.remove(currentWindowHandle);
+            String newWindowHandle = windowHandles.iterator().next();
+            driver.switchTo().window(newWindowHandle);
+            waitForPageLoad();
+            isCurrentPage(urlToCompare, true);
+            closeTab();
+            driver.switchTo().window(currentWindowHandle);
+        } else {
+            isCurrentPage(urlToCompare, true);
+        }
     }
     public void type(WebElement element, String text) {
         if (text != null) {

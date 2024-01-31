@@ -44,61 +44,51 @@ public class FooterPageTests extends TestBase {
 
     @Test
     public void clickMyAccountLink() {
-        basePage.clickLinks(footerPage.MY_ACCOUNT());
-        basePage.isCurrentPage(HomePage.homePageURL() + FooterPage.MY_ACCOUNT_URL(), true);
+        basePage.testClickLink(footerPage.MY_ACCOUNT(), FooterPage.MY_ACCOUNT_URL());
     }
 
     @Test
     public void clickLoginLink() {
-        basePage.clickLinks(footerPage.LOGIN());
-        basePage.isCurrentPage(LoginPage.loginPageURL(), true);
+        basePage.testClickLink(footerPage.LOGIN(), LoginPage.loginPageURL());
     }
 
     @Test
     public void clickRegisterLink() {
-        basePage.clickLinks(footerPage.REGISTER());
-        basePage.isCurrentPage(RegisterPage.registerPageURL(), true);
+        basePage.testClickLink(footerPage.REGISTER(), RegisterPage.registerPageURL());
     }
 
     @Test
     public void clickMyAuctionsLink() {
-        basePage.clickLinks(footerPage.MY_AUCTIONS());
-        basePage.isCurrentPage(HomePage.homePageURL() + FooterPage.MY_AUCTIONS_URL(), true);
+        basePage.testClickLink(footerPage.MY_AUCTIONS(), FooterPage.MY_AUCTIONS_URL());
     }
 
     @Test
     public void clickFavoritesAuctionsLink() {
-        basePage.clickLinks(footerPage.FAVORITES_AUCTIONS());
-        basePage.isCurrentPage(HomePage.homePageURL() + FooterPage.FAVORITES_AUCTIONS_URL(), true);
+        basePage.testClickLink(footerPage.FAVORITES_AUCTIONS(), FooterPage.FAVORITES_AUCTIONS_URL());
     }
 
     @Test
     public void clickAboutUsLink() {
-        basePage.clickLinks(footerPage.ABOUT_US());
-        basePage.isCurrentPage(HomePage.homePageURL() + FooterPage.ABOUT_US_URL(), true);
-    }
+        basePage.testClickLink(footerPage.ABOUT_US(), FooterPage.ABOUT_US_URL());
+ }
 
     @Test
     public void clickContactLink() {
-        basePage.clickLinks(footerPage.CONTACT_US());
-        basePage.isCurrentPage(HomePage.homePageURL() + FooterPage.CONTACT_US_URL(), true);
+        basePage.testClickLink(footerPage.CONTACT_US(), FooterPage.CONTACT_US_URL());
     }
 
     @Test
     public void clickPortfolioLink() {
-        basePage.clickLinks(footerPage.PORTFOLIO());
-        basePage.isCurrentPage(HomePage.homePageURL() + FooterPage.PORTFOLIO_URL(), true);
+        basePage.testClickLink(footerPage.PORTFOLIO(), FooterPage.PORTFOLIO_URL());
     }
 
     @Test
     public void clickPrivacyPolicyLink() {
-        basePage.clickLinks(footerPage.PRIVACY_POLICY());
-        basePage.isCurrentPage(HomePage.homePageURL() + FooterPage.PRIVACY_POLICY_URL(), true);
+        basePage.testClickLink(footerPage.PRIVACY_POLICY(), FooterPage.PRIVACY_POLICY_URL());
     }
 
     @Test
     public void clickAllcomBottomLink() {
-        basePage.clickLinks(footerPage.ALLCOM_GO_HOME_BOTTOM());
-        basePage.isCurrentPage(HomePage.homePageURL(), true);
+        basePage.testClickLink(footerPage.ALLCOM_GO_HOME_BOTTOM(), HomePage.homePageURL());
     }
 }

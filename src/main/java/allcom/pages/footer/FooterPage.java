@@ -1,6 +1,7 @@
 package allcom.pages.footer;
 
 import allcom.pages.BasePage;
+import allcom.pages.HomePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -27,31 +28,31 @@ public class FooterPage extends BasePage {
     }
 
     public static String MY_ACCOUNT_URL() {
-        return "/login";
+        return HomePage.homePageURL() + "/login";
     }
 
     public static String MY_AUCTIONS_URL() {
-        return "/user/my_account/my_auctions";
+        return HomePage.homePageURL() + "/user/my_account/my_auctions";
     }
 
     public static String FAVORITES_AUCTIONS_URL() {
-        return "/user/my_account/products";
+        return HomePage.homePageURL() + "/user/my_account/products";
     }
 
     public static String ABOUT_US_URL() {
-        return "/about_us";
+        return HomePage.homePageURL() + "/about_us";
     }
 
     public static String CONTACT_US_URL() {
-        return "/contact";
+        return HomePage.homePageURL() + "/contact";
     }
 
     public static String PORTFOLIO_URL() {
-        return "/portfolio";
+        return HomePage.homePageURL() + "/portfolio";
     }
 
     public static String PRIVACY_POLICY_URL() {
-        return "/privacy-policy";
+        return HomePage.homePageURL() + "/privacy-policy";
     }
 
     public WebElement FACEBOOK() {
