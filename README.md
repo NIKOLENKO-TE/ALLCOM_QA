@@ -77,13 +77,14 @@ You can run tests in my project. For example:
 *          ├── header                                                        ├── header
 *          │        └── HeaderPage.java                               │           └── HeaderTests.java
 *          ├── login                                                           ├── login
-*          │        └── LoginPage.java                                  │           └── LoginTests.java
+*          │        └── LoginPage.java                                  │           └── LoginPositiveTests.java, LoginNegativeTests.java
 *          ├── notFoundPage                                            ├── notFound
 *          │        └── NotFoundPage.java                          │           └── NotFoundTests.java
 *          ├── passwordReset                                           ├── passwordReset
 *          │        └── PasswordResetPage.java                   │           └── PasswordResetTests.java
 *          └── registration                                                 └── registration
-*                    └──  RegistrationPage.java                                     └── RegisterPagePositiveTests.java
+*                    └──  RegistrationPage.java                                     ├── RegisterPagePositiveTests.java
+*                                                                                                    └── RegisterPageNegativeTests.java
 
 
     
@@ -134,10 +135,9 @@ Commitment to continuous improvement of skills and knowledge.
 
 ## Result
 <img align="center" src="https://i.ibb.co/BzxgKXb/readme.png" alt="screenshot"/>
+<img align="center" src="https://i.ibb.co/tHmy8qh/Untitled-1.jpg" alt="screenshot"/>
 :mailbox_with_mail: If you have questions or suggestions, please contact me at `nikoloenkote@gmail.com`.
 
-
-### Contacts
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
