@@ -92,8 +92,6 @@ You can run tests in my project. For example:
 
 
     
-#  Tester Profile for Automated Auction Website:
-
 ## Experience in software testing, including web application testing.
 :art: Knowledge and experience in testing automated systems, particularly in the context of web technologies.
 
