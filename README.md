@@ -14,18 +14,24 @@
 
 ## Description
 
-:book: This site is a site for selling goods through an auction price. Users will buy items at the price that wins the bid. On this site, sellers will be able to upload photos, post advertisements and much more. Also, both an ordinary user and a legal entity will be able to register on the site.
+:book: This repository comprises automated tests designed for the ALLCOM project - an online platform facilitating user and company registration. The project caters to both regular users and legal entities, providing features for registration, data input, validation, and more.
+
+In addition to the mentioned functionalities, the **[ALLCOM](https://github.com/NIKOLENKO-TE/ALLCOM_SITE)** project offers an auction-based selling system. Users have the opportunity to purchase goods through an auction, where the winning bid determines the final price. Sellers on the platform can upload photos of their items, post advertisements, and utilize various features to enhance their listings. The inclusive nature of the platform allows both individual users and legal entities to register and participate in the auction process.
 
 ## Technologies
-:nazar_amulet: Java
+:nazar_amulet: **Java** Programming Language
 
-:nazar_amulet: Gradle
+:nazar_amulet: **Gradle** Build System
 
-:nazar_amulet: Selenium
+:nazar_amulet: **TestNG** Test Automation Framework
 
-:nazar_amulet: TestNG
+:nazar_amulet: **Selenium** Web Testing Library
 
-:nazar_amulet: Jenkins 
+:nazar_amulet: **Logback** Logging Library
+
+:nazar_amulet: **OpenCSV** CSV Handling Library
+
+:nazar_amulet: **Gradle Task** Task Management System:
 
 ## Installation
 
@@ -36,15 +42,31 @@
 :gear: Install the required dependencies using `gradle install`.
 
 :gear: Start the project with`gradle run`.
+
+Before executing tests, ensure the installation of the following dependencies: Java, Gradle, Selenium (version 4.17.0), TestNG (version 7.9.0), Logback (version 1.4.14), OpenCSV (version 5.9).
 ## Сreate new branch
 :floppy_disk: Use `feature/new-branch`
 
 :floppy_disk: Use `git status` to list all new or modified files that haven't yet been committed.
-## Testing
-:memo: 
-You can run tests in my project. For example:
 
-1. Run tests with `gradle test`.
+## Tasks
+1. **Development of Test Scenarios**
+   The primary objective was to formulate a comprehensive set of test scenarios encompassing key functionalities on the site. This spans user registration, data input, and validation processes.
+
+2. **Test Automation**
+   A test automation framework was crafted utilizing Selenium and TestNG. The suite covers a spectrum of basic and edge use cases to ensure robust testing.
+
+3. **Integration with Continuous Integration System (Jenkins)**
+   To ensure seamless execution of integration tests, integration with the continuous integration system (Jenkins) was established. This ensures automatic test runs with each code change.
+
+4. **Report Generation**
+   Detailed report generation was implemented post each test run to enhance result comprehension and facilitate problem identification.
+
+## Testing
+:memo:
+You can run tests in my project. For example:
+ 
+ **Run tests with** `gradle test`.
 ## Project structure
 :white_check_mark: allcom
 
@@ -106,9 +128,20 @@ Effective collaboration with developers and other project stakeholders to addres
 :neckbeard: Willingness to learn new testing methodologies and technologies.
 Commitment to continuous improvement of skills and knowledge.
 
+##  Problems and Challenges
+1. **Data Validation Instability**
+   Issues arose during testing, revealing that certain tests associated with data validation exhibit instability due to fluctuations in the interface.
+
+2. **Asynchronous Operations Challenge**
+   Tests linked to asynchronous operations, such as updating registration status, necessitate additional configurations for stable execution.
+
+3. **Expansion of Test Coverage**
+   While the existing suite covers a substantial portion of the functionality, there's a need to extend testing scenarios for comprehensive project coverage.
+
 ## Result
 <img align="center" src="https://i.ibb.co/BzxgKXb/readme.png" alt="screenshot"/>
 :mailbox_with_mail: If you have questions or suggestions, please contact me at `nikoloenkote@gmail.com`.
+
 
 ### Contacts
 
@@ -402,3 +435,5 @@ Commitment to continuous improvement of skills and knowledge.
 <a href="http://www.gradle.org">Gradle 8.5</a> at 30 янв. 2024 г., 2:53:56<p></p>
 </div>
 </div>
+Contribution
+Should you have insights for test improvements or discover new issues, kindly create an issue or submit a pull request.
