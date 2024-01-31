@@ -69,30 +69,24 @@ You can run tests in my project. For example:
  **Run tests with** `gradle test`.
 ## Project structure
 :white_check_mark: allcom
+* ├── pages───────────────────────── tests
+*          ├── aboutUs                                                      ├── aboutUs
+*          │        └── AboutUsPage.java                              │           └── AboutUsTests.java
+*          ├── footer                                                          ├── footer
+*          │        └── FooterPage.java                                │           └── FooterTests.java
+*          ├── header                                                        ├── header
+*          │        └── HeaderPage.java                               │           └── HeaderTests.java
+*          ├── login                                                           ├── login
+*          │        └── LoginPage.java                                  │           └── LoginTests.java
+*          ├── notFoundPage                                            ├── notFound
+*          │        └── NotFoundPage.java                          │           └── NotFoundTests.java
+*          ├── passwordReset                                           ├── passwordReset
+*          │        └── PasswordResetPage.java                   │           └── PasswordResetTests.java
+*          └── registration                                                 └── registration
+*                    └──  RegistrationPage.java                                     └── RegisterPagePositiveTests.java
 
-:arrow_right: tests
 
-:arrow_right:	:arrow_right:  aboutUsTests
-
-:arrow_right:	:arrow_right:  header
-
-:arrow_right:	:arrow_right:  login
-
-:arrow_right:	:arrow_right:  passwordReset
-
-:arrow_right:	:arrow_right:  registration
-
-:arrow_right: pages
-
-:arrow_right:	:arrow_right:  aboutUs
-
-:arrow_right:	:arrow_right:  header
-
-:arrow_right:	:arrow_right:  login
-
-:arrow_right:	:arrow_right:  passwordReset
-
-:arrow_right:	:arrow_right:  registration
+    
 #  Tester Profile for Automated Auction Website:
 
 ## Experience in software testing, including web application testing.
