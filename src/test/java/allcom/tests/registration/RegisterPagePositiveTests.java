@@ -105,7 +105,7 @@ public class RegisterPagePositiveTests extends TestBase {
         basePage.validateField(registerPage.getLastNameField(), DataRandom.getValidLastName(), false);
         basePage.validateField(registerPage.getEmailField(), DataRandom.getValidEmail(), false);
         basePage.validateField(registerPage.getPhoneNumberField(), DataRandom.getValidPhoneNumber(), false);
-        basePage.validateField(registerPage.getPasswordField(), DataRandom.getValidPhoneNumber(), false);
+        basePage.validateField(registerPage.getPasswordField(), validPassword, false);
         basePage.validateField(registerPage.getPasswordConfirmField(), validPassword, false);
         registerPage.clickReadTermsCheckbox();
         registerPage.clickRegisterButton();
