@@ -2,7 +2,6 @@ package allcom.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
@@ -92,20 +91,6 @@ public class BasePage {
         boolean isCurrent = currentUrl.equals(expectedURL);
         Assert.assertEquals(isCurrent, expectedPage, "Current page status does not match the expected status");
     }
-//    public void isCurrentPage(String expectedURL, boolean expectedPage) {
-//        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-//        wait.until(ExpectedConditions.urlMatches(expectedURL + "/?"));
-//
-//        String currentUrl = driver.getCurrentUrl();
-//        if (currentUrl.endsWith("/")) {
-//            currentUrl = currentUrl.substring(0, currentUrl.length() - 1);
-//        }
-//        if (expectedURL.endsWith("/")) {
-//            expectedURL = expectedURL.substring(0, expectedURL.length() - 1);
-//        }
-//        boolean isCurrent = currentUrl.equals(expectedURL);
-//        Assert.assertEquals(isCurrent, expectedPage, "Current page status does not match the expected status");
-//    }
 
     public void goToPage(String pageURL) {
         driver.get(pageURL);
