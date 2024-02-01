@@ -138,7 +138,7 @@ Commitment to continuous improvement of skills and knowledge.
 ## Result
 <img align="center" src="https://i.ibb.co/BzxgKXb/readme.png" alt="screenshot"/>
 <img align="center" src="https://i.ibb.co/tHmy8qh/Untitled-1.jpg" alt="screenshot"/>
-:mailbox_with_mail: If you have questions or suggestions, please contact me at `nikoloenkote@gmail.com`.
+:mailbox_with_mail: If you have questions or suggestions, please contact me at `nikolenkote@gmail.com`.
 
 
 <h3 align="left">Connect with me:</h3>
