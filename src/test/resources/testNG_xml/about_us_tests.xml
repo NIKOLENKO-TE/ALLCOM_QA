@@ -3,7 +3,7 @@
 <suite name="AboutUs" verbose="1">
     <test name="AboutUs">
         <classes>
-            <class name="allcom.tests.aboutUs.AboutUsPageTests"/>
+            <class name="allcom_testng.tests.aboutUs.AboutUsPageTests"/>
         </classes>
     </test>
 </suite>

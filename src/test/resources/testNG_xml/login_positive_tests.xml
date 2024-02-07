@@ -3,7 +3,7 @@
 <suite name="LoginPositive" verbose="1">
     <test name="LoginPositive">
         <classes>
-            <class name="allcom.tests.login.LoginPositiveTests"/>
+            <class name="allcom_testng.tests.login.LoginPositiveTests"/>
         </classes>
     </test>
 </suite>

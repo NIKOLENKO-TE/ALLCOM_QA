@@ -3,7 +3,7 @@
 <suite name="RegistrationNegative" verbose="1">
     <test name="RegistrationNegative">
         <classes>
-            <class name="allcom.tests.registration.RegisterPageNegativeTests"/>
+            <class name="allcom_testng.tests.registration.RegisterPageNegativeTests"/>
         </classes>
     </test>
 </suite>
