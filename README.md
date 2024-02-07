@@ -19,19 +19,34 @@
 In addition to the mentioned functionalities, the **[ALLCOM](https://github.com/NIKOLENKO-TE/ALLCOM_SITE)** project offers an auction-based selling system. Users have the opportunity to purchase goods through an auction, where the winning bid determines the final price. Sellers on the platform can upload photos of their items, post advertisements, and utilize various features to enhance their listings. The inclusive nature of the platform allows both individual users and legal entities to register and participate in the auction process.
 
 ## Technologies
-:nazar_amulet: **Java** Programming Language
+🧿 Java Programming Language 
 
-:nazar_amulet: **Gradle** Build System
+🧿 Gradle Build System 
 
-:nazar_amulet: **TestNG** Test Automation Framework
+🧿 TestNG Test Automation Framework 
 
-:nazar_amulet: **Selenium** Web Testing Library
+🧿 Selenium Web Testing Library 
 
-:nazar_amulet: **Logback** Logging Library
+🧿 Logback Logging Library 
 
-:nazar_amulet: **OpenCSV** CSV Handling Library
+🧿 OpenCSV CSV Handling Library 
 
-:nazar_amulet: **Gradle Task** Task Management System:
+🧿 Gradle Task Task Management System 
+
+🧿 RestAssured for API testing 
+
+🧿 Gson for working with JSON 
+
+🧿 TestNG Asserts for condition checking in tests 
+
+🧿 Java Collections Framework for working with data sets 
+
+🧿 Java IO and Java NIO for input-output operations 
+
+🧿 Java Exceptions for error handling 
+
+🧿 Cucumber for BDD (Behavior-Driven Development) and writing test scenarios in natural language
+
 
 ## Installation
 
