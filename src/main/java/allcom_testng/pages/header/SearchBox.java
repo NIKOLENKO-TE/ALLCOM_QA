@@ -19,27 +19,19 @@ public class SearchBox extends BasePage {
     public static String searchResultURL() {
         return HomePage.homePageURL() + "/?#222";
     }
-    @FindBy(className = "header__search--box")
+    @FindBy(className = "search__container")
     WebElement searchBox;
 
     public WebElement getSearchBox() {
         return searchBox;
     }
-    @FindBy(className = "header__search--input")
+    @FindBy(className = "search__input")
     WebElement searchBoxInput;
 
     public WebElement getSearchBoxInput() {
         return searchBoxInput;
     }
 
-    public void clickOnSearchButton() {
-        clickOnElement(BasePage.ElementType.DATA_TESTID, "searchButton");
-    }
-    public By getSearchButton() {
-        By locator = By.cssSelector("[data-testid='searchButton']");
-        isElementPresent(BasePage.ElementType.DATA_TESTID, "searchButton", true);
-        return locator;
-    }
     public By getSearchButtonBottom() {
         By locator = By.cssSelector("[data-testid='searchBottom']");
         isElementPresent(BasePage.ElementType.DATA_TESTID, "searchBottom", true);

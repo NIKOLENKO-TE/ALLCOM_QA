@@ -6,6 +6,7 @@ import allcom_testng.pages.header.SearchBox;
 import allcom_testng.pages.DataProviderClass;
 import allcom_testng.tests.TestBase;
 import org.openqa.selenium.Dimension;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -40,13 +41,13 @@ public class SearchBoxTests extends TestBase {
     @Test
     public void searchBoxIsPresentOnHighResolution() {
         app.driver.manage().window().setSize(HIGH_RESOLUTION);
-        wait.until(ExpectedConditions.elementToBeClickable(searchBox.getSearchBox()));
+        wait.until(ExpectedConditions.elementToBeClickable(searchBox.getSearchBoxInput()));
     }
 
     @Test
     public void searchBoxIsAbsentOnLowResolution() {
         app.driver.manage().window().setSize(LOW_RESOLUTION);
-        wait.until(ExpectedConditions.not(ExpectedConditions.elementToBeClickable(searchBox.getSearchBox())));
+        wait.until(ExpectedConditions.not(ExpectedConditions.elementToBeClickable(searchBox.getSearchBoxInput())));
     }
 
     @Test
@@ -96,13 +97,7 @@ public class SearchBoxTests extends TestBase {
 
     @Test
     public void searchBoxIsClickableOnDifferentResolutions() {
-        searchBox.validateClickable(searchBox.getSearchButton(), HIGH_RESOLUTION, WAIT_SECONDS);
         searchBox.validateClickable(searchBox.getSearchButtonBottom(), LOW_RESOLUTION, WAIT_SECONDS);
-    }
-
-    @Test
-    public void searchButtonIsClickable() {
-        searchBox.validateClickable(searchBox.getSearchButton(), HIGH_RESOLUTION, WAIT_SECONDS);
     }
 
     @Test
@@ -113,11 +108,11 @@ public class SearchBoxTests extends TestBase {
     @Test
     public void searchRedirectsToCorrectPageTest() {
         String searchText = "some text to input test";
+        app.driver.manage().window().setSize(HIGH_RESOLUTION);
         basePage.type(searchBox.getSearchBoxInput(), searchText);
-        searchBox.clickOnSearchButton();
-        basePage.isCurrentPage(SearchBox.searchResultURL(), false);
+        searchBox.getSearchBoxInput().sendKeys(Keys.ENTER);
+        basePage.isCurrentPage(SearchBox.searchResultURL(), false);//TODO change to true when search result page is implemented
     }
-
 
     @Test(dataProvider = "invalidSearchData", dataProviderClass = DataProviderClass.class)
     public void searchBoxInputTest(String searchText) {
@@ -127,8 +122,9 @@ public class SearchBoxTests extends TestBase {
 
     @Test(dataProvider = "invalidSearchData", dataProviderClass = DataProviderClass.class)
     public void validateSearchWithIncorrectData(String invalidSearch) {
+        app.driver.manage().window().setSize(HIGH_RESOLUTION);
         basePage.type(searchBox.getSearchBoxInput(), invalidSearch);
-        //basePage.isValidationErrorPresent(false); // TODO change to true when validation is implemented
+        basePage.isValidationErrorPresent(false); // TODO change to true when validation is implemented
     }
 }
 

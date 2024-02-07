@@ -71,12 +71,15 @@ public class BasePage {
         }
     }
     public void type(WebElement element, String text) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        wait.until(ExpectedConditions.elementToBeClickable(element));
         if (text != null) {
             click(element);
             element.clear();
             element.sendKeys(text);
         }
     }
+
 
     public void isValidationErrorPresent(boolean validationStatus) {
         boolean isPresent = isElementPresent(BasePage.ElementType.ERROR_VALIDATION, "", validationStatus);
