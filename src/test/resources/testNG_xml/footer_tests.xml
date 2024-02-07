@@ -3,7 +3,7 @@
 <suite name="Footer" verbose="1">
     <test name="Footer">
         <classes>
-            <class name="allcom.tests.footerPageTests.FooterPageTests"/>
+            <class name="allcom.tests.footerTests.FooterPageTests"/>
         </classes>
     </test>
 </suite>

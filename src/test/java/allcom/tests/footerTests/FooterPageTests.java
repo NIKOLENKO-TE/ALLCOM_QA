@@ -1,4 +1,4 @@
-package allcom.tests.footerPageTests;
+package allcom.tests.footerTests;
 
 import allcom.pages.BasePage;
 import allcom.pages.HomePage;

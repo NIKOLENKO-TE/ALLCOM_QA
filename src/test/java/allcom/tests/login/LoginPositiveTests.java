@@ -36,9 +36,9 @@ public class LoginPositiveTests extends TestBase {
     }
     @Test(invocationCount = 30)
     public void loginUserWithValidRandomDataPositive() {
-        String email = DataRandom.getValidEmail();
-        String password = DataRandom.getValidPassword();
-        loginPage.login(email, password);
+        String randomEmail = DataRandom.getValidEmail();
+        String randomPassword = DataRandom.getValidPassword();
+        loginPage.login(randomEmail, randomPassword);
         loginPage.clickLoginButton();
         basePage.isValidationErrorPresent(false);
     }

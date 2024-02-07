@@ -1,10 +1,10 @@
 package allcom.tests.login;
 
 import allcom.pages.BasePage;
-import allcom.pages.login.LoginPage;
-import allcom.pages.registration.RegisterPage;
-import allcom.pages.passwordReset.RestorePasswordPage;
 import allcom.pages.DataProviderClass;
+import allcom.pages.login.LoginPage;
+import allcom.pages.passwordReset.RestorePasswordPage;
+import allcom.pages.registration.RegisterPage;
 import allcom.tests.TestBase;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;

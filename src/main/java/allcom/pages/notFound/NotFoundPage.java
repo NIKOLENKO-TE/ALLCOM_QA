@@ -1,4 +1,4 @@
-package allcom.pages.NotFoundPage;
+package allcom.pages.notFound;
 
 import allcom.pages.BasePage;
 import allcom.pages.HomePage;
