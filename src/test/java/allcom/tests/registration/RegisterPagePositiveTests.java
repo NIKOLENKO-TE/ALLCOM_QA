@@ -5,15 +5,15 @@ import allcom.pages.DataProviderClass;
 import allcom.pages.DataRandom;
 import allcom.pages.registration.RegisterPage;
 import allcom.tests.TestBase;
+
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class RegisterPagePositiveTests extends TestBase {
-
     private final String validNewUserRegisterDataFromFile = "validNewUserRegisterDataFromFile";
     private final String validNewFirmaRegisterDataFromFile = "validNewFirmaRegisterDataFromFile";
-    BasePage basePage;
-    RegisterPage registerPage;
+    private BasePage basePage;
+    private RegisterPage registerPage;
 
     @BeforeMethod
     public void precondition() {
@@ -58,7 +58,6 @@ public class RegisterPagePositiveTests extends TestBase {
         registerPage.clickRegisterButton();
         basePage.isValidationErrorPresent(false);
     }
-
 
     @Test(dataProvider = validNewUserRegisterDataFromFile, dataProviderClass = DataProviderClass.class)
     public void registerNewUserWithValidDataPositive(String validFirstName, String validLastName, String validEmail, String validPhoneNumber, String validPassword) {

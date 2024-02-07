@@ -12,7 +12,8 @@ public class LoginPositiveTests extends TestBase {
     private final String validLoginData = "validLoginData";
     private BasePage basePage;
     private LoginPage loginPage;
-
+    String randomEmail = DataRandom.getValidEmail();
+    String randomPassword = DataRandom.getValidPassword();
     @BeforeMethod
     public void precondition() {
         basePage = new BasePage(app.driver);
@@ -36,8 +37,6 @@ public class LoginPositiveTests extends TestBase {
     }
     @Test(invocationCount = 30)
     public void loginUserWithValidRandomDataPositive() {
-        String randomEmail = DataRandom.getValidEmail();
-        String randomPassword = DataRandom.getValidPassword();
         loginPage.login(randomEmail, randomPassword);
         loginPage.clickLoginButton();
         basePage.isValidationErrorPresent(false);
