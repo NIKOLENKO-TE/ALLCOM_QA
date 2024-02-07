@@ -18,6 +18,8 @@ dependencies {
     implementation group: 'io.cucumber', name: 'cucumber-junit', version: '7.15.0'
     implementation group: 'com.google.code.gson', name: 'gson', version: '2.10.1'
     implementation group: 'io.rest-assured', name: 'rest-assured', version: '5.4.0'
+    implementation project(path: ':')
+    implementation project(path: ':')
     compileOnly 'org.projectlombok: lombok: 1.18.16'
     annotationProcessor 'org.projectlombok: lombok: 1.18.16'
     testCompileOnly 'org.projectlombok: lombok: 1.18.16'

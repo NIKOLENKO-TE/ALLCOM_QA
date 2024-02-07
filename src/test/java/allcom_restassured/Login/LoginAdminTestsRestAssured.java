@@ -6,6 +6,7 @@ import allcom_restassured_dto.ErrorDTO;
 import allcom_restassured.TestBaseRA;
 import io.restassured.http.ContentType;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
@@ -13,6 +14,20 @@ import static org.hamcrest.Matchers.containsString;
 import static org.hamcrest.core.IsEqual.equalTo;
 
 public class LoginAdminTestsRestAssured extends TestBaseRA {
+    @BeforeMethod
+    public void setup() {
+        AuthResponseDTO dto =
+                given()
+                        .contentType("application/json")
+                        .body(AuthRequestDTO.valid())
+                        .when().post("/auth/login")
+                        .then()
+                        .assertThat().statusCode(200)
+                        .extract()
+                        .response()
+                        .as(AuthResponseDTO.class);
+        TestBaseRA.setTokenAdmin(dto.getToken());
+    }
     @Test
     public void loginAdminPositiveTest() {
         AuthResponseDTO dto =
@@ -38,7 +53,6 @@ public class LoginAdminTestsRestAssured extends TestBaseRA {
                 .assertThat().statusCode(200)
                 .body(containsString("token"))
                 .extract().path("token");
-        System.out.println("Admin successfully logged in with token: " + responseToken);
     }
 
     @Test
