@@ -62,6 +62,7 @@ registerTask('allcom_qa_register_negative', 'src/test/resources/testNG_xml/regis
 registerTask('allcom_qa_register_positive', 'src/test/resources/testNG_xml/registration_positive_tests.xml')
 registerTask('allcom_qa_aboutUs', 'src/test/resources/testNG_xml/about_us_tests.xml')
 registerTask('allcom_qa_header', 'src/test/resources/testNG_xml/header_tests.xml')
+registerTask('allcom_qa_header_search', 'src/test/resources/testNG_xml/header_search_tests.xml')
 registerTask('allcom_qa_restore_password', 'src/test/testNG_xml/resources/restore_password_tests.xml')
 registerTask('allcom_qa_notFound', 'src/test/resources/testNG_xml/not_found_positive_tests.xml')
 registerTask('allcom_qa_footer', 'src/test/resources/testNG_xml/footer_tests.xml')

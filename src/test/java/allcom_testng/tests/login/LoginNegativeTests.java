@@ -20,6 +20,7 @@ public class LoginNegativeTests extends TestBase {
         loginPage = new LoginPage(app.driver);
         basePage.goToPage(LoginPage.loginPageURL());
         basePage.isCurrentPage(LoginPage.loginPageURL(), true);
+        driver.manage().window().maximize();
     }
 
     @Test(dataProvider = invalidLoginData, dataProviderClass = DataProviderClass.class)

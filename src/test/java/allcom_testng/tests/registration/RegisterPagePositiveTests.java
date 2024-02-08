@@ -21,6 +21,7 @@ public class RegisterPagePositiveTests extends TestBase {
         registerPage = new RegisterPage(app.driver);
         basePage.goToPage(RegisterPage.registerPageURL());
         basePage.isCurrentPage(RegisterPage.registerPageURL(), true);
+        driver.manage().window().maximize();
     }
 
     @Test
