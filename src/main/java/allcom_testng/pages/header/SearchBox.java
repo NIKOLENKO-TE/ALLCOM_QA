@@ -17,7 +17,7 @@ public class SearchBox extends BasePage {
         super(driver);
     }
     public static String searchResultURL() {
-        return HomePage.homePageURL() + "/?#222";
+        return HomePage.homePageURL() + "/?";
     }
     @FindBy(className = "search__container")
     WebElement searchBox;
@@ -25,6 +25,8 @@ public class SearchBox extends BasePage {
     public WebElement getSearchBox() {
         return searchBox;
     }
+
+
     @FindBy(className = "search__input")
     WebElement searchBoxInput;
 

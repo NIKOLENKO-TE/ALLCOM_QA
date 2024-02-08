@@ -5,6 +5,7 @@ import allcom_restassured_dto.AuthResponseDTO;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
 
@@ -15,6 +16,7 @@ public class TestBaseRA {
     public void init() {
         RestAssured.baseURI = "http://allcom.itvm.com.ua:8080";
         RestAssured.basePath = "/api";
+        setTokenAdmin(getAdminToken());
     }
 
     public static void setTokenAdmin(String token) {

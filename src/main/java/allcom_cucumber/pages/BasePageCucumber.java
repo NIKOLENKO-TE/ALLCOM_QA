@@ -7,10 +7,10 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.time.Duration;
 
-public class BasePage {
+public class BasePageCucumber {
     public static WebDriver driver;
 
-    public BasePage(WebDriver driver) {
+    public BasePageCucumber(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
@@ -20,7 +20,7 @@ public class BasePage {
         driver.manage().timeouts().implicitlyWait(Duration.ZERO);
     }
     public void openURL() {
-        driver.get("https://master--incredible-snickerdoodle-514a2d.netlify.app");
+        driver.get("http://allcom.itvm.com.ua:5173/");
     }
     public void closeBrowser() {
         driver.quit();

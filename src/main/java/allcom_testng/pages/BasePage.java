@@ -81,7 +81,7 @@ public class BasePage {
         assert isPresent == validationStatus : "Validation error present status does not match the expected status";
     }
 
-    public void isCurrentPage(String expectedURL, boolean expectedPage) {
+    public void isCurrentPage(String expectedURL, boolean expectedStatus) {
         new WebDriverWait(driver, Duration.ofSeconds(10)).until(
                 webDriver -> ((JavascriptExecutor) webDriver).executeScript("return document.readyState").equals("complete"));
         String currentUrl = driver.getCurrentUrl();
@@ -89,7 +89,7 @@ public class BasePage {
             currentUrl = currentUrl.substring(0, currentUrl.length() - 1);
         }
         boolean isCurrent = currentUrl.equals(expectedURL);
-        Assert.assertEquals(isCurrent, expectedPage, "Current page status does not match the expected status");
+        Assert.assertEquals(isCurrent, expectedStatus, "Current page status does not match the expected status");
     }
 
     public void goToPage(String pageURL) {
