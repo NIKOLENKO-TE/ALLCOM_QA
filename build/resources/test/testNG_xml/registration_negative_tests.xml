@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="RegistrationNegative" verbose="1">
+    <test name="RegistrationNegative">
+        <classes>
+            <class name="allcom_testng.tests.registration.RegisterPageNegativeTests"/>
+        </classes>
+    </test>
+</suite>

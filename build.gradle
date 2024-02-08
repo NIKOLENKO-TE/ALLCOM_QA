@@ -18,12 +18,10 @@ dependencies {
     implementation group: 'io.cucumber', name: 'cucumber-junit', version: '7.15.0'
     implementation group: 'com.google.code.gson', name: 'gson', version: '2.10.1'
     implementation group: 'io.rest-assured', name: 'rest-assured', version: '5.4.0'
-    implementation project(path: ':')
-    implementation project(path: ':')
-    compileOnly 'org.projectlombok: lombok: 1.18.16'
-    annotationProcessor 'org.projectlombok: lombok: 1.18.16'
-    testCompileOnly 'org.projectlombok: lombok: 1.18.16'
-    testAnnotationProcessor 'org.projectlombok: lombok: 1.18.16'
+    compileOnly 'org.projectlombok:lombok:1.18.16'
+    annotationProcessor 'org.projectlombok:lombok:1.18.16'
+    testCompileOnly 'org.projectlombok:lombok:1.18.16'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.16'
     implementation group: 'org.projectlombok', name: 'lombok', version: '1.18.30'
 }
 
@@ -57,13 +55,13 @@ def registerTask(String taskName, String suitePath) {
     }
 }
 
-registerTask('allcom_qa_regression', 'src/test/resources/regression.xml')
-registerTask('allcom_qa_login_negative', 'src/test/resources/login_negative_tests.xml')
-registerTask('allcom_qa_login_positive', 'src/test/resources/login_positive_tests.xml')
-registerTask('allcom_qa_register_negative', 'src/test/resources/registration_negative_tests.xml')
-registerTask('allcom_qa_register_positive', 'src/test/resources/registration_positive_tests.xml')
-registerTask('allcom_qa_aboutUs', 'src/test/resources/about_us_tests.xml')
-registerTask('allcom_qa_header', 'src/test/resources/header_tests.xml')
-registerTask('allcom_qa_restore_password', 'src/test/resources/restore_password_tests.xml')
-registerTask('allcom_qa_notFound', 'src/test/resources/not_found_positive_tests.xml')
-registerTask('allcom_qa_footer', 'src/test/resources/footer_tests.xml')
+registerTask('allcom_qa_regression', 'src/test/resources/testNG_xml/regression.xml')
+registerTask('allcom_qa_login_negative', 'src/test/resources/testNG_xml/login_negative_tests.xml')
+registerTask('allcom_qa_login_positive', 'src/test/resources/testNG_xml/login_positive_tests.xml')
+registerTask('allcom_qa_register_negative', 'src/test/resources/testNG_xml/registration_negative_tests.xml')
+registerTask('allcom_qa_register_positive', 'src/test/resources/testNG_xml/registration_positive_tests.xml')
+registerTask('allcom_qa_aboutUs', 'src/test/resources/testNG_xml/about_us_tests.xml')
+registerTask('allcom_qa_header', 'src/test/resources/testNG_xml/header_tests.xml')
+registerTask('allcom_qa_restore_password', 'src/test/testNG_xml/resources/restore_password_tests.xml')
+registerTask('allcom_qa_notFound', 'src/test/resources/testNG_xml/not_found_positive_tests.xml')
+registerTask('allcom_qa_footer', 'src/test/resources/testNG_xml/footer_tests.xml')

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="allcom_testng.tests.aboutUs.AboutUsPageTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-02-08T08:52:07" hostname="DESKTOP-8I9EVFD" time="1.569">
+  <properties/>
+  <testcase name="aboutUsContentIsPresent" classname="allcom_testng.tests.aboutUs.AboutUsPageTests" time="0.001"/>
+  <testcase name="aboutUsHeaderIsPresent" classname="allcom_testng.tests.aboutUs.AboutUsPageTests" time="0.0"/>
+  <testcase name="aboutUsMapContainerIsPresent" classname="allcom_testng.tests.aboutUs.AboutUsPageTests" time="0.0"/>
+  <system-out><![CDATA[09:52:06.578 [Test worker] INFO  allcom_testng.tests.TestBase -- Start test: [aboutUsContentIsPresent]
+09:52:07.552 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [aboutUsContentIsPresent], with Parameters: []
+09:52:07.554 [Test worker] INFO  allcom_testng.tests.TestBase -- Start test: [aboutUsHeaderIsPresent]
+09:52:08.324 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [aboutUsHeaderIsPresent], with Parameters: []
+09:52:08.325 [Test worker] INFO  allcom_testng.tests.TestBase -- Start test: [aboutUsMapContainerIsPresent]
+09:52:09.118 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [aboutUsMapContainerIsPresent], with Parameters: []
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

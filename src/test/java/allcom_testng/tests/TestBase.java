@@ -52,6 +52,7 @@ public class TestBase {
             String errorMessage = throwable != null ? throwable.getMessage() : "Unknown error";
             logger.error("ERROR FAILED TEST: [" + result.getMethod().getMethodName() + "], with Parameters: " + params);
             logger.error("ERROR TEST MESSAGE: " + errorMessage);
+            logger.error("ERROR TEST STACK TRACE: ", throwable);
             logger.error("ERROR TEST SCREENSHOT: " + app.takeScreenshot());
             logger.info("[==================================================================================================]");
         }

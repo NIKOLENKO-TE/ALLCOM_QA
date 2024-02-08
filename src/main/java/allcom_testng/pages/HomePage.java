@@ -7,6 +7,6 @@ public class HomePage extends BasePage {
         super(driver);
     }
     public static String homePageURL() {
-        return "https://master--incredible-snickerdoodle-514a2d.netlify.app";
+        return "http://allcom.itvm.com.ua:5173";
     }
 }

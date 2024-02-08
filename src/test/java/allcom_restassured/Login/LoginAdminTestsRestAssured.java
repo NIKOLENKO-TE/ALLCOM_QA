@@ -62,7 +62,7 @@ public class LoginAdminTestsRestAssured extends TestBaseRA {
                 .body(AuthRequestDTO.invalidEmail())
                 .when().post("/auth/login")
                 .then()
-                .assertThat().statusCode(404) //TODO: change to 400 after fixing the bug
+                .assertThat().statusCode(401)
                 .extract()
                 .response()
                 .as(AuthResponseDTO.class);
@@ -102,7 +102,7 @@ public class LoginAdminTestsRestAssured extends TestBaseRA {
                         .contentType(ContentType.JSON)
                         .when().post("/auth/login")
                         .then()
-                        .assertThat().statusCode(404)
+                        .assertThat().statusCode(401)
                         .extract()
                         .response()
                         .as(ErrorDTO.class);
@@ -118,7 +118,7 @@ public class LoginAdminTestsRestAssured extends TestBaseRA {
                         .body(AuthRequestDTO.invalidEmail())
                         .when().post("/auth/login")
                         .then()
-                        .assertThat().statusCode(404)
+                        .assertThat().statusCode(401)
                         .extract()
                         .response()
                         .as(ErrorDTO.class);
@@ -146,7 +146,7 @@ public class LoginAdminTestsRestAssured extends TestBaseRA {
                 .contentType(ContentType.JSON)
                 .when().post("/auth/login")
                 .then()
-                .assertThat().statusCode(404)
+                .assertThat().statusCode(401)
                 .assertThat().body("message", equalTo("User with email " + AuthRequestDTO.nonExistentUser().getEmail() + " not found!"));
     }
 }

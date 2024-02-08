@@ -1,11 +1,6 @@
 package allcom_testng.pages;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.TimeoutException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -87,6 +82,8 @@ public class BasePage {
     }
 
     public void isCurrentPage(String expectedURL, boolean expectedPage) {
+        new WebDriverWait(driver, Duration.ofSeconds(10)).until(
+                webDriver -> ((JavascriptExecutor) webDriver).executeScript("return document.readyState").equals("complete"));
         String currentUrl = driver.getCurrentUrl();
         if (currentUrl.endsWith("/")) {
             currentUrl = currentUrl.substring(0, currentUrl.length() - 1);
@@ -101,6 +98,7 @@ public class BasePage {
 
     public WebElement waitForElement(By locator, int timeoutInSeconds) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutInSeconds));
+        wait.ignoring(StaleElementReferenceException.class);
         return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
 

@@ -1,9 +1,0 @@
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-
-<suite name="LoginNegative" verbose="1">
-    <test name="LoginNegative">
-        <classes>
-            <class name="allcom.tests.login.LoginNegativeTests"/>
-        </classes>
-    </test>
-</suite>

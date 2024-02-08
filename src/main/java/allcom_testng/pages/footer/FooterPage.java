@@ -52,7 +52,7 @@ public class FooterPage extends BasePage {
     }
 
     public static String PRIVACY_POLICY_URL() {
-        return HomePage.homePageURL() + "/privacy-policy";
+        return HomePage.homePageURL() + "/privacy_policy";
     }
 
     public WebElement FACEBOOK() {
