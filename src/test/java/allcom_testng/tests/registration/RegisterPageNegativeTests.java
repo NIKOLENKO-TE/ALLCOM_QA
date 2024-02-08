@@ -17,7 +17,7 @@ public class RegisterPageNegativeTests extends TestBase {
         registerPage = new RegisterPage(app.driver);
         basePage.goToPage(RegisterPage.registerPageURL());
         basePage.isCurrentPage(RegisterPage.registerPageURL(),true);
-        driver.manage().window().maximize();
+        app.driver.manage().window().maximize();
     }
 
     @Test(dataProvider = "invalidTextData", dataProviderClass = DataProviderClass.class)

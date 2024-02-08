@@ -13,37 +13,7 @@ import java.util.concurrent.atomic.AtomicLong;
 import static io.restassured.RestAssured.given;
 
 public class RegisterNewUserAssured extends TestBaseRA {
-//    @BeforeMethod
-//    public void setup() {
-//        AuthResponseDTO dto =
-//                given()
-//                        .contentType("application/json")
-//                        .header("Authorization", "Bearer " + TestBaseRA.getTokenAdmin())
-//                        .body(AuthRequestDTO.valid())
-//                        .when().post("/auth/register")
-//                        .then()
-//                        .assertThat().statusCode(200)
-//                        .extract()
-//                        .response()
-//                        .as(AuthResponseDTO.class);
-//        System.out.println("Token used in test: " + dto.getToken());
-//    }
 
-//    @Test
-//    public void registerNewUserTest() {
-//        AuthRequestDTO newUser = AuthRequestDTO.exampleValidFieldNewUser();
-//        ErrorDTO errorResponse =
-//                given()
-//                        .contentType(ContentType.JSON)
-//                        .body(newUser)
-//                        .when().post("/auth/register")
-//                        .then()
-//                        .extract()
-//                        .response()
-//                        .as(ErrorDTO.class);
-//
-//        System.out.println("Error message: " + errorResponse.getMessage());
-//    }
     @Test(invocationCount = 1000, threadPoolSize = 1)
     public void registerNewRandomUserTest() {
         //System.out.println("ADMIN TOKEN: " + TestBaseRA.getTokenAdmin());

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="allcom_testng.tests.header.AllcomLogoTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-02-08T22:52:34" hostname="DESKTOP-8I9EVFD" time="1.543">
+  <properties/>
+  <testcase name="allcomLogoIsPresent" classname="allcom_testng.tests.header.AllcomLogoTests" time="0.0"/>
+  <testcase name="clickAllcomLogoNavigatesToHomePage" classname="allcom_testng.tests.header.AllcomLogoTests" time="0.81"/>
+  <system-out><![CDATA[23:52:33.027 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [allcomLogoIsPresent]
+23:52:34.051 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [allcomLogoIsPresent], with VALUES: []
+23:52:34.052 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [clickAllcomLogoNavigatesToHomePage]
+23:52:35.595 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [clickAllcomLogoNavigatesToHomePage], with VALUES: []
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

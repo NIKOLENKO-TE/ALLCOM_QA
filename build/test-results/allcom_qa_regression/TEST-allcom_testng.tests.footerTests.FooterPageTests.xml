@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="allcom_testng.tests.footerTests.FooterPageTests" tests="14" skipped="0" failures="0" errors="0" timestamp="2024-02-08T22:52:09" hostname="DESKTOP-8I9EVFD" time="23.802">
+  <properties/>
+  <testcase name="clickAboutUsLink" classname="allcom_testng.tests.footerTests.FooterPageTests" time="0.785"/>
+  <testcase name="clickAllcomBottomLink" classname="allcom_testng.tests.footerTests.FooterPageTests" time="0.042"/>
+  <testcase name="clickContactLink" classname="allcom_testng.tests.footerTests.FooterPageTests" time="0.748"/>
+  <testcase name="clickFacebookLink" classname="allcom_testng.tests.footerTests.FooterPageTests" time="1.583"/>
+  <testcase name="clickFavoritesAuctionsLink" classname="allcom_testng.tests.footerTests.FooterPageTests" time="0.739"/>
+  <testcase name="clickInstagramLink" classname="allcom_testng.tests.footerTests.FooterPageTests" time="1.217"/>
+  <testcase name="clickLoginLink" classname="allcom_testng.tests.footerTests.FooterPageTests" time="0.746"/>
+  <testcase name="clickMyAccountLink" classname="allcom_testng.tests.footerTests.FooterPageTests" time="0.813"/>
+  <testcase name="clickMyAuctionsLink" classname="allcom_testng.tests.footerTests.FooterPageTests" time="0.986"/>
+  <testcase name="clickPortfolioLink" classname="allcom_testng.tests.footerTests.FooterPageTests" time="0.765"/>
+  <testcase name="clickPrivacyPolicyLink" classname="allcom_testng.tests.footerTests.FooterPageTests" time="0.051"/>
+  <testcase name="clickRegisterLink" classname="allcom_testng.tests.footerTests.FooterPageTests" time="0.781"/>
+  <testcase name="clickTwitterLink" classname="allcom_testng.tests.footerTests.FooterPageTests" time="2.128"/>
+  <testcase name="clickYoutubeLink" classname="allcom_testng.tests.footerTests.FooterPageTests" time="2.176"/>
+  <system-out><![CDATA[23:52:08.469 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [clickAboutUsLink]
+23:52:10.010 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [clickAboutUsLink], with VALUES: []
+23:52:10.011 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [clickAllcomBottomLink]
+23:52:10.781 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [clickAllcomBottomLink], with VALUES: []
+23:52:10.781 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [clickContactLink]
+23:52:12.253 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [clickContactLink], with VALUES: []
+23:52:12.254 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [clickFacebookLink]
+23:52:14.612 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [clickFacebookLink], with VALUES: []
+23:52:14.613 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [clickFavoritesAuctionsLink]
+23:52:16.312 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [clickFavoritesAuctionsLink], with VALUES: []
+23:52:16.313 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [clickInstagramLink]
+23:52:18.263 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [clickInstagramLink], with VALUES: []
+23:52:18.264 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [clickLoginLink]
+23:52:19.989 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [clickLoginLink], with VALUES: []
+23:52:19.990 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [clickMyAccountLink]
+23:52:21.556 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [clickMyAccountLink], with VALUES: []
+23:52:21.557 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [clickMyAuctionsLink]
+23:52:23.280 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [clickMyAuctionsLink], with VALUES: []
+23:52:23.281 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [clickPortfolioLink]
+23:52:24.742 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [clickPortfolioLink], with VALUES: []
+23:52:24.743 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [clickPrivacyPolicyLink]
+23:52:25.561 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [clickPrivacyPolicyLink], with VALUES: []
+23:52:25.562 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [clickRegisterLink]
+23:52:27.055 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [clickRegisterLink], with VALUES: []
+23:52:27.056 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [clickTwitterLink]
+23:52:29.916 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [clickTwitterLink], with VALUES: []
+23:52:29.917 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [clickYoutubeLink]
+23:52:33.027 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [clickYoutubeLink], with VALUES: []
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
