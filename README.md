@@ -23,6 +23,8 @@ In addition to the mentioned functionalities, the **[ALLCOM](https://github.com/
 
 🧿 Gradle Build System 
 
+🧿 Cucumber for BDD (Behavior-Driven Development) and writing test scenarios in natural language
+
 🧿 TestNG Test Automation Framework 
 
 🧿 Selenium Web Testing Library 
@@ -44,9 +46,6 @@ In addition to the mentioned functionalities, the **[ALLCOM](https://github.com/
 🧿 Java IO and Java NIO for input-output operations 
 
 🧿 Java Exceptions for error handling 
-
-🧿 Cucumber for BDD (Behavior-Driven Development) and writing test scenarios in natural language
-
 
 ## Installation
 
@@ -73,7 +72,7 @@ Before executing tests, ensure the installation of the following dependencies: J
    The primary objective was to formulate a comprehensive set of test scenarios encompassing key functionalities on the site. This spans user registration, data input, and validation processes.
 
 2. **Test Automation**
-   A test automation framework was crafted utilizing Selenium and TestNG. The suite covers a spectrum of basic and edge use cases to ensure robust testing.
+   A test automation framework was crafted utilizing Selenium, Cucumber and TestNG. The suite covers a spectrum of basic and edge use cases to ensure robust testing.
 
 3. **Integration with Continuous Integration System (Jenkins)**
    To ensure seamless execution of integration tests, integration with the continuous integration system (Jenkins) was established. This ensures automatic test runs with each code change.
