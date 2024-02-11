@@ -10,7 +10,7 @@
   
 - 👨‍💻 All of my projects are available at [git NIKOLENKO-TE](https://github.com/NIKOLENKO-TE)
   
-<h1 align="center"> ALLCOM AUCTION :+1:  QA Automation Test Project</h1>
+<h1 align="center"> ALLCOM AUCTION <img align="top" src="http://allcom.itvm.com.ua:5173/src/img/logo/logo_main.png"  height="40" width="140" alt="allcom"/>  QA Automation Test Project</h1>
 
 ## Description
 
