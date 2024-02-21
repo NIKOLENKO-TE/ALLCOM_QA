@@ -59,7 +59,7 @@ In addition to the mentioned functionalities, the **[ALLCOM](https://github.com/
 
 or You can use one of this .**batch** files on Windows
 
-<img align="center" src="https://i.ibb.co/dDcpZth/batch.png" alt="screenshot"/>
+<img align="center" src="https://i.ibb.co/wggcj3N/Screenshot-2024-02-21-155128.png" alt="screenshot"/>
 
 Before executing tests, ensure the installation of the following dependencies: Java, Gradle, Selenium (version 4.17.0), TestNG (version 7.9.0), Logback (version 1.4.14), OpenCSV (version 5.9).
 ## Сreate new branch
@@ -150,6 +150,9 @@ Commitment to continuous improvement of skills and knowledge.
    While the existing suite covers a substantial portion of the functionality, there's a need to extend testing scenarios for comprehensive project coverage.
 
 ## Result
+
+[**Bug-Report critical password bug**](https://docs.google.com/document/d/1dCLwoqUhUV1jotgXQzl-1bs-rQTBDkDY7pAArFUxKGQ/edit?usp=sharing)
+
 <img align="center" src="https://i.ibb.co/BzxgKXb/readme.png" alt="screenshot"/>
 <img align="center" src="https://i.ibb.co/tHmy8qh/Untitled-1.jpg" alt="screenshot"/>
 <img align="center" src="https://i.ibb.co/NySHBZZ/waterfall-1.png" alt="screenshot"/>
