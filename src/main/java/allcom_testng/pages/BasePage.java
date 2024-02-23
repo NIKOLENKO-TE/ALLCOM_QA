@@ -11,11 +11,11 @@ import java.util.ArrayList;
 import java.util.Set;
 
 public class BasePage {
-    public WebDriver driver;
+    protected WebDriver driver;
     private static final Duration WAIT_SECONDS = Duration.ofSeconds(5);
 
     public enum ElementType {
-        XPATH, CSS, ID, DATA_TESTID, HREF, ROLE, LABEL, SPAN, BUTTON, P, ERROR_VALIDATION, PASSWORD_CONFIRM, CHECKBOX
+        XPATH, CSS, ID, DATA_TESTID, CLASS, HREF, ROLE, LABEL, SPAN, BUTTON, P, ERROR_VALIDATION, PASSWORD_CONFIRM, CHECKBOX
     }
 
     public BasePage() {
@@ -125,6 +125,12 @@ public class BasePage {
             case ID:
                 by = By.id(value);
                 break;
+            case XPATH:
+                by = By.xpath(value);
+                break;
+            case CSS:
+                by = By.cssSelector(value);
+                break;
             case DATA_TESTID:
                 by = By.xpath("//*[@data-testid='" + value + "']");
                 break;
@@ -136,6 +142,9 @@ public class BasePage {
                 break;
             case LABEL:
                 by = By.xpath("//label[@id='" + value + "']/a");
+                break;
+            case CLASS:
+                by = By.className(value);
                 break;
             case CHECKBOX:
                 by = By.xpath("//input[@id='" + value + "']");
@@ -215,5 +224,30 @@ public class BasePage {
     public void scrollToBottom() {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+    }
+     public void refreshPage() {
+        driver.navigate().refresh();
+    }
+    public void navigateBack() {
+        driver.navigate().back();
+    }
+    public void navigateForward() {
+        driver.navigate().forward();
+    }
+    public void switchToTab(int tabNumber) {
+        driver.switchTo().window((String) driver.getWindowHandles().toArray()[tabNumber]);
+    }
+
+    public boolean isElementDisplayed(WebElement element) {
+        return element.isDisplayed();
+    }
+    public void waitForPageLoadComplete() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(webDriver -> ((JavascriptExecutor) webDriver).executeScript("return document.readyState").equals("complete"));
+    }
+
+    public void waitForPageLoadInteractive() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30)); // увеличьте время ожидания до 30 секунд
+        wait.until(webDriver -> ((JavascriptExecutor) webDriver).executeScript("return document.readyState").equals("interactive"));
     }
 }

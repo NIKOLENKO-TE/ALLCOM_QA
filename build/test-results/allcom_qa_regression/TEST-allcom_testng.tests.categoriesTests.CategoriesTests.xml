@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="allcom_testng.tests.categoriesTests.CategoriesTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-02-08T22:52:08" hostname="DESKTOP-8I9EVFD" time="0.0">
-  <properties/>
-  <testcase name="categoriesArePresent" classname="allcom_testng.tests.categoriesTests.CategoriesTests" time="0.0"/>
-  <system-out><![CDATA[23:52:07.745 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [categoriesArePresent]
-23:52:08.467 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [categoriesArePresent], with VALUES: []
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

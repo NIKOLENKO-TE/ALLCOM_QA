@@ -16,7 +16,7 @@ import java.util.Arrays;
 public class TestBase {
     protected static ApplicationManager app = new ApplicationManager("chrome");
 
-    protected static WebDriver driver;
+    public static WebDriver driver;
     Logger logger = LoggerFactory.getLogger(TestBase.class);
     protected static int BROWSER_MODE_SWITCHER = 1; // 1- NORMAL, 2 - HEADLESS
     public WebDriver getDriver() {

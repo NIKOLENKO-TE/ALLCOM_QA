@@ -9,10 +9,11 @@ import org.testng.annotations.Test;
 
 public class AboutUsPageTests extends TestBase {
     private AboutUsPage aboutUsPage;
+    private BasePage basePage;
 
     @BeforeMethod
     public void precondition() {
-        BasePage basePage = new BasePage(app.driver);
+        basePage = new BasePage(app.driver);
         aboutUsPage = new AboutUsPage(app.driver);
         basePage.goToPage(AboutUsPage.aboutUsPageURL());
         basePage.isCurrentPage(AboutUsPage.aboutUsPageURL(), true);

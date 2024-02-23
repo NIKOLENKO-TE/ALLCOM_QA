@@ -1,33 +1,28 @@
 package allcom_cucumber.stepDefinitions;
 
-import allcom_cucumber.pages.HomePageCucumberCucumber;
 import allcom_testng.pages.HomePage;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
-import static allcom_cucumber.pages.BasePageCucumber.driver;
+
+import static allcom_testng.pages.ApplicationManager.app;
+import static allcom_testng.tests.TestBase.driver;
 
 public class HomePageSteps {
 
-    @Given("User launches the browser")
-    public void user_launches_the_browser() {
-        new HomePageCucumberCucumber(driver).launchBrowser();
+    @Given("User open HOME_PAGE and choose language to EN")
+    public void user_launches_the_browser_and_lang_en() {
+        app.init();
     }
 
-    @When("User opens ALLCOM Home Page")
-    public void open_allcom_HomePage() {
-        new HomePageCucumberCucumber(driver).openURL();
-    }
 
     @Then("User verifies Home Page title Auctions")
     public void verify_HomePage_title_auctions() {
-        new HomePageCucumberCucumber(driver).isHomePageTitleAuctionsDisplayed();
+        new HomePage(driver).isHomePageTitleAuctionsDisplayed();
     }
 
-    @And("User changes the language to English")
-    public void userChangesTheLanguageToEnglish() {
-        HomePage homePage = new HomePage(driver);
-        homePage.changeLanguage("English");
+    @And("User close the browser")
+    public void userCloseBrowser() {
+        app.stop();
     }
 }
