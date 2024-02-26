@@ -1,3 +1,4 @@
+//TestBase.java
 package allcom_testng.tests;
 
 import allcom_testng.pages.ApplicationManager;
@@ -18,7 +19,10 @@ public class TestBase {
 
     public static WebDriver driver;
     Logger logger = LoggerFactory.getLogger(TestBase.class);
-    protected static int BROWSER_MODE_SWITCHER = 1; // 1- NORMAL, 2 - HEADLESS
+    public static boolean HEADLESS_MODE = false; // false - NORMAL, true - HEADLESS
+    public static void SET_HEADLESS_MODE(boolean headlessMode) {
+        HEADLESS_MODE = headlessMode;
+    }
     public WebDriver getDriver() {
         return driver;
     }
@@ -32,15 +36,10 @@ public class TestBase {
         String browser = System.getProperty("browser", "chrome");
         app = new ApplicationManager(browser);
         driver = app.getDriver();
-        switch (BROWSER_MODE_SWITCHER) {
-            case 1:
-                app.init();
-                break;
-            case 2:
-                app.initHeadless();
-                break;
-            default:
-                throw new IllegalArgumentException("Invalid mode value: " + BROWSER_MODE_SWITCHER);
+        if (HEADLESS_MODE) {
+            app.initHeadless();
+        } else {
+            app.init();
         }
     }
     @AfterMethod

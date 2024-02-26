@@ -18,7 +18,7 @@ public class HeaderAccount extends BasePage{
     }
     public void clickMyAccountTop() {
         By locator = By.xpath("//*[@data-testid='myAccountTop_link']");
-        WebElement cartTop = super.waitForElement(locator, 5);
+        WebElement cartTop = driver.findElement(locator);
         if (cartTop != null) {
             cartTop.click();
         } else {
@@ -34,7 +34,7 @@ public class HeaderAccount extends BasePage{
         By locator = By.xpath("//*[@data-testid='wishlistTop_link']");
         WebElement cartTop = super.waitForElement(locator, 5);
         if (cartTop != null) {
-            cartTop.click();
+            click(cartTop);
         } else {
             throw new NoSuchElementException("Element not found: cartTop_link");
         }

@@ -1,17 +1,18 @@
+//HomePage.java
 package allcom_testng.pages;
 
-import allcom_testng.pages.login.LoginPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
 public class HomePage extends BasePage {
-    BasePage basePage = new BasePage(driver);
-    public static final Duration WAIT_SEC = Duration.ofSeconds(10);
+    public static final String LANGUAGE_SELECTOR = "[data-testid='language-text-set']";
+    public static final String LANGUAGE_ITEM_XPATH = "//li[contains(text(), '%s')]";
+    public static final Duration WAIT_SEC = Duration.ofSeconds(5);
+    public HomePage() {
+    }
     public HomePage(WebDriver driver) {
         super(driver);
     }
@@ -19,18 +20,14 @@ public class HomePage extends BasePage {
         return "http://allcom.itvm.com.ua:5173";
     }
     @FindBy(xpath = "//h2[@class='home_page__title--h2']")
-    WebElement homePageTitleAuctions;
+    public WebElement homePageTitleAuctions;
 
-    public HomePage isHomePageTitleAuctionsDisplayed() {
-        WebDriverWait wait = new WebDriverWait(driver, WAIT_SEC);
-        wait.until(ExpectedConditions.visibilityOf(homePageTitleAuctions));
-        isElementDisplayed(homePageTitleAuctions);
-        return this;
+    public boolean isHomePageTitleAuctionsDisplayed() {
+        return homePageTitleAuctions.isDisplayed();
     }
     @FindBy(css = "[data-testid='login_link']")
     WebElement loginLink;
-    public LoginPage clickOnLoginLink() {
+    public void clickOnLoginLink() {
         click(loginLink);
-        return new LoginPage(driver);
     }
 }

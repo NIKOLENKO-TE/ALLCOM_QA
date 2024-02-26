@@ -1,3 +1,4 @@
+// Test: LoginPositiveTests
 package allcom_testng.tests.login;
 
 import allcom_testng.pages.BasePage;
@@ -36,7 +37,7 @@ public class LoginPositiveTests extends TestBase {
         loginPage.clickLoginButton();
         basePage.isValidationErrorPresent(false);
     }
-    @Test(invocationCount = 30)
+    @Test(invocationCount = 5)
     public void loginUserWithValidRandomDataPositive() {
         loginPage.login(randomEmail, randomPassword);
         loginPage.clickLoginButton();

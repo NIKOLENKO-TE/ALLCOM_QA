@@ -1,8 +1,8 @@
 package allcom_testng.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -19,35 +19,27 @@ public class UserProfilePage extends BasePage{
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
+
     public static String userProfilePageURL() {
         return homePageURL() + "/user/my_account/about_me";
     }
 
-    @FindBy(xpath = "//div[text()='My auctions']")
-    public WebElement myAuctions;
     public void clickOnMyAuctions() {
-        myAuctions.click();
+        clickOnElement(ElementType.XPATH, "//div[text()='My auctions']");
     }
-    @FindBy(xpath = "//div[text()='Wishlist']")
-    public WebElement wishlist;
     public void clickOnWishlist() {
-        wishlist.click();
+        clickOnElement(ElementType.XPATH, "//div[text()='Wishlist']");
     }
-    @FindBy(xpath = "//div[text()='Log Out']")
-    public WebElement logOut;
     public void logout() {
-        WebDriverWait wait = new WebDriverWait(driver, WAIT_SECONDS);
-        wait.until(ExpectedConditions.visibilityOf(logOut));
-        logOut.click();
+        new WebDriverWait(driver, WAIT_SECONDS)
+                .until(ExpectedConditions
+                        .visibilityOf((WebElement) By.xpath("//div[text()='Log Out']")))
+                .click();
     }
-    @FindBy(xpath = "//div[text()='About me']")
-    public WebElement aboutMe;
     public void clickOnAboutMe() {
-        aboutMe.click();
+        clickOnElement(ElementType.XPATH, "//div[text()='About me']");
     }
-    @FindBy(xpath = "//div[text()='Change password']")
-    public WebElement changePassword;
     public void clickOnChangePassword() {
-        changePassword.click();
+        clickOnElement(ElementType.XPATH, "//div[text()='Change password']");
     }
 }

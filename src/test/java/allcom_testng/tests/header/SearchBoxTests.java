@@ -18,9 +18,9 @@ public class SearchBoxTests extends TestBase {
     private static final Dimension FULL_HD_RESOLUTION = new Dimension(1920, 1080);
     private static final Dimension LOW_RESOLUTION = new Dimension(990, 800);
     private static final Duration WAIT_SECONDS = Duration.ofSeconds(5);
-    private BasePage basePage;
-    private SearchBox searchBox;
     private WebDriverWait wait;
+    BasePage basePage = new BasePage(app.driver);
+    SearchBox searchBox = new SearchBox(app.driver);
 
     @BeforeMethod
     public void precondition() {
@@ -58,7 +58,7 @@ public class SearchBoxTests extends TestBase {
     @Test(priority = 5)
     public void searchButtonBottomIsAbsentOnHighResolution() {
         app.driver.manage().window().setSize(FULL_HD_RESOLUTION);
-        wait.until(ExpectedConditions.not(ExpectedConditions.elementToBeClickable(searchBox.getSearchButtonBottom())));
+        basePage.isElementClickable(BasePage.ElementType.ID, "searchBottom", false);
     }
 
     @Test(priority = 6)
@@ -94,13 +94,20 @@ public class SearchBoxTests extends TestBase {
     }
 
     @Test(priority = 11)
-    public void searchBoxIsClickableOnDifferentResolutions() {
-        searchBox.validateClickable(searchBox.getSearchButtonBottom(), LOW_RESOLUTION, WAIT_SECONDS);
+    public void searchBoxIsClickableOnLowResolution() {
+        basePage.isElementClickable(searchBox.getSearchButtonBottom(), LOW_RESOLUTION, true);
     }
-
+    @Test(priority = 12)
+    public void searchBoxIsNotClickableOnFullHDResolution() {
+        basePage.isElementClickable(searchBox.getSearchButtonBottom(), FULL_HD_RESOLUTION, false);
+    }
+    @Test(priority = 12)
+    public void searchBoxIsNotClickableOnFullHDResolution2() {
+        basePage.isElementClickable(searchBox.getSearchButtonBottom(), FULL_HD_RESOLUTION, false);
+    }
     @Test(priority = 12)
     public void searchButtonBottomIsClickable() {
-        searchBox.validateClickable(searchBox.getSearchButtonBottom(), LOW_RESOLUTION, WAIT_SECONDS);
+        basePage.isElementClickable(searchBox.getSearchButtonBottom(), LOW_RESOLUTION,true);
     }
 
     @Test(priority = 13)

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="allcom_testng.tests.notFound.NotFoundPositiveTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-02-25T22:29:37" hostname="PORTISHEAD-PC" time="2.428">
+  <properties/>
+  <testcase name="clickOnBackToHomeButton" classname="allcom_testng.tests.notFound.NotFoundPositiveTests" time="0.754"/>
+  <testcase name="findContentTitleElement" classname="allcom_testng.tests.notFound.NotFoundPositiveTests" time="0.018"/>
+  <testcase name="findErrorContentElement" classname="allcom_testng.tests.notFound.NotFoundPositiveTests" time="0.0"/>
+  <system-out><![CDATA[23:29:37.065 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [clickOnBackToHomeButton]
+23:29:38.654 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [clickOnBackToHomeButton], with VALUES: []
+23:29:38.654 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [findContentTitleElement]
+23:29:39.561 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [findContentTitleElement], with VALUES: []
+23:29:39.562 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [findErrorContentElement]
+23:29:40.327 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [findErrorContentElement], with VALUES: []
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

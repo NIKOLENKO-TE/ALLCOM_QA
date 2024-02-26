@@ -3,14 +3,15 @@ package allcom_testng.tests.header;
 import allcom_testng.pages.BasePage;
 import allcom_testng.pages.HomePage;
 import allcom_testng.pages.header.AllcomLogo;
+import allcom_testng.pages.login.LoginPage;
 import allcom_testng.tests.TestBase;
-import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class AllcomLogoTests extends TestBase {
-    private BasePage basePage;
     private AllcomLogo allcomLogo;
+
+    BasePage basePage = new BasePage(app.driver);
 
     @BeforeMethod
     public void precondition() {
@@ -22,14 +23,19 @@ public class AllcomLogoTests extends TestBase {
 
     @Test
     public void allcomLogoIsPresent() {
-        Assert.assertNotNull(allcomLogo.getAllcomLogo(), "Allcom logo is not present");
+        basePage.isElementPresent(allcomLogo.getAllcomLogo(), true);
     }
-
+    @Test
+    public void allcomLogoIsClickable() {
+        basePage.isElementPresent(allcomLogo.getAllcomLogo(), true);
+        basePage.isElementClickable(allcomLogo.getAllcomLogo(), true);
+    }
     @Test
     public void clickAllcomLogoNavigatesToHomePage() {
-        basePage.goToPage(HomePage.homePageURL() + "/login");
-        Assert.assertNotNull(allcomLogo.getAllcomLogo(), "Allcom logo is not present");
-        allcomLogo.getAllcomLogo().click();
+        basePage.goToPage(LoginPage.loginPageURL());
+        basePage.isElementPresent(allcomLogo.getAllcomLogo(), true);
+        basePage.isElementClickable(allcomLogo.getAllcomLogo(), true);
+        basePage.click(allcomLogo.getAllcomLogo());
         basePage.isCurrentPage(HomePage.homePageURL(), true);
     }
 }

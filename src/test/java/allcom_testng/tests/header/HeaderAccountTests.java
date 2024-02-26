@@ -18,6 +18,7 @@ public class HeaderAccountTests extends TestBase {
     private BasePage basePage;
     private LoginPage loginPage;
     private HeaderAccount headerAccount;
+    private static final Duration WAIT_SECONDS = Duration.ofSeconds(10);
 
     @BeforeMethod
     public void precondition() {
@@ -29,8 +30,10 @@ public class HeaderAccountTests extends TestBase {
         try {
             loginPage.loginAdmin();
         } catch (StaleElementReferenceException e) {
-            WebDriverWait wait = new WebDriverWait(app.driver, Duration.ofSeconds(10));
-            wait.ignoring(StaleElementReferenceException.class).until(ExpectedConditions.elementToBeClickable(loginPage.getLoginButton()));
+            new WebDriverWait(app.driver, WAIT_SECONDS)
+                    .ignoring(StaleElementReferenceException.class)
+                    .until(ExpectedConditions
+                            .elementToBeClickable(loginPage.signInButtonText));
             loginPage.loginAdmin();
         }
     }
@@ -52,14 +55,14 @@ public class HeaderAccountTests extends TestBase {
 
     @Test
     public void clickMyAccountTopNavigatesToCorrectPage() {
-        Assert.assertNotNull(headerAccount.getMyAccountTop(), "My account top is not present");
+        Assert.assertNotNull(headerAccount.getMyAccountTop(), "MyAccountTop is not present");
         headerAccount.clickMyAccountTop();
         basePage.isCurrentPage(LoginPage.myAccountPageURL(), true);
     }
 
     @Test
     public void clickWishlistTopNavigatesToCorrectPage() {
-        Assert.assertNotNull(headerAccount.getWishlistTop(), "Wishlist Top top is not present");
+        Assert.assertNotNull(headerAccount.getWishlistTop(), "WishlistTop is not present");
         headerAccount.clickWishlistTop();
         basePage.isCurrentPage(HomePage.homePageURL() + "/user/my_account/products", true);
     }

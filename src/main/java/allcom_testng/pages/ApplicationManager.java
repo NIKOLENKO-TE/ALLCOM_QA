@@ -20,6 +20,8 @@ public class ApplicationManager extends BasePage {
     public String browser;
 
     public WebDriver driver;
+    private static final Duration WAIT_MILLIS_TIMEOUT = Duration.ofMillis(5000);
+    private static final Duration WAIT_MILLIS_WAIT = Duration.ofMillis(500);
 
     public static ApplicationManager app = new ApplicationManager(System.getProperty("browser", Browser.CHROME.browserName()));
 
@@ -40,7 +42,8 @@ public class ApplicationManager extends BasePage {
         driver.get(HomePage.homePageURL());
         BasePage basePage = new BasePage(driver);
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ZERO);
+        driver.manage().timeouts().pageLoadTimeout(WAIT_MILLIS_TIMEOUT);
+        driver.manage().timeouts().implicitlyWait(WAIT_MILLIS_WAIT);
         basePage.changeLanguage("English");
         basePage.waitForElementToAppear(BasePage.ElementType.DATA_TESTID, "language-option-en", true, 5);
     }
@@ -59,7 +62,8 @@ public class ApplicationManager extends BasePage {
         }
         BasePage basePage = new BasePage(driver);
         driver.get(HomePage.homePageURL());
-        driver.manage().timeouts().implicitlyWait(Duration.ZERO);
+        driver.manage().timeouts().pageLoadTimeout(WAIT_MILLIS_TIMEOUT);
+        driver.manage().timeouts().implicitlyWait(WAIT_MILLIS_WAIT);
         basePage.changeLanguage("English");
         basePage.waitForElementToAppear(BasePage.ElementType.DATA_TESTID, "language-option-en", true, 5);
     }

@@ -1,0 +1,1358 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class allcom_testng.tests.header.SearchBoxTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class allcom_testng.tests.header.SearchBoxTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/allcom_testng.tests.header.html">allcom_testng.tests.header</a> &gt; SearchBoxTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">77</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">5</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">30.906s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">93%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="searchBoxInputTest[17](create)"></a>
+<h3 class="failures">searchBoxInputTest[17](create)</h3>
+<span class="code">
+<pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.search__input&quot;}
+  (Session info: chrome-headless-shell=122.0.6261.70)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9df5fa7d277ff147dedd064b19ea2862, findElement {using=class name, value=search__input}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 122.0.6261.70, chrome: {chromedriverVersion: 122.0.6261.69 (81bc525b6a36..., userDataDir: C:\Users\PORTIS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63482}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63482/devtoo..., se:cdpVersion: 122.0.6261.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9df5fa7d277ff147dedd064b19ea2862
+	at java.base@11.0.20/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base@11.0.20/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base@11.0.20/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base@11.0.20/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at app//org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at app//org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at app//org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at app//org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at app//org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at app//org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at app//com.sun.proxy.$Proxy17.isDisplayed(Unknown Source)
+	at app//org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at app//org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at app//org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at app//org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at app//org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at app//org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at app//allcom_testng.pages.BasePage.waitUntilElementToBeClickable(BasePage.java:57)
+	at app//allcom_testng.pages.BasePage.type(BasePage.java:98)
+	at app//allcom_testng.tests.header.SearchBoxTests.searchBoxInputTest(SearchBoxTests.java:116)
+	at jdk.internal.reflect.GeneratedMethodAccessor18.invoke(Unknown Source)
+	at java.base@11.0.20/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.20/java.lang.reflect.Method.invoke(Method.java:566)
+	at app//org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at app//org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at app//org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at app//org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at app//org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at app//org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at app//org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at app//org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base@11.0.20/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at app//org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at app//org.testng.TestRunner.run(TestRunner.java:619)
+	at app//org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at app//org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at app//org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at app//org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at app//org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at app//org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at app//org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at app//org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at app//org.testng.TestNG.runSuites(TestNG.java:1134)
+	at app//org.testng.TestNG.run(TestNG.java:1101)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:148)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:95)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+	at java.base@11.0.20/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.20/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.20/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.20/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="searchBoxInputTest[26](kill)"></a>
+<h3 class="failures">searchBoxInputTest[26](kill)</h3>
+<span class="code">
+<pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.search__input&quot;}
+  (Session info: chrome-headless-shell=122.0.6261.70)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9df5fa7d277ff147dedd064b19ea2862, findElement {using=class name, value=search__input}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 122.0.6261.70, chrome: {chromedriverVersion: 122.0.6261.69 (81bc525b6a36..., userDataDir: C:\Users\PORTIS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63482}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63482/devtoo..., se:cdpVersion: 122.0.6261.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9df5fa7d277ff147dedd064b19ea2862
+	at java.base@11.0.20/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base@11.0.20/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base@11.0.20/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base@11.0.20/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at app//org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at app//org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at app//org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at app//org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at app//org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at app//org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at app//com.sun.proxy.$Proxy17.isDisplayed(Unknown Source)
+	at app//org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at app//org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at app//org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at app//org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at app//org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at app//org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at app//allcom_testng.pages.BasePage.waitUntilElementToBeClickable(BasePage.java:57)
+	at app//allcom_testng.pages.BasePage.type(BasePage.java:98)
+	at app//allcom_testng.tests.header.SearchBoxTests.searchBoxInputTest(SearchBoxTests.java:116)
+	at jdk.internal.reflect.GeneratedMethodAccessor18.invoke(Unknown Source)
+	at java.base@11.0.20/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.20/java.lang.reflect.Method.invoke(Method.java:566)
+	at app//org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at app//org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at app//org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at app//org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at app//org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at app//org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at app//org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at app//org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base@11.0.20/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at app//org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at app//org.testng.TestRunner.run(TestRunner.java:619)
+	at app//org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at app//org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at app//org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at app//org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at app//org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at app//org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at app//org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at app//org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at app//org.testng.TestNG.runSuites(TestNG.java:1134)
+	at app//org.testng.TestNG.run(TestNG.java:1101)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:148)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:95)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+	at java.base@11.0.20/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.20/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.20/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.20/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="searchBoxIsClickableOnDifferentResolutions"></a>
+<h3 class="failures">searchBoxIsClickableOnDifferentResolutions</h3>
+<span class="code">
+<pre>java.lang.AssertionError: Element searchBottomnot be found for short time expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertFalse(Assert.java:79)
+	at allcom_testng.pages.BasePage.isElementPresent(BasePage.java:216)
+	at allcom_testng.pages.header.SearchBox.getSearchButtonBottom(SearchBox.java:34)
+	at allcom_testng.tests.header.SearchBoxTests.searchBoxIsClickableOnDifferentResolutions(SearchBoxTests.java:98)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:148)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:95)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="searchButtonBottomIsAbsentOnHighResolution"></a>
+<h3 class="failures">searchButtonBottomIsAbsentOnHighResolution</h3>
+<span class="code">
+<pre>java.lang.AssertionError: Element searchBottomnot be found for short time expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertFalse(Assert.java:79)
+	at allcom_testng.pages.BasePage.isElementPresent(BasePage.java:216)
+	at allcom_testng.pages.header.SearchBox.getSearchButtonBottom(SearchBox.java:34)
+	at allcom_testng.tests.header.SearchBoxTests.searchButtonBottomIsAbsentOnHighResolution(SearchBoxTests.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:148)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:95)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="searchButtonBottomIsClickable"></a>
+<h3 class="failures">searchButtonBottomIsClickable</h3>
+<span class="code">
+<pre>java.lang.AssertionError: Element searchBottomnot be found for short time expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertFalse(Assert.java:79)
+	at allcom_testng.pages.BasePage.isElementPresent(BasePage.java:216)
+	at allcom_testng.pages.header.SearchBox.getSearchButtonBottom(SearchBox.java:34)
+	at allcom_testng.tests.header.SearchBoxTests.searchButtonBottomIsClickable(SearchBoxTests.java:103)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:148)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:95)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">searchBoxAcceptsLongInput</td>
+<td class="success">0.250s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">searchBoxAcceptsSpecialCharacters</td>
+<td class="success">0.144s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">searchBoxInputIsPresent</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">searchBoxInputTest[0]()</td>
+<td class="success">0.133s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">searchBoxInputTest[10](char)</td>
+<td class="success">0.153s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">searchBoxInputTest[11](nchar)</td>
+<td class="success">0.148s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">searchBoxInputTest[12](varchar)</td>
+<td class="success">0.137s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">searchBoxInputTest[13](nvarchar)</td>
+<td class="success">0.134s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">searchBoxInputTest[14](alter)</td>
+<td class="success">0.143s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">searchBoxInputTest[15](begin)</td>
+<td class="success">0.147s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">searchBoxInputTest[16](cast)</td>
+<td class="success">0.142s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">searchBoxInputTest[17](create)</td>
+<td class="failures">0.586s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">searchBoxInputTest[18](cursor)</td>
+<td class="success">0.143s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">searchBoxInputTest[19](declare)</td>
+<td class="success">0.130s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">searchBoxInputTest[1](В )</td>
+<td class="success">0.130s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">searchBoxInputTest[20](delete)</td>
+<td class="success">0.142s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">searchBoxInputTest[21](drop)</td>
+<td class="success">0.126s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">searchBoxInputTest[22](exec)</td>
+<td class="success">0.140s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">searchBoxInputTest[23](execute)</td>
+<td class="success">0.132s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">searchBoxInputTest[24](fetch)</td>
+<td class="success">0.171s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">searchBoxInputTest[25](insert)</td>
+<td class="success">0.138s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">searchBoxInputTest[26](kill)</td>
+<td class="failures">0.568s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">searchBoxInputTest[27](select)</td>
+<td class="success">0.150s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">searchBoxInputTest[28](sys)</td>
+<td class="success">0.124s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">searchBoxInputTest[29](sysobjects)</td>
+<td class="success">0.132s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">searchBoxInputTest[2](&lt;script&gt;)</td>
+<td class="success">0.184s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">searchBoxInputTest[30](syscolumns)</td>
+<td class="success">0.132s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">searchBoxInputTest[31](&lt;script&gt;&lt;/script&gt;)</td>
+<td class="success">0.142s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">searchBoxInputTest[3](&lt;/script&gt;)</td>
+<td class="success">0.135s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">searchBoxInputTest[4](&lt;script&gt;)</td>
+<td class="success">0.136s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">searchBoxInputTest[5](&lt;img&gt;)</td>
+<td class="success">0.162s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">searchBoxInputTest[6](&lt;div&gt;)</td>
+<td class="success">0.138s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">searchBoxInputTest[7](&lt;iframe&gt;)</td>
+<td class="success">0.140s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">searchBoxInputTest[8](&lt;input&gt;)</td>
+<td class="success">0.137s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">searchBoxInputTest[9](@@)</td>
+<td class="success">0.132s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">searchBoxInputTextTest</td>
+<td class="success">0.169s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">searchBoxIsAbsentOnLowResolution</td>
+<td class="success">0.281s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">searchBoxIsClickableOnDifferentResolutions</td>
+<td class="failures">0.358s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">searchBoxIsEmptyBeforeInput</td>
+<td class="success">0.015s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">searchBoxIsPresent</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">searchBoxIsPresentOnHighResolution</td>
+<td class="success">0.324s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">searchButtonBottomIsAbsentOnHighResolution</td>
+<td class="failures">0.534s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">searchButtonBottomIsClickable</td>
+<td class="failures">0.310s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">searchButtonBottomIsPresentOnLowResolution</td>
+<td class="success">0.333s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">searchRedirectsToCorrectPageTest</td>
+<td class="success">1.242s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">validateSearchWithIncorrectData[0]()</td>
+<td class="success">0.673s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">validateSearchWithIncorrectData[10](char)</td>
+<td class="success">0.682s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">validateSearchWithIncorrectData[11](nchar)</td>
+<td class="success">0.689s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">validateSearchWithIncorrectData[12](varchar)</td>
+<td class="success">0.640s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">validateSearchWithIncorrectData[13](nvarchar)</td>
+<td class="success">0.671s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">validateSearchWithIncorrectData[14](alter)</td>
+<td class="success">0.670s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">validateSearchWithIncorrectData[15](begin)</td>
+<td class="success">0.689s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">validateSearchWithIncorrectData[16](cast)</td>
+<td class="success">0.662s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">validateSearchWithIncorrectData[17](create)</td>
+<td class="success">0.673s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">validateSearchWithIncorrectData[18](cursor)</td>
+<td class="success">0.701s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">validateSearchWithIncorrectData[19](declare)</td>
+<td class="success">0.687s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">validateSearchWithIncorrectData[1](В )</td>
+<td class="success">0.686s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">validateSearchWithIncorrectData[20](delete)</td>
+<td class="success">0.654s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">validateSearchWithIncorrectData[21](drop)</td>
+<td class="success">0.660s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">validateSearchWithIncorrectData[22](exec)</td>
+<td class="success">0.681s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">validateSearchWithIncorrectData[23](execute)</td>
+<td class="success">0.690s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">validateSearchWithIncorrectData[24](fetch)</td>
+<td class="success">0.674s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">validateSearchWithIncorrectData[25](insert)</td>
+<td class="success">0.659s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">validateSearchWithIncorrectData[26](kill)</td>
+<td class="success">0.680s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">validateSearchWithIncorrectData[27](select)</td>
+<td class="success">0.704s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">validateSearchWithIncorrectData[28](sys)</td>
+<td class="success">0.669s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">validateSearchWithIncorrectData[29](sysobjects)</td>
+<td class="success">0.653s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">validateSearchWithIncorrectData[2](&lt;script&gt;)</td>
+<td class="success">0.662s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">validateSearchWithIncorrectData[30](syscolumns)</td>
+<td class="success">0.682s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">validateSearchWithIncorrectData[31](&lt;script&gt;&lt;/script&gt;)</td>
+<td class="success">0.656s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">validateSearchWithIncorrectData[3](&lt;/script&gt;)</td>
+<td class="success">0.674s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">validateSearchWithIncorrectData[4](&lt;script&gt;)</td>
+<td class="success">0.670s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">validateSearchWithIncorrectData[5](&lt;img&gt;)</td>
+<td class="success">0.676s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">validateSearchWithIncorrectData[6](&lt;div&gt;)</td>
+<td class="success">0.674s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">validateSearchWithIncorrectData[7](&lt;iframe&gt;)</td>
+<td class="success">0.667s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">validateSearchWithIncorrectData[8](&lt;input&gt;)</td>
+<td class="success">0.673s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">validateSearchWithIncorrectData[9](@@)</td>
+<td class="success">0.678s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>23:25:56.928 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [searchBoxIsPresent]
+23:25:57.924 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [searchBoxIsPresent], with VALUES: []
+23:25:57.925 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [searchBoxIsPresentOnHighResolution]
+23:25:59.076 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [searchBoxIsPresentOnHighResolution], with VALUES: []
+23:25:59.077 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [searchBoxIsAbsentOnLowResolution]
+23:26:00.345 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [searchBoxIsAbsentOnLowResolution], with VALUES: []
+23:26:00.346 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [searchButtonBottomIsPresentOnLowResolution]
+23:26:01.646 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [searchButtonBottomIsPresentOnLowResolution], with VALUES: []
+23:26:01.647 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [searchButtonBottomIsAbsentOnHighResolution]
+23:26:03.153 [Test worker] ERROR allcom_testng.tests.TestBase -- ERROR FAILED TEST: [searchButtonBottomIsAbsentOnHighResolution], with VALUES: []
+23:26:03.154 [Test worker] ERROR allcom_testng.tests.TestBase -- ERROR TEST MESSAGE: Element searchBottomnot be found for short time expected [false] but found [true]
+23:26:03.154 [Test worker] ERROR allcom_testng.tests.TestBase -- ERROR TEST STACK TRACE: 
+java.lang.AssertionError: Element searchBottomnot be found for short time expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertFalse(Assert.java:79)
+	at allcom_testng.pages.BasePage.isElementPresent(BasePage.java:216)
+	at allcom_testng.pages.header.SearchBox.getSearchButtonBottom(SearchBox.java:34)
+	at allcom_testng.tests.header.SearchBoxTests.searchButtonBottomIsAbsentOnHighResolution(SearchBoxTests.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:148)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:95)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+23:26:03.289 [Test worker] ERROR allcom_testng.tests.TestBase -- ERROR TEST SCREENSHOT: C:\Users\PORTISHEAD\Desktop\ALLCOM\allcom_qa\src\screenshots\screenshot_error_423726.png
+23:26:03.289 [Test worker] INFO  allcom_testng.tests.TestBase -- [==================================================================================================]
+23:26:03.290 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [searchBoxInputIsPresent]
+23:26:04.259 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [searchBoxInputIsPresent], with VALUES: []
+23:26:04.259 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [searchBoxInputTextTest]
+23:26:05.238 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [searchBoxInputTextTest], with VALUES: []
+23:26:05.239 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [searchBoxIsEmptyBeforeInput]
+23:26:06.068 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [searchBoxIsEmptyBeforeInput], with VALUES: []
+23:26:06.068 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [searchBoxAcceptsLongInput]
+23:26:07.097 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [searchBoxAcceptsLongInput], with VALUES: []
+23:26:07.098 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [searchBoxAcceptsSpecialCharacters]
+23:26:07.998 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [searchBoxAcceptsSpecialCharacters], with VALUES: []
+23:26:07.999 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [searchBoxIsClickableOnDifferentResolutions]
+23:26:09.133 [Test worker] ERROR allcom_testng.tests.TestBase -- ERROR FAILED TEST: [searchBoxIsClickableOnDifferentResolutions], with VALUES: []
+23:26:09.134 [Test worker] ERROR allcom_testng.tests.TestBase -- ERROR TEST MESSAGE: Element searchBottomnot be found for short time expected [false] but found [true]
+23:26:09.134 [Test worker] ERROR allcom_testng.tests.TestBase -- ERROR TEST STACK TRACE: 
+java.lang.AssertionError: Element searchBottomnot be found for short time expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertFalse(Assert.java:79)
+	at allcom_testng.pages.BasePage.isElementPresent(BasePage.java:216)
+	at allcom_testng.pages.header.SearchBox.getSearchButtonBottom(SearchBox.java:34)
+	at allcom_testng.tests.header.SearchBoxTests.searchBoxIsClickableOnDifferentResolutions(SearchBoxTests.java:98)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:148)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:95)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+23:26:09.278 [Test worker] ERROR allcom_testng.tests.TestBase -- ERROR TEST SCREENSHOT: C:\Users\PORTISHEAD\Desktop\ALLCOM\allcom_qa\src\screenshots\screenshot_error_423786.png
+23:26:09.278 [Test worker] INFO  allcom_testng.tests.TestBase -- [==================================================================================================]
+23:26:09.279 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [searchButtonBottomIsClickable]
+23:26:10.401 [Test worker] ERROR allcom_testng.tests.TestBase -- ERROR FAILED TEST: [searchButtonBottomIsClickable], with VALUES: []
+23:26:10.401 [Test worker] ERROR allcom_testng.tests.TestBase -- ERROR TEST MESSAGE: Element searchBottomnot be found for short time expected [false] but found [true]
+23:26:10.401 [Test worker] ERROR allcom_testng.tests.TestBase -- ERROR TEST STACK TRACE: 
+java.lang.AssertionError: Element searchBottomnot be found for short time expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertFalse(Assert.java:79)
+	at allcom_testng.pages.BasePage.isElementPresent(BasePage.java:216)
+	at allcom_testng.pages.header.SearchBox.getSearchButtonBottom(SearchBox.java:34)
+	at allcom_testng.tests.header.SearchBoxTests.searchButtonBottomIsClickable(SearchBoxTests.java:103)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:148)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:95)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+23:26:10.578 [Test worker] ERROR allcom_testng.tests.TestBase -- ERROR TEST SCREENSHOT: C:\Users\PORTISHEAD\Desktop\ALLCOM\allcom_qa\src\screenshots\screenshot_error_423798.png
+23:26:10.579 [Test worker] INFO  allcom_testng.tests.TestBase -- [==================================================================================================]
+23:26:10.579 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [searchRedirectsToCorrectPageTest]
+23:26:12.599 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [searchRedirectsToCorrectPageTest], with VALUES: []
+23:26:12.614 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [searchBoxInputTest]
+23:26:13.761 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [searchBoxInputTest], with VALUES: []
+23:26:13.761 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [searchBoxInputTest]
+23:26:14.722 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [searchBoxInputTest], with VALUES: [В ]
+23:26:14.722 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [searchBoxInputTest]
+23:26:15.756 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [searchBoxInputTest], with VALUES: [&lt;script&gt;]
+23:26:15.757 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [searchBoxInputTest]
+23:26:16.680 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [searchBoxInputTest], with VALUES: [&lt;/script&gt;]
+23:26:16.680 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [searchBoxInputTest]
+23:26:17.678 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [searchBoxInputTest], with VALUES: [&lt;script&gt;]
+23:26:17.679 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [searchBoxInputTest]
+23:26:19.474 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [searchBoxInputTest], with VALUES: [&lt;img&gt;]
+23:26:19.475 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [searchBoxInputTest]
+23:26:22.036 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [searchBoxInputTest], with VALUES: [&lt;div&gt;]
+23:26:22.037 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [searchBoxInputTest]
+23:26:24.364 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [searchBoxInputTest], with VALUES: [&lt;iframe&gt;]
+23:26:24.364 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [searchBoxInputTest]
+23:26:25.831 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [searchBoxInputTest], with VALUES: [&lt;input&gt;]
+23:26:25.832 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [searchBoxInputTest]
+23:26:27.180 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [searchBoxInputTest], with VALUES: [@@]
+23:26:27.180 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [searchBoxInputTest]
+23:26:28.834 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [searchBoxInputTest], with VALUES: [char]
+23:26:28.835 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [searchBoxInputTest]
+23:26:30.106 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [searchBoxInputTest], with VALUES: [nchar]
+23:26:30.107 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [searchBoxInputTest]
+23:26:31.367 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [searchBoxInputTest], with VALUES: [varchar]
+23:26:31.368 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [searchBoxInputTest]
+23:26:33.005 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [searchBoxInputTest], with VALUES: [nvarchar]
+23:26:33.005 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [searchBoxInputTest]
+23:26:34.617 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [searchBoxInputTest], with VALUES: [alter]
+23:26:34.618 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [searchBoxInputTest]
+23:26:35.831 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [searchBoxInputTest], with VALUES: [begin]
+23:26:35.832 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [searchBoxInputTest]
+23:26:37.099 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [searchBoxInputTest], with VALUES: [cast]
+23:26:37.100 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [searchBoxInputTest]
+23:26:38.381 [Test worker] ERROR allcom_testng.tests.TestBase -- ERROR FAILED TEST: [searchBoxInputTest], with VALUES: [create]
+23:26:38.382 [Test worker] ERROR allcom_testng.tests.TestBase -- ERROR TEST MESSAGE: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.search__input&quot;}
+  (Session info: chrome-headless-shell=122.0.6261.70)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9df5fa7d277ff147dedd064b19ea2862, findElement {using=class name, value=search__input}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 122.0.6261.70, chrome: {chromedriverVersion: 122.0.6261.69 (81bc525b6a36..., userDataDir: C:\Users\PORTIS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63482}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63482/devtoo..., se:cdpVersion: 122.0.6261.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9df5fa7d277ff147dedd064b19ea2862
+23:26:38.382 [Test worker] ERROR allcom_testng.tests.TestBase -- ERROR TEST STACK TRACE: 
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.search__input&quot;}
+  (Session info: chrome-headless-shell=122.0.6261.70)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9df5fa7d277ff147dedd064b19ea2862, findElement {using=class name, value=search__input}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 122.0.6261.70, chrome: {chromedriverVersion: 122.0.6261.69 (81bc525b6a36..., userDataDir: C:\Users\PORTIS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63482}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63482/devtoo..., se:cdpVersion: 122.0.6261.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9df5fa7d277ff147dedd064b19ea2862
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy17.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at allcom_testng.pages.BasePage.waitUntilElementToBeClickable(BasePage.java:57)
+	at allcom_testng.pages.BasePage.type(BasePage.java:98)
+	at allcom_testng.tests.header.SearchBoxTests.searchBoxInputTest(SearchBoxTests.java:116)
+	at jdk.internal.reflect.GeneratedMethodAccessor18.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:148)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:95)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+23:26:38.507 [Test worker] ERROR allcom_testng.tests.TestBase -- ERROR TEST SCREENSHOT: C:\Users\PORTISHEAD\Desktop\ALLCOM\allcom_qa\src\screenshots\screenshot_error_424078.png
+23:26:38.507 [Test worker] INFO  allcom_testng.tests.TestBase -- [==================================================================================================]
+23:26:38.507 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [searchBoxInputTest]
+23:26:39.489 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [searchBoxInputTest], with VALUES: [cursor]
+23:26:39.489 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [searchBoxInputTest]
+23:26:40.539 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [searchBoxInputTest], with VALUES: [declare]
+23:26:40.540 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [searchBoxInputTest]
+23:26:42.014 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [searchBoxInputTest], with VALUES: [delete]
+23:26:42.014 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [searchBoxInputTest]
+23:26:43.070 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [searchBoxInputTest], with VALUES: [drop]
+23:26:43.071 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [searchBoxInputTest]
+23:26:44.494 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [searchBoxInputTest], with VALUES: [exec]
+23:26:44.495 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [searchBoxInputTest]
+23:26:45.533 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [searchBoxInputTest], with VALUES: [execute]
+23:26:45.533 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [searchBoxInputTest]
+23:26:47.019 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [searchBoxInputTest], with VALUES: [fetch]
+23:26:47.019 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [searchBoxInputTest]
+23:26:48.132 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [searchBoxInputTest], with VALUES: [insert]
+23:26:48.132 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [searchBoxInputTest]
+23:26:49.220 [Test worker] ERROR allcom_testng.tests.TestBase -- ERROR FAILED TEST: [searchBoxInputTest], with VALUES: [kill]
+23:26:49.221 [Test worker] ERROR allcom_testng.tests.TestBase -- ERROR TEST MESSAGE: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.search__input&quot;}
+  (Session info: chrome-headless-shell=122.0.6261.70)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9df5fa7d277ff147dedd064b19ea2862, findElement {using=class name, value=search__input}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 122.0.6261.70, chrome: {chromedriverVersion: 122.0.6261.69 (81bc525b6a36..., userDataDir: C:\Users\PORTIS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63482}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63482/devtoo..., se:cdpVersion: 122.0.6261.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9df5fa7d277ff147dedd064b19ea2862
+23:26:49.221 [Test worker] ERROR allcom_testng.tests.TestBase -- ERROR TEST STACK TRACE: 
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.search__input&quot;}
+  (Session info: chrome-headless-shell=122.0.6261.70)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9df5fa7d277ff147dedd064b19ea2862, findElement {using=class name, value=search__input}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 122.0.6261.70, chrome: {chromedriverVersion: 122.0.6261.69 (81bc525b6a36..., userDataDir: C:\Users\PORTIS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63482}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63482/devtoo..., se:cdpVersion: 122.0.6261.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9df5fa7d277ff147dedd064b19ea2862
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy17.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at allcom_testng.pages.BasePage.waitUntilElementToBeClickable(BasePage.java:57)
+	at allcom_testng.pages.BasePage.type(BasePage.java:98)
+	at allcom_testng.tests.header.SearchBoxTests.searchBoxInputTest(SearchBoxTests.java:116)
+	at jdk.internal.reflect.GeneratedMethodAccessor18.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:148)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:95)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+23:26:49.345 [Test worker] ERROR allcom_testng.tests.TestBase -- ERROR TEST SCREENSHOT: C:\Users\PORTISHEAD\Desktop\ALLCOM\allcom_qa\src\screenshots\screenshot_error_424186.png
+23:26:49.345 [Test worker] INFO  allcom_testng.tests.TestBase -- [==================================================================================================]
+23:26:49.345 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [searchBoxInputTest]
+23:26:50.284 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [searchBoxInputTest], with VALUES: [select]
+23:26:50.284 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [searchBoxInputTest]
+23:26:51.251 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [searchBoxInputTest], with VALUES: [sys]
+23:26:51.251 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [searchBoxInputTest]
+23:26:52.170 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [searchBoxInputTest], with VALUES: [sysobjects]
+23:26:52.170 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [searchBoxInputTest]
+23:26:53.158 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [searchBoxInputTest], with VALUES: [syscolumns]
+23:26:53.159 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [searchBoxInputTest]
+23:26:54.095 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [searchBoxInputTest], with VALUES: [&lt;script&gt;&lt;/script&gt;]
+23:26:54.096 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [validateSearchWithIncorrectData]
+23:26:55.594 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [validateSearchWithIncorrectData], with VALUES: []
+23:26:55.595 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [validateSearchWithIncorrectData]
+23:26:57.194 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [validateSearchWithIncorrectData], with VALUES: [В ]
+23:26:57.195 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [validateSearchWithIncorrectData]
+23:26:58.731 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [validateSearchWithIncorrectData], with VALUES: [&lt;script&gt;]
+23:26:58.731 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [validateSearchWithIncorrectData]
+23:27:00.333 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [validateSearchWithIncorrectData], with VALUES: [&lt;/script&gt;]
+23:27:00.334 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [validateSearchWithIncorrectData]
+23:27:01.863 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [validateSearchWithIncorrectData], with VALUES: [&lt;script&gt;]
+23:27:01.863 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [validateSearchWithIncorrectData]
+23:27:03.396 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [validateSearchWithIncorrectData], with VALUES: [&lt;img&gt;]
+23:27:03.397 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [validateSearchWithIncorrectData]
+23:27:05.011 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [validateSearchWithIncorrectData], with VALUES: [&lt;div&gt;]
+23:27:05.012 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [validateSearchWithIncorrectData]
+23:27:06.939 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [validateSearchWithIncorrectData], with VALUES: [&lt;iframe&gt;]
+23:27:06.940 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [validateSearchWithIncorrectData]
+23:27:08.424 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [validateSearchWithIncorrectData], with VALUES: [&lt;input&gt;]
+23:27:08.425 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [validateSearchWithIncorrectData]
+23:27:10.013 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [validateSearchWithIncorrectData], with VALUES: [@@]
+23:27:10.014 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [validateSearchWithIncorrectData]
+23:27:11.580 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [validateSearchWithIncorrectData], with VALUES: [char]
+23:27:11.580 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [validateSearchWithIncorrectData]
+23:27:13.085 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [validateSearchWithIncorrectData], with VALUES: [nchar]
+23:27:13.086 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [validateSearchWithIncorrectData]
+23:27:14.553 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [validateSearchWithIncorrectData], with VALUES: [varchar]
+23:27:14.554 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [validateSearchWithIncorrectData]
+23:27:16.073 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [validateSearchWithIncorrectData], with VALUES: [nvarchar]
+23:27:16.075 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [validateSearchWithIncorrectData]
+23:27:17.604 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [validateSearchWithIncorrectData], with VALUES: [alter]
+23:27:17.605 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [validateSearchWithIncorrectData]
+23:27:19.063 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [validateSearchWithIncorrectData], with VALUES: [begin]
+23:27:19.065 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [validateSearchWithIncorrectData]
+23:27:20.684 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [validateSearchWithIncorrectData], with VALUES: [cast]
+23:27:20.685 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [validateSearchWithIncorrectData]
+23:27:22.193 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [validateSearchWithIncorrectData], with VALUES: [create]
+23:27:22.193 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [validateSearchWithIncorrectData]
+23:27:23.818 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [validateSearchWithIncorrectData], with VALUES: [cursor]
+23:27:23.819 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [validateSearchWithIncorrectData]
+23:27:25.366 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [validateSearchWithIncorrectData], with VALUES: [declare]
+23:27:25.367 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [validateSearchWithIncorrectData]
+23:27:26.883 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [validateSearchWithIncorrectData], with VALUES: [delete]
+23:27:26.884 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [validateSearchWithIncorrectData]
+23:27:28.406 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [validateSearchWithIncorrectData], with VALUES: [drop]
+23:27:28.407 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [validateSearchWithIncorrectData]
+23:27:29.999 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [validateSearchWithIncorrectData], with VALUES: [exec]
+23:27:30.000 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [validateSearchWithIncorrectData]
+23:27:31.560 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [validateSearchWithIncorrectData], with VALUES: [execute]
+23:27:31.560 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [validateSearchWithIncorrectData]
+23:27:33.069 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [validateSearchWithIncorrectData], with VALUES: [fetch]
+23:27:33.070 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [validateSearchWithIncorrectData]
+23:27:34.698 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [validateSearchWithIncorrectData], with VALUES: [insert]
+23:27:34.700 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [validateSearchWithIncorrectData]
+23:27:36.298 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [validateSearchWithIncorrectData], with VALUES: [kill]
+23:27:36.299 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [validateSearchWithIncorrectData]
+23:27:37.912 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [validateSearchWithIncorrectData], with VALUES: [select]
+23:27:37.913 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [validateSearchWithIncorrectData]
+23:27:39.498 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [validateSearchWithIncorrectData], with VALUES: [sys]
+23:27:39.499 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [validateSearchWithIncorrectData]
+23:27:41.124 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [validateSearchWithIncorrectData], with VALUES: [sysobjects]
+23:27:41.125 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [validateSearchWithIncorrectData]
+23:27:42.646 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [validateSearchWithIncorrectData], with VALUES: [syscolumns]
+23:27:42.646 [Test worker] INFO  allcom_testng.tests.TestBase -- STARTED: [validateSearchWithIncorrectData]
+23:27:44.209 [Test worker] INFO  allcom_testng.tests.TestBase -- PASSED: [validateSearchWithIncorrectData], with VALUES: [&lt;script&gt;&lt;/script&gt;]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.6</a> at 25 февр. 2024 г., 23:50:23</p>
+</div>
+</div>
+</body>
+</html>
