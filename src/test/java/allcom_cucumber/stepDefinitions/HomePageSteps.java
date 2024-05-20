@@ -1,7 +1,7 @@
 package allcom_cucumber.stepDefinitions;
 
-import allcom_testng.pages.HomePage;
-import allcom_testng.tests.TestBase;
+import allcom_testng.pages.homePage.HomePage;
+import allcom_testng.TestBaseSE;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
@@ -15,7 +15,7 @@ public class HomePageSteps {
 
     @Given("User open HOME_PAGE and choose language to EN")
     public void user_launches_the_browser_and_lang_en() {
-        if (TestBase.HEADLESS_MODE) {
+        if (TestBaseSE.HEADLESS_MODE) {
             app.initHeadless();
         } else {
             app.init();

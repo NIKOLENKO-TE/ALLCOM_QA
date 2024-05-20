@@ -2,32 +2,40 @@
 package allcom_testng.pages.login;
 
 import allcom_testng.pages.BasePage;
-import allcom_testng.pages.HomePage;
+import allcom_testng.pages.homePage.HomePage;
 import allcom_testng.pages.UserCredentials;
+import allcom_testng.pages.userProfile.UserProfilePage;
+import allcom_testng.pages.header.HeaderAccount;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 
 import java.time.Duration;
+import java.time.Instant;
 
-import static allcom_testng.pages.BasePage.ElementType.CSS;
 import static allcom_testng.pages.BasePage.ElementType.DATA_TESTID;
 
 public class LoginPage extends BasePage {
 
+    HeaderAccount headerAccount = new HeaderAccount(driver);
+    UserProfilePage userProfilePage = new UserProfilePage(driver);
+
+    BasePage basePage = new BasePage(driver);
+
     public LoginPage(WebDriver driver) {
         super(driver);
     }
+
     public static String loginPageURL() {
         return HomePage.homePageURL() + "/login";
     }
+
     public static String myAccountPageURL() {
         return HomePage.homePageURL() + "/user/my_account/about_me";
     }
-    private static final Duration WAIT_SECONDS = Duration.ofSeconds(10);
+
+    private static final Duration WAIT_SECONDS = Duration.ofSeconds(1);
     private static final Duration WAIT_MILLIS = Duration.ofMillis(200);
     public static final UserCredentials CLIENT_UNCHECKED = new UserCredentials("nikolenkote_800@gmail.com", "Qwertyuiop@1");
     public static final UserCredentials CLIENT_CHECKED = new UserCredentials("nikolenkote_900@gmail.com", "Qwertyuiop@1");
@@ -47,16 +55,19 @@ public class LoginPage extends BasePage {
     }
 
     public void loginAdmin() {
-        WebDriverWait wait = new WebDriverWait(driver, WAIT_SECONDS);
+        waitForSpinnerStop();
         try {
-            wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//a[@href='/login']")));
-            wait.until(ExpectedConditions.visibilityOf(USER_EMAIL));
-            wait.until(ExpectedConditions.visibilityOf(USER_PASSWORD));
+            waitUntilElementToBeClickable(USER_EMAIL);
             type(USER_EMAIL, ADMIN.getUsername());
+            waitUntilElementToBeClickable(USER_PASSWORD);
             type(USER_PASSWORD, ADMIN.getPassword());
             clickLoginButton();
-            wait.until(ExpectedConditions.urlToBe(myAccountPageURL()));
-        } catch (TimeoutException e) {
+            isElementClickable(signInButtonText, true);
+            String buttonText = signInButtonText.getText();
+            if (buttonText.equals("Sign in")) {
+                throw new AssertionError("Button text did not change after login");
+            }
+        } catch (TimeoutException | NoSuchElementException e) {
             System.out.println("Login element not found. Skipping login.");
         }
     }
@@ -80,36 +91,68 @@ public class LoginPage extends BasePage {
     @FindBy(css = "p.login_register--header")
     WebElement loginHeader;
 
-    public boolean isLoginHeaderPresent() {
-        return loginHeader.isDisplayed();
+    public WebElement isLoginHeaderPresent() {
+        return loginHeader;
     }
 
-    public void isUserLoggedIn(boolean expectedLoggedInState) {
-        FluentWait<WebDriver> wait = new FluentWait<>(driver)
-                .withTimeout(WAIT_SECONDS)
-                .pollingEvery(WAIT_MILLIS)
-                .ignoring(NoSuchElementException.class);
-        if (!expectedLoggedInState) {
-            try {
-                Thread.sleep(2000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
-        WebElement signInButton = wait.until(driver -> driver.findElement(By.xpath("//span[@class='header__account--btn__text']")));
-        String loginButtonText = signInButton.getText();
-        boolean actualLoggedInState = !loginButtonText.equals("Sign In");
-        Assert.assertEquals(actualLoggedInState, expectedLoggedInState, "Login state is not as expected");
+public void isUserLoggedIn(boolean expectedLoggedInState) {
+    waitForSpinnerStop();
+    Instant start = Instant.now();
+    WebElement myAccountButton = driver.findElement(By.xpath("(//span[@class='header__account--btn__text'])[1]"));
+    String buttonText = myAccountButton.getText().trim();
+    boolean actualLoggedInState = !buttonText.equals("Sign In");
+    if (actualLoggedInState != expectedLoggedInState) {
+        long timeTakenMillis = Duration.between(start, Instant.now()).toMillis();
+        throw new AssertionError("\nLogin state did not change to expected state:" +
+                "\nActual state: [" + actualLoggedInState + "]\nExpected state: [" + expectedLoggedInState + "]" +
+                "\nTime taken: [" + timeTakenMillis + "] milliseconds");
     }
-
-    public void userLoggedOut() {
-        FluentWait<WebDriver> wait = new FluentWait<>(driver)
-                .withTimeout(WAIT_SECONDS)
-                .pollingEvery(WAIT_MILLIS)
-                .ignoring(NoSuchElementException.class);
-        driver.get(LoginPage.myAccountPageURL());
-        wait.until(ExpectedConditions.urlToBe(myAccountPageURL()));
-        wait.until(ExpectedConditions.visibilityOfElementLocated(getByFromType(CSS, "div[class='my_account__menu--list']")));
-        clickOnElement(CSS, "div[class='my_account__menu--list']");
+    System.out.println("User logged status: [" + actualLoggedInState + "]");
+}
+//    public void userLoggedOut() {
+//        Instant totalStart = Instant.now();
+//        WebDriverWait wait = new WebDriverWait(driver, WAIT_SECONDS);
+//        String buttonText = headerAccount.myAccountTop().getText().trim();
+//        boolean userLoggedIn = !buttonText.equals("Sign In");
+//        Instant totalFinish = Instant.now();
+//        long totalTimeElapsed = Duration.between(totalStart, totalFinish).toMillis();
+//        System.out.println("Total execution time for userLoggedOut method: [" + totalTimeElapsed + "] milliseconds");
+//        if (!userLoggedIn) {
+//            return;
+//        }
+//        Instant start = Instant.now();
+//        Instant finish = Instant.now();
+//        long timeElapsed = Duration.between(start, finish).toMillis();
+//        driver.navigate().to(LoginPage.myAccountPageURL());
+//        click(userProfilePage.logOut());
+//        System.out.println("Clicked on [logOutLink], Time taken: [" + timeElapsed + "] milliseconds");
+//        finish = Instant.now();
+//        timeElapsed = Duration.between(start, finish).toMillis();
+//        System.out.println("Clicked on [logOutLink], Time taken: [" + timeElapsed + "] milliseconds");
+//        try {
+//            wait.until(ExpectedConditions.elementToBeClickable(headerAccount.myAccountTopBeforeLoggedIn()));
+//        } catch (TimeoutException e) {
+//            finish = Instant.now();
+//            timeElapsed = Duration.between(start, finish).toMillis();
+//            System.err.println("Failed to log out, element not found or not disappearing in :[" + WAIT_SECONDS.getSeconds() + "] seconds, Time taken: [" + timeElapsed + "] milliseconds");
+//        }
+//        finish = Instant.now();
+//        timeElapsed = Duration.between(start, finish).toMillis();
+//        System.out.println("Test execution time: [" + timeElapsed + "] milliseconds");
+//    }
+public void userLoggedOut() {
+    WebDriverWait wait = new WebDriverWait(driver, WAIT_SECONDS);
+    String buttonText = headerAccount.myAccountTop().getText().trim();
+    boolean userLoggedIn = !buttonText.equals("Sign In");
+    if (!userLoggedIn) {
+        return;
     }
+    driver.get(LoginPage.myAccountPageURL());
+    click(userProfilePage.logOut());
+    try {
+        wait.until(ExpectedConditions.elementToBeClickable(headerAccount.myAccountTopBeforeLoggedIn()));
+    } catch (TimeoutException e) {
+        System.err.println("Failed to log out, element not found or not disappearing in :[" + WAIT_SECONDS.getSeconds() + "] seconds");
+    }
+}
 }

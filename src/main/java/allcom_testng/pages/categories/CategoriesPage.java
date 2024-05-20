@@ -1,7 +1,7 @@
 package allcom_testng.pages.categories;
 
 import allcom_testng.pages.BasePage;
-import allcom_testng.pages.HomePage;
+import allcom_testng.pages.homePage.HomePage;
 import org.openqa.selenium.WebDriver;
 
 public class CategoriesPage extends BasePage {

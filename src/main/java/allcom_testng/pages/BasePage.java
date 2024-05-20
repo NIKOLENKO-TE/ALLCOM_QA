@@ -1,41 +1,107 @@
 //BasePage.java
 package allcom_testng.pages;
 
+import allcom_testng.pages.homePage.HomePage;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import java.time.Duration;
+import java.time.Instant;
 import java.util.ArrayList;
 import java.util.NoSuchElementException;
 import java.util.Set;
 
 import static allcom_testng.pages.BasePage.ElementType.DATA_TESTID;
-import static allcom_testng.pages.HomePage.*;
+import static allcom_testng.pages.homePage.HomePage.LANGUAGE_ITEM_XPATH;
+import static allcom_testng.pages.homePage.HomePage.LANGUAGE_SELECTOR;
 
 public class BasePage {
     protected WebDriver driver;
-    FluentWait<WebDriver> wait;
+    public FluentWait<WebDriver> wait;
     public static final Duration WAIT_SEC = Duration.ofSeconds(5);
 
     public enum ElementType {
         XPATH, CSS, ID, DATA_TESTID, CLASS, HREF, ROLE, LABEL, SPAN, BUTTON, P, ERROR_VALIDATION, PASSWORD_CONFIRM, LANGUAGE_SELECTOR, LANGUAGE_ITEM, CHECKBOX
     }
-
     public BasePage() {
     }
-    public WebElement getElement(ElementType type, String value) {
-        By locator = getByFromType(type, value);
-        try {
-            waitForElementToAppear(type, value, true, 5);
-            return driver.findElement(locator);
-        } catch (TimeoutException e) {
-            throw new RuntimeException("Element not found with locator: " + locator, e);
+    public BasePage(WebDriver driver) {
+        this.driver = driver;
+        this.wait = new FluentWait<>(driver)
+                .withTimeout(Duration.ofMillis(100))
+                .pollingEvery(Duration.ofMillis(100))
+                .ignoring(NoSuchElementException.class);
+        PageFactory.initElements(driver, this);
+    }
+    public void waitUntilUrlToBe(String url) {
+        final int MAX_ATTEMPTS = 5;
+        int attempts = 0;
+        final String expectedUrl = url.replaceAll("/$", "");
+        Instant start = Instant.now();
+        while (attempts < MAX_ATTEMPTS) {
+            try {
+                WebDriverWait wait = new WebDriverWait(driver, WAIT_SEC);
+                wait.until((ExpectedCondition<Boolean>) webDriver -> {
+                    assert webDriver != null;
+                    String currentUrl = webDriver.getCurrentUrl().replaceAll("/$", "");
+                    return currentUrl.equals(expectedUrl);
+                });
+                long timeTakenMillis = Duration.between(start, Instant.now()).toMillis();
+                System.out.println("Waiting for URL to be [" + expectedUrl + "], Time taken: [" + timeTakenMillis + "] milliseconds, Attempts: [" + MAX_ATTEMPTS + "]");
+                break;
+            } catch (TimeoutException e) {
+                attempts++;
+            } catch (WebDriverException e) {
+                long timeTakenMillis = Duration.between(start, Instant.now()).toMillis();
+                String actualUrl = driver.getCurrentUrl().replaceAll("/$", "");
+                throw new RuntimeException("Failed to wait URL \nExpected URL: [" + expectedUrl + "] \nActual URL: [" + actualUrl + "]\nTime taken: [" + timeTakenMillis + "] milliseconds\nAttempts: [" + MAX_ATTEMPTS + "]", e);
+            }
+        }
+        if (attempts == MAX_ATTEMPTS) {
+            long timeTakenMillis = Duration.between(start, Instant.now()).toMillis();
+            String actualUrl = driver.getCurrentUrl().replaceAll("/$", "");
+            throw new RuntimeException("Failed to navigate to URL. \nExpected URL: [" + expectedUrl + "] \nActual URL: [" + actualUrl + "]\nTime taken: [" + timeTakenMillis + "] milliseconds\nAttempts: [" + MAX_ATTEMPTS + "]");
         }
     }
+    public void isCurrentPage(String expectedUrl, boolean expectedStatus) {
+        final String ERROR_MESSAGE = "\nCurrent URL: %s\nExpected URL: %s\nTime taken: [%d] milliseconds";
+        final String[] currentUrl = new String[1];
+        final String[] expectedUrlArray = new String[1];
+        expectedUrlArray[0] = expectedUrl.replaceAll("/$", "");
+        Instant start = null;
+        try {
+            waitForSpinnerStop();
+            start = Instant.now();
+            waitUntilUrlToBe(expectedUrlArray[0]);
+            currentUrl[0] = driver.getCurrentUrl().replaceAll("/$", "");
+            long timeTakenMillis = Duration.between(start, Instant.now()).toMillis();
+            String errorMessage = String.format(ERROR_MESSAGE, currentUrl[0], expectedUrlArray[0], timeTakenMillis);
+            if (expectedStatus) {
+                Assert.assertEquals(currentUrl[0], expectedUrlArray[0], errorMessage);
+            } else {
+                Assert.assertNotEquals(currentUrl[0], expectedUrlArray[0], errorMessage);
+            }
+        } catch (TimeoutException e) {
+            assert start != null;
+            long timeTakenMillis = Duration.between(start, Instant.now()).toMillis();
+            String errorMessage = String.format(ERROR_MESSAGE, currentUrl[0], expectedUrlArray[0], timeTakenMillis);
+            if (expectedStatus) {
+                Assert.fail("\nCurrent page URL does not match the expected URL: " + errorMessage);
+            } else {
+                Assert.fail("\nCurrent page URL matches the expected URL: " + errorMessage);
+            }
+        }
+    }
+    public void waitForSpinnerStop() {
+        WebDriverWait wait = new WebDriverWait(driver, WAIT_SEC);
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//div[@class='loading-spinner']")));
+    }
+
     public WebElement getElement(WebElement element) {
         try {
             wait.until(ExpectedConditions.visibilityOf(element));
@@ -44,34 +110,84 @@ public class BasePage {
             throw new RuntimeException("Element not found: " + element, e);
         }
     }
-    public BasePage(WebDriver driver) {
-        this.driver = driver;
-        this.wait = new FluentWait<>(driver)
-                .withTimeout(Duration.ofMillis(200))
-                .pollingEvery(Duration.ofMillis(100))
-                .ignoring(NoSuchElementException.class);
-        PageFactory.initElements(driver, this);
+
+    public WebElement waitUntilElementToBeClickable(WebElement element) {
+        final int MAX_ATTEMPTS = 10;
+        int attempts = 0;
+        while (attempts < MAX_ATTEMPTS) {
+            try {
+                wait.until(ExpectedConditions.elementToBeClickable(element));
+                break;
+            } catch (StaleElementReferenceException e) {
+                attempts++;
+            } catch (ElementNotInteractableException e) {
+                throw new RuntimeException("Element is not intractable: [" + element + "]", e);
+            } catch (NoSuchElementException e) {
+                throw new RuntimeException("Element not found: [" + element + "]", e);
+            } catch (TimeoutException e) {
+                throw new RuntimeException("Operation timed out: [" + element + "]", e);
+            } catch (WebDriverException e) {
+                throw new RuntimeException("Element operation failed: [" + element + "]", e);
+            }
+        }
+        if (attempts == MAX_ATTEMPTS) {
+            throw new RuntimeException("Element was not clickable after: [" + MAX_ATTEMPTS + "] attempts");
+        }
+        return element;
     }
 
-    public void waitUntilElementToBeClickable(WebElement element) {
-        wait.until(ExpectedConditions.elementToBeClickable(element));
-    }
 
     public void click(WebElement element) {
+        isElementPresent(element, true);
+        String[] split = element.toString().split("->");
+        String elementDescription = split.length > 1 ? split[1].trim().replace("]", "") : "Element description not available";
+        Instant start = null;
+        try {
+            start = Instant.now();
+            wait.until(ExpectedConditions.elementToBeClickable(element));
+            element.click();
+            long timeTakenMillis = Duration.between(start, Instant.now()).toMillis();
+            System.out.println("Click on Element [" + elementDescription + "] Time taken: [" + timeTakenMillis + "] milliseconds");
+        } catch (ElementNotInteractableException e) {
+            throw new RuntimeException("Element is not intractable: [" + elementDescription + "]", e);
+        } catch (StaleElementReferenceException e) {
+            throw new RuntimeException("Stale element reference: [" + elementDescription + "]", e);
+        } catch (NoSuchElementException e) {
+            throw new RuntimeException("Element not found: [" + elementDescription + "]", e);
+        } catch (TimeoutException e) {
+            assert start != null;
+            long timeTakenMillis = Duration.between(start, Instant.now()).toMillis();
+            throw new RuntimeException("Operation timed out: [" + elementDescription + "] Time taken: [" + timeTakenMillis + "] milliseconds", e);
+        } catch (WebDriverException e) {
+            throw new RuntimeException("Element is not clickable: [" + elementDescription + "]", e);
+        }
+    }
+    public void clickJSExecutor(WebElement element) {
         waitUntilElementToBeClickable(element);
-        element.click();
+        String[] split = element.toString().split("->");
+        String elementDescription = split.length > 1 ? split[1].trim().replace("]", "") : "Element description not available";
+        Instant start = null;
+        try {
+            start = Instant.now();
+            wait.until(ExpectedConditions.elementToBeClickable(element));
+            JavascriptExecutor executor = (JavascriptExecutor) driver;
+            executor.executeScript("arguments[0].click();", element);
+            long timeTakenMillis = Duration.between(start, Instant.now()).toMillis();
+            System.out.println("Click on Element [" + elementDescription + "], Time taken: [" + timeTakenMillis + "] milliseconds");
+        } catch (ElementNotInteractableException e) {
+            throw new RuntimeException("Element is not intractable: [" + elementDescription + "]", e);
+        } catch (StaleElementReferenceException e) {
+            throw new RuntimeException("Stale element reference: [" + elementDescription + "]", e);
+        } catch (NoSuchElementException e) {
+            throw new RuntimeException("Element not found: [" + elementDescription + "]", e);
+        } catch (TimeoutException e) {
+            assert start != null;
+            long timeTakenMillis = Duration.between(start, Instant.now()).toMillis();
+            throw new RuntimeException("Operation timed out: [" + elementDescription + "], Time taken: [" + timeTakenMillis + "] milliseconds", e);
+        } catch (WebDriverException e) {
+            throw new RuntimeException("Element is not clickable: [" + elementDescription + "]", e);
+        }
     }
-
-    public void clickLinks(WebElement element) {
-        JavascriptExecutor executor = (JavascriptExecutor) driver;
-        executor.executeScript("arguments[0].click();", element);
-    }
-
-    public void switchToNewTab() {
-        ArrayList<String> tabs = new ArrayList<>(driver.getWindowHandles());
-        driver.switchTo().window(tabs.get(1));
-    }
-
     public void closeTab() {
         driver.close();
         ArrayList<String> tabs = new ArrayList<>(driver.getWindowHandles());
@@ -80,7 +196,7 @@ public class BasePage {
 
     public void testClickLink(WebElement urlToOpen, String urlToCompare) {
         String currentWindowHandle = driver.getWindowHandle();
-        clickLinks(urlToOpen);
+        clickJSExecutor(urlToOpen);
         Set<String> windowHandles = driver.getWindowHandles();
         if (windowHandles.size() > 1) {
             windowHandles.remove(currentWindowHandle);
@@ -93,13 +209,27 @@ public class BasePage {
             isCurrentPage(urlToCompare, true);
         }
     }
-
     public void type(WebElement element, String text) {
         waitUntilElementToBeClickable(element);
         if (text != null) {
-            click(element);
-            element.clear();
-            element.sendKeys(text);
+            try {
+                clickJSExecutor(element);
+                String elementDescription = element.toString().split("->")[1].trim().replace("]", "");
+                element.clear();
+                System.out.println("Clear Element [" + elementDescription + "]");
+                element.sendKeys(text);
+                System.out.println("Type [" + text + "] to [" + elementDescription + "]");
+            } catch (ElementNotInteractableException e) {
+                throw new RuntimeException("Element is not intractable: [" + element + "]", e);
+            } catch (StaleElementReferenceException e) {
+                throw new RuntimeException("Stale element reference: [" + element + "]", e);
+            } catch (NoSuchElementException e) {
+                throw new RuntimeException("Element not found: [" + element + "]", e);
+            } catch (TimeoutException e) {
+                throw new RuntimeException("Operation timed out: [" + element + "]", e);
+            } catch (WebDriverException e) {
+                throw new RuntimeException("Element operation failed: [" + element + "]", e);
+            }
         }
     }
 
@@ -109,18 +239,8 @@ public class BasePage {
         assert isPresent == validationStatus : "Validation error present status does not match the expected status";
     }
 
-    public void isCurrentPage(String expectedURL, boolean expectedStatus) {
-        wait.until(
-                webDriver -> ((JavascriptExecutor) webDriver).executeScript("return document.readyState").equals("complete"));
-        String currentUrl = driver.getCurrentUrl();
-        if (currentUrl.endsWith("/")) {
-            currentUrl = currentUrl.substring(0, currentUrl.length() - 1);
-        }
-        boolean isCurrent = currentUrl.equals(expectedURL);
-        assert isCurrent == expectedStatus : "Current page status does not match the expected status";
-    }
-
     public void goToPage(String pageURL) {
+        waitForSpinnerStop();
         driver.get(pageURL);
     }
 
@@ -132,6 +252,7 @@ public class BasePage {
 
     public void waitForElementToAppear(ElementType type, String value, boolean expectedStatus, int timeoutInSeconds) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutInSeconds));
+        waitForSpinnerStop();
         try {
             wait.until((WebDriver d) -> isElementPresent(type, value, expectedStatus));
         } catch (TimeoutException e) {
@@ -140,10 +261,22 @@ public class BasePage {
         }
     }
 
-    public void changeLanguage(String language) {
-        click(waitForElement(By.cssSelector(HomePage.LANGUAGE_SELECTOR), 10));
-        click(waitForElement(By.xpath(String.format(HomePage.LANGUAGE_ITEM_XPATH, language)), 10));
-    }
+        public void changeLanguage(String language) {
+            try {
+                click(waitForElement(By.cssSelector(HomePage.LANGUAGE_SELECTOR), 5));
+                click(waitForElement(By.xpath(String.format(HomePage.LANGUAGE_ITEM_XPATH, language)), 5));
+            } catch (ElementNotInteractableException e) {
+                throw new RuntimeException("Element is not interactable: [" + language + "]", e);
+            } catch (StaleElementReferenceException e) {
+                throw new RuntimeException("Stale element reference: [" + language + "]", e);
+            } catch (NoSuchElementException e) {
+                throw new RuntimeException("Element not found: [" + language + "]", e);
+            } catch (TimeoutException e) {
+                throw new RuntimeException("Operation timed out: [" + language + "]", e);
+            } catch (WebDriverException e) {
+                throw new RuntimeException("Element operation failed: [" + language + "]", e);
+            }
+        }
 
     protected By getByFromType(ElementType type, String value) {
         switch (type) {
@@ -185,67 +318,82 @@ public class BasePage {
     public void clickOnElement(ElementType type, String value) {
         By by = getByFromType(type, value);
         WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(by));
+        isElementPresent(element, true);
         if (type == ElementType.CHECKBOX) {
             if (!element.isSelected()) {
-                element.click();
+                click(element);
             }
         } else {
+            waitUntilElementToBeClickable(element);
             click(element);
         }
     }
+
+    public void clickOnElement(WebElement element) {
+        isElementPresent(element, true);
+        if (element.getTagName().equals("input") && element.getAttribute("type").equals("checkbox")) {
+            if (!element.isSelected()) {
+                clickJSExecutor(element);
+            }
+        } else {
+            waitUntilElementToBeClickable(element);
+            clickJSExecutor(element);
+        }
+    }
+
     public void isElementPresent(WebElement element, boolean expectedStatus) {
         try {
             wait.until(ExpectedConditions.visibilityOf(element));
-            Assert.assertTrue(expectedStatus, "Element ["+ element + "] is not visible");
-        } catch (TimeoutException e) {
-            Assert.assertFalse(expectedStatus, "Element ["+ element + "] not be found for short time");
-        } catch (NoSuchElementException e) {
-            Assert.assertFalse(expectedStatus, "Element ["+ element + "] not be found");
+            Assert.assertEquals(true, expectedStatus, "Element [" + element.toString().split("->")[1].trim().replace("]", "") + "] visibility status is: " + expectedStatus);
+        } catch (TimeoutException | NoSuchElementException e) {
+            Assert.assertEquals(false, expectedStatus, "Element [" + element.toString().split("->")[1].trim().replace("]", "") + "] visibility status is: " + expectedStatus);
         }
     }
     public boolean isElementPresent(ElementType type, String value, boolean expectedStatus) {
         By by = getByFromType(type, value);
         try {
             wait.until(ExpectedConditions.visibilityOfElementLocated(by));
-            Assert.assertTrue(expectedStatus);
+            Assert.assertEquals(true, expectedStatus, "Element [" + type + ": " + value + "] visibility status does not match the expected status");
             return true;
         } catch (TimeoutException e) {
-            Assert.assertFalse(expectedStatus, "Element ["+  type + ": " +  value + "] not be found for short time");
-            return false;
+            Assert.assertEquals(false, expectedStatus, "Element [" + type + ": " + value + "] not be found for short time");
+            return expectedStatus;
         } catch (NoSuchElementException e) {
-            Assert.assertFalse(expectedStatus, "Element ["+  type + ": " +  value + "] not be found");
-            return false;
+            Assert.assertEquals(false, expectedStatus, "Element [" + type + ": " + value + "] not be found");
+            return expectedStatus;
         }
     }
-//public boolean isElementPresent(ElementType type, String value, boolean expectedStatus) {
-//    By locator = getByFromType(type, value);
-//    try {
-//        wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
-//        return expectedStatus;
-//    } catch (TimeoutException e) {
-//        Assert.assertFalse(expectedStatus, "Element with " + type + ": " + value + " not be found for short time");
-//        return true;
-//    } catch (NoSuchElementException e) {
-//        Assert.assertFalse(expectedStatus, "Element with " + type + ": " + value + " not be found");
-//        return true;
+//    public boolean isElementPresent(ElementType type, String value, boolean expectedStatus) {
+//        By by = getByFromType(type, value);
+//        try {
+//            wait.until(ExpectedConditions.visibilityOfElementLocated(by));
+//            Assert.assertEquals(true, expectedStatus, "Element [" + type + ": " + value + "] visibility status does not match the expected status");
+//            return true;
+//        } catch (TimeoutException e) {
+//            Assert.assertEquals(false, expectedStatus, "Element [" + type + ": " + value + "] not be found for short time");
+//            return false;
+//        } catch (NoSuchElementException e) {
+//            Assert.assertEquals(false, expectedStatus, "Element [" + type + ": " + value + "] not be found");
+//            return false;
+//        }
 //    }
-//}
-public void isElementClickable(WebElement element, boolean expectedStatus) {
-    try {
-        wait.until(ExpectedConditions.elementToBeClickable(element));
-        Assert.assertTrue(expectedStatus, "Element " + element + " is not clickable");
-    } catch (TimeoutException e) {
-        Assert.assertFalse(expectedStatus, "Element " + element + " is not clickable for short time");
-    } catch (NoSuchElementException e) {
-        Assert.assertFalse(expectedStatus, "Element " + element + " not be found");
+
+    public void isElementClickable(WebElement element, boolean expectedStatus) {
+        try {
+            wait.until(ExpectedConditions.elementToBeClickable(element));
+            Assert.assertTrue(expectedStatus, "Element " + element + " is not clickable");
+        } catch (TimeoutException e) {
+            Assert.assertFalse(expectedStatus, "Element " + element + " is not clickable for short time");
+        } catch (NoSuchElementException e) {
+            Assert.assertFalse(expectedStatus, "Element " + element + " not be found");
+        }
     }
-}
+
     public void isElementClickable(By locator, Dimension resolution, boolean expectedStatus) {
         driver.manage().window().setSize(resolution);
         boolean isClickable;
         try {
             wait.withTimeout(WAIT_SEC)
-                    .withTimeout(Duration.ofMillis(5000))
                     .pollingEvery(Duration.ofMillis(100))
                     .ignoring(NoSuchElementException.class)
                     .until(ExpectedConditions.elementToBeClickable(locator));
@@ -278,10 +426,7 @@ public void isElementClickable(WebElement element, boolean expectedStatus) {
         }
         Assert.assertEquals(isClickable, expectedStatus, "Element is clickable?");
     }
-    public void isElementClickable(ElementType type, String value, Dimension resolution, boolean expectedStatus) {
-        By locator = getByFromType(type, value);
-        isElementClickable(locator, resolution, expectedStatus);
-    }
+
     public void validateField(WebElement getElement, String invalidData, boolean validationExpectation) {
         if (getElement == null) {
             throw new IllegalArgumentException("Element is invalid");
@@ -296,6 +441,10 @@ public void isElementClickable(WebElement element, boolean expectedStatus) {
     public void setCheckboxFirma() {
         clickOnElement(DATA_TESTID, "checkbox_client_firma_switch");
     }
+    public void scrollToBottom() {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+    }
 
     public void clickLinkSameTab(String linkName) {
         if (linkName != null) {
@@ -306,11 +455,6 @@ public void isElementClickable(WebElement element, boolean expectedStatus) {
         } else {
             throw new IllegalArgumentException("Invalid link name: " + linkName);
         }
-    }
-
-    public void scrollToBottom() {
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
     }
 
     public void refreshPage() {
@@ -336,4 +480,9 @@ public void isElementClickable(WebElement element, boolean expectedStatus) {
     public void waitForPageLoadInteractive() {
         wait.until(webDriver -> ((JavascriptExecutor) webDriver).executeScript("return document.readyState").equals("interactive"));
     }
+    public void switchToNewTab() {
+        ArrayList<String> tabs = new ArrayList<>(driver.getWindowHandles());
+        driver.switchTo().window(tabs.get(1));
+    }
+
 }

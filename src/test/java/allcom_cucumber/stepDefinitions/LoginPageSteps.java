@@ -1,6 +1,7 @@
 package allcom_cucumber.stepDefinitions;
 
-import allcom_testng.pages.HomePage;
+import allcom_testng.pages.BasePage;
+import allcom_testng.pages.homePage.HomePage;
 import allcom_testng.pages.login.LoginPage;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
@@ -16,6 +17,7 @@ import static allcom_testng.pages.login.LoginPage.*;
 
 public class LoginPageSteps {
     WebDriver driver = app.getDriver();
+    BasePage basePage = new BasePage(driver);
     LoginPage loginPage = new LoginPage(driver);
     HomePage homePage = new HomePage(driver);
     private static final Duration WAIT_SECONDS = Duration.ofSeconds(5);
@@ -51,7 +53,7 @@ public class LoginPageSteps {
 
     @Then("User is still on Login Page")
     public void isLoginHeaderPresent() {
-        loginPage.isLoginHeaderPresent();
+        basePage.isElementPresent(loginPage.isLoginHeaderPresent(), true);
     }
     @And("User is redirected on Home Page?")
     public void userIsRedirectedOnHomePage() {

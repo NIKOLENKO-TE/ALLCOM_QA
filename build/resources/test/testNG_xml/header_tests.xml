@@ -1,9 +1,0 @@
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-
-<suite name="Header" verbose="1">
-    <test name="Header">
-        <packages>
-            <package name="allcom_testng.tests.header.*"/>
-        </packages>
-    </test>
-</suite>

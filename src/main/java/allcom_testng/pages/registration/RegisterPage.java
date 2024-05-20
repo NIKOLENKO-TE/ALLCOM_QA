@@ -1,7 +1,7 @@
 package allcom_testng.pages.registration;
 
 import allcom_testng.pages.BasePage;
-import allcom_testng.pages.HomePage;
+import allcom_testng.pages.homePage.HomePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;

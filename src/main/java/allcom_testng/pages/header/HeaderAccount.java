@@ -1,56 +1,51 @@
 package allcom_testng.pages.header;
-import allcom_testng.pages.BasePage;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
+import allcom_testng.pages.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-public class HeaderAccount extends BasePage{
+
+public class HeaderAccount extends BasePage {
     public HeaderAccount(WebDriver driver) {
         super(driver);
     }
 
-    @FindBy(xpath = "//li[@data-testid='myAccountTop']")
-    WebElement myAccountTop;
-    public WebElement getMyAccountTop() {
-        return myAccountTop;
+    BasePage basePage = new BasePage(driver);
+    @FindBy(xpath = "//a[@data-testid='myAccountTop_link'][normalize-space()='Sign In']")
+    WebElement myAccountTopBeforeLoggedInLink;
+
+    public WebElement myAccountTopBeforeLoggedIn() {
+        return myAccountTopBeforeLoggedInLink;
     }
-    public void clickMyAccountTop() {
-        By locator = By.xpath("//*[@data-testid='myAccountTop_link']");
-        WebElement cartTop = driver.findElement(locator);
-        if (cartTop != null) {
-            cartTop.click();
-        } else {
-            throw new NoSuchElementException("Element not found: cartTop_link");
-        }
+
+    //@FindBy(xpath = "//a[@data-testid='myAccountTop_link'][not(contains(.,'Sign In'))]")
+    //@FindBy(xpath = "//*[@id=\"root\"]/header/div[1]/div/div/div[4]/ul/li[1]")
+    //@FindBy(xpath = "(//li[@data-testid='myAccountTop'])[1]")
+    //@FindBy(xpath = "/html/body/div/header/div[1]/div/div/div[4]/ul/li[1]/a")
+    @FindBy(xpath = "/html/body/div/header/div[1]/div/div/div[4]/ul/li[1]")
+    WebElement myAccountTopAfterLoggedInButton;
+
+    public WebElement myAccountTopAfterLoggedIn() {
+        return myAccountTopAfterLoggedInButton;
     }
-    @FindBy(xpath = "//li[@data-testid='wishlistTop']")
-    WebElement wishlistTop;
-    public WebElement getWishlistTop() {
-        return wishlistTop;
+
+    @FindBy(xpath = "(//li[@data-testid='wishlistTop'])[1]")
+    private WebElement wishlistTopButtonLink;
+
+    public WebElement wishlistTop() {
+        return wishlistTopButtonLink;
     }
-    public void clickWishlistTop() {
-        By locator = By.xpath("//*[@data-testid='wishlistTop_link']");
-        WebElement cartTop = super.waitForElement(locator, 5);
-        if (cartTop != null) {
-            click(cartTop);
-        } else {
-            throw new NoSuchElementException("Element not found: cartTop_link");
-        }
+
+    @FindBy(xpath = "(//li[@data-testid='cartTop'])[1]")
+    private WebElement cartTopButtonLink;
+
+    public WebElement cartTop() {
+        return cartTopButtonLink;
     }
-    @FindBy(xpath = "//li[@data-testid='cartTop_link']")
-    WebElement cartTop;
-    public WebElement getCartTop() {
-        return wishlistTop;
-    }
-    public void clickCartTop() {
-        By locator = By.xpath("//*[@data-testid='cartTop_link']");
-        WebElement cartTop = super.waitForElement(locator, 5);
-        if (cartTop != null) {
-            cartTop.click();
-        } else {
-            throw new NoSuchElementException("Element not found: cartTop_link");
-        }
+
+    @FindBy(xpath = "(//span[@class='header__account--btn__text'])[1]")
+    private WebElement myAccountTopButton;
+    public WebElement myAccountTop() {
+        return myAccountTopButton;
     }
 }

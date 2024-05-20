@@ -1,6 +1,8 @@
 package allcom_testng.pages;
 
+import allcom_testng.pages.homePage.HomePage;
 import com.google.common.io.Files;
+import lombok.Getter;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -19,18 +21,15 @@ public class ApplicationManager extends BasePage {
     public BasePage basePage;
     public String browser;
 
+    @Getter
     public WebDriver driver;
-    private static final Duration WAIT_MILLIS_TIMEOUT = Duration.ofMillis(5000);
+    private static final Duration WAIT_MILLIS_TIMEOUT = Duration.ofMillis(1000);
     private static final Duration WAIT_MILLIS_WAIT = Duration.ofMillis(500);
 
     public static ApplicationManager app = new ApplicationManager(System.getProperty("browser", Browser.CHROME.browserName()));
 
     public ApplicationManager(String browser) {
         this.browser = browser;
-    }
-
-    public WebDriver getDriver() {
-        return driver;
     }
 
     public void init() {
@@ -45,7 +44,6 @@ public class ApplicationManager extends BasePage {
         driver.manage().timeouts().pageLoadTimeout(WAIT_MILLIS_TIMEOUT);
         driver.manage().timeouts().implicitlyWait(WAIT_MILLIS_WAIT);
         basePage.changeLanguage("English");
-        basePage.waitForElementToAppear(BasePage.ElementType.DATA_TESTID, "language-option-en", true, 5);
     }
 
     public void initHeadless() {
@@ -65,17 +63,17 @@ public class ApplicationManager extends BasePage {
         driver.manage().timeouts().pageLoadTimeout(WAIT_MILLIS_TIMEOUT);
         driver.manage().timeouts().implicitlyWait(WAIT_MILLIS_WAIT);
         basePage.changeLanguage("English");
-        basePage.waitForElementToAppear(BasePage.ElementType.DATA_TESTID, "language-option-en", true, 5);
     }
 
     public void stop() {
-        driver.quit();
+        if (driver != null) {
+            driver.quit();
+        }
         try {
             Runtime.getRuntime().exec("taskkill /F /IM chromedriver.exe /T");
         } catch (IOException ignored) {
         }
     }
-
     public String takeScreenshot() {
         String time = String.valueOf(System.nanoTime());
         String shortTime = time.substring(0, 6);

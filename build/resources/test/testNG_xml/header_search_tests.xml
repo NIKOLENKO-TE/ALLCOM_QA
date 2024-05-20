@@ -1,9 +1,0 @@
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-
-<suite name="HeaderSearch" verbose="1">
-    <test name="HeaderSearch">
-        <classes>
-            <class name="allcom_testng.tests.header.SearchBoxTests"/>
-        </classes>
-    </test>
-</suite>
