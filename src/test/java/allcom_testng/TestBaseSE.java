@@ -30,11 +30,6 @@ public class TestBaseSE {
 
     private Instant testStart; // Добавляем поле для хранения времени начала теста
 
-    @BeforeMethod
-    public void logTestStart(Method method) {
-        testStart = Instant.now(); // Записываем время начала теста
-        logger.info("STARTED: [" + method.getName() + "]");
-    }
     @BeforeSuite
     public void setUp() {
         String browser = System.getProperty("browser", "chrome");
@@ -45,6 +40,12 @@ public class TestBaseSE {
         } else {
             app.init();
         }
+    }
+
+    @BeforeMethod
+    public void logTestStart(Method method) {
+        testStart = Instant.now(); // Записываем время начала теста
+        logger.info("STARTED: [" + method.getName() + "]");
     }
 
     @AfterMethod
@@ -65,7 +66,7 @@ public class TestBaseSE {
             logger.info("[==================================================================================================]");
         }
     }
-    @AfterSuite
+    @AfterSuite(enabled = false)
     public void tearDown() {
         app.stop();
     }

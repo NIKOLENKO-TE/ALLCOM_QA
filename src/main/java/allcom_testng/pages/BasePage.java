@@ -8,8 +8,13 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.testng.Assert;
 
+import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.time.Duration;
 import java.time.Instant;
 import java.util.ArrayList;
@@ -24,12 +29,14 @@ public class BasePage {
     protected WebDriver driver;
     public FluentWait<WebDriver> wait;
     public static final Duration WAIT_SEC = Duration.ofSeconds(5);
-
+    static Logger logger = LoggerFactory.getLogger(BasePage.class);
     public enum ElementType {
         XPATH, CSS, ID, DATA_TESTID, CLASS, HREF, ROLE, LABEL, SPAN, BUTTON, P, ERROR_VALIDATION, PASSWORD_CONFIRM, LANGUAGE_SELECTOR, LANGUAGE_ITEM, CHECKBOX
     }
+
     public BasePage() {
     }
+
     public BasePage(WebDriver driver) {
         this.driver = driver;
         this.wait = new FluentWait<>(driver)
@@ -38,6 +45,7 @@ public class BasePage {
                 .ignoring(NoSuchElementException.class);
         PageFactory.initElements(driver, this);
     }
+
     public void waitUntilUrlToBe(String url) {
         final int MAX_ATTEMPTS = 5;
         int attempts = 0;
@@ -68,6 +76,7 @@ public class BasePage {
             throw new RuntimeException("Failed to navigate to URL. \nExpected URL: [" + expectedUrl + "] \nActual URL: [" + actualUrl + "]\nTime taken: [" + timeTakenMillis + "] milliseconds\nAttempts: [" + MAX_ATTEMPTS + "]");
         }
     }
+
     public void isCurrentPage(String expectedUrl, boolean expectedStatus) {
         final String ERROR_MESSAGE = "\nCurrent URL: %s\nExpected URL: %s\nTime taken: [%d] milliseconds";
         final String[] currentUrl = new String[1];
@@ -97,6 +106,7 @@ public class BasePage {
             }
         }
     }
+
     public void waitForSpinnerStop() {
         WebDriverWait wait = new WebDriverWait(driver, WAIT_SEC);
         wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//div[@class='loading-spinner']")));
@@ -136,7 +146,6 @@ public class BasePage {
         return element;
     }
 
-
     public void click(WebElement element) {
         isElementPresent(element, true);
         String[] split = element.toString().split("->");
@@ -162,6 +171,7 @@ public class BasePage {
             throw new RuntimeException("Element is not clickable: [" + elementDescription + "]", e);
         }
     }
+
     public void clickJSExecutor(WebElement element) {
         waitUntilElementToBeClickable(element);
         String[] split = element.toString().split("->");
@@ -188,6 +198,7 @@ public class BasePage {
             throw new RuntimeException("Element is not clickable: [" + elementDescription + "]", e);
         }
     }
+
     public void closeTab() {
         driver.close();
         ArrayList<String> tabs = new ArrayList<>(driver.getWindowHandles());
@@ -209,6 +220,7 @@ public class BasePage {
             isCurrentPage(urlToCompare, true);
         }
     }
+
     public void type(WebElement element, String text) {
         waitUntilElementToBeClickable(element);
         if (text != null) {
@@ -232,7 +244,6 @@ public class BasePage {
             }
         }
     }
-
 
     public void isValidationErrorPresent(boolean validationStatus) {
         boolean isPresent = isElementPresent(BasePage.ElementType.ERROR_VALIDATION, "", validationStatus);
@@ -261,22 +272,22 @@ public class BasePage {
         }
     }
 
-        public void changeLanguage(String language) {
-            try {
-                click(waitForElement(By.cssSelector(HomePage.LANGUAGE_SELECTOR), 5));
-                click(waitForElement(By.xpath(String.format(HomePage.LANGUAGE_ITEM_XPATH, language)), 5));
-            } catch (ElementNotInteractableException e) {
-                throw new RuntimeException("Element is not interactable: [" + language + "]", e);
-            } catch (StaleElementReferenceException e) {
-                throw new RuntimeException("Stale element reference: [" + language + "]", e);
-            } catch (NoSuchElementException e) {
-                throw new RuntimeException("Element not found: [" + language + "]", e);
-            } catch (TimeoutException e) {
-                throw new RuntimeException("Operation timed out: [" + language + "]", e);
-            } catch (WebDriverException e) {
-                throw new RuntimeException("Element operation failed: [" + language + "]", e);
-            }
+    public void changeLanguage(String language) {
+        try {
+            click(waitForElement(By.cssSelector(HomePage.LANGUAGE_SELECTOR), 5));
+            click(waitForElement(By.xpath(String.format(HomePage.LANGUAGE_ITEM_XPATH, language)), 5));
+        } catch (ElementNotInteractableException e) {
+            throw new RuntimeException("Element is not interactable: [" + language + "]", e);
+        } catch (StaleElementReferenceException e) {
+            throw new RuntimeException("Stale element reference: [" + language + "]", e);
+        } catch (NoSuchElementException e) {
+            throw new RuntimeException("Element not found: [" + language + "]", e);
+        } catch (TimeoutException e) {
+            throw new RuntimeException("Operation timed out: [" + language + "]", e);
+        } catch (WebDriverException e) {
+            throw new RuntimeException("Element operation failed: [" + language + "]", e);
         }
+    }
 
     protected By getByFromType(ElementType type, String value) {
         switch (type) {
@@ -349,6 +360,7 @@ public class BasePage {
             Assert.assertEquals(false, expectedStatus, "Element [" + element.toString().split("->")[1].trim().replace("]", "") + "] visibility status is: " + expectedStatus);
         }
     }
+
     public boolean isElementPresent(ElementType type, String value, boolean expectedStatus) {
         By by = getByFromType(type, value);
         try {
@@ -363,20 +375,6 @@ public class BasePage {
             return expectedStatus;
         }
     }
-//    public boolean isElementPresent(ElementType type, String value, boolean expectedStatus) {
-//        By by = getByFromType(type, value);
-//        try {
-//            wait.until(ExpectedConditions.visibilityOfElementLocated(by));
-//            Assert.assertEquals(true, expectedStatus, "Element [" + type + ": " + value + "] visibility status does not match the expected status");
-//            return true;
-//        } catch (TimeoutException e) {
-//            Assert.assertEquals(false, expectedStatus, "Element [" + type + ": " + value + "] not be found for short time");
-//            return false;
-//        } catch (NoSuchElementException e) {
-//            Assert.assertEquals(false, expectedStatus, "Element [" + type + ": " + value + "] not be found");
-//            return false;
-//        }
-//    }
 
     public void isElementClickable(WebElement element, boolean expectedStatus) {
         try {
@@ -441,6 +439,7 @@ public class BasePage {
     public void setCheckboxFirma() {
         clickOnElement(DATA_TESTID, "checkbox_client_firma_switch");
     }
+
     public void scrollToBottom() {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
@@ -480,9 +479,36 @@ public class BasePage {
     public void waitForPageLoadInteractive() {
         wait.until(webDriver -> ((JavascriptExecutor) webDriver).executeScript("return document.readyState").equals("interactive"));
     }
+
     public void switchToNewTab() {
         ArrayList<String> tabs = new ArrayList<>(driver.getWindowHandles());
         driver.switchTo().window(tabs.get(1));
     }
+    public static void checkLink(String url) {
+        if (url == null || url.isEmpty()) {
+            logger.error("URL is either not configured for anchor tag or it is empty");
+            return;
+        }
 
+//        if (!url.startsWith(homePageURL())) {
+//        logger.info("URL belongs to another domain, skipping it.");
+//            return;
+//        }
+
+        try {
+            HttpURLConnection huc = (HttpURLConnection) (new URL(url).openConnection());
+            huc.setRequestMethod("HEAD");
+            huc.connect();
+            int respCode = huc.getResponseCode();
+
+            if (respCode >= 400) {
+                logger.error("Broken link: " + url);
+            } else {
+                logger.info("Valid link: " + url);
+            }
+            huc.disconnect();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 }
