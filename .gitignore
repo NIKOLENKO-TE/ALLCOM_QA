@@ -1,6 +1,5 @@
 # Maven
 target/
-!.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
 
@@ -44,11 +43,9 @@ build/
 *.bak
 *.swp
 *~.nib
-*.properties
 *.class
 *.war
 *.ear
-*.jar
 *.rar
 
 # Virtual Machine files
