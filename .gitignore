@@ -9,7 +9,6 @@ target/
 
 # Git
 .gitignore
-gradle.properties
 
 # Eclipse
 .apt_generated
@@ -36,9 +35,6 @@ gradle.properties
 # Gradle
 build/
 .gradle/
-gradlew
-gradlew.bat
-gradle/wrapper/
 
 # Logs and databases
 *.log
