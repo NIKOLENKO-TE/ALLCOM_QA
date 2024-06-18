@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id 'io.qameta.allure' version '2.11.2'
 }
 
 group 'org.example'
@@ -24,6 +25,7 @@ dependencies {
     testCompileOnly 'org.projectlombok:lombok:1.18.30'
     testAnnotationProcessor 'org.projectlombok:lombok:1.18.30'
     implementation 'org.projectlombok:lombok:1.18.30'
+    implementation group: 'io.qameta.allure', name: 'allure-testng', version: '2.27.0'
 }
 
 tasks.jar {
@@ -36,6 +38,15 @@ processTestResources {
 
 test {
     useTestNG()
+    finalizedBy 'allureReport'
+}
+
+allureReport {
+    reportDir = file('build/allure-report')
+}
+
+allureReport { // перед созданием отчёта, удаляем старые результаты чтобы не мешались
+    dependsOn cleanAllureReport
 }
 
 sourceSets {

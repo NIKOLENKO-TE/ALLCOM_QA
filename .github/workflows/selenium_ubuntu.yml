@@ -45,7 +45,7 @@ jobs:
       - name: ✅ 📂 List Directories before tests
         if: always()
         run: ls -R
-      - name: ▶️ 🐞 Run all tests
+      - name: ▶️ 🐞 Run tests
         run: xvfb-run --auto-servernum --server-args="-screen 0 1920x1080x24" ./gradlew -Pbrowser=chrome -Pmode=normal clean allcom_qa_broken_links > build.log 2>&1 || true
       - name: ✅ 📂 List Directories after tests
         if: always()
@@ -83,7 +83,7 @@ jobs:
         with:
           gh_pages: gh-pages
           allure_history: allure-history
-          allure_results: build/allure-results
+          allure_results: build/allure-report
       - name: ✅ 💻 Publish test report
         uses: peaceiris/actions-gh-pages@v3
         if: always()
