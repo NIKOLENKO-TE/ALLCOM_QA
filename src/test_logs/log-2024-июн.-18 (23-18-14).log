@@ -1,0 +1,94 @@
+690  [main] INFO  org.testng.internal.Utils -- [TestNG] Running:
+  C:\Users\PORTISHEAD\AppData\Local\JetBrains\IntelliJIdea2024.1\temp-testng-customsuite.xml
+
+4067 [main] INFO  allcom_selenium.pages.BasePage -- Clicked on Element [css selector: [data-testid='language-text-set'], Time taken: [220] milliseconds
+4234 [main] INFO  allcom_selenium.pages.BasePage -- Clicked on Element [xpath: //li[contains(text(), 'English')], Time taken: [83] milliseconds
+4281 [main] INFO  allcom_selenium.TestBaseSE -- STARTED: [checkLinks]
+4563 [main] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/
+4594 [main] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/login
+4626 [main] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/about_us
+4657 [main] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/contact
+4687 [main] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/faq
+4719 [main] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/register
+4750 [main] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/user/my_account/about_me
+4782 [main] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/user/my_account/products
+4812 [main] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/user/my_account/my_auctions
+4842 [main] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/about_us
+4873 [main] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/contact
+4903 [main] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/faq
+4934 [main] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/login
+4964 [main] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/register
+4994 [main] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/about_us
+5024 [main] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/contact
+5054 [main] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/faq
+5084 [main] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/login
+5113 [main] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/
+5143 [main] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/user/my_account/my_auctions
+5172 [main] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/user/my_account/products
+5203 [main] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/products/details/1
+5234 [main] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/products/details/2
+5264 [main] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/products/details/3
+5294 [main] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/products/details/4
+5324 [main] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/products/details/5
+5355 [main] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/products/details/6
+5384 [main] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/products/details/7
+5414 [main] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/products/details/8
+5445 [main] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/products/details/9
+5474 [main] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/products/details/10
+5505 [main] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/products/details/11
+5535 [main] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/products/details/12
+5565 [main] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/products/details/13
+5594 [main] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/products/details/14
+5623 [main] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/products/details/15
+5654 [main] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/products/details/16
+5684 [main] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/products/details/17
+5714 [main] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/products/details/18
+5744 [main] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/products/details/19
+5774 [main] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/products/details/20
+6092 [main] INFO  allcom_selenium.pages.BasePage -- Valid link: https://www.facebook.com/
+6522 [main] ERROR allcom_selenium.pages.BasePage -- Broken link: https://twitter.com/
+6772 [main] INFO  allcom_selenium.pages.BasePage -- Valid link: https://www.instagram.com/
+6987 [main] INFO  allcom_selenium.pages.BasePage -- Valid link: https://www.youtube.com/
+7018 [main] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/login
+7048 [main] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/user/my_account/my_auctions
+7079 [main] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/login
+7108 [main] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/register
+7137 [main] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/user/my_account/products
+7166 [main] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/about_us
+7198 [main] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/contact
+7228 [main] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/portfolio
+7260 [main] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/privacy_policy
+7291 [main] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/
+7300 [main] ERROR allcom_selenium.TestBaseSE -- ERROR FAILED TEST: [checkLinks], with VALUES: []
+7300 [main] ERROR allcom_selenium.TestBaseSE -- ERROR TEST MESSAGE: [31mThere were some broken links: [https://twitter.com/][0m
+7300 [main] ERROR allcom_selenium.TestBaseSE -- ERROR TEST STACK TRACE: 
+org.testng.SkipException: [31mThere were some broken links: [https://twitter.com/][0m
+	at allcom_selenium.links.BrokenLinksTests.checkLinks(BrokenLinksTests.java:30)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+7574 [main] INFO  allcom_selenium.pages.BasePage -- Screenshot saved to: [C:\Users\PORTISHEAD\Desktop\ALLCOM\allcom_qa\src\screenshots\screenshot_error_480695.png]
+7574 [main] ERROR allcom_selenium.TestBaseSE -- ERROR TEST SCREENSHOT: C:\Users\PORTISHEAD\Desktop\ALLCOM\allcom_qa\src\screenshots\screenshot_error_480695.png
+7575 [main] INFO  allcom_selenium.TestBaseSE -- [==================================================================================================]

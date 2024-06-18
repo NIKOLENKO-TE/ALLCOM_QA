@@ -1,0 +1,108 @@
+3725 [Test worker] INFO  allcom_selenium.pages.BasePage -- Clicked on Element [css selector: [data-testid='language-text-set'], Time taken: [84] milliseconds
+4045 [Test worker] INFO  allcom_selenium.pages.BasePage -- Clicked on Element [xpath: //li[contains(text(), 'English')], Time taken: [189] milliseconds
+4070 [Test worker] INFO  allcom_selenium.TestBaseSE -- STARTED: [checkLinks]
+4298 [Test worker] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/
+4333 [Test worker] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/login
+4365 [Test worker] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/about_us
+4396 [Test worker] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/contact
+4430 [Test worker] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/faq
+4462 [Test worker] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/register
+4496 [Test worker] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/user/my_account/about_me
+4527 [Test worker] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/user/my_account/products
+4558 [Test worker] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/user/my_account/my_auctions
+4591 [Test worker] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/about_us
+4623 [Test worker] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/contact
+4654 [Test worker] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/faq
+4684 [Test worker] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/login
+4715 [Test worker] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/register
+4746 [Test worker] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/about_us
+4777 [Test worker] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/contact
+4811 [Test worker] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/faq
+4843 [Test worker] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/login
+4874 [Test worker] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/
+4905 [Test worker] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/user/my_account/my_auctions
+4937 [Test worker] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/user/my_account/products
+4967 [Test worker] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/products/details/1
+4999 [Test worker] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/products/details/2
+5031 [Test worker] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/products/details/3
+5062 [Test worker] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/products/details/4
+5094 [Test worker] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/products/details/5
+5126 [Test worker] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/products/details/6
+5156 [Test worker] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/products/details/7
+5188 [Test worker] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/products/details/8
+5219 [Test worker] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/products/details/9
+5251 [Test worker] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/products/details/10
+5283 [Test worker] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/products/details/11
+5315 [Test worker] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/products/details/12
+5345 [Test worker] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/products/details/13
+5376 [Test worker] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/products/details/14
+5407 [Test worker] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/products/details/15
+5439 [Test worker] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/products/details/16
+5471 [Test worker] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/products/details/17
+5503 [Test worker] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/products/details/18
+5534 [Test worker] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/products/details/19
+5565 [Test worker] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/products/details/20
+5879 [Test worker] INFO  allcom_selenium.pages.BasePage -- Valid link: https://www.facebook.com/
+6441 [Test worker] ERROR allcom_selenium.pages.BasePage -- Broken link: https://twitter.com/
+6696 [Test worker] INFO  allcom_selenium.pages.BasePage -- Valid link: https://www.instagram.com/
+6925 [Test worker] INFO  allcom_selenium.pages.BasePage -- Valid link: https://www.youtube.com/
+6957 [Test worker] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/login
+6990 [Test worker] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/user/my_account/my_auctions
+7020 [Test worker] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/login
+7052 [Test worker] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/register
+7082 [Test worker] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/user/my_account/products
+7115 [Test worker] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/about_us
+7145 [Test worker] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/contact
+7176 [Test worker] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/portfolio
+7208 [Test worker] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/privacy_policy
+7239 [Test worker] INFO  allcom_selenium.pages.BasePage -- Valid link: http://allcom.itvm.com.ua:5173/
+7241 [Test worker] ERROR allcom_selenium.TestBaseSE -- ERROR FAILED TEST: [checkLinks], with VALUES: []
+7242 [Test worker] ERROR allcom_selenium.TestBaseSE -- ERROR TEST MESSAGE: [31mThere were some broken links: [https://twitter.com/][0m
+7242 [Test worker] ERROR allcom_selenium.TestBaseSE -- ERROR TEST STACK TRACE: 
+org.testng.SkipException: [31mThere were some broken links: [https://twitter.com/][0m
+	at allcom_selenium.links.BrokenLinksTests.checkLinks(BrokenLinksTests.java:30)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:153)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:96)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:119)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:66)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+7510 [Test worker] INFO  allcom_selenium.pages.BasePage -- Screenshot saved to: [C:\Users\PORTISHEAD\Desktop\ALLCOM\allcom_qa\src\screenshots\screenshot_error_479870.png]
+7510 [Test worker] ERROR allcom_selenium.TestBaseSE -- ERROR TEST SCREENSHOT: C:\Users\PORTISHEAD\Desktop\ALLCOM\allcom_qa\src\screenshots\screenshot_error_479870.png
+7510 [Test worker] INFO  allcom_selenium.TestBaseSE -- [==================================================================================================]
