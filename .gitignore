@@ -1,0 +1,81 @@
+# Maven
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# IntelliJ IDEA
+.idea/
+
+# Git
+.gitignore
+gradle.properties
+
+# Eclipse
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# VS Code
+.vscode/
+
+# Mac OS
+.DS_Store
+
+# Gradle
+build/
+.gradle/
+gradlew
+gradlew.bat
+gradle/wrapper/
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# Other
+*.bak
+*.swp
+*~.nib
+*.properties
+*.class
+*.war
+*.ear
+*.jar
+*.rar
+
+# Virtual Machine files
+*.vdi
+*.vbox
+*.vbox-prev
+
+# JetBrains IDE
+*.iml.*
+*.icls
+*.iws
+
+# Junit
+*.junit
+*.junit_tmp
+
+# TestNG
+test-output/
+*.tlog
+*.tmp
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

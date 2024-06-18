@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3689804e-5748-44d1-a33e-47aeb09c80cd" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ALLCOM_QA" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ALLCOM_QA" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ALLCOM_QA" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;NIKOLENKO-TE&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/NIKOLENKO-TE/ALLCOM_QA.git&quot;,
+    &quot;accountId&quot;: &quot;cfb7b822-181f-4f33-b5d4-d39cbcb363ca&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2i1OQ1ecX471q1Ey9osRtDpQNFd" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showScratchesAndConsoles" value="false" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.ALLCOM_QA [build].executor": "Run",
+    "Gradle.ALLCOM_QA [clean].executor": "Run",
+    "Gradle.AllcomLogoTests.executor": "Run",
+    "Gradle.FooterPageTests.clickFacebookLink.executor": "Run",
+    "Gradle.FooterPageTests.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TestNG.AboutUsPageTests.aboutUsHeaderIsPresent.executor": "Run",
+    "TestNG.AboutUsPageTests.aboutUsMapContainerIsPresent.executor": "Run",
+    "TestNG.AboutUsPageTests.executor": "Run",
+    "TestNG.BrokenLinksTests.checkLinks.executor": "Run",
+    "TestNG.BrokenLinksTests.checkLinksByCall.executor": "Run",
+    "TestNG.BrokenLinksTests.executor": "Run",
+    "TestNG.C:/Users/PORTISHEAD/Desktop/allcom_test/ALLCOM_QA/src/test/resources/testNG_xml/footer_tests.xml.executor": "Run",
+    "TestNG.FooterPageTests.checkLinks.executor": "Run",
+    "TestNG.FooterPageTests.clickLinkedInLink.executor": "Run",
+    "TestNG.FooterPageTests.clickMyAccountLink.executor": "Run",
+    "TestNG.FooterPageTests.clickTwitterLink.executor": "Run",
+    "TestNG.FooterPageTests.clickTwitterLocator.executor": "Run",
+    "TestNG.FooterPageTests.clickYoutubeLink.executor": "Run",
+    "TestNG.FooterPageTests.executor": "Run",
+    "TestNG.GetAllCategoriesTestsRA.getAllCategoriesTest.executor": "Run",
+    "TestNG.GetAllCategoriesTestsRA.getAllCategoriesWithoutAnyTokenTest.executor": "Run",
+    "TestNG.GetAllCategoriesTestsRestAssured.getAllCategoriesTest.executor": "Run",
+    "TestNG.GetAllCategoriesTestsRestAssured.getAllCategoriesWithoutAnyTokenTest.executor": "Run",
+    "TestNG.GetCategoriesTestsRA.getAllCategoriesTest.executor": "Run",
+    "TestNG.HeaderAccountTests.executor": "Run",
+    "TestNG.HeaderAccountTests.myAccountTopIsPresent.executor": "Run",
+    "TestNG.LoginPositiveTests.executor": "Run",
+    "TestNG.LoginPositiveTests.loginWithValidDataPositive.executor": "Run",
+    "TestNG.RegisterNewUserRA.registerNewRandomMultipleUserTest.executor": "Run",
+    "TestNG.RegisterNewUserRA.registerNewRandomUserTest.executor": "Run",
+    "TestNG.RegisterPagePositiveTests (1).executor": "Run",
+    "TestNG.RegisterPagePositiveTests (2).executor": "Run",
+    "TestNG.RegisterPagePositiveTests.executor": "Run",
+    "TestNG.RegisterPagePositiveTests.registerNewFirmaWithValidDataPositive2.executor": "Run",
+    "TestNG.RegisterPagePositiveTests.registerNewFirmaWithValidRandomDataPositive.executor": "Run",
+    "TestNG.RegisterPagePositiveTests.registerNewFirmaWithValidRandomDataPositive2 (1).executor": "Run",
+    "TestNG.RegisterPagePositiveTests.registerNewFirmaWithValidRandomDataPositive2.executor": "Run",
+    "TestNG.RegisterPagePositiveTests.registerNewUserWithValidRandomDataPositive.executor": "Run",
+    "TestNG.RegisterPagePositiveTests.validateComparePasswordsEqualityPositiveData.executor": "Run",
+    "TestNG.UsersAssured.getAllUsersTest.executor": "Run",
+    "TestNG.allcom_testng.executor": "Run",
+    "com.google.cloudcode.ide_session_index": "20240618_0003",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Tools/gradle-8.8",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="TestNG.BrokenLinksTests.checkLinks">
+    <configuration name="BrokenLinksTests.checkLinks" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ALLCOM_QA.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="allcom_selenium.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="allcom_selenium" />
+      <option name="MAIN_CLASS_NAME" value="allcom_selenium.BrokenLinksTests" />
+      <option name="METHOD_NAME" value="checkLinks" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FooterPageTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ALLCOM_QA.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="allcom_selenium.footerTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="allcom_testng.footerTests" />
+      <option name="MAIN_CLASS_NAME" value="allcom_selenium.footerTests.FooterPageTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HeaderAccountTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ALLCOM_QA.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="allcom_selenium.header.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="allcom_testng.header" />
+      <option name="MAIN_CLASS_NAME" value="allcom_selenium.header.HeaderAccountTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HeaderAccountTests.myAccountTopIsPresent" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ALLCOM_QA.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="allcom_selenium.header.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="allcom_testng.header" />
+      <option name="MAIN_CLASS_NAME" value="allcom_selenium.header.HeaderAccountTests" />
+      <option name="METHOD_NAME" value="myAccountTopIsPresent" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="allcom_selenium" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ALLCOM_QA.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="allcom_selenium.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="allcom_selenium" />
+      <option name="TEST_OBJECT" value="PACKAGE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.BrokenLinksTests.checkLinks" />
+        <item itemvalue="TestNG.HeaderAccountTests" />
+        <item itemvalue="TestNG.HeaderAccountTests.myAccountTopIsPresent" />
+        <item itemvalue="TestNG.allcom_selenium" />
+        <item itemvalue="TestNG.FooterPageTests" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17890.1" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17890.1" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3689804e-5748-44d1-a33e-47aeb09c80cd" name="Changes" comment="" />
+      <created>1718654597937</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1718654597937</updated>
+      <workItem from="1718654599110" duration="16779000" />
+      <workItem from="1718672929371" duration="105000" />
+      <workItem from="1718673066452" duration="23000" />
+      <workItem from="1718702976976" duration="137000" />
+      <workItem from="1718703155555" duration="239000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WfRunsListSearchHistory">{
+  &quot;history&quot;: [
+    {
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;currentBranchFilter&quot;: true
+    },
+    {
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;currentBranchFilter&quot;: true
+    },
+    {
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;currentBranchFilter&quot;: true
+    },
+    {
+      &quot;branch&quot;: &quot;master&quot;,
+      &quot;currentBranchFilter&quot;: true
+    }
+  ],
+  &quot;lastFilter&quot;: {
+    &quot;branch&quot;: &quot;master&quot;,
+    &quot;currentBranchFilter&quot;: true
+  }
+}</component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/allcom_selenium/pages/BasePage.java</url>
+          <line>140</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
