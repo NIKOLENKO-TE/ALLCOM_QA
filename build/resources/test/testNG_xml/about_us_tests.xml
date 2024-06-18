@@ -1,9 +1,0 @@
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-
-<suite name="AboutUs" verbose="1">
-    <test name="AboutUs">
-        <classes>
-            <class name="allcom_selenium.aboutUs.AboutUsPageTests"/>
-        </classes>
-    </test>
-</suite>
