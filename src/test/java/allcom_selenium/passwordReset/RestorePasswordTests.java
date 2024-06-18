@@ -15,8 +15,8 @@ public class RestorePasswordTests extends TestBaseSE {
 
     @BeforeMethod
     public void precondition() {
-        basePage = new BasePage(app.driver);
-        restorePasswordPage = new RestorePasswordPage(app.driver);
+        basePage = new BasePage(driver);
+        restorePasswordPage = new RestorePasswordPage(driver);
         basePage.goToPage(RESTORE_PASSWORD_PAGE_URL);
         basePage.isCurrentPage(RESTORE_PASSWORD_PAGE_URL,true);
     }

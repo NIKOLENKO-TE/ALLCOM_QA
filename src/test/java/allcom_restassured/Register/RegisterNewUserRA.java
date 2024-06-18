@@ -1,4 +1,5 @@
 package allcom_restassured.Register;
+
 import allcom_restassured.User.UsersAssured;
 
 import allcom_restassured.TestBaseRA;
@@ -15,59 +16,48 @@ import static io.restassured.RestAssured.given;
 
 public class RegisterNewUserRA extends TestBaseRA {
 
-    @Test(invocationCount = 10, threadPoolSize = 1)
-    public void registerNewRandomUserTest() {
-        //System.out.println("ADMIN TOKEN: " + TestBaseRA.getTokenAdmin());
-        long uniqueSuffix = System.currentTimeMillis();
+  @Test(invocationCount = 10, threadPoolSize = 1)
+  public void registerNewRandomUserTest() {
+    logger.info("ADMIN TOKEN: {}", TestBaseRA.getTokenAdmin());
+    long uniqueSuffix = System.currentTimeMillis();
+    AuthRequestDTO newUser = AuthRequestDTO.exampleValidFieldNewUser();
+    newUser.setEmail("email_random_" + uniqueSuffix + "@mail.com");
+    given().contentType(ContentType.JSON).body(newUser).log().all().when().post("/auth/register").then().assertThat().statusCode(201);
+  }
+
+  @Test
+  public void registerNewRandomMultipleUserTest() {
+    UsersAssured usersAssured = new UsersAssured();
+
+    logger.info("Before registration:");
+    usersAssured.getAllUsersTest();
+
+    logger.info("ADMIN TOKEN: {}", TestBaseRA.getTokenAdmin());
+    ExecutorService executorService = Executors.newFixedThreadPool(10); //reducing the number of threads to 10
+    AtomicLong uniqueSuffix = new AtomicLong(System.currentTimeMillis());
+    for (int i = 0; i < 100; i++) { // Number of users we want to register
+      executorService.submit(() -> {
         AuthRequestDTO newUser = AuthRequestDTO.exampleValidFieldNewUser();
-        newUser.setEmail("nikolenkote_" + uniqueSuffix + "_random@mail.com");
-        given()
-                .contentType(ContentType.JSON)
-                .body(newUser)
-                .log().all()
-                .when().post("/auth/register")
-                .then()
-                .assertThat().statusCode(201);
-    }
-
-    @Test
-    public void registerNewRandomMultipleUserTest() {
-        UsersAssured usersAssured = new UsersAssured();
-
-        System.out.println("Before registration:");
-        usersAssured.getAllUsersTest();
-
-        System.out.println("ADMIN TOKEN: " + TestBaseRA.getTokenAdmin());
-        ExecutorService executorService = Executors.newFixedThreadPool(10); //reducing the number of threads to 10
-        AtomicLong uniqueSuffix = new AtomicLong(System.currentTimeMillis());
-        for (int i = 0; i < 100; i++) { // Number of users we want to register
-            executorService.submit(() -> {
-                AuthRequestDTO newUser = AuthRequestDTO.exampleValidFieldNewUser();
-                newUser.setEmail("nikolenkote_" + uniqueSuffix.incrementAndGet() + "_random@mail.com");
-                given()
-                        .contentType(ContentType.JSON)
-                        .body(newUser)
-                        .when().post("/auth/register")
-                        .then()
-                        .assertThat().statusCode(201);
-                try {
-                    Thread.sleep(100); // добавляем задержку в 100 миллисекунд между запросами
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-            });
-        }
-        executorService.shutdown();
+        newUser.setEmail("nikolenkote_" + uniqueSuffix.incrementAndGet() + "_random@mail.com");
+        given().contentType(ContentType.JSON).body(newUser).when().post("/auth/register").then().assertThat().statusCode(201);
         try {
-            // Ожидание завершения всех задач в течение 1 часа
-            if (!executorService.awaitTermination(1, TimeUnit.HOURS)) {
-                System.out.println("Not all tasks finished");
-            }
+          Thread.sleep(100); // добавляем задержку в 100 миллисекунд между запросами
         } catch (InterruptedException e) {
-            e.printStackTrace();
+          e.printStackTrace();
         }
-
-        System.out.println("After registration:");
-        usersAssured.getAllUsersTest();
+      });
     }
+    executorService.shutdown();
+    try {
+      // Ожидание завершения всех задач в течение 1 часа
+      if (!executorService.awaitTermination(1, TimeUnit.HOURS)) {
+        logger.info("Not all tasks finished");
+      }
+    } catch (InterruptedException e) {
+      e.printStackTrace();
+    }
+
+    logger.info("After registration:");
+    usersAssured.getAllUsersTest();
+  }
 }

@@ -3,7 +3,7 @@
 <suite name="RegistrationPositive" verbose="1">
     <test name="RegistrationPositive">
         <classes>
-            <class name="allcom_selenium.tests.registration.RegisterPagePositiveTests"/>
+            <class name="allcom_selenium.registration.RegisterPagePositiveTests"/>
         </classes>
     </test>
 </suite>

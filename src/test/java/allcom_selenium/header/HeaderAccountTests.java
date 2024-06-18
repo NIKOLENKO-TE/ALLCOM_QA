@@ -16,21 +16,20 @@ import static allcom_selenium.pages.login.LoginPage.LOGIN_PAGE_URL;
 import static allcom_selenium.pages.login.LoginPage.MY_ACCOUNT_PAGE_URL;
 
 public class HeaderAccountTests extends TestBaseSE {
-    BasePage basePage = new BasePage(app.driver);
-    LoginPage loginPage = new LoginPage(app.driver);
+    BasePage basePage = new BasePage(driver);
+    LoginPage loginPage = new LoginPage(driver);
     private HeaderAccount headerAccount;
     private static final Duration WAIT_SECONDS = Duration.ofSeconds(5);
 
     @BeforeMethod
     public void precondition() {
-        basePage = new BasePage(app.driver);
-        loginPage = new LoginPage(app.driver);
-        headerAccount = new HeaderAccount(app.driver);
+        basePage = new BasePage(driver);
+        loginPage = new LoginPage(driver);
+        headerAccount = new HeaderAccount(driver);
         basePage.goToPage(LOGIN_PAGE_URL);
         basePage.isCurrentPage(LOGIN_PAGE_URL, true);
         loginPage.loginAdmin();
         basePage.waitForSpinnerStop();
-        System.out.println("***************************************************");
     }
 
     @Test(priority = 1)

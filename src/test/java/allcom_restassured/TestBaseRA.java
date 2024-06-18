@@ -2,8 +2,11 @@ package allcom_restassured;
 
 import allcom_restassured_dto.AuthRequestDTO;
 import allcom_restassured_dto.AuthResponseDTO;
+import allcom_selenium.TestBaseSE;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -11,7 +14,7 @@ import static io.restassured.RestAssured.given;
 
 public class TestBaseRA {
     public static String TOKEN_ADMIN;
-
+    public static Logger logger = LoggerFactory.getLogger(TestBaseSE.class);
     @BeforeMethod
     public void init() {
         RestAssured.baseURI = "http://allcom.itvm.com.ua:8080";

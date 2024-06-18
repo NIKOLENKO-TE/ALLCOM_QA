@@ -16,8 +16,8 @@ public class NotFoundPositiveTests extends TestBaseSE {
 
     @BeforeMethod
     public void precondition() {
-        basePage = new BasePage(app.driver);
-        notFoundPage = new NotFoundPage(app.driver);
+        basePage = new BasePage(driver);
+        notFoundPage = new NotFoundPage(driver); // Передаём тот же экземпляр driver
         basePage.goToPage(NOT_FOUND_PAGE_URL);
         basePage.isCurrentPage(NOT_FOUND_PAGE_URL, true);
     }

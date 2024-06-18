@@ -15,8 +15,8 @@ public class CategoriesTests extends TestBaseSE {
 
   @BeforeMethod
   public void precondition() {
-    basePage = new BasePage(app.driver);
-    categoriesPage = new CategoriesPage(app.driver);
+    basePage = new BasePage(driver);
+    categoriesPage = new CategoriesPage(driver);
     basePage.goToPage(CATEGORIES_PAGE_URL);
     basePage.isCurrentPage(CATEGORIES_PAGE_URL, true);
   }

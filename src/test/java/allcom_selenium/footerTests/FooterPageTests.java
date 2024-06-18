@@ -1,6 +1,6 @@
 package allcom_selenium.footerTests;
 
-import allcom_selenium.BrokenLinksTests;
+import allcom_selenium.links.BrokenLinksTests;
 import allcom_selenium.TestBaseSE;
 import allcom_selenium.pages.BasePage;
 import allcom_selenium.pages.footer.FooterPage;
@@ -21,9 +21,9 @@ public class FooterPageTests extends TestBaseSE {
 
   @BeforeMethod
   public void precondition() {
-    loginPage = new LoginPage(app.driver);
-    basePage = new BasePage(app.driver);
-    footerPage = new FooterPage(app.driver);
+    loginPage = new LoginPage(driver);
+    basePage = new BasePage(driver);
+    footerPage = new FooterPage(driver);
     brokenLinksTests = new BrokenLinksTests();
     basePage.goToPage(HOME_PAGE_URL);
     basePage.isCurrentPage(HOME_PAGE_URL, true);
@@ -37,7 +37,7 @@ public class FooterPageTests extends TestBaseSE {
 
   @Test
   public void clickFacebookLocator() {
-    checkLocatorLink(app.driver, FACEBOOK_XPATH);
+    checkLocatorLink(driver, FACEBOOK_XPATH);
   }
 
   @Test
@@ -47,7 +47,7 @@ public class FooterPageTests extends TestBaseSE {
 
   @Test
   public void clickTwitterLocator() {
-    checkLocatorLink(app.driver, TWITTER_XPATH);
+    checkLocatorLink(driver, TWITTER_XPATH);
   }
 
   @Test
@@ -57,7 +57,7 @@ public class FooterPageTests extends TestBaseSE {
 
   @Test
   public void clickInstagramLocator() {
-    checkLocatorLink(app.driver, INSTAGRAM_XPATH);
+    checkLocatorLink(driver, INSTAGRAM_XPATH);
   }
 
   @Test
@@ -67,7 +67,7 @@ public class FooterPageTests extends TestBaseSE {
 
   @Test
   public void clickYoutubeLocator() {
-    checkLocatorLink(app.driver, YOUTUBE_XPATH);
+    checkLocatorLink(driver, YOUTUBE_XPATH);
   }
 
   @Test
@@ -77,7 +77,7 @@ public class FooterPageTests extends TestBaseSE {
 
   @Test
   public void clickLoginLocator() {
-    checkLocatorLink(app.driver, LOGIN_XPATH);
+    checkLocatorLink(driver, LOGIN_XPATH);
   }
 
   @Test
@@ -87,7 +87,7 @@ public class FooterPageTests extends TestBaseSE {
 
   @Test
   public void clickRegisterLocator() {
-    checkLocatorLink(app.driver, REGISTER_XPATH);
+    checkLocatorLink(driver, REGISTER_XPATH);
   }
 
   @Test
@@ -97,7 +97,7 @@ public class FooterPageTests extends TestBaseSE {
 
   @Test
   public void clickMyAuctionsLocator() {
-    checkLocatorLink(app.driver, MY_AUCTIONS_XPATH);
+    checkLocatorLink(driver, MY_AUCTIONS_XPATH);
   }
 
   @Test
@@ -107,7 +107,7 @@ public class FooterPageTests extends TestBaseSE {
 
   @Test
   public void clickFavoritesAuctionsLocator() {
-    checkLocatorLink(app.driver, FAVORITES_AUCTIONS_XPATH);
+    checkLocatorLink(driver, FAVORITES_AUCTIONS_XPATH);
   }
 
   @Test
@@ -117,7 +117,7 @@ public class FooterPageTests extends TestBaseSE {
 
   @Test
   public void clickAboutUsLocator() {
-    checkLocatorLink(app.driver, ABOUT_US_XPATH);
+    checkLocatorLink(driver, ABOUT_US_XPATH);
   }
 
   @Test
@@ -127,7 +127,7 @@ public class FooterPageTests extends TestBaseSE {
 
   @Test
   public void clickContactLocator() {
-    checkLocatorLink(app.driver, CONTACT_US_XPATH);
+    checkLocatorLink(driver, CONTACT_US_XPATH);
   }
 
   @Test
@@ -137,17 +137,16 @@ public class FooterPageTests extends TestBaseSE {
 
   @Test
   public void clickPortfolioLocator() {
-    checkLocatorLink(app.driver, PORTFOLIO_XPATH);
+    checkLocatorLink(driver, PORTFOLIO_XPATH);
   }
 
   @Test
   public void clickPrivacyPolicyLink() {
     basePage.testClickLink(footerPage.PRIVACY_POLICY(), PRIVACY_POLICY_URL);
   }
-
   @Test
   public void clickPrivacyPolicyLocator() {
-    checkLocatorLink(app.driver, PRIVACY_POLICY_XPATH);
+    checkLocatorLink(driver, PRIVACY_POLICY_XPATH);
   }
 
   @Test
@@ -157,6 +156,6 @@ public class FooterPageTests extends TestBaseSE {
 
   @Test
   public void clickAllComBottomLocator() {
-    checkLocatorLink(app.driver, ALLCOM_GO_HOME_BOTTOM_XPATH);
+    checkLocatorLink(driver, ALLCOM_GO_HOME_BOTTOM_XPATH);
   }
 }

@@ -13,6 +13,7 @@ import static org.testng.Assert.assertEquals;
 @Getter
 public class SearchBox extends BasePage {
   public static final String SEARCH_BOX_URL = HOME_PAGE_URL + "/search";
+  public static final String SEARCH_BOX_RESULT_URL = HOME_PAGE_URL + "/?";
 
   public SearchBox(WebDriver driver) {
     super(driver);

@@ -14,8 +14,8 @@ public class AboutUsPageTests extends TestBaseSE {
 
   @BeforeMethod
   public void precondition() {
-    BasePage basePage = new BasePage(app.driver);
-    aboutUsPage = new AboutUsPage(app.driver);
+    BasePage basePage = new BasePage(driver);
+    aboutUsPage = new AboutUsPage(driver);
     basePage.goToPage(ABOUT_US_PAGE_URL);
     basePage.isCurrentPage(ABOUT_US_PAGE_URL, true);
   }

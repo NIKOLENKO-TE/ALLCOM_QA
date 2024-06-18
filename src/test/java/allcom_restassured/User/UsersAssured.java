@@ -28,7 +28,7 @@ public class UsersAssured extends TestBaseRA {
                         .response()
                         .as(UserListResponseDTO.class);
         int totalUsersCount = response.getContent().size();
-        System.out.println("TOTAL QUANTITY: [" + totalUsersCount + "]");
+      logger.info("TOTAL QUANTITY: [{}]", totalUsersCount);
 
         Map<String, Long> rolesCount = response.getContent().stream()
                 .collect(Collectors.groupingBy(user -> user.getRole() == null ? "NO ROLE" : user.getRole(), Collectors.counting()));
@@ -39,16 +39,16 @@ public class UsersAssured extends TestBaseRA {
         orderedRolesCount.put("CLIENT", rolesCount.getOrDefault("CLIENT", 0L));
 
         for (Map.Entry<String, Long> entry : orderedRolesCount.entrySet()) {
-            System.out.println("ROLE: [" + entry.getKey() + "]: {" + entry.getValue() + "}");
+          logger.info("ROLE: [{}]: {{}}", entry.getKey(), entry.getValue());
         }
-        System.out.println("==================================================================================");
+        logger.info("==================================================================================");
         for (UserDTO user : response.getContent()) {
-            System.out.println("USER ID: [" + user.getId() + "], EMAIL: [" + user.getEmail() + "], CHECKED: [" + user.isChecked() + "], BLOCKED: [" + user.isBlocked() + "], ROLE: [" + user.getRole() + "]");
+          logger.info("USER ID: [{}], EMAIL: [{}], CHECKED: [{}], BLOCKED: [{}], ROLE: [{}]", user.getId(), user.getEmail(), user.isChecked(), user.isBlocked(), user.getRole());
         }
     }
     @Test
     public void testGetTokenAdmin() {
         String token = TestBaseRA.getTokenAdmin();
-        System.out.println("Token: " + token);
+      logger.info("Token: {}", token);
     }
 }

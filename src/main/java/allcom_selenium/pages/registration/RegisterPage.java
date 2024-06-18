@@ -60,7 +60,6 @@ public class RegisterPage extends BasePage {
 
   public void registerFirma(String firstName, String lastName, String phoneNumber, String email, String password, String passwordConfirm, String companyName, String position, String taxNumber, String postIndex, String city, String street, String houseNumber) {
     registerClient(firstName, lastName, phoneNumber, email, password, passwordConfirm); // Reuse client registration logic
-    basePage.setCheckboxFirma();
     type(companyNameField, companyName);
     type(positionField, position);
     type(taxNumberField, taxNumber);

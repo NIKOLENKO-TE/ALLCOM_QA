@@ -17,9 +17,9 @@ public class CreateNewPasswordPageTests extends TestBaseSE {
 
     @BeforeMethod
     public void precondition() {
-        basePage = new BasePage(app.driver);
-        createNewPasswordPage = new CreateNewPasswordPage(app.driver);
-        registerPage = new RegisterPage(app.driver);
+        basePage = new BasePage(driver);
+        createNewPasswordPage = new CreateNewPasswordPage(driver);
+        registerPage = new RegisterPage(driver);
         basePage.goToPage(CREATE_NEW_PASSWORD_PAGE_URL);
         basePage.isCurrentPage(CREATE_NEW_PASSWORD_PAGE_URL, true);
     }

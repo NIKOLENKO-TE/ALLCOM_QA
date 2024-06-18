@@ -17,9 +17,9 @@ public class RestorePasswordWaitPageTests extends TestBaseSE {
 
     @BeforeMethod
     public void precondition() {
-        basePage = new BasePage(app.driver);
-        registerPage = new RegisterPage(app.driver);
-        restorePasswordWaitPage = new RestorePasswordWaitPage(app.driver);
+        basePage = new BasePage(driver);
+        registerPage = new RegisterPage(driver);
+        restorePasswordWaitPage = new RestorePasswordWaitPage(driver);
         basePage.goToPage(RESTORE_PASSWORD_WAIT_PAGE_URL);
         basePage.isCurrentPage(RESTORE_PASSWORD_WAIT_PAGE_URL, true);
     }

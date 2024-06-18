@@ -3,7 +3,7 @@
 <suite name="LoginNegative" verbose="1">
     <test name="LoginNegative">
         <classes>
-            <class name="allcom_selenium.tests.login.LoginNegativeTests"/>
+            <class name="allcom_selenium.login.LoginNegativeTests"/>
         </classes>
     </test>
 </suite>

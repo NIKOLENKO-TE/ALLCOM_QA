@@ -14,7 +14,7 @@ public class GetAllCategoriesTestsRA extends TestBaseRA {
 
     @Test
     public void getAllCategoriesTest() {
-        System.out.println("User successfully logged in with Admin token: " + TestBaseRA.getAdminToken());
+        logger.info("User successfully logged in with Admin token: " + TestBaseRA.getAdminToken());
         List<CategoriesDTO> categoriesList = given()
                 .header("Authorization", TestBaseRA.getAdminToken())
                 .get("/categories/all")
@@ -23,9 +23,9 @@ public class GetAllCategoriesTestsRA extends TestBaseRA {
                 .extract().body().as(new TypeRef<>() {
             });
         for (CategoriesDTO categories : categoriesList) {
-            System.out.println("ID: [" + categories.getId() + "], NAME: [" + categories.getNameRu() + "]");
-            System.out.println("ID: [" + categories.getId() + "], NAME: [" + categories.getNameEn() + "]");
-            System.out.println("---------------------------------------------------");
+            logger.info("ID: [" + categories.getId() + "], NAME: [" + categories.getNameRu() + "]");
+            logger.info("ID: [" + categories.getId() + "], NAME: [" + categories.getNameEn() + "]");
+            logger.info("---------------------------------------------------");
         }
     }
 

@@ -121,7 +121,7 @@ public class LoginAdminTestsRA extends TestBaseRA {
                         .extract()
                         .response()
                         .as(ErrorDTO.class);
-        System.out.println(errorDTO.getMessage());
+        logger.info(errorDTO.getMessage().toString());
         Assert.assertEquals(errorDTO.getMessage(), "User with email " + nonExistentUser().getEmail() + " not found!");
     }
 

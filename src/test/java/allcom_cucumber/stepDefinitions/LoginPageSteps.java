@@ -12,7 +12,7 @@ import org.testng.Assert;
 
 import java.time.Duration;
 
-import static allcom_selenium.pages.ApplicationManager.app;
+import static allcom_selenium.TestBaseSE.app;
 import static allcom_selenium.pages.homePage.HomePage.HOME_PAGE_URL;
 import static allcom_selenium.pages.login.LoginPage.*;
 

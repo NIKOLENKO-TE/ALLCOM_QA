@@ -18,11 +18,11 @@ public class LoginNegativeTests extends TestBaseSE {
 
     @BeforeMethod
     public void precondition() {
-        basePage = new BasePage(app.driver);
-        loginPage = new LoginPage(app.driver);
+        basePage = new BasePage(driver);
+        loginPage = new LoginPage(driver);
         basePage.goToPage(LOGIN_PAGE_URL);
         basePage.isCurrentPage(LOGIN_PAGE_URL, true);
-        app.driver.manage().window().maximize();
+        driver.manage().window().maximize();
     }
 
     @Test(dataProvider = invalidLoginData, dataProviderClass = DataProviderClass.class)

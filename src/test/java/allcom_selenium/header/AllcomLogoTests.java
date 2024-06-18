@@ -12,12 +12,12 @@ import static allcom_selenium.pages.login.LoginPage.LOGIN_PAGE_URL;
 public class AllcomLogoTests extends TestBaseSE {
     private AllcomLogo allcomLogo;
 
-    BasePage basePage = new BasePage(app.driver);
+    BasePage basePage = new BasePage(driver);
 
     @BeforeMethod
     public void precondition() {
-        basePage = new BasePage(app.driver);
-        allcomLogo = new AllcomLogo(app.driver);
+        basePage = new BasePage(driver);
+        allcomLogo = new AllcomLogo(driver);
         basePage.goToPage(HOME_PAGE_URL);
         basePage.isCurrentPage(HOME_PAGE_URL, true);
     }

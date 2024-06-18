@@ -15,11 +15,11 @@ public class RegisterPageNegativeTests extends TestBaseSE {
 
     @BeforeMethod
     public void precondition() {
-        basePage = new BasePage(app.driver);
-        registerPage = new RegisterPage(app.driver);
+        basePage = new BasePage(driver);
+        registerPage = new RegisterPage(driver);
         basePage.goToPage(REGISTER_PAGE_URL);
         basePage.isCurrentPage(REGISTER_PAGE_URL,true);
-        app.driver.manage().window().maximize();
+        driver.manage().window().maximize();
     }
 
     @Test(dataProvider = "invalidTextData", dataProviderClass = DataProviderClass.class)

@@ -10,26 +10,26 @@ repositories {
 }
 
 dependencies {
-    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.21.0'
-    implementation 'org.junit.jupiter:junit-jupiter-engine:5.10.0'
-    implementation group: 'org.testng', name: 'testng', version: '7.9.0'
-    implementation group: 'ch.qos.logback', name: 'logback-classic', version: '1.4.14'
-    implementation group: 'com.opencsv', name: 'opencsv', version: '5.9'
-    implementation group: 'io.cucumber', name: 'cucumber-java', version: '7.15.0'
-    implementation group: 'io.cucumber', name: 'cucumber-junit', version: '7.15.0'
-    implementation group: 'com.google.code.gson', name: 'gson', version: '2.10.1'
-    implementation group: 'io.rest-assured', name: 'rest-assured', version: '5.4.0'
-    implementation project(':')
-    implementation project(':')
+    implementation 'org.seleniumhq.selenium:selenium-java:4.21.0'
+    implementation 'org.junit.jupiter:junit-jupiter-engine:5.11.0-M2'
+    implementation 'org.testng:testng:7.9.0'
+    implementation 'ch.qos.logback:logback-classic:1.4.14'
+    implementation 'com.opencsv:opencsv:5.9'
+    implementation 'io.cucumber:cucumber-java:7.15.0'
+    implementation 'io.cucumber:cucumber-junit:7.15.0'
+    implementation 'com.google.code.gson:gson:2.10.1'
+    implementation 'io.rest-assured:rest-assured:5.4.0'
     compileOnly 'org.projectlombok:lombok:1.18.30'
     annotationProcessor 'org.projectlombok:lombok:1.18.30'
     testCompileOnly 'org.projectlombok:lombok:1.18.30'
     testAnnotationProcessor 'org.projectlombok:lombok:1.18.30'
-    implementation group: 'org.projectlombok', name: 'lombok', version: '1.18.30'
+    implementation 'org.projectlombok:lombok:1.18.30'
 }
+
 tasks.jar {
     dependsOn 'classes' // Ensure classes are compiled before creating the JAR
 }
+
 processTestResources {
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 }
@@ -60,6 +60,7 @@ def registerTask(String taskName, String suitePath) {
     }
 }
 
+registerTask('allcom_qa_smoke', 'src/test/resources/testNG_xml/smoke.xml')
 registerTask('allcom_qa_regression', 'src/test/resources/testNG_xml/regression.xml')
 registerTask('allcom_qa_login_negative', 'src/test/resources/testNG_xml/login_negative_tests.xml')
 registerTask('allcom_qa_login_positive', 'src/test/resources/testNG_xml/login_positive_tests.xml')
@@ -68,6 +69,6 @@ registerTask('allcom_qa_register_positive', 'src/test/resources/testNG_xml/regis
 registerTask('allcom_qa_aboutUs', 'src/test/resources/testNG_xml/about_us_tests.xml')
 registerTask('allcom_qa_header', 'src/test/resources/testNG_xml/header_tests.xml')
 registerTask('allcom_qa_header_search', 'src/test/resources/testNG_xml/header_search_tests.xml')
-registerTask('allcom_qa_restore_password', 'src/test/testNG_xml/resources/restore_password_tests.xml')
+registerTask('allcom_qa_restore_password', 'src/test/resources/testNG_xml/restore_password_tests.xml')
 registerTask('allcom_qa_notFound', 'src/test/resources/testNG_xml/not_found_positive_tests.xml')
 registerTask('allcom_qa_footer', 'src/test/resources/testNG_xml/footer_tests.xml')

@@ -65,7 +65,7 @@ public class LoginPage extends BasePage {
         throw new AssertionError("Button text did not change after login");
       }
     } catch (TimeoutException | NoSuchElementException e) {
-      System.out.println("Login element not found. Skipping login.");
+      logger.info("Login element not found. Skipping login.");
     }
   }
 
@@ -102,7 +102,7 @@ public class LoginPage extends BasePage {
       long timeTakenMillis = Duration.between(start, Instant.now()).toMillis();
       throw new AssertionError("\nLogin state did not change to expected state:" + "\nActual state: [" + actualLoggedInState + "]\nExpected state: [" + expectedLoggedInState + "]" + "\nTime taken: [" + timeTakenMillis + "] milliseconds");
     }
-    System.out.println("User logged status: [" + actualLoggedInState + "]");
+    logger.info("User logged status: [{}]", actualLoggedInState);
   }
 
   public void userLoggedOut() {
@@ -117,7 +117,7 @@ public class LoginPage extends BasePage {
     try {
       wait.until(ExpectedConditions.elementToBeClickable(headerAccount.myAccountTopBeforeLoggedIn()));
     } catch (TimeoutException e) {
-      System.err.println("Failed to log out, element not found or not disappearing in :[" + WAIT_SECONDS.getSeconds() + "] seconds");
+      logger.error("Failed to log out, element not found or not disappearing in :[{}] seconds", WAIT_SECONDS.getSeconds());
     }
   }
 }

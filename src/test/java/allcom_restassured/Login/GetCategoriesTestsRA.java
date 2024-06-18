@@ -20,8 +20,8 @@ public class GetCategoriesTestsRA extends TestBaseRA {
                 .extract().body().as(new TypeRef<>() {
             });
         for (CategoriesDTO categories : categoriesList) {
-            System.out.println("ID: [" + categories.getId() + "], NAME: [" + categories.getNameRu() + "]");
-            System.out.println("---------------------------------------------------");
+          logger.info("ID: [{}], NAME: [{}]", categories.getId(), categories.getNameRu());
+            logger.info("---------------------------------------------------");
         }
     }
 
@@ -36,6 +36,6 @@ public class GetCategoriesTestsRA extends TestBaseRA {
                 .extract()
                 .response()
                 .as(CategoriesDTO.class);
-        System.out.println("Request ID: [" + categoryId + "], Found ID: [" + category.getId() + "], CATEGORY NAME: [" + category.getNameRu() + "]");
+      logger.info("Request ID: [{}], Found ID: [{}], CATEGORY NAME: [{}]", categoryId, category.getId(), category.getNameRu());
     }
 }
