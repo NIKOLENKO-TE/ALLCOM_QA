@@ -13,6 +13,7 @@ import org.testng.Assert;
 import java.time.Duration;
 
 import static allcom_testng.pages.ApplicationManager.app;
+import static allcom_testng.pages.homePage.HomePage.HOME_PAGE_URL;
 import static allcom_testng.pages.login.LoginPage.*;
 
 public class LoginPageSteps {
@@ -57,7 +58,7 @@ public class LoginPageSteps {
     }
     @And("User is redirected on Home Page?")
     public void userIsRedirectedOnHomePage() {
-        String expectedUrl = HomePage.homePageURL();
+        String expectedUrl = HOME_PAGE_URL;
         if (!expectedUrl.endsWith("/")) {
             expectedUrl = expectedUrl + "/";
         }
@@ -69,7 +70,7 @@ public class LoginPageSteps {
     }
     @Then("User is redirected on Login Page?")
     public void userIsRedirectedOnLoginPage() {
-        String expectedUrl = LoginPage.loginPageURL();
+        String expectedUrl = LOGIN_PAGE_URL;
         String currentUrl = driver.getCurrentUrl();
         new WebDriverWait(driver, WAIT_SECONDS).until(ExpectedConditions.urlToBe(expectedUrl));
         Assert.assertEquals(currentUrl, expectedUrl, "User is not redirected on Home Page");

@@ -6,9 +6,13 @@ import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
+import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.util.List;
 
 import static allcom_testng.pages.BasePage.checkLink;
+import static allcom_testng.pages.homePage.HomePage.HOME_PAGE_URL;
 
 
 public class BrokenLinksTests extends TestBaseSE{
@@ -20,10 +24,5 @@ public class BrokenLinksTests extends TestBaseSE{
         for (WebElement link : links) {
             checkLink(link.getAttribute("href"));
         }
-    }
-
-    @AfterMethod
-    public void tearDown() {
-        TestBaseSE.app.driver.quit();
     }
 }

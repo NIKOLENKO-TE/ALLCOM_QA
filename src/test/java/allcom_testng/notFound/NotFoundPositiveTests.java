@@ -8,6 +8,9 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import static allcom_testng.pages.homePage.HomePage.HOME_PAGE_URL;
+import static allcom_testng.pages.notFound.NotFoundPage.NOT_FOUND_PAGE_URL;
+
 public class NotFoundPositiveTests extends TestBaseSE {
     private BasePage basePage;
     private NotFoundPage notFoundPage;
@@ -16,14 +19,14 @@ public class NotFoundPositiveTests extends TestBaseSE {
     public void precondition() {
         basePage = new BasePage(app.driver);
         notFoundPage = new NotFoundPage(app.driver);
-        basePage.goToPage(NotFoundPage.notFoundPageURL());
-        basePage.isCurrentPage(NotFoundPage.notFoundPageURL(), true);
+        basePage.goToPage(NOT_FOUND_PAGE_URL);
+        basePage.isCurrentPage(NOT_FOUND_PAGE_URL, true);
     }
 
     @Test
     public void clickOnBackToHomeButton() {
         basePage.clickOnElement(BasePage.ElementType.DATA_TESTID, "back_to_home_button");
-        basePage.isCurrentPage(HomePage.homePageURL(), true);
+        basePage.isCurrentPage(HOME_PAGE_URL, true);
     }
 
     @Test

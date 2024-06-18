@@ -11,6 +11,11 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 
+import static allcom_testng.pages.footer.FooterPage.FAVORITES_AUCTIONS_URL;
+import static allcom_testng.pages.footer.FooterPage.MY_AUCTIONS_URL;
+import static allcom_testng.pages.login.LoginPage.LOGIN_PAGE_URL;
+import static allcom_testng.pages.login.LoginPage.MY_ACCOUNT_PAGE_URL;
+
 public class HeaderAccountTests extends TestBaseSE {
     BasePage basePage = new BasePage(app.driver);
     LoginPage loginPage = new LoginPage(app.driver);
@@ -22,9 +27,9 @@ public class HeaderAccountTests extends TestBaseSE {
         basePage = new BasePage(app.driver);
         loginPage = new LoginPage(app.driver);
         headerAccount = new HeaderAccount(app.driver);
-        driver.get(LoginPage.loginPageURL());
+        driver.get(LOGIN_PAGE_URL);
         //basePage.goToPage(LoginPage.loginPageURL());
-        basePage.isCurrentPage(LoginPage.loginPageURL(), true);
+        basePage.isCurrentPage(LOGIN_PAGE_URL, true);
         loginPage.loginAdmin();
         basePage.waitForSpinnerStop();
         System.out.println("***************************************************");
@@ -51,19 +56,19 @@ public class HeaderAccountTests extends TestBaseSE {
     @Test(priority = 4)
     public void clickMyAccountTopNavigatesToCorrectPage() {
         basePage.click(headerAccount.myAccountTopAfterLoggedIn());
-        basePage.isCurrentPage(LoginPage.myAccountPageURL(), true);
+        basePage.isCurrentPage(MY_ACCOUNT_PAGE_URL, true);
     }
 
     @Test(priority = 5)
     public void clickWishlistTopNavigatesToCorrectPage() {
         basePage.click(headerAccount.wishlistTop());
-        basePage.isCurrentPage(FooterPage.FAVORITES_AUCTIONS_URL(), true);
+        basePage.isCurrentPage(FAVORITES_AUCTIONS_URL, true);
     }
 
     @Test(priority = 6)
     public void clickCartTopNavigatesToCorrectPage() {
         basePage.click(headerAccount.cartTop());
-        basePage.isCurrentPage(FooterPage.MY_AUCTIONS_URL(), true);
+        basePage.isCurrentPage(MY_AUCTIONS_URL, true);
 
     }
 
@@ -73,7 +78,7 @@ public class HeaderAccountTests extends TestBaseSE {
         loginPage.userLoggedOut();
         loginPage.isUserLoggedIn(false);
         basePage.clickJSExecutor(headerAccount.myAccountTopBeforeLoggedIn());
-        basePage.isCurrentPage(LoginPage.loginPageURL(), true);
+        basePage.isCurrentPage(LOGIN_PAGE_URL, true);
         loginPage.isUserLoggedIn(false);
     }
     @AfterMethod

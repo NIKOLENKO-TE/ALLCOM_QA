@@ -21,9 +21,10 @@ import java.util.ArrayList;
 import java.util.NoSuchElementException;
 import java.util.Set;
 
+import static allcom_testng.pages.ApplicationManager.app;
 import static allcom_testng.pages.BasePage.ElementType.DATA_TESTID;
-import static allcom_testng.pages.homePage.HomePage.LANGUAGE_ITEM_XPATH;
-import static allcom_testng.pages.homePage.HomePage.LANGUAGE_SELECTOR;
+import static allcom_testng.pages.BasePage.ElementType.ERROR_VALIDATION;
+import static allcom_testng.pages.homePage.HomePage.*;
 
 public class BasePage {
     protected WebDriver driver;
@@ -225,7 +226,7 @@ public class BasePage {
         waitUntilElementToBeClickable(element);
         if (text != null) {
             try {
-                clickJSExecutor(element);
+                click(element);
                 String elementDescription = element.toString().split("->")[1].trim().replace("]", "");
                 element.clear();
                 System.out.println("Clear Element [" + elementDescription + "]");
@@ -246,7 +247,7 @@ public class BasePage {
     }
 
     public void isValidationErrorPresent(boolean validationStatus) {
-        boolean isPresent = isElementPresent(BasePage.ElementType.ERROR_VALIDATION, "", validationStatus);
+        boolean isPresent = isElementPresent(ERROR_VALIDATION, "", validationStatus);
         assert isPresent == validationStatus : "Validation error present status does not match the expected status";
     }
 
@@ -328,7 +329,7 @@ public class BasePage {
 
     public void clickOnElement(ElementType type, String value) {
         By by = getByFromType(type, value);
-        WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(by));
+        WebElement element = wait.until(ExpectedConditions.elementToBeClickable(by));
         isElementPresent(element, true);
         if (type == ElementType.CHECKBOX) {
             if (!element.isSelected()) {
@@ -354,7 +355,7 @@ public class BasePage {
 
     public void isElementPresent(WebElement element, boolean expectedStatus) {
         try {
-            wait.until(ExpectedConditions.visibilityOf(element));
+            wait.until(ExpectedConditions.elementToBeClickable(element));
             Assert.assertEquals(true, expectedStatus, "Element [" + element.toString().split("->")[1].trim().replace("]", "") + "] visibility status is: " + expectedStatus);
         } catch (TimeoutException | NoSuchElementException e) {
             Assert.assertEquals(false, expectedStatus, "Element [" + element.toString().split("->")[1].trim().replace("]", "") + "] visibility status is: " + expectedStatus);
@@ -448,7 +449,7 @@ public class BasePage {
     public void clickLinkSameTab(String linkName) {
         if (linkName != null) {
             if (!linkName.startsWith("https://") && !linkName.startsWith("http://")) {
-                linkName = HomePage.homePageURL() + "/" + linkName;
+                linkName = HOME_PAGE_URL + "/" + linkName;
             }
             driver.get(linkName);
         } else {
@@ -509,6 +510,46 @@ public class BasePage {
             huc.disconnect();
         } catch (IOException e) {
             e.printStackTrace();
+        }
+    }
+    public static void checkLocatorLink(WebDriver driver, By locator) {
+        if (locator == null) {
+            logger.error("Locator is null, cannot check link.");
+            return;
+        }
+
+        try {
+            WebElement linkElement = new WebDriverWait(driver, WAIT_SEC).until(ExpectedConditions.visibilityOfElementLocated(locator));
+            String url = linkElement.getAttribute("href");
+
+            if (url == null || url.isEmpty()) {
+                logger.error("URL is either not configured for anchor tag or it is empty.");
+                return;
+            }
+
+            // You can add the domain check here if needed
+            // if (!url.startsWith(homePageURL())) {
+            //     logger.info("URL belongs to another domain, skipping it.");
+            //     return;
+            // }
+
+            HttpURLConnection huc = (HttpURLConnection) (new URL(url).openConnection());
+            huc.setRequestMethod("HEAD");
+            huc.connect();
+            int respCode = huc.getResponseCode();
+
+            if (respCode >= 400) {
+                logger.error("Broken link: " + url);
+            } else {
+                logger.info("Valid link: " + url);
+            }
+            huc.disconnect();
+        } catch (NoSuchElementException e) {
+            logger.error("Link element not found: " + locator, e);
+        } catch (TimeoutException e) {
+            logger.error("Timeout while waiting for link element: " + locator, e);
+        } catch (IOException e) {
+            logger.error("Error checking link: " + locator, e);
         }
     }
 }

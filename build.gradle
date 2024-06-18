@@ -27,7 +27,9 @@ dependencies {
     testAnnotationProcessor 'org.projectlombok:lombok:1.18.30'
     implementation group: 'org.projectlombok', name: 'lombok', version: '1.18.30'
 }
-
+tasks.jar {
+    dependsOn 'classes' // Ensure classes are compiled before creating the JAR
+}
 processTestResources {
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 }

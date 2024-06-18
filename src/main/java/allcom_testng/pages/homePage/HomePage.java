@@ -12,14 +12,13 @@ public class HomePage extends BasePage {
     public static final String LANGUAGE_SELECTOR = "[data-testid='language-text-set']";
     public static final String LANGUAGE_ITEM_XPATH = "//li[contains(text(), '%s')]";
     public static final Duration WAIT_SEC = Duration.ofSeconds(5);
+    public static final String HOME_PAGE_URL = "http://allcom.itvm.com.ua:5173";
     public HomePage() {
     }
     public HomePage(WebDriver driver) {
         super(driver);
     }
-    public static String homePageURL() {
-        return "http://allcom.itvm.com.ua:5173";
-    }
+
     @FindBy(xpath = "//h2[@class='home_page__title--h2']")
     public WebElement homePageTitleAuctions;
 

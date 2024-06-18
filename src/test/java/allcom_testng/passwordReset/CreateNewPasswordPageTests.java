@@ -8,6 +8,8 @@ import allcom_testng.pages.registration.RegisterPage;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import static allcom_testng.pages.passwordReset.CreateNewPasswordPage.CREATE_NEW_PASSWORD_PAGE_URL;
+
 public class CreateNewPasswordPageTests extends TestBaseSE {
     BasePage basePage;
     RegisterPage registerPage;
@@ -18,8 +20,8 @@ public class CreateNewPasswordPageTests extends TestBaseSE {
         basePage = new BasePage(app.driver);
         createNewPasswordPage = new CreateNewPasswordPage(app.driver);
         registerPage = new RegisterPage(app.driver);
-        basePage.goToPage(CreateNewPasswordPage.createNewPasswordPageURL());
-        basePage.isCurrentPage(CreateNewPasswordPage.createNewPasswordPageURL(), true);
+        basePage.goToPage(CREATE_NEW_PASSWORD_PAGE_URL);
+        basePage.isCurrentPage(CREATE_NEW_PASSWORD_PAGE_URL, true);
     }
 
     @Test

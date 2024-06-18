@@ -6,31 +6,33 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import static allcom_testng.pages.homePage.HomePage.HOME_PAGE_URL;
+
 public class CreateNewPasswordPage extends BasePage {
-    @FindBy(name = "password")
-    WebElement passwordField;
-    @FindBy(name = "passwordConfirm")
-    WebElement passwordConfirmField;
+  @FindBy(name = "password")
+  WebElement passwordField;
+  @FindBy(name = "passwordConfirm")
+  WebElement passwordConfirmField;
 
-    public CreateNewPasswordPage(WebDriver driver) {
-        super(driver);
-    }
+  public CreateNewPasswordPage(WebDriver driver) {
+    super(driver);
+  }
 
-    public static String createNewPasswordPageURL() {
-        return HomePage.homePageURL() + "/restore_password_new";
-    }
+  public static final String CREATE_NEW_PASSWORD_PAGE_URL = HOME_PAGE_URL + "/restore_password_new";
 
-    public WebElement getPasswordField() {
-        return passwordField;
-    }
+  public WebElement getPasswordField() {
+    return passwordField;
+  }
 
-    public WebElement getPasswordConfirmField() {
-        return passwordConfirmField;
-    }
-    public void clickSetNewPasswordButton() {
-        clickOnElement(BasePage.ElementType.DATA_TESTID, "buttonRestore");
-    }
-    public void isCountdownTimerPresent(boolean expectedStatus) {
-        isElementPresent(ElementType.DATA_TESTID, "countdownTimer", expectedStatus);
-    }
+  public WebElement getPasswordConfirmField() {
+    return passwordConfirmField;
+  }
+
+  public void clickSetNewPasswordButton() {
+    clickOnElement(ElementType.DATA_TESTID, "buttonRestore");
+  }
+
+  public void isCountdownTimerPresent(boolean expectedStatus) {
+    isElementPresent(ElementType.DATA_TESTID, "countdownTimer", expectedStatus);
+  }
 }

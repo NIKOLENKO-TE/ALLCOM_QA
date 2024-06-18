@@ -14,6 +14,9 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 
+import static allcom_testng.pages.header.SearchBox.SEARCH_BOX_URL;
+import static allcom_testng.pages.homePage.HomePage.HOME_PAGE_URL;
+
 public class SearchBoxTests extends TestBaseSE {
     private static final Dimension FULL_HD_RESOLUTION = new Dimension(1920, 1080);
     private static final Dimension LOW_RESOLUTION = new Dimension(990, 800);
@@ -27,8 +30,8 @@ public class SearchBoxTests extends TestBaseSE {
         basePage = new BasePage(app.driver);
         searchBox = new SearchBox(app.driver);
         app.driver.manage().window().maximize();
-        basePage.goToPage(HomePage.homePageURL());
-        basePage.isCurrentPage(HomePage.homePageURL(), true);
+        basePage.goToPage(HOME_PAGE_URL);
+        basePage.isCurrentPage(HOME_PAGE_URL, true);
         wait = new WebDriverWait(app.driver, WAIT_SECONDS);
     }
 
@@ -115,7 +118,7 @@ public class SearchBoxTests extends TestBaseSE {
         app.driver.manage().window().setSize(FULL_HD_RESOLUTION);
         basePage.type(searchBox.getSearchBoxInput(), "text");
         searchBox.getSearchBoxInput().submit();
-        basePage.isCurrentPage(SearchBox.searchResultURL(), true);
+        basePage.isCurrentPage(SEARCH_BOX_URL, true);
     }
 
     @Test(priority = 14, dataProvider = "invalidSearchData", dataProviderClass = DataProviderClass.class)

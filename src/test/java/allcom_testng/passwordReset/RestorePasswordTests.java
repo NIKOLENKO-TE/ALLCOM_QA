@@ -7,6 +7,8 @@ import allcom_testng.TestBaseSE;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import static allcom_testng.pages.passwordReset.RestorePasswordPage.RESTORE_PASSWORD_PAGE_URL;
+
 public class RestorePasswordTests extends TestBaseSE {
     private BasePage basePage;
     private RestorePasswordPage restorePasswordPage;
@@ -15,15 +17,15 @@ public class RestorePasswordTests extends TestBaseSE {
     public void precondition() {
         basePage = new BasePage(app.driver);
         restorePasswordPage = new RestorePasswordPage(app.driver);
-        basePage.goToPage(RestorePasswordPage.restorePasswordPageURL());
-        basePage.isCurrentPage(RestorePasswordPage.restorePasswordPageURL(),true);
+        basePage.goToPage(RESTORE_PASSWORD_PAGE_URL);
+        basePage.isCurrentPage(RESTORE_PASSWORD_PAGE_URL,true);
     }
 
     @Test
     public void restoreWithValidEmail() {
         restorePasswordPage.emailToRestore("admin@gmail.com");
         restorePasswordPage.clickRestorePasswordButton();
-        basePage.isCurrentPage(RestorePasswordPage.restorePasswordPageURL(),true);
+        basePage.isCurrentPage(RESTORE_PASSWORD_PAGE_URL,true);
     }
 
     @Test(dataProvider = "invalidEMailData", dataProviderClass = DataProviderClass.class)

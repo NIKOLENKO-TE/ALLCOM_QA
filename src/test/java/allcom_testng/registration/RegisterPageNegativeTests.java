@@ -7,6 +7,8 @@ import allcom_testng.pages.registration.RegisterPage;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import static allcom_testng.pages.registration.RegisterPage.REGISTER_PAGE_URL;
+
 public class RegisterPageNegativeTests extends TestBaseSE {
     BasePage basePage;
     RegisterPage registerPage;
@@ -15,8 +17,8 @@ public class RegisterPageNegativeTests extends TestBaseSE {
     public void precondition() {
         basePage = new BasePage(app.driver);
         registerPage = new RegisterPage(app.driver);
-        basePage.goToPage(RegisterPage.registerPageURL());
-        basePage.isCurrentPage(RegisterPage.registerPageURL(),true);
+        basePage.goToPage(REGISTER_PAGE_URL);
+        basePage.isCurrentPage(REGISTER_PAGE_URL,true);
         app.driver.manage().window().maximize();
     }
 

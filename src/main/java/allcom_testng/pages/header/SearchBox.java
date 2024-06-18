@@ -2,34 +2,35 @@ package allcom_testng.pages.header;
 
 import allcom_testng.pages.BasePage;
 import allcom_testng.pages.homePage.HomePage;
+import lombok.Getter;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
 
-public class SearchBox extends BasePage {
-    public SearchBox(WebDriver driver) {
-        super(driver);
-    }
-    public static String searchResultURL() {
-        return HomePage.homePageURL() + "/?";
-    }
-    @FindBy(className = "search__container")
-    WebElement searchBox;
-    public WebElement getSearchBox() {
-        return searchBox;
-    }
-    @FindBy(className = "search__input")
-    WebElement searchBoxInput;
-    public WebElement getSearchBoxInput() {
-        return searchBoxInput;
-    }
-    public By getSearchButtonBottom() {
-        return By.cssSelector("[data-testid='searchBottom']");
-    }
+import static allcom_testng.pages.homePage.HomePage.HOME_PAGE_URL;
+import static org.testng.Assert.assertEquals;
 
-    public void assertSearchBoxInputText(String expectedText) {
-        Assert.assertEquals(getSearchBoxInput().getAttribute("value"), expectedText, "Search box input text is not correct");
-    }
+@Getter
+public class SearchBox extends BasePage {
+  public static final String SEARCH_BOX_URL = HOME_PAGE_URL + "/search";
+
+  public SearchBox(WebDriver driver) {
+    super(driver);
+  }
+
+  @FindBy(className = "search__container")
+  WebElement searchBox;
+
+  @FindBy(className = "search__input")
+  WebElement searchBoxInput;
+
+  public By getSearchButtonBottom() {
+    return By.cssSelector("[data-testid='searchBottom']");
+  }
+
+  public void assertSearchBoxInputText(String expectedText) {
+    assertEquals(getSearchBoxInput().getAttribute("value"), expectedText, "Search box input text is not correct");
+  }
 }

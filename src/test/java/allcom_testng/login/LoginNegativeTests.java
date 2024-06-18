@@ -6,8 +6,13 @@ import allcom_testng.pages.DataProviderClass;
 import allcom_testng.pages.login.LoginPage;
 import allcom_testng.pages.passwordReset.RestorePasswordPage;
 import allcom_testng.pages.registration.RegisterPage;
+import org.junit.jupiter.api.extension.RegisterExtension;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
+import static allcom_testng.pages.login.LoginPage.LOGIN_PAGE_URL;
+import static allcom_testng.pages.passwordReset.RestorePasswordPage.RESTORE_PASSWORD_PAGE_URL;
+import static allcom_testng.pages.registration.RegisterPage.REGISTER_PAGE_URL;
 
 public class LoginNegativeTests extends TestBaseSE {
     private final String invalidLoginData = "invalidLoginData";
@@ -18,8 +23,8 @@ public class LoginNegativeTests extends TestBaseSE {
     public void precondition() {
         basePage = new BasePage(app.driver);
         loginPage = new LoginPage(app.driver);
-        basePage.goToPage(LoginPage.loginPageURL());
-        basePage.isCurrentPage(LoginPage.loginPageURL(), true);
+        basePage.goToPage(LOGIN_PAGE_URL);
+        basePage.isCurrentPage(LOGIN_PAGE_URL, true);
         app.driver.manage().window().maximize();
     }
 
@@ -48,7 +53,7 @@ public class LoginNegativeTests extends TestBaseSE {
     @Test
     public void clickOnForgotYourPasswordLabel() {
         loginPage.clickForgotPasswordButton();
-        basePage.isCurrentPage(RestorePasswordPage.restorePasswordPageURL(), true);
+        basePage.isCurrentPage(RESTORE_PASSWORD_PAGE_URL, true);
     }
 
     @Test
@@ -61,6 +66,6 @@ public class LoginNegativeTests extends TestBaseSE {
     @Test
     public void clickOnRegisterButtonWOData() {
         loginPage.clickRegisterButton();
-        basePage.isCurrentPage(RegisterPage.registerPageURL(), true);
+        basePage.isCurrentPage(REGISTER_PAGE_URL, true);
     }
 }

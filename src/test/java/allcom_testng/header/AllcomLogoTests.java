@@ -8,6 +8,9 @@ import allcom_testng.pages.login.LoginPage;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import static allcom_testng.pages.homePage.HomePage.HOME_PAGE_URL;
+import static allcom_testng.pages.login.LoginPage.LOGIN_PAGE_URL;
+
 public class AllcomLogoTests extends TestBaseSE {
     private AllcomLogo allcomLogo;
 
@@ -17,8 +20,8 @@ public class AllcomLogoTests extends TestBaseSE {
     public void precondition() {
         basePage = new BasePage(app.driver);
         allcomLogo = new AllcomLogo(app.driver);
-        basePage.goToPage(HomePage.homePageURL());
-        basePage.isCurrentPage(HomePage.homePageURL(), true);
+        basePage.goToPage(HOME_PAGE_URL);
+        basePage.isCurrentPage(HOME_PAGE_URL, true);
     }
 
     @Test
@@ -31,12 +34,12 @@ public class AllcomLogoTests extends TestBaseSE {
     }
     @Test
     public void clickAllcomLogoNavigatesToHomePage() {
-        basePage.goToPage(LoginPage.loginPageURL());
+        basePage.goToPage(LOGIN_PAGE_URL);
         basePage.isElementPresent(allcomLogo.getAllcomLogo(), true);
         basePage.isElementClickable(allcomLogo.getAllcomLogo(), true);
         basePage.click(allcomLogo.getAllcomLogo());
-        basePage.waitUntilUrlToBe(HomePage.homePageURL());
-        basePage.isCurrentPage(HomePage.homePageURL(), true);
+        basePage.waitUntilUrlToBe(HOME_PAGE_URL);
+        basePage.isCurrentPage(HOME_PAGE_URL, true);
     }
 }
 

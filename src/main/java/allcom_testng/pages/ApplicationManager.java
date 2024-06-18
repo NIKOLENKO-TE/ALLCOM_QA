@@ -16,6 +16,8 @@ import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
 
+import static allcom_testng.pages.homePage.HomePage.HOME_PAGE_URL;
+
 public class ApplicationManager extends BasePage {
 
     public BasePage basePage;
@@ -23,7 +25,7 @@ public class ApplicationManager extends BasePage {
 
     @Getter
     public WebDriver driver;
-    private static final Duration WAIT_MILLIS_TIMEOUT = Duration.ofMillis(1000);
+    private static final Duration WAIT_MILLIS_TIMEOUT = Duration.ofMillis(5000);
     private static final Duration WAIT_MILLIS_WAIT = Duration.ofMillis(500);
 
     public static ApplicationManager app = new ApplicationManager(System.getProperty("browser", Browser.CHROME.browserName()));
@@ -38,10 +40,9 @@ public class ApplicationManager extends BasePage {
         } else if (browser.equalsIgnoreCase("firefox")) {
             driver = new FirefoxDriver();
         }
-        driver.get(HomePage.homePageURL());
+        driver.get(HOME_PAGE_URL);
         BasePage basePage = new BasePage(driver);
         driver.manage().window().maximize();
-        driver.manage().timeouts().pageLoadTimeout(WAIT_MILLIS_TIMEOUT);
         driver.manage().timeouts().implicitlyWait(WAIT_MILLIS_WAIT);
         basePage.changeLanguage("English");
     }
@@ -59,8 +60,7 @@ public class ApplicationManager extends BasePage {
             driver = new ChromeDriver(options);
         }
         BasePage basePage = new BasePage(driver);
-        driver.get(HomePage.homePageURL());
-        driver.manage().timeouts().pageLoadTimeout(WAIT_MILLIS_TIMEOUT);
+        driver.get(HOME_PAGE_URL);
         driver.manage().timeouts().implicitlyWait(WAIT_MILLIS_WAIT);
         basePage.changeLanguage("English");
     }

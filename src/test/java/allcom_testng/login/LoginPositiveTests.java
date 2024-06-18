@@ -9,6 +9,8 @@ import allcom_testng.pages.login.LoginPage;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import static allcom_testng.pages.login.LoginPage.LOGIN_PAGE_URL;
+
 public class LoginPositiveTests extends TestBaseSE {
     private final String validLoginData = "validLoginData";
     private BasePage basePage;
@@ -19,14 +21,14 @@ public class LoginPositiveTests extends TestBaseSE {
     public void precondition() {
         basePage = new BasePage(app.driver);
         loginPage = new LoginPage(app.driver);
-        basePage.goToPage(LoginPage.loginPageURL());
-        basePage.isCurrentPage(LoginPage.loginPageURL(), true);
+        basePage.goToPage(LOGIN_PAGE_URL);
+        basePage.isCurrentPage(LOGIN_PAGE_URL, true);
         app.driver.manage().window().maximize();
     }
 
     @Test
     public void loginWithValidDataPositive() {
-        loginPage.login("admin@gmail.com", "Qwertyuiop@1");
+        loginPage.login("james-smith@mail.com", "Qwerty007!");
         loginPage.clickLoginButton();
         basePage.isValidationErrorPresent(false);
     }

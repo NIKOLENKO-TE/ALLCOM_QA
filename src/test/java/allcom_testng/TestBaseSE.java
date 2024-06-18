@@ -66,7 +66,7 @@ public class TestBaseSE {
             logger.info("[==================================================================================================]");
         }
     }
-    @AfterSuite(enabled = false)
+    @AfterSuite(enabled = true)
     public void tearDown() {
         app.stop();
     }

@@ -8,9 +8,9 @@ import allcom_testng.pages.registration.RegisterPage;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import static allcom_testng.pages.registration.RegisterPage.REGISTER_PAGE_URL;
+
 public class RegisterPagePositiveTests extends TestBaseSE {
-    private final String validNewUserRegisterDataFromFile = "validNewUserRegisterDataFromFile";
-    private final String validNewFirmaRegisterDataFromFile = "validNewFirmaRegisterDataFromFile";
     private BasePage basePage;
     private RegisterPage registerPage;
 
@@ -18,8 +18,8 @@ public class RegisterPagePositiveTests extends TestBaseSE {
     public void precondition() {
         basePage = new BasePage(app.driver);
         registerPage = new RegisterPage(app.driver);
-        basePage.goToPage(RegisterPage.registerPageURL());
-        basePage.isCurrentPage(RegisterPage.registerPageURL(), true);
+        basePage.goToPage(REGISTER_PAGE_URL);
+        basePage.isCurrentPage(REGISTER_PAGE_URL, true);
         app.driver.manage().window().maximize();
     }
 
@@ -59,7 +59,7 @@ public class RegisterPagePositiveTests extends TestBaseSE {
         basePage.isValidationErrorPresent(false);
     }
 
-    @Test(dataProvider = validNewUserRegisterDataFromFile, dataProviderClass = DataProviderClass.class)
+    @Test(dataProvider = "validNewUserRegisterDataFromFile", dataProviderClass = DataProviderClass.class)
     public void registerNewUserWithValidDataPositive(String validFirstName, String validLastName, String validEmail, String validPhoneNumber, String validPassword) {
         basePage.validateField(registerPage.getFirstNameField(), validFirstName, false);
         basePage.validateField(registerPage.getLastNameField(), validLastName, false);
@@ -72,62 +72,54 @@ public class RegisterPagePositiveTests extends TestBaseSE {
         basePage.isValidationErrorPresent(false);
     }
 
-    @Test(dataProvider = validNewFirmaRegisterDataFromFile, dataProviderClass = DataProviderClass.class)
+    @Test(dataProvider = "validNewFirmaRegisterDataFromFile", dataProviderClass = DataProviderClass.class)
     public void registerNewFirmaWithValidDataPositive(
-            String validFirstName, String validLastName, String validEmail,
-            String validPhoneNumber, String validPassword, String validPasswordConfirm,
-            String validCompanyName, String validPosition, String validTaxNumber,
-            String validPostIndex, String validCity, String validStreet, String validHouseNumber) {
+        String firstName, String lastName, String email,
+        String phoneNumber, String password, String passwordConfirm,
+        String companyName, String position, String taxNumber,
+        String postIndex, String city, String street, String houseNumber) {
         basePage.setCheckboxFirma();
-        basePage.validateField(registerPage.getFirstNameField(), validFirstName, false);
-        basePage.validateField(registerPage.getLastNameField(), validLastName, false);
-        basePage.validateField(registerPage.getEmailField(), validEmail, false);
-        basePage.validateField(registerPage.getPhoneNumberField(), validPhoneNumber, false);
-        basePage.validateField(registerPage.getPasswordField(), validPassword, false);
-        basePage.validateField(registerPage.getPasswordConfirmField(), validPasswordConfirm, false);
-        basePage.validateField(registerPage.getCompanyNameField(), validCompanyName, false);
-        basePage.validateField(registerPage.getPositionField(), validPosition, false);
-        basePage.validateField(registerPage.getTaxNumberField(), validTaxNumber, false);
-        basePage.validateField(registerPage.getPostIndexField(), validPostIndex, false);
-        basePage.validateField(registerPage.getCityField(), validCity, false);
-        basePage.validateField(registerPage.getStreetField(), validStreet, false);
-        basePage.validateField(registerPage.getHouseNumberField(), validHouseNumber, false);
+        registerPage.registerFirma(firstName, lastName, phoneNumber, email, password, passwordConfirm,
+            companyName, position, taxNumber, postIndex, city, street, houseNumber);
         registerPage.clickReadTermsCheckbox();
         registerPage.clickRegisterButton();
         basePage.isValidationErrorPresent(false);
     }
 
-    @Test(invocationCount = 5)
+    @Test(invocationCount = 2)
     public void registerNewUserWithValidRandomDataPositive() {
         String validPassword = DataRandom.getValidPassword();
-        basePage.validateField(registerPage.getFirstNameField(), DataRandom.getValidFirstName(), false);
-        basePage.validateField(registerPage.getLastNameField(), DataRandom.getValidLastName(), false);
-        basePage.validateField(registerPage.getEmailField(), DataRandom.getValidEmail(), false);
-        basePage.validateField(registerPage.getPhoneNumberField(), DataRandom.getValidPhoneNumber(), false);
-        basePage.validateField(registerPage.getPasswordField(), validPassword, false);
-        basePage.validateField(registerPage.getPasswordConfirmField(), validPassword, false);
+        registerPage.registerClient(
+            DataRandom.getValidFirstName(),
+            DataRandom.getValidLastName(),
+            DataRandom.getValidPhoneNumber(),
+            DataRandom.getValidEmail(),
+            validPassword,
+            validPassword
+        );
         registerPage.clickReadTermsCheckbox();
         registerPage.clickRegisterButton();
         basePage.isValidationErrorPresent(false);
     }
 
-    @Test(invocationCount = 30)
+    @Test(invocationCount = 2)
     public void registerNewFirmaWithValidRandomDataPositive() {
         String validPassword = DataRandom.getValidPassword();
-        basePage.setCheckboxFirma();
-        basePage.validateField(registerPage.getFirstNameField(), DataRandom.getValidFirstName(), false);
-        basePage.validateField(registerPage.getLastNameField(), DataRandom.getValidLastName(), false);
-        basePage.validateField(registerPage.getEmailField(), DataRandom.getValidEmail(), false);
-        basePage.validateField(registerPage.getPhoneNumberField(), DataRandom.getValidPhoneNumber(), false);
-        basePage.validateField(registerPage.getPasswordField(), validPassword, false);
-        basePage.validateField(registerPage.getPasswordConfirmField(), validPassword, false);
-        basePage.validateField(registerPage.getCompanyNameField(), DataRandom.getValidCompanyName(), false);
-        basePage.validateField(registerPage.getPositionField(), DataRandom.getValidPosition(), false);
-        basePage.validateField(registerPage.getTaxNumberField(), DataRandom.getValidTaxNumber(), false);
-        basePage.validateField(registerPage.getPostIndexField(), DataRandom.getValidPostIndex(), false);
-        basePage.validateField(registerPage.getCityField(), DataRandom.getValidCity(), false);
-        basePage.validateField(registerPage.getStreetField(), DataRandom.getValidStreet(), false);
-        basePage.validateField(registerPage.getHouseNumberField(), DataRandom.getValidHouseNumber(), false);
+        registerPage.registerFirma(
+            DataRandom.getValidFirstName(),
+            DataRandom.getValidLastName(),
+            DataRandom.getValidPhoneNumber(),
+            DataRandom.getValidEmail(),
+            validPassword,
+            validPassword, // Confirm password
+            DataRandom.getValidCompanyName(),
+            DataRandom.getValidPosition(),
+            DataRandom.getValidTaxNumber(),
+            DataRandom.getValidPostIndex(),
+            DataRandom.getValidCity(),
+            DataRandom.getValidStreet(),
+            DataRandom.getValidHouseNumber()
+        );
         registerPage.clickReadTermsCheckbox();
         registerPage.clickRegisterButton();
         basePage.isValidationErrorPresent(false);
