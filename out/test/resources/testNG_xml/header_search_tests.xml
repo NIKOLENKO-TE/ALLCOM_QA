@@ -3,7 +3,7 @@
 <suite name="HeaderSearch" verbose="1">
     <test name="HeaderSearch">
         <classes>
-            <class name="allcom_testng.tests.header.SearchBoxTests"/>
+            <class name="allcom_selenium.tests.header.SearchBoxTests"/>
         </classes>
     </test>
 </suite>

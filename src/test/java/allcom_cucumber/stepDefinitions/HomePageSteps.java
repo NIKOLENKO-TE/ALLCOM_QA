@@ -1,14 +1,14 @@
 package allcom_cucumber.stepDefinitions;
 
-import allcom_testng.pages.homePage.HomePage;
-import allcom_testng.TestBaseSE;
+import allcom_selenium.pages.homePage.HomePage;
+import allcom_selenium.TestBaseSE;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 
-import static allcom_testng.pages.ApplicationManager.app;
+import static allcom_selenium.pages.ApplicationManager.app;
 
 public class HomePageSteps {
     WebDriver driver = app.getDriver();

@@ -3,7 +3,7 @@
 <suite name="Header" verbose="1">
     <test name="Header">
         <packages>
-            <package name="allcom_testng.tests.header.*"/>
+            <package name="allcom_selenium.tests.header.*"/>
         </packages>
     </test>
 </suite>

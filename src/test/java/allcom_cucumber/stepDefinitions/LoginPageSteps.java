@@ -1,8 +1,8 @@
 package allcom_cucumber.stepDefinitions;
 
-import allcom_testng.pages.BasePage;
-import allcom_testng.pages.homePage.HomePage;
-import allcom_testng.pages.login.LoginPage;
+import allcom_selenium.pages.BasePage;
+import allcom_selenium.pages.homePage.HomePage;
+import allcom_selenium.pages.login.LoginPage;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import org.openqa.selenium.WebDriver;
@@ -12,9 +12,9 @@ import org.testng.Assert;
 
 import java.time.Duration;
 
-import static allcom_testng.pages.ApplicationManager.app;
-import static allcom_testng.pages.homePage.HomePage.HOME_PAGE_URL;
-import static allcom_testng.pages.login.LoginPage.*;
+import static allcom_selenium.pages.ApplicationManager.app;
+import static allcom_selenium.pages.homePage.HomePage.HOME_PAGE_URL;
+import static allcom_selenium.pages.login.LoginPage.*;
 
 public class LoginPageSteps {
     WebDriver driver = app.getDriver();

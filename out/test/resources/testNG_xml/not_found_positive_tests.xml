@@ -3,7 +3,7 @@
 <suite name="NotFoundPositive" verbose="1">
     <test name="NotFoundPositive">
         <classes>
-            <class name="allcom_testng.tests.notFound.NotFoundPositiveTests"/>
+            <class name="allcom_selenium.tests.notFound.NotFoundPositiveTests"/>
         </classes>
     </test>
 </suite>

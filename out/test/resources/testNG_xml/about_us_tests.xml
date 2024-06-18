@@ -3,7 +3,7 @@
 <suite name="AboutUs" verbose="1">
     <test name="AboutUs">
         <classes>
-            <class name="allcom_testng.aboutUs.AboutUsPageTests"/>
+            <class name="allcom_selenium.aboutUs.AboutUsPageTests"/>
         </classes>
     </test>
 </suite>
