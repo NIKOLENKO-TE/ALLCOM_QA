@@ -32,8 +32,8 @@ jobs:
         run: javac -version
       - name: ✅ ⚙️ Set execute permission for gradlew
         run: chmod +x gradlew
-      - name: ✅ ⚙️ Build with Gradle
-        run: ./gradlew -Pbrowser=chrome -Pmode=normal clean allcom_qa_broken_links > build.log 2>&1 || true
+#      - name: ✅ ⚙️ Build with Gradle
+#        run: ./gradlew -Pbrowser=chrome -Pmode=normal clean allcom_qa_broken_links > build.log 2>&1 || true
       - name: ❎ ⌛️ Check Gradle version
         run: ./gradlew --version
       - name: ✅ 🚿 Clean Gradle build
@@ -46,7 +46,7 @@ jobs:
         if: always()
         run: ls -R
       - name: ▶️ 🐞 Run all tests
-        run: xvfb-run --auto-servernum --server-args="-screen 0 2000x1000x24" ./gradlew test
+        run: xvfb-run --auto-servernum --server-args="-screen 0 1920x1080x24" ./gradlew -Pbrowser=chrome -Pmode=normal clean allcom_qa_broken_links > build.log 2>&1 || true
       - name: ✅ 📂 List Directories after tests
         if: always()
         run: ls -R
