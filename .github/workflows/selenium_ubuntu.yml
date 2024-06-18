@@ -51,7 +51,7 @@ jobs:
         if: always()
         run: ls -R
       - name: ✅ 📦 Archive [Gradle build log]
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         if: always()
         with:
           name: gradle-build-log.zip
@@ -71,7 +71,7 @@ jobs:
           path: |
             src/test_logs/*
       - name: ✅ 💾 Load previous test report history
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         if: always()
         continue-on-error: true
         with:
@@ -85,7 +85,7 @@ jobs:
           allure_history: allure-history
           allure_results: build/allure-report
       - name: ✅ 💻 Publish test report
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         if: always()
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
