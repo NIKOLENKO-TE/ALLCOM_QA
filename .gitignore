@@ -34,7 +34,7 @@ target/
 
 # Gradle
 build/
-.gradle/
+# gradle/
 
 # Logs and databases
 *.log
