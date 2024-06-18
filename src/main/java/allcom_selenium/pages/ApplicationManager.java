@@ -85,7 +85,7 @@ public class ApplicationManager extends BasePage {
     }
     // Закрытие chromedriver.exe
     try {
-      Runtime.getRuntime().exec("taskkill /F /IM chromedriver.exe /T");
+      new ProcessBuilder("taskkill", "/F", "/IM", "chromedriver.exe", "/T").start();
     } catch (IOException e) {
       System.err.println("IOException while trying to kill chromedriver.exe: " + e.getMessage());
     }

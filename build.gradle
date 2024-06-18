@@ -28,34 +28,11 @@ dependencies {
     implementation group: 'io.qameta.allure', name: 'allure-testng', version: '2.27.0'
 }
 
-tasks.jar {
-    dependsOn 'classes' // Ensure classes are compiled before creating the JAR
-}
 
 processTestResources {
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 }
 
-test {
-    useTestNG()
-    finalizedBy 'allureReport'
-}
-
-allureReport {
-    reportDir = file('build/allure-report')
-}
-
-allureReport { // перед созданием отчёта, удаляем старые результаты чтобы не мешались
-    dependsOn cleanAllureReport
-}
-
-sourceSets {
-    test {
-        resources {
-            srcDir 'src/test/resources'
-        }
-    }
-}
 
 def registerTask(String taskName, String suitePath) {
     tasks.register(taskName, Test) {
@@ -67,6 +44,28 @@ def registerTask(String taskName, String suitePath) {
         }
         if (project.hasProperty('mode')) {
             systemProperty 'mode', "${mode}"
+        }
+    }
+}
+
+test {
+    useTestNG()
+    finalizedBy 'allureReport'
+}
+
+allureReport {
+    dependsOn test
+    reportDir = file('build/allure-report')
+}
+
+//allureReport { // перед созданием отчёта, удаляем старые результаты чтобы не мешались
+//    dependsOn cleanAllureReport
+//}
+
+sourceSets {
+    test {
+        resources {
+            srcDir 'src/test/resources'
         }
     }
 }

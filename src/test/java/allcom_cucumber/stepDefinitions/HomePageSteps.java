@@ -25,7 +25,6 @@ public class HomePageSteps {
     @When("User verifies Home Page title Auctions")
     public void verify_HomePage_title_auctions() {
         HomePage homePage = new HomePage(driver);
-        System.out.println("HomePage title: "); // delete this
         Assert.assertTrue(homePage.isHomePageTitleAuctionsDisplayed());
     }
 
