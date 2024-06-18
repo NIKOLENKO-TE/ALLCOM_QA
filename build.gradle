@@ -72,3 +72,4 @@ registerTask('allcom_qa_header_search', 'src/test/resources/testNG_xml/header_se
 registerTask('allcom_qa_restore_password', 'src/test/resources/testNG_xml/restore_password_tests.xml')
 registerTask('allcom_qa_notFound', 'src/test/resources/testNG_xml/not_found_positive_tests.xml')
 registerTask('allcom_qa_footer', 'src/test/resources/testNG_xml/footer_tests.xml')
+registerTask('allcom_qa_broken_links', 'src/test/resources/testNG_xml/broken_links.xml')
