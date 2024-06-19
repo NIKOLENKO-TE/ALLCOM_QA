@@ -32,8 +32,8 @@ jobs:
         run: javac -version
       - name: ✅ ⚙️ Set execute permission for gradlew
         run: chmod +x gradlew
-#      - name: ✅ ⚙️ Build with Gradle
-#        run: ./gradlew -Pbrowser=chrome -Pmode=normal clean allcom_qa_broken_links > build.log 2>&1 || true
+      #      - name: ✅ ⚙️ Build with Gradle
+      #        run: ./gradlew -Pbrowser=chrome -Pmode=normal clean allcom_qa_broken_links > build.log 2>&1 || true
       - name: ❎ ⌛️ Check Gradle version
         run: ./gradlew --version
       - name: ✅ 🚿 Clean Gradle build
@@ -83,7 +83,7 @@ jobs:
         with:
           gh_pages: gh-pages
           allure_history: allure-history
-          allure_results: build/allure-report
+          allure_results: build/allure-results
       - name: ✅ 💻 Publish test report
         uses: peaceiris/actions-gh-pages@v4.0.0
         if: always()
