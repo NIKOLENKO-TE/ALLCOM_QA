@@ -32,8 +32,6 @@ jobs:
         run: javac -version
       - name: ✅ ⚙️ Set execute permission for gradlew
         run: chmod +x gradlew
-      #      - name: ✅ ⚙️ Build with Gradle
-      #        run: ./gradlew -Pbrowser=chrome -Pmode=normal clean allcom_qa_broken_links > build.log 2>&1 || true
       - name: ❎ ⌛️ Check Gradle version
         run: ./gradlew --version
       - name: ✅ 🚿 Clean Gradle build
